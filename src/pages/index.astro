@@ -1,0 +1,72 @@
+---
+import HeroSection from "../components/HeroSection.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import QuienesSomos from "../components/sections/QuienesSomos.astro";
+import Actualidad from "../components/sections/Actualidad.astro";
+import Actualidad2 from "../components/sections/Actualidad2.astro";
+import Sede from "../components/sections/Sede.astro";
+
+import Layout from "../layouts/Layout.astro";
+import SiteFooter from "../components/molecules/SiteFooter.astro";
+
+import PorqueAsistir from "../components/sections/PorqueAsistir.astro";
+import Speakers from "../components/sections/Speakers.astro";
+import Notas from "../components/sections/Notas.astro";
+import Recursos from "../components/sections/Recursos.astro";
+import Patrocinadores from "../components/sections/Patrocinadores.astro";
+---
+
+<Layout title="Plenilunia - Foro Menopausia 2025">
+  <LandingHeader />
+
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+  >
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+
+    <div class="snap-center">
+      <QuienesSomos />
+    </div>
+
+    <div class="snap-center">
+      <Actualidad />
+    </div> 
+
+    <div class="snap-center">
+      <Actualidad2 />
+    </div>
+    
+    <div class="snap-center">
+      <Sede />
+      
+    </div>
+    <div class="snap-center">
+      <PorqueAsistir />
+    </div>
+
+   
+    <div class="snap-center">
+      <Speakers />
+    </div>
+
+    <div class="snap-center">
+      <Notas />
+    </div>
+    
+    <div class="snap-center">
+      <Recursos />
+      
+    </div>
+    <div class="snap-center">
+      <Patrocinadores />
+      
+    </div>
+    <div class="snap-center">
+      
+      <SiteFooter />
+    </div>
+  
+  </main>
+</Layout>

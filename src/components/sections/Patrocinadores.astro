@@ -1,0 +1,121 @@
+---
+import SpeakerOrganicBg from "../atoms/SpeakerOrganicBg.astro";
+import logo_pleni from '../../assets/patrocinadores/logo_pleni.png';
+import logo_atha from '../../assets/patrocinadores/logo_atha.png';
+import logo_sinreglas from '../../assets/patrocinadores/logo_sinreglas.png';
+import logo_nopausa from '../../assets/patrocinadores/logo_nopausa.png';
+import logo_medita_mexico from '../../assets/patrocinadores/logo_medita_mexico.png';
+import logo_mujeres_en_hormonia from '../../assets/patrocinadores/logo_mujeres_en_hormonia.png';
+
+import logo_therbal from '../../assets/patrocinadores/logo_therbal.png';
+import logo_bayer from '../../assets/patrocinadores/logo_bayer.png';
+import logo_lelo from '../../assets/patrocinadores/logo_lelo.png';
+import logo_botanical_wisdom from '../../assets/patrocinadores/logo_botanical_wisdom.png';
+import { Image } from 'astro:assets';
+
+const patrocinadores = [
+  {
+    imgUrl: logo_therbal,
+    alt: "Therbal",
+  },
+  {
+    imgUrl: logo_bayer,
+    alt: "Bayer",
+  },
+  {
+    imgUrl: logo_lelo,
+    alt: "Lelo",
+  },
+  {
+    imgUrl: logo_botanical_wisdom,
+    alt: "Botanical Wisdom",
+  },
+  
+  // Add more speakers as needed
+];
+const aliados = [
+  {
+    imgUrl: logo_pleni, 
+    alt: "Pleni",
+  },
+  {
+    imgUrl: logo_atha,
+    alt: "Atha",
+  },
+  {
+    imgUrl: logo_sinreglas,
+    alt: "Sinreglas",
+  },
+  {
+    imgUrl: logo_nopausa,
+    alt: "Nopausa",
+  },
+  {
+    imgUrl: logo_medita_mexico,
+    alt: "Medita Mexico",
+  },
+  {
+    imgUrl: logo_mujeres_en_hormonia,
+    alt: "Mujeres en Hormonia",
+  },
+  // Add more speakers as needed
+];
+
+
+const sectionStyles = `landing-section bg-capuchino min-h-screen w-screen flex flex-col items-center justify-center pt-24 px-8 relative overflow-y-hidden pb-8 md:pb-0`;
+---
+
+<!-- <section aria-labelledby="speakers-title" class="py-16 bg-purple"> -->
+<section
+  class={sectionStyles}
+  data-header-color={`capuchino`}
+  id='aliados'
+>
+  <div class="container mx-auto px-4">
+    <h2 id="speakers-title" class="text-purple-text text-4xl font-bold text-center mb-8">
+      ALIADOS
+    </h2>
+
+    <div
+      class="grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 2xl:grid-cols-5"
+    >
+      {aliados.map((aliado) => (
+        <div class="flex w-full min-h-[162px] max-h-[162px]  items-center justify-center">
+          <Image 
+            src={aliado.imgUrl}
+            alt={aliado.alt || 'Aliado'} 
+            class="object-contain w-full h-full rounded-md" 
+            loading="lazy"
+            width={320}
+            height={162}
+          />
+        </div>
+        
+      ))}
+    </div>
+  </div>
+
+  <div class="container mx-auto mt-12 px-0 md:px-24">
+    <h2 id="speakers-title" class="text-purple-text text-4xl font-bold text-center mb-8 uppercase">
+      patrocinadores
+    </h2>
+
+    <div
+      class="grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 2xl:grid-cols-4"
+    >
+      {patrocinadores.map((aliado) => (
+        <div class="flex w-full min-h-[162px] max-h-[162px] ">
+            <Image 
+            src={aliado.imgUrl}
+            alt={aliado.alt || 'Aliado'} 
+            class="object-contain w-full h-full rounded-md" 
+            loading="lazy"
+            width={320}
+            height={162}
+          />
+        </div>
+        
+      ))}
+    </div>
+  </div>
+</section>
