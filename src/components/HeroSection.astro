@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Button from "./Button.astro"
-const sectionStyles = `landing-section bg-purple h-screen w-screen text-center overflow-hidden overflow-y-hidden relative`;
+const sectionStyles = `landing-section bg-light-gray h-screen w-screen text-center overflow-hidden overflow-y-hidden relative`;
 
 import heroLogo from '../assets/hero-logo.png';
 import heroLogoMobile from '../assets/hero-logo-mobile.png';
@@ -10,47 +10,49 @@ import heroWoman from '../assets/hero-woman.png';
 
 <section
   class={sectionStyles}
-  data-header-color={`purple`}
+  data-header-color={`light-gray`}
   id='inicio'
 >
   <!-- Desktop Layout -->
 <div class="hidden lg:flex justify-between items-center h-full px-16 pt-32 z-30 relative">
   <!-- Left content -->
   <div class="flex flex-col w-[50vw] items-start max-w-[50vw] space-y-6">
-    <h2 class="text-apple text-6xl font-bold uppercase">PRIMER FORO</h2>
+    <h2 class="text-black text-6xl font-black uppercase"> <span class="text-7xl">F</span>oro 2025</h2>
 
-    <Image
-        src={heroLogo}
-        alt="Logo habitando mi menopausia"
-        class="w-full max-w-md 2xl:max-w-xl"
-        loading="eager"       
-        fetchpriority="high"  
-        widths={[400, 600, 800]} 
-        sizes="(max-width: 1536px) 50vw, 800px" 
-        format="webp"        
-      />
+    <h3 class="flex flex-col items-start justify-start leading-8 font-thin text-6xl text-black">
+      <span>El desafío de las</span><br />
+      <span>Infecciones</span><br />
+      <span>Intrahospitalarias</span>
+    </h1>
+    
+    <div class="bg-gradient-to-r from-[#334757] via-[#00b0e3] to-[#62ac58] rounded-[20px] px-6 py-2 inline-block">
+      <p class="text-white font-extrabold uppercase text-4xl leading-tight tracking-wide text-left">HACIA UNA POLÍTICA PÚBLICA</p>
+      <p class="text-white font-extrabold uppercase text-4xl leading-tight tracking-wide text-left">QUE IMPULSE LA PREVENCIÓN</p>
+    </div>
 
     <!-- Texto y botón alineados -->
     <div class="flex items-start gap-4">
       <!-- Texto -->
-      <div class="space-y-2 flex flex-col items-start">
-        <p class="text-3xl font-bold text-apple">
-          SÁBADO 18 OCTUBRE 2025
+      <div class="space-y-1 flex flex-col items-start">
+        <p class="text-3xl tracking-wider font-bold text-black-text">
+          25 Y 26 DE SEPTIEMBRE, 2025
         </p>
-        <p class="text-white text-2xl">Día Mundial de la Menopausia</p>
+        <div class="flex flex-col items-start justify-start w-full ">
+          <p class="text-black text-2xl font-normal tracking-widest">
+            Auditorio del <strong class="font-extrabold">Hospital Médica Sur</strong>
+          </p>
+          <div class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-[#334757] via-[#00b0e3] to-[#62ac58]"></div>
+        </div>
       </div>
 
       <!-- Botón alineado arriba -->
-      <div class="pt-1">
-        <Button href="#registro" label="QUIERO ASISTIR" />
-      </div>
+      
     </div>
 
     <!-- Sede -->
-    <p class="text-md text-white">
-      <strong class="text-[#C0EA6A]">SEDE:</strong>
-      <span class="font-bold">Museo Memoria y Tolerancia, CDMX.</span>
-    </p>
+    <div class="pt-1">
+        <Button href="#registro" label="QUIERO ASISTIR" />
+      </div>
   </div>
 
   <!-- Right image -->

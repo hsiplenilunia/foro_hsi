@@ -1,14 +1,17 @@
 ---
 const { href = "#", label = "Ver más" } = Astro.props;
-const tickets = "https://www.eventbrite.com.mx/e/habitando-mi-menopausia-tickets-1484975243929"
+const tickets = "https://www.eventbrite.com.mx/e/1411328253799?aff=oddtdtcreator"
 ---
 
 <a
   href={tickets}
   class="flex w-full justify-center md:w-auto md:inline-block 
-  bg-[#A2AB8E] 
-  text-white hover:text-purple font-bold py-2 px-6 rounded-full 
-  border-2 border-white hover:border-apple shadow-xl hover:bg-white transition focus:outline-none focus:ring-2 focus:ring-apple focus:ring-opacity-50"
+  bg-gray-hsi 
+  text-white hover:text-navy font-medium py-2 px-6 rounded-full 
+  border-2 border-white hover:border-navy 
+  shadow-2xl hover:bg-hsi-blue transition 
+  text-xl
+  focus:outline-none focus:ring-2 focus:ring-navy focus:ring-opacity-50"
   aria-label={label}
   target="_blank"
 >
