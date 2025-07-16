@@ -1,24 +1,39 @@
 ---
 import { Image } from "astro:assets";
 import Button from "./Button.astro";
-const sectionStyles = `landing-section bg-light-gray h-screen w-screen text-center overflow-hidden overflow-y-hidden relative bg-[url('/src/assets/hsi_bg.png')] bg-cover bg-center`;
+import hsiBg from "../assets/hsi_bg.png";
+const sectionStyles = `landing-section bg-light-gray h-screen w-screen text-center overflow-hidden overflow-y-hidden relative`;
 
 import heroLogo from "../assets/hero-logo.png";
 import heroLogoMobile from "../assets/hero-logo-mobile.png";
 import heroWoman from "../assets/hero-woman.png";
+import msLogo from "../assets/MS_logotipo-horizontal.png";
 import HeroSlider from "./react/HeroSlider.tsx";
 ---
 
 <section class={sectionStyles} data-header-color={`light-gray`} id="inicio">
+  <Image
+    src={hsiBg}
+    alt="Fondo HSI"
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    width={1920}
+    height={1080}
+    loading="lazy"
+    decoding="async"
+    format="webp"
+    quality={70}
+    aria-hidden="true"
+    style="pointer-events:none; user-select:none;"
+  />
   <!-- Desktop Layout -->
   <div
     class="hidden lg:flex justify-between items-center h-full px-16 pt-32 z-30 relative"
   >
     <!-- Left content -->
     <div class="flex flex-col w-[50vw] items-start max-w-[50vw] space-y-6">
-      <h2 class="text-black text-6xl font-black uppercase">
+      <h1 class="text-black text-6xl font-black uppercase">
         <span class="text-7xl">F</span>oro 2025
-      </h2>
+      </h1>
 
       <h3
         class="flex flex-col items-start justify-start leading-8 font-thin text-6xl text-black"
@@ -74,10 +89,20 @@ import HeroSlider from "./react/HeroSlider.tsx";
 
     <!-- Right image -->
     <div class="absolute bottom-24 right-24 max-w-4xl md:w-[28vw] lg:w-[28vw] flex flex-col items-end gap-2">
-      <HeroSlider client:load />
+      <HeroSlider client:idle />
       <div class="flex flex-col items-end mt-4">
         <span class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2">AVAL ACADÉMICO</span>
-        <img src="/MS_logotipo-horizontal.png" alt="Médica Sur" class="h-10 w-auto" />
+        <Image
+          src={msLogo}
+          alt="Médica Sur"
+          class="h-10 w-auto"
+          width={200}
+          height={50}
+          loading="lazy"
+          decoding="async"
+          format="webp"
+          quality={80}
+        />
       </div>
     </div>
 
@@ -90,9 +115,9 @@ import HeroSlider from "./react/HeroSlider.tsx";
   <div
     class="lg:hidden flex flex-col items-center text-center px-6 pt-40 z-30 relative h-full"
   >
-    <h2 class="text-black text-3xl font-black uppercase">
+    <h1 class="text-black text-3xl font-black uppercase">
       <span class="text-4xl">F</span>oro 2025
-    </h2>
+    </h1>
      <Image
       src={heroLogoMobile}
       alt="Doctores"
