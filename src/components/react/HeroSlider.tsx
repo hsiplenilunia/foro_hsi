@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 const images = [
-  '/src/assets/Auditorio-MedicaSur-scaled_28percent_transparent.png',
-  '/src/assets/hero-logo-mobile.png',
+  '/Auditorio-MedicaSur-scaled_28percent_transparent.png',
+  '/hero-logo-mobile.png',
 ];
 
 const SLIDER_HEIGHT = 220; // px, adjust as needed
