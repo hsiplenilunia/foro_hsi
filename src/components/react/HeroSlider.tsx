@@ -24,9 +24,10 @@ const HeroSlider: React.FC = () => {
 
   return (
     <div
+      className='flex'
       style={{
-        width: '100%',
-        height: `${SLIDER_HEIGHT}px`,
+        width: `100%`,
+        height: '520px',
         position: 'relative',
         overflow: 'hidden',
       }}
