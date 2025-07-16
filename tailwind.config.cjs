@@ -22,6 +22,9 @@ module.exports = {
 				'light-gray':"#f2f2f2",
 				'gray-hsi': "#808080",
 				'hsi-blue': "#00ccf2",
+				'gradient-start': "#334757",
+				'gradient-center': "#00b0e3",
+				'gradient-end': "#62ac58",
 			}
 		},
 	},

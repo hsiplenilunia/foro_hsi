@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Button from "./Button.astro";
-const sectionStyles = `landing-section bg-light-gray h-screen w-screen text-center overflow-hidden overflow-y-hidden relative`;
+const sectionStyles = `landing-section bg-light-gray h-screen w-screen text-center overflow-hidden overflow-y-hidden relative bg-[url('/src/assets/hsi_bg.png')] bg-cover bg-center`;
 
 import heroLogo from "../assets/hero-logo.png";
 import heroLogoMobile from "../assets/hero-logo-mobile.png";
@@ -28,7 +28,7 @@ import heroWoman from "../assets/hero-woman.png";
       </h3>
 
       <div
-        class="bg-gradient-to-r from-[#334757] via-[#00b0e3] to-[#62ac58] rounded-[20px] px-6 py-2 inline-block"
+        class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block"
       >
         <p
           class="text-white font-extrabold uppercase text-4xl leading-tight tracking-wide text-left"
@@ -56,7 +56,7 @@ import heroWoman from "../assets/hero-woman.png";
               >
             </p>
             <div
-              class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-[#334757] via-[#00b0e3] to-[#62ac58]"
+              class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"
             >
             </div>
           </div>
@@ -72,17 +72,25 @@ import heroWoman from "../assets/hero-woman.png";
     </div>
 
     <!-- Right image -->
-    <div class="absolute bottom-0 right-0 max-w-2xl md:w-[30vw] lg:w-[40vw]">
+    <div class="absolute bottom-24 right-24 max-w-4xl md:w-[28vw] lg:w-[28vw] flex flex-col items-end gap-2">
       <Image
-        src={heroWoman}
-        alt="Mujer feliz"
+        src={heroLogoMobile}
+        alt="Doctores"
         class="w-full object-contain"
         loading="eager"
         fetchpriority="high"
         widths={[400, 600, 800, 1024]}
-        sizes="(max-width: 768px) 30vw, 40vw"
+        sizes="(max-width: 512px) 30vw, 40vw"
         format="webp"
       />
+      <div class="flex flex-col items-end mt-4">
+        <span class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2">AVAL ACADÉMICO</span>
+        <img src="/src/assets/MS_logotipo-horizontal.png" alt="Médica Sur" class="h-10 w-auto" />
+      </div>
+    </div>
+
+    <div class="w-full flex justify-end absolute bottom-0 left-0 bg-[url('/src/assets/motivos_pattern.png')] bg-repeat-x bg-contain bg-bottom h-12">
+        &nbsp;
     </div>
   </div>
 
@@ -113,7 +121,7 @@ import heroWoman from "../assets/hero-woman.png";
       </h3>
 
       <div
-        class="bg-gradient-to-r from-[#334757] via-[#00b0e3] to-[#62ac58] rounded-[20px] px-6 py-2 inline-block mb-3"
+        class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block mb-3"
       >
         <p
           class="text-white font-extrabold uppercase text-xl leading-tight tracking-wide text-left"
@@ -136,7 +144,7 @@ import heroWoman from "../assets/hero-woman.png";
         >
       </p>
       <div
-        class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-[#334757] via-[#00b0e3] to-[#62ac58]"
+        class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"
       >
       </div>
     </div>

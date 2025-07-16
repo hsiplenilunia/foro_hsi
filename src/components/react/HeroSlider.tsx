@@ -1,0 +1,54 @@
+import React, { useEffect, useState } from 'react';
+
+const images = [
+  '/src/assets/Auditorio-MedicaSur-scaled_28percent_transparent.png',
+  '/src/assets/hero-logo-mobile.png',
+];
+
+const SLIDER_HEIGHT = 220; // px, adjust as needed
+
+const HeroSlider: React.FC = () => {
+  const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % images.length);
+        setFade(true);
+      }, 400); // fade out duration
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div
+      style={{
+        width: '100%',
+        height: `${SLIDER_HEIGHT}px`,
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
+      <img
+        src={images[index]}
+        alt="Slider"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          opacity: fade ? 1 : 0,
+          transition: 'opacity 0.4s ease',
+        }}
+        loading="eager"
+        fetchPriority="high"
+      />
+    </div>
+  );
+};
+
+export default HeroSlider;
