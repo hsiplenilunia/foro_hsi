@@ -1,6 +1,8 @@
 ---
 
 import Logo from "./Logo.astro";
+import { Image } from "astro:assets";
+import logoHSI from "../assets/Logo-HSI-01-768x734.png";
 import HamburguerIcon from "./icons/hamburguerIcon.astro";
 import MobileMenu from "./MobileMenu.astro";
 
@@ -8,9 +10,7 @@ import { menu } from "./data/menuData.ts";
 import DownTriangleIcon from "./icons/DownTriangleIcon.astro";
 
 const headerInitialClasses = `
-  transition-colors duration-300 bg-white/40 backdrop-blur-xl
-  py-4 px-6 flex items-center fixed top-0 w-full h-[162px] justify-between z-40
-  text-white
+  bg-white/40 backdrop-blur-xl fixed top-0 w-full h-[162px] flex items-center justify-between px-6 py-4 z-40 text-white transition-colors duration-300
 `;
 ---
 
@@ -18,13 +18,23 @@ const headerInitialClasses = `
   id="landing-header"
   class={headerInitialClasses}
 >
-  <div class="flex flex-grow basis-0">
+  <div>
     <a href="#inicio">
-      <img src="/Logo-HSI-01-768x734.png" alt="HSI Logo" class="h-[122px] min-h-[122px] w-[128px] min-w-[128px]" />
+      <Image
+        src={logoHSI}
+        alt="HSI Logo"
+        width={128}
+        height={122}
+        class="h-[122px] w-[128px]"
+        format="webp"
+        loading="eager"
+        quality={85}
+        priority
+      />
     </a>
   </div>
 
-  <nav class="hidden ml-6 flex-grow xl:block sm:hidden text-black-text">
+  <nav class="hidden xl:block ml-6 text-black-text">
     <ul class="flex justify-end text-base gap-4 font-medium uppercase">
       {
         menu.map((item) => (
@@ -77,7 +87,7 @@ const headerInitialClasses = `
     </ul>
   </nav>
 
-  <nav class="flex flex-grow justify-end basis-0 text-white">
+  <nav class="flex justify-end text-white">
     <button
       id="menu-btn"
       aria-label="Abrir menú"
