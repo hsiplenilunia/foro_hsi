@@ -18,10 +18,13 @@ module.exports = {
 				'black-text': "#231F20",
 				capuchino: "#EBE5DD",
 				'light-text': "#FAF9F9",
+
 				'navy': "#144157",
 				'light-gray':"#f2f2f2",
 				'gray-hsi': "#808080",
+				'bg-gray': "#e9e9e9",
 				'hsi-blue': "#00ccf2",
+				'green-hsi': "#00B851",
 				'gradient-start': "#334757",
 				'gradient-center': "#00b0e3",
 				'gradient-end': "#62ac58",

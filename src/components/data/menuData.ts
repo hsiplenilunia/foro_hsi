@@ -1,7 +1,7 @@
 export const menu = [
   {
     name: "Propósito",
-    link: "#proposito",
+    link: "#que-es",
   },
   {
     name: "¿Por qué asistir?",
