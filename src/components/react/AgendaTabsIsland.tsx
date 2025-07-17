@@ -137,12 +137,16 @@ export default function AgendaTabsIsland() {
   const [expandedPanels, setExpandedPanels] = useState(
     agendaData.map((day) => day.events.map(() => false))
   );
+  const [fadeState, setFadeState] = useState<'in' | 'out'>('in');
 
   const handleTabClick = (idx: number) => {
-    console.log(`Tab ${idx} clicked`);
-    setActiveTab(idx);
-    // Al cambiar de tab, colapsar todos los paneles de todos los días
-    setExpandedPanels(agendaData.map((day) => day.events.map(() => false)));
+    if (idx === activeTab) return;
+    setFadeState('out');
+    setTimeout(() => {
+      setActiveTab(idx);
+      setExpandedPanels(agendaData.map((day) => day.events.map(() => false)));
+      setFadeState('in');
+    }, 250); // Duración del fadeOut
   };
 
   const handleToggle = (eventIdx: number) => {
@@ -159,7 +163,7 @@ export default function AgendaTabsIsland() {
   };
 
   return (
-    <section className="font-sans p-8 bg-white text-black" id="hsi-agenda">
+    <section className="font-sans p-8 text-black-text" id="hsi-agenda">
       <header className="mb-8">
         <h2 className="font-bold text-center text-5xl mb-4">Programa Foro 2025</h2>
         <nav
@@ -173,7 +177,7 @@ export default function AgendaTabsIsland() {
               aria-controls={tab.id}
               aria-selected={activeTab === idx}
               className={`bg-[#002b5c] text-white border-none px-6 py-3 text-3xl rounded cursor-pointer transition-colors ${
-                activeTab === idx ? "bg-[#3b7d42]" : "hover:bg-blue-700"
+                activeTab === idx ? "bg-[#3b7d42]" : "hover:bg-celeste-hsi"
               }`}
               id={`tab-${tab.id}`}
               role="tab"
@@ -185,10 +189,10 @@ export default function AgendaTabsIsland() {
         </nav>
       </header>
       <div className="relative">
-        {/* Only render the active tab's content */}
+        {/* Only render the active tab's content with fade transition */}
         <section
           aria-labelledby={`tab-${agendaData[activeTab].id}`}
-          className="block"
+          className={`block transition-opacity duration-300 ${fadeState === 'in' ? 'opacity-100' : 'opacity-0'}`}
           id={agendaData[activeTab].id}
           role="tabpanel"
         >

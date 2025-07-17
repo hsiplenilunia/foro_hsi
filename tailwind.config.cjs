@@ -24,6 +24,7 @@ module.exports = {
 				'gray-hsi': "#808080",
 				'bg-gray': "#e9e9e9",
 				'hsi-blue': "#00ccf2",
+				'celeste-hsi': "#00bbe7",
 				'green-hsi': "#00B851",
 				'gradient-start': "#334757",
 				'gradient-center': "#00b0e3",
