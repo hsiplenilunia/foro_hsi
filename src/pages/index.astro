@@ -16,6 +16,7 @@ import Notas from "../components/sections/Notas.astro";
 import Recursos from "../components/sections/Recursos.astro";
 import Patrocinadores from "../components/sections/Patrocinadores.astro";
 import Agenda from "../components/sections/Agenda.astro";
+import PageFooter from "../components/sections/PageFooter.astro";
 ---
 
 <Layout title="Foro 2025 - Hospital sin infecciones">
@@ -24,7 +25,7 @@ import Agenda from "../components/sections/Agenda.astro";
   <main
     class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
   >
-    <!-- <div class="snap-center">
+    <div class="snap-center">
       <HeroSection />
     </div> 
 
@@ -37,10 +38,14 @@ import Agenda from "../components/sections/Agenda.astro";
 
     <div class="snap-center">
       <PorqueAsistir />
-    </div> -->
-
+    
+      <div class="snap-center">
+        <Agenda />
+      </div>
+    </div> -
+    
     <div class="snap-center">
-      <Agenda />
+      <PageFooter />
     </div> 
 
     <!-- <div class="snap-center">
