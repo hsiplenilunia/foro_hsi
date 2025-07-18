@@ -32,22 +32,26 @@ const HeroSlider: React.FC = () => {
         overflow: 'hidden',
       }}
     >
-      <img
-        src={images[index]}
-        alt="Slider"
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          opacity: fade ? 1 : 0,
-          transition: 'opacity 0.4s ease',
-        }}
-        loading="eager"
-        fetchPriority="high"
-      />
+      {images.map((src, i) => (
+        <img
+          key={src}
+          src={src}
+          alt="Slider"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            opacity: index === i && fade ? 1 : 0,
+            pointerEvents: index === i ? 'auto' : 'none',
+            transition: 'opacity 0.4s ease',
+          }}
+          loading={i === 0 ? 'eager' : 'lazy'}
+          fetchPriority={i === 0 ? 'high' : 'auto'}
+        />
+      ))}
     </div>
   );
 };
