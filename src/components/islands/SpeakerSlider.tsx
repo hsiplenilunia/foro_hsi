@@ -14,6 +14,7 @@ interface SpeakerSliderProps {
 const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers }) => {
   // Detectar si es móvil (simple, usando window.innerWidth)
   const [isMobile, setIsMobile] = useState(false);
+  const [sliderInView, setSliderInView] = useState(false);
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 640); // Tailwind sm breakpoint
     checkMobile();
@@ -31,6 +32,7 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
   useEffect(() => {
     const observer = new window.IntersectionObserver(
       ([entry]) => {
+        setSliderInView(entry.isIntersecting);
         if (entry.isIntersecting) setVisible(true);
       },
       { threshold: 0.2 }
@@ -66,6 +68,8 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
   // Lazy load images: only load first, then rest when visible
   const startIdx = page * maxShowed;
   const endIdx = Math.min(startIdx + maxShowed, speakers.length);
+  // Para el desplazamiento vertical en móviles, calcular cuántas imágenes hay en la página actual
+  const imagesInPage = Math.min(maxShowed, speakers.length - startIdx);
   // Para el slider, mostramos todas las imágenes pero desplazamos el contenedor
   // para lograr la transición suave
 
@@ -85,7 +89,11 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
         {/* Botones a los costados en móviles */}
         {isMobile && (
           <>
-            <div className="absolute left-2 top-1/2 -translate-y-1/2 z-10">
+            <div className={
+              sliderInView
+                ? "fixed left-2 top-1/2 -translate-y-1/2 z-50"
+                : "absolute left-2 top-1/2 -translate-y-1/2 z-10"
+            }>
               <button
                 className="bg-white/80 hover:bg-white rounded-full p-2 shadow transition"
                 onClick={handlePrev}
@@ -94,7 +102,11 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
                 <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 18l-6-6 6-6"/></svg>
               </button>
             </div>
-            <div className="absolute right-2 top-1/2 -translate-y-1/2 z-10">
+            <div className={
+              sliderInView
+                ? "fixed right-2 top-1/2 -translate-y-1/2 z-50"
+                : "absolute right-2 top-1/2 -translate-y-1/2 z-10"
+            }>
               <button
                 className="bg-white/80 hover:bg-white rounded-full p-2 shadow transition"
                 onClick={handleNext}
@@ -108,7 +120,13 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
         <div
           className={isMobile ? "flex flex-col gap-4 transition-transform duration-700" : "flex gap-4 transition-transform duration-700"}
           style={isMobile
-            ? { transform: `translateY(-${page * maxShowed * 285}px)` }
+            ? {
+                transform: `translateY(-${
+                  page === totalPages - 1
+                    ? (speakers.length - maxShowed) * 285
+                    : page * maxShowed * 285
+                }px)`
+              }
             : { transform: `translateX(-${page * maxShowed * 232}px)` }}
         >
           {speakers.map((speaker, idx) => (
