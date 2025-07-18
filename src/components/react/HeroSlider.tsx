@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 const images = [
-  '/hero-logo-mobile.png',
-  '/Auditorio-MedicaSur-scaled_28percent_transparent.png',
+  '/hero-logo-mobile-min.webp',
+  '/Auditorio-MedicaSur-scaled_28percent_transparent.webp',
 ];
 
 const SLIDER_HEIGHT = 220; // px, adjust as needed
@@ -27,7 +27,7 @@ const HeroSlider: React.FC = () => {
       className='flex'
       style={{
         width: `100%`,
-        height: '420px',
+        height: '490px',
         position: 'relative',
         overflow: 'hidden',
       }}
