@@ -52,12 +52,58 @@ const speakers = [
     url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861845/speaker_alejandro_macias_egwdei.webp",
     alt: "Alejandro Macías"
   },
+   {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752865731/speaker_juanita_jimenez_ygqzip.webp",
+    alt: "Juanita Jiménez"
+  },
   /* {
     url: "",
     alt: ""
   }, */
-  
+
 ];
+
+const speakers2 = [
+  {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861847/speaker_hector_valle_comdzp.webp",
+    alt: "Héctor Valle"
+  },
+  {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_fabiola_casas_ohhgal.webp",
+    alt: "Fabiola Casas"
+  },
+  {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_fabiana_zepeda_e7vexy.webp",
+    alt: "Fabiana Zepeda"
+  },
+  {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_eduardo_gonzalez_zuyzpy.webp",
+    alt: "Eduardo González"
+  },
+  {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_eric_ochoa_loz2gx.webp",
+    alt: "Eric Ochoa"
+  },
+  {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_celia_mercedes_vpqdsc.webp",
+    alt: "Celia Mercedes"
+  },
+  {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_daniela_de_la_rosa_kbdhxe.webp",
+    alt: "Daniela de la Rosa"
+  },
+  {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861845/speaker_alejandro_macias_egwdei.webp",
+    alt: "Alejandro Macías"
+  },
+   {
+    url: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752865731/speaker_juanita_jimenez_ygqzip.webp",
+    alt: "Juanita Jiménez"
+  },
+];
+
+
+
 const sectionStyles = `landing-section bg-purple min-h-screen w-screen flex items-center justify-center pt-24 px-8 relative overflow-y-hidden`;
 ---
 
@@ -73,7 +119,7 @@ const sectionStyles = `landing-section bg-purple min-h-screen w-screen flex item
     </h2>
 
     <SpeakerSlider client:visible
-      maxShowed={5}
+      maxShowed={4}
       time={5000}
       speakers={speakers}
       imgWidth={210}
@@ -81,9 +127,9 @@ const sectionStyles = `landing-section bg-purple min-h-screen w-screen flex item
         className='mb-10'
     />
     <SpeakerSlider client:visible
-      maxShowed={5}
-      time={5000}
-      speakers={speakers}
+      maxShowed={4}
+      time={5500}
+      speakers={speakers2.sort((a, b) => a.alt.localeCompare(b.alt))}
       imgWidth={210}
       imgHeight={260}
     />
