@@ -131,7 +131,14 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
                     : page * maxShowed * 285
                 }px)`
               }
-            : { transform: `translateX(-${page * maxShowed * 232}px)` }}
+            : {
+                transform: `translateX(-${
+                  page === totalPages - 1 && speakers.length % maxShowed !== 0
+                    ? (speakers.length - maxShowed) * 232
+                    : page * maxShowed * 232
+                }px)`
+              }
+          }
         >
           {speakers.map((speaker, idx) => (
             <img
