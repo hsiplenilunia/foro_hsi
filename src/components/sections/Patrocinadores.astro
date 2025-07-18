@@ -11,6 +11,7 @@ import logo_mexypidn from '../../assets/patrocinadores/logo-mexYpidn.jpg';
 import logo_sepsismx from '../../assets/patrocinadores/SepsisMX-Móvil.jpg';
 import logo_somib from '../../assets/patrocinadores/Somib.png';
 import logo_unursing from '../../assets/patrocinadores/U-nursign-Versión-Móvil.png';
+import AliadosIsland from '../islands/AliadosIsland.jsx';
 
 const aliados = [
   { imgUrl: logo_amein, alt: 'AMEIN' },
@@ -47,57 +48,8 @@ const sectionStyles = `landing-section bg-white min-h-screen w-screen flex flex-
       <h2 id="speakers-title" class="text-celeste-hsi text-4xl font-bold text-center mb-8">
         ALIADOS
       </h2>
-
-      <div
-        class="grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 2xl:grid-cols-6"
-      >
-        <div class="flex w-full min-h-[120px] max-h-[120px] items-center justify-center">
-          <Image
-            src={aliados[0].imgUrl}
-            alt={aliados[0].alt || 'Aliado'}
-            widths={[120, 180, 320]}
-            sizes="(max-width: 640px) 120px, (max-width: 1024px) 180px, 320px"
-            loading="lazy"
-            class="object-contain w-full h-full rounded-md"
-          />
-        </div>
-        {aliados.slice(1).map((aliado, idx) => (
-          <div class="flex w-full min-h-[120px] max-h-[120px] items-center justify-center aliado-hidden" style="display:none;">
-            <Image
-              src={aliado.imgUrl}
-              alt={aliado.alt || 'Aliado'}
-              widths={[120, 180, 320]}
-              sizes="(max-width: 640px) 120px, (max-width: 1024px) 180px, 320px"
-              loading="lazy"
-              class="object-contain w-full h-full rounded-md"
-            />
-          </div>
-        ))}
+        <AliadosIsland client:idle />
       </div>
-      {aliados.length > 1 && (
-        <div class="w-full flex justify-center mt-6">
-          <button
-            id="showAllAliadosBtn"
-            class="bg-celeste-hsi text-white px-6 py-2 rounded font-bold shadow hover:bg-celeste-hsi/80 transition"
-            type="button"
-          >
-            Ver todos los aliados
-          </button>
-        </div>
-      )}
-      <script is:inline>
-        document.addEventListener('DOMContentLoaded', function() {
-          const btn = document.getElementById('showAllAliadosBtn');
-          if (!btn) return;
-          btn.addEventListener('click', function() {
-            document.querySelectorAll('.aliado-hidden').forEach(el => {
-              el.style.display = 'flex';
-            });
-            btn.style.display = 'none';
-          });
-        });
-      </script>
-    </div>
   )}
 
   {patrocinadores.length > 0 && (
