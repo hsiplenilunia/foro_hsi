@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import pleniluniaLogo from "../../assets/Hospi-con-texto-correcion-2.png";
 import Button from "../Button.astro";
+import YouTubePlayer from "../YouTubePlayer.astro";
 
 //const sectionStyles = `landing-section bg-purple h-screen w-screen text-center overflow-hidden overflow-y-hidden relative`;
 const sectionStyles = `landing-section bg-bg-gray min-h-screen w-screen flex items-center justify-center pt-24 px-8 relative overflow-y-hidden`;
@@ -10,6 +11,7 @@ const {
   title = "Ocultar una infección hospitalaria complica la defensa legal de un profesional de la salud",
 } = Astro.props;
 const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+const url = "https://www.youtube.com/embed/0k9FbACPenQ?si=kWbF74RhI0rBO17S";
 ---
 
 <section class={sectionStyles} data-header-color={`bg-gray`} id="que-es-2">
@@ -21,25 +23,8 @@ const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
         <div
           class="flex flex-col text-black-text text-lg min-w-[50%] max-w-[947px] px-[5%]"
         >
-          <div class="aspect-video w-full max-w-md mx-auto md:mb-4 relative">
-            <div
-              id="yt-lite"
-              class="absolute inset-0 w-full h-full flex items-center justify-center cursor-pointer bg-black/40"
-              style={`background: url('${thumbnail}') center/cover no-repeat;`}
-              tabindex="0"
-              role="button"
-              aria-label="Reproducir video"
-            >
-              <div
-                class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-navy"
-              >
-                <svg width="64" height="64" fill="white" viewBox="0 0 24 24"
-                  ><path d="M8 5v14l11-7z"></path></svg
-                >
-              </div>
-            </div>
-          </div>
-
+          <YouTubePlayer url={url} title={title} />
+          
           <p class="md:px-8">
             <strong>Comparte, aprende y relaciónate </strong>con los mejores
             especialistas en vigilancia epidemiológica, infectología, calidad y
@@ -62,32 +47,3 @@ const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
     </div>
   </div>
 </section>
-
-<script>
-  let showIframe = false;
-  function handlePlay() {
-    showIframe = true;
-  }
-
-  const videoId = "0k9FbACPenQ";
-  const ytLite = document.getElementById("yt-lite");
-  if (ytLite) {
-    ytLite.addEventListener("click", function () {
-      const iframe = document.createElement("iframe");
-      iframe.className = "w-full h-full";
-      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
-      iframe.title = `Ocultar una infección hospitalaria complica la defensa legal de un profesional de la salud`;
-      iframe.allow =
-        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-      iframe.allowFullscreen = true;
-      iframe.frameBorder = "0";
-      iframe.referrerPolicy = "strict-origin-when-cross-origin";
-      ytLite.replaceWith(iframe);
-    });
-    ytLite.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") {
-        ytLite.click();
-      }
-    });
-  }
-</script>
