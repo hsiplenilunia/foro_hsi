@@ -118,7 +118,11 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
           </>
         )}
         <div
-          className={isMobile ? "flex flex-col gap-4 transition-transform duration-700" : "flex gap-4 transition-transform duration-700"}
+          className={
+            isMobile
+              ? "flex flex-col gap-4 transition-transform duration-700 items-center justify-center"
+              : "flex gap-4 transition-transform duration-700"
+          }
           style={isMobile
             ? {
                 transform: `translateY(-${
@@ -134,7 +138,7 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
               key={speaker.url}
               src={visible || idx === 0 ? speaker.url : undefined}
               alt={speaker.alt}
-              className="w-[220px] h-[273px] object-center"
+              className="w-[220px] h-[273px] object-center mx-auto"
               loading={idx === 0 ? "eager" : "lazy"}
               style={{ opacity: visible || idx === 0 ? 1 : 0.2, transition: "opacity 0.7s" }}
             />
