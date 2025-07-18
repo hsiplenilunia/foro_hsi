@@ -28,7 +28,12 @@ export const menu = [
   },
   {
     name: "Foros Anteriores",
-    link: "#foros-anteriores",
+    subOptions: [
+      { name: "2021", link: "https://hospitalsininfecciones.com/foro-abordando-el-desafio-de-las-infecciones-intrahospitalarias" },
+      { name: "2022", link: "https://hospitalsininfecciones.com/foro-infecciones-en-la-atencion-medica-desafios-postpademia" },
+      { name: "2023", link: "https://hospitalsininfecciones.com/abordando-el-desafio-de-las-infecciones-intrahospitalarias" },
+      
+    ],
   },
   {
     name: "Social Media",

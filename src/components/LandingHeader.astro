@@ -1,10 +1,7 @@
 ---
-
-import Logo from "./Logo.astro";
 import { Image } from "astro:assets";
 import logoHSI from "../assets/Logo-HSI-01-768x734.png";
 import HamburguerIcon from "./icons/hamburguerIcon.astro";
-import MobileMenu from "./MobileMenu.astro";
 
 import { menu } from "./data/menuData.ts";
 import DownTriangleIcon from "./icons/DownTriangleIcon.astro";
@@ -63,12 +60,23 @@ const headerInitialClasses = `
                 >
                   {item.subOptions.map((sub) => (
                     <li>
-                      <a
-                        href={sub.link}
-                        class="block px-2 py-1 hover:text-navy hover:font-semibold transition-colors whitespace-nowrap"
-                      >
-                        {sub.name}
-                      </a>
+                      {sub.link.startsWith('http') ? (
+                        <a
+                          href={sub.link}
+                          class="block px-2 py-1 hover:text-navy hover:font-semibold transition-colors whitespace-nowrap"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {sub.name}
+                        </a>
+                      ) : (
+                        <a
+                          href={sub.link}
+                          class="block px-2 py-1 hover:text-navy hover:font-semibold transition-colors whitespace-nowrap"
+                        >
+                          {sub.name}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
