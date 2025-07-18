@@ -9,9 +9,19 @@ interface SpeakerSliderProps {
   maxShowed: number;
   time: number; // ms
   speakers: Speaker[];
+  imgWidth?: number | string;
+  imgHeight?: number | string;
+  className?: string;
 }
 
-const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers }) => {
+const SpeakerSlider: React.FC<SpeakerSliderProps> = ({
+  maxShowed,
+  time,
+  speakers,
+  imgWidth = 220,
+  imgHeight = 273,
+  className = ""
+}) => {
   // Detectar si es móvil (simple, usando window.innerWidth)
   const [isMobile, setIsMobile] = useState(false);
   const [sliderInView, setSliderInView] = useState(false);
@@ -76,15 +86,15 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
   return (
     <div
       ref={sliderRef}
-      className="relative w-full flex flex-col items-center group"
+      className={`relative w-full flex flex-col items-center group ${className}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <div
         className="overflow-hidden w-full"
         style={isMobile
-          ? { maxHeight: `${maxShowed * 285}px`, minWidth: '220px', position: 'relative' }
-          : { maxWidth: `${maxShowed * 232}px` }}
+          ? { maxHeight: `${maxShowed * Number(imgHeight) + (maxShowed - 1) * 4}px`, minWidth: typeof imgWidth === "number" ? `${imgWidth}px` : imgWidth, position: 'relative' }
+          : { maxWidth: `${maxShowed * Number(imgWidth) + (maxShowed - 1) * 4}px` }}
       >
         {/* Botones a los costados en móviles */}
         {isMobile && (
@@ -145,9 +155,14 @@ const SpeakerSlider: React.FC<SpeakerSliderProps> = ({ maxShowed, time, speakers
               key={speaker.url}
               src={visible || idx === 0 ? speaker.url : undefined}
               alt={speaker.alt}
-              className="w-[220px] h-[273px] object-center mx-auto"
+              className="object-center mx-auto"
               loading={idx === 0 ? "eager" : "lazy"}
-              style={{ opacity: visible || idx === 0 ? 1 : 0.2, transition: "opacity 0.7s" }}
+              style={{
+                width: typeof imgWidth === "number" ? `${imgWidth}px` : imgWidth,
+                height: typeof imgHeight === "number" ? `${imgHeight}px` : imgHeight,
+                opacity: visible || idx === 0 ? 1 : 0.2,
+                transition: "opacity 0.7s"
+              }}
             />
           ))}
         </div>
