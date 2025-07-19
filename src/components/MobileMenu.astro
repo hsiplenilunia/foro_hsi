@@ -1,20 +1,9 @@
 ---
-import Logo from "./Logo.astro";
 import { menu } from "./data/menuData.ts";
 import CloseIcon from "./icons/CloseIcon.astro";
 import DownTriangleIcon from "./icons/DownTriangleIcon.astro";
 import MailIcon from "./icons/MailIcon.astro";
 import PhoneIcon from "./icons/PhoneIcon.astro";
-
-
-/*
-import Logo from "./Logo.astro";
-
-import { menu } from "./data/menuData.ts";
-import CloseIcon from "./icons/CloseIcon.astro";
-import DownTriangleIcon from "./icons/DownTriangleIcon.astro";
-import MailIcon from "./icons/MailIcon.astro";
-import PhoneIcon from "./icons/PhoneIcon.astro";*/
 ---
 
 <div
@@ -25,10 +14,10 @@ import PhoneIcon from "./icons/PhoneIcon.astro";*/
 >
   <div
     id="menu-panel"
-    class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-[#4F2583]/50 text-white flex flex-col transition-transform duration-300 ease-in-out transform translate-x-full"
+    class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white/50 text-black-text flex flex-col transition-transform duration-300 ease-in-out transform translate-x-full"
   >
     <div class="flex items-center justify-between p-6 border-b border-white/10">
-      <Logo />
+      <img src="https://res.cloudinary.com/difrqz0ke/image/upload/v1752888449/Logo-HSI_1_lopusa.webp" alt="logo HSI">
       <button
         id="close-btn"
         aria-label="Cerrar menú"
@@ -43,7 +32,7 @@ import PhoneIcon from "./icons/PhoneIcon.astro";*/
           menu.map((item) => (
             <li>
               {item.subOptions ? (
-                <details class="bg-purple rounded-lg shadow-2xl overflow-hidden group">
+                <details class="bg-green-hsi text-white tracking-wide rounded-lg shadow-2xl overflow-hidden group">
                   <summary class="px-4 py-3 flex justify-between items-center cursor-pointer list-none">
                     <div class="flex flex-grow justify-center">
                       {item.name}
@@ -52,7 +41,7 @@ import PhoneIcon from "./icons/PhoneIcon.astro";*/
                       <DownTriangleIcon />
                     </div>
                   </summary>
-                  <ul class="bg-[#E3CEF7] text-[#351B64] text-base uppercase font-bold space-y-1 p-2">
+                  <ul class="bg-white text-[#351B64] text-base uppercase font-bold space-y-1 p-2">
                     {item.subOptions.map((sub) => (
                       <li>
                         <a
@@ -68,7 +57,7 @@ import PhoneIcon from "./icons/PhoneIcon.astro";*/
               ) : (
                 <a
                   href={item.link}
-                  class="block px-4 py-3 bg-purple shadow-xl rounded-lg text-center hover:bg-white/20 transition-colors"
+                  class="block px-4 py-3 bg-green-hsi text-white tracking-wide shadow-xl rounded-lg text-center hover:bg-white/20 transition-colors"
                 >
                   {item.name}
                 </a>
@@ -80,11 +69,11 @@ import PhoneIcon from "./icons/PhoneIcon.astro";*/
       <div class="mt-8 pt-4 border-t border-white/10 text-sm space-y-2">
         <p class="flex items-center gap-2 mb-6">
           <span><PhoneIcon/></span>
-          <a href="https://wa.me/525563654094" class="hover:underline text-lg">+52 55 4365 4094</a>
+          <a href="https://wa.me/525511355967" class="hover:underline text-lg">+52 55 1135 5967</a>
         </p>
         <p class="flex items-center gap-2">
           <span><MailIcon/></span>
-          <a href="mailto:foro.menopausia@plenilunia.com" class="hover:underline text-base">foro.menopausia@plenilunia.com</a>
+          <a href="mailto:eventos@hospitalesininfecciones.com" class=" tracking-tight hover:underline text-base">eventos@hospitalesininfecciones.com</a>
         </p>
       </div>
     </div>

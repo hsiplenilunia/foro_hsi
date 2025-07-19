@@ -25,13 +25,23 @@ const sectionStyles = `landing-section bg-bg-gray min-h-screen w-screen flex ite
       </p>
     </div>
     <div class="w-full flex justify-center">
-      <Image
-        src={pleniluniaLogo}
-        alt="Infografía sobre el Foro"
-        class="w-full h-auto max-w-[1920px]"
-        width={1920}
-        loading="lazy"
-      />
+      {/* Imagen para pantallas horizontales (aspect-ratio >= 1) */}
+      <div class="w-full">
+        <Image
+          src={pleniluniaLogo}
+          alt="Infografía sobre el Foro"
+          class="w-full h-auto max-w-[1920px] hidden md:block aspect-video"
+          width={1920}
+          loading="lazy"
+        />
+        {/* Imagen para pantallas verticales (aspect-ratio < 1) */}
+        <img
+          src="https://res.cloudinary.com/difrqz0ke/image/upload/v1752887855/TextCompleto-conPastillas_zoh9qm.webp"
+          alt="Infografía sobre el Foro vertical"
+          class="w-full h-auto max-w-[600px] block md:hidden aspect-[3/4]"
+          loading="lazy"
+        />
+      </div>
     </div>
   </div>
 </section>
