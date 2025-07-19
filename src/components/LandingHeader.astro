@@ -5,6 +5,7 @@ import HamburguerIcon from "./icons/hamburguerIcon.astro";
 
 import { menu } from "./data/menuData.ts";
 import DownTriangleIcon from "./icons/DownTriangleIcon.astro";
+import MobileMenu from "./MobileMenu.astro";
 
 const headerInitialClasses = `
   bg-white/40 backdrop-blur-xl fixed top-0 w-full h-[162px] flex items-center justify-between px-6 py-4 z-40 text-white transition-colors duration-300
@@ -105,7 +106,7 @@ const headerInitialClasses = `
     </button>
   </nav>
 
-  <!-- <MobileMenu /> -->
+  <MobileMenu /> 
 
   <div
     id="menu-backdrop"
