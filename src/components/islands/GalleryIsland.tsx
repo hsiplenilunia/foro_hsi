@@ -110,25 +110,24 @@ const GalleryIsland: React.FC<GalleryIslandProps> = ({ imageItems }) => {
   };
 
   return (
-    <div className="w-full h-full" style={{ minHeight: '60vh' }}>
+    <div className="w-full md:max-w-[1100px] mx-auto h-full" style={{ minHeight: '60vh' }}>
       <div
         ref={galleryRef}
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 overflow-visible"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 overflow-visible"
         style={{ maxHeight: '70vh' }}
       >
         {imageItems.slice(0, visibleImages).map((img, idx) => (
           <div
             key={img.url}
-            className="relative group cursor-pointer flex items-center justify-center"
-            style={{ height: IMAGE_HEIGHT }}
+            className="flex relative group cursor-pointer items-center justify-center max-w-[220px] h-[150px] min-h-[150px] max-h-[200px]"
             onClick={() => showOverlay(idx)}
           >
             <img
               src={img.url}
               alt={img.alt}
               loading="lazy"
-              className="object-cover w-full h-full rounded-lg transition-transform duration-300 group-hover:scale-110 group-hover:z-20 group-hover:shadow-2xl group-hover:-rotate-2 group-hover:brightness-110"
-              style={{ pointerEvents: 'none' }}
+              className="object-contain max-h-full max-w-full mx-auto my-auto rounded-lg transition-transform duration-300 group-hover:scale-110 group-hover:z-20 group-hover:shadow-2xl group-hover:-rotate-2 group-hover:brightness-110"
+              style={{ pointerEvents: 'none', background: 'transparent', display: 'block' }}
               draggable={false}
             />
           </div>
