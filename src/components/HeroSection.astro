@@ -26,86 +26,94 @@ import HeroSlider from "./react/HeroSlider.tsx";
     style="pointer-events:none; user-select:none;"
   />
   <!-- Desktop Layout -->
-  <div
-    class="hidden lg:flex justify-between items-center h-full px-16 pt-32 z-30 relative"
-  >
-    <!-- Left content -->
-    <div class="flex flex-col w-[50vw] items-start max-w-[50vw] space-y-6">
-      <h1 class="text-black text-6xl font-black uppercase">
-        <span class="text-7xl">F</span>oro 2025
-      </h1>
+  <div class="flex flex-col xl:mt-6">
+    <div
+      class="hidden lg:flex justify-between items-center grow px-16 pt-32 z-30 relative"
+    >
+      <!-- Left content -->
+      <div class="flex flex-col w-[50vw] items-start max-w-[50vw] space-y-5 mb-5">
+        <h1 class="text-black text-5xl font-black uppercase">
+          <span class="text-6xl">F</span>oro 2025
+        </h1>
 
-      <h3
-        class="flex flex-col items-start justify-start leading-8 font-thin text-6xl text-black"
-      >
-        <span>El desafío de las</span><br />
-        <span>Infecciones</span><br />
-        <span>Intrahospitalarias</span>
-      </h3>
-
-      <div
-        class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block"
-      >
-        <p
-          class="text-white font-extrabold uppercase text-4xl leading-tight tracking-wide text-left"
+        <h3
+          class="flex flex-col items-start justify-start leading-5 font-thin text-4xl text-black"
         >
-          HACIA UNA POLÍTICA PÚBLICA
-        </p>
-        <p
-          class="text-white font-extrabold uppercase text-4xl leading-tight tracking-wide text-left"
-        >
-          QUE IMPULSE LA PREVENCIÓN
-        </p>
-      </div>
+          <span>El desafío de las</span><br />
+          <span>Infecciones</span><br />
+          <span>Intrahospitalarias</span>
+        </h3>
 
-      <!-- Texto y botón alineados -->
-      <div class="flex items-start gap-4">
-        <!-- Texto -->
-        <div class="space-y-1 flex flex-col items-start">
-          <p class="text-3xl tracking-wider font-bold text-black-text">
-            25 Y 26 DE SEPTIEMBRE, 2025
+        <div
+          class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block"
+        >
+          <p
+            class="text-white font-extrabold uppercase text-4xl lg:text-2xl leading-tight tracking-wide text-left"
+          >
+            HACIA UNA POLÍTICA PÚBLICA
           </p>
-          <div class="flex flex-col items-start justify-start w-full">
-            <p class="text-black text-2xl font-normal tracking-widest">
-              Auditorio del <strong class="font-extrabold"
-                >Hospital Médica Sur</strong
-              >
+          <p
+            class="text-white font-extrabold uppercase text-4xl lg:text-2xl leading-tight tracking-wide text-left"
+          >
+            QUE IMPULSE LA PREVENCIÓN
+          </p>
+        </div>
+
+        <!-- Texto y botón alineados -->
+        <div class="flex items-start gap-4">
+          <!-- Texto -->
+          <div class="space-y-1 flex flex-col items-start">
+            <p class="text-2xl tracking-wider font-bold text-black-text">
+              25 Y 26 DE SEPTIEMBRE, 2025
             </p>
-            <div
-              class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"
-            >
+            <div class="flex flex-col items-start justify-start w-full">
+              <p class="text-black text-xl font-normal tracking-widest">
+                Auditorio del <strong class="font-extrabold"
+                  >Hospital Médica Sur</strong
+                >
+              </p>
+              <div
+                class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"
+              >
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Sede -->
+        <div class="pt-1">
+          <Button href="#registro" label="QUIERO ASISTIR" />
+        </div>
       </div>
 
-      <!-- Sede -->
-      <div class="pt-1">
-        <Button href="#registro" label="QUIERO ASISTIR" />
+      <!-- Right image -->
+      <div
+        class="absolute bottom-10 right-24 max-w-4xl md:w-[28vw] lg:w-[28vw] flex flex-col items-end gap-2"
+      >
+        <HeroSlider client:idle />
+        <div class="flex flex-col items-end mt-4">
+          <span
+            class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2"
+            >AVAL ACADÉMICO</span
+          >
+          <Image
+            src={msLogo}
+            alt="Médica Sur"
+            class="h-10 w-auto"
+            width={200}
+            height={50}
+            loading="lazy"
+            decoding="async"
+            format="webp"
+            quality={80}
+          />
+        </div>
       </div>
     </div>
-
-    <!-- Right image -->
-    <div class="absolute bottom-24 right-24 max-w-4xl md:w-[28vw] lg:w-[28vw] flex flex-col items-end gap-2">
-      <HeroSlider client:idle />
-      <div class="flex flex-col items-end mt-4">
-        <span class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2">AVAL ACADÉMICO</span>
-        <Image
-          src={msLogo}
-          alt="Médica Sur"
-          class="h-10 w-auto"
-          width={200}
-          height={50}
-          loading="lazy"
-          decoding="async"
-          format="webp"
-          quality={80}
-        />
-      </div>
-    </div>
-
-    <div class="w-full flex justify-end absolute bottom-0 left-0 bg-[url('/motivos_pattern.webp')] bg-repeat-x bg-contain bg-bottom h-12">
-        &nbsp;
+    <div
+      class="w-full flex h-12 min-h-12 absolute bottom-0 bg-[url('/motivos_pattern.webp')] bg-repeat-x bg-contain bg-bottom"
+    >
+      &nbsp;
     </div>
   </div>
 
@@ -116,7 +124,7 @@ import HeroSlider from "./react/HeroSlider.tsx";
     <h1 class="text-black text-3xl font-black uppercase">
       <span class="text-4xl">F</span>oro 2025
     </h1>
-     <Image
+    <Image
       src={heroLogoMobile}
       alt="Doctores"
       class="w-[200px]"
@@ -125,37 +133,40 @@ import HeroSlider from "./react/HeroSlider.tsx";
       width={320}
       format="webp"
       quality={80}
-    /> 
+    />
 
     <h3
-        class="flex flex-col w-full items-\ justify-start leading-3 font-thin text-2xl text-black mt-3 mb-6"
-      >
-        <span>El desafío de las</span><br />
-        <span>Infecciones</span><br />
-        <span>Intrahospitalarias</span>
-      </h3>
+      class="flex flex-col w-full items-\ justify-start leading-3 font-thin text-2xl text-black mt-3 mb-6"
+    >
+      <span>El desafío de las</span><br />
+      <span>Infecciones</span><br />
+      <span>Intrahospitalarias</span>
+    </h3>
 
-      <div
-        class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block mb-3"
+    <div
+      class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block mb-3"
+    >
+      <p
+        class="text-white font-extrabold uppercase text-xl leading-tight tracking-wide text-left"
       >
-        <p
-          class="text-white font-extrabold uppercase text-xl leading-tight tracking-wide text-left"
-        >
-          HACIA UNA POLÍTICA PÚBLICA
-        </p>
-        <p
-          class="text-white font-extrabold uppercase text-xl leading-tight tracking-wide text-left"
-        >
-          QUE IMPULSE LA PREVENCIÓN
-        </p>
-      </div>
+        HACIA UNA POLÍTICA PÚBLICA
+      </p>
+      <p
+        class="text-white font-extrabold uppercase text-xl leading-tight tracking-wide text-left"
+      >
+        QUE IMPULSE LA PREVENCIÓN
+      </p>
+    </div>
 
     <p class="text-black text-3xl font-bold">
       25 Y 26 DE <br />SEPTIEMBRE, 2025
     </p>
     <div class="flex flex-col items-start justify-start w-full">
-      <p class="flex w-full  flex-col text-black text-2xl text-center font-normal tracking-wide">
-        Auditorio del <br/><strong class="font-extrabold">Hospital Médica Sur</strong
+      <p
+        class="flex w-full flex-col text-black text-2xl text-center font-normal tracking-wide"
+      >
+        Auditorio del <br /><strong class="font-extrabold"
+          >Hospital Médica Sur</strong
         >
       </p>
       <div
