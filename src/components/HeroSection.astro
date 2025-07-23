@@ -2,13 +2,13 @@
 import { Image } from "astro:assets";
 import Button from "./Button.astro";
 import hsiBg from "../assets/hsi_bg.png";
-const sectionStyles = `landing-section bg-light-gray h-screen w-screen text-center overflow-hidden overflow-y-hidden relative`;
 
 import heroLogo from "../assets/hero-logo.png";
 import heroLogoMobile from "../assets/hero-logo-mobile.png";
 import heroWoman from "../assets/hero-woman.png";
 import msLogo from "../assets/MS_logotipo-horizontal.png";
 import HeroSlider from "./react/HeroSlider.tsx";
+const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen text-center overflow-hidden relative pb-24 md:pb-0`;
 ---
 
 <section class={sectionStyles} data-header-color={`light-gray`} id="inicio">
@@ -28,7 +28,7 @@ import HeroSlider from "./react/HeroSlider.tsx";
   <!-- Desktop Layout -->
   <div class="flex flex-col xl:mt-6">
     <div
-      class="hidden lg:flex justify-between items-center grow px-16 pt-32 z-30 relative"
+      class="hidden lg:flex justify-between items-center grow px-[10%] pt-32 z-30 relative"
     >
       <!-- Left content -->
       <div class="flex flex-col w-[50vw] items-start max-w-[50vw] space-y-5 mb-5">
@@ -91,12 +91,12 @@ import HeroSlider from "./react/HeroSlider.tsx";
         class="absolute bottom-10 right-24 max-w-4xl md:w-[28vw] lg:w-[28vw] flex flex-col items-end gap-2"
       >
         <HeroSlider client:idle />
-        <div class="flex flex-col items-end mt-4">
+        <div class="flex flex-col items-center mt-4 w-full">
           <span
             class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2"
-            >AVAL ACADÉMICO</span
+            >CON AVAL ACADÉMICO</span
           >
-          <Image
+          <!-- <Image
             src={msLogo}
             alt="Médica Sur"
             class="h-10 w-auto"
@@ -106,12 +106,12 @@ import HeroSlider from "./react/HeroSlider.tsx";
             decoding="async"
             format="webp"
             quality={80}
-          />
+          /> -->
         </div>
       </div>
     </div>
     <div
-      class="w-full flex h-12 min-h-12 absolute bottom-0 bg-[url('/motivos_pattern.webp')] bg-repeat-x bg-contain bg-bottom"
+      class="w-full flex h-12 min-h-12 absolute bottom-0  bg-[url('/motivos_pattern.webp')] bg-repeat-x bg-contain bg-bottom"
     >
       &nbsp;
     </div>
