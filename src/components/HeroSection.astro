@@ -31,7 +31,9 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
       class="hidden lg:flex justify-between items-center grow px-[10%] pt-32 z-30 relative"
     >
       <!-- Left content -->
-      <div class="flex flex-col w-[50vw] items-start max-w-[50vw] space-y-5 mb-5">
+      <div
+        class="flex flex-col w-[50vw] items-start max-w-[50vw] space-y-5 mb-5"
+      >
         <h1 class="text-black text-5xl font-black uppercase">
           <span class="text-6xl">F</span>oro 2025
         </h1>
@@ -111,7 +113,7 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
       </div>
     </div>
     <div
-      class="w-full flex h-12 min-h-12 absolute bottom-0  bg-[url('/motivos_pattern.webp')] bg-repeat-x bg-contain bg-bottom"
+      class="w-full flex h-12 min-h-12 absolute bottom-0 bg-[url('/motivos_pattern.webp')] bg-repeat-x bg-contain bg-bottom"
     >
       &nbsp;
     </div>
@@ -175,8 +177,13 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
       </div>
     </div>
 
+    <span
+      class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end mt-10 mb-2"
+      >CON AVAL ACADÉMICO</span
+    >
     <div class="mt-6">
       <Button href="#registro" label="REGÍSTRATE" />
     </div>
+    
   </div>
 </section>
