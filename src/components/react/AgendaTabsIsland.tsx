@@ -9,52 +9,63 @@ const agendaData = [
         time: "09:00 - 09:30",
         title: "Acto Inaugural",
         desc:
-          "Participan autoridades, Consejo Técnico y directivos de Médica Sur. Modera: Maribel Ramírez Coronel.",
+          "Participa Consejo de Salubridad General, Consejo Técnico y directivos de Médica Sur.",
       },
       {
         time: "09:30 - 10:00",
-        title: "Conferencia Magistral: Plan de Acción Mundial y Marco de Monitoreo",
+        title: "Conferencia Magistral",
         desc:
-          "Programa de Control de Infecciones y Centro de Colaboración de la OMS.",
+          "Dra. Patricia Clark, Titular del Consejo de Salubridad General.",
       },
       {
-        time: "10:00 - 10:45",
-        title: "Panel: El potencial en ahorros por prevención de IAAS",
+        time: "10:00 - 10:30",
+        title: "Conferencia: La leche materna en la prevención de IAAS. Caso de estudio.",
         desc:
-          "Participan Dirección General de Epidemiología, ANHP, Hospitales de Jalisco y CIEP. Modera: Mtra. Mariana Barraza Lloréns.",
+          "Dr. Iván Castillo, Jefe de Epidemiología Christus Muguerza Alta Especialidad",
       },
       {
-        time: "10:45 - 11:15",
-        title: "Conferencia",
-        desc: "Por definir.",
+        time: "10:30 - 11:15",
+        title: "Panel: Ahorros por prevención de IAAS más allá del hospital",
+        desc: `Asociación Nacional de Hospitales Privados, Asociación de Hospitales Privados de Jalisco, Dr. Jorge Azpiri, TecSalud
+<br/> <strong>Modera:</strong> Centro de Investigación Económica y Presupuestaria, CIEP`,
       },
       {
-        time: "11:40 - 12:25",
-        title: "Panel: El papel de la enfermería en la toma de decisiones preventivas IAAS-RAM",
+        time: "11:15 - 11:45",
+        title: "Networking",
+        desc: ``,
+      },
+      {
+        time: "11:45 - 12:30",
+        title: "Panel: El papel de la enfermería en la prevención de infecciones intrahospitalarias",
         desc:
-          "Dra. Gudelia Bautista, Mtra. Juanita Jiménez, Mtra. Fabiola Casas, Mtra. Margarita Torres. Modera: Maribel Ramírez Coronel.",
+          "Dra. Gudelia Bautista (Centro Médico ABC), Mtra. Martha Huertas (INCMNSZ),<br/> Mtra. Fabiola Casas, Mtra. Rosa Amarilis Zárate (FENO UNAM) <br/> <strong>Modera:</strong> Mtra. Margarita Torres, AMEIN.",
       },
       {
-        time: "12:25 - 12:55",
+        time: "12:30 - 13:00",
         title: "Conferencia: Uso de catéter y el riesgo de infecciones en procedimientos ambulatorios",
-        desc: "Especialista por definir.",
+        desc: "",
       },
       {
-        time: "13:15 - 14:00",
+        time: "13:00 - 13:45",
         title: "Panel: El incremento de infecciones fúngicas en la era post COVID",
         desc:
-          "IMSS Bienestar / Dr. Alejandro Sassoe, Dr. Eric Ochoa / INCMNSZ.",
+          "",
       },
       {
-        time: "14:00 - 14:30",
-        title: "Conferencia: La leche materna en la prevención de IAAS",
+        time: "13:45 - 14:15",
+        title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes",
         desc:
-          "Dr. Iván Castillo, Jefe de Epidemiología Christus Muguerza Alta Especialidad.",
+          "Dra. Celia Alpuche",
       },
       {
-        time: "14:30 - 14:40",
-        title: "Conclusiones y cierre del día",
-        desc: "Hospitales sin Infecciones",
+        time: "14:15 - 14:45",
+        title: "Conferencia: Actualización de NOM 045 sobre vigilancia epidemiológica",
+        desc: "Miguel Ángel Lezana, titular Dirección General de Epidemiología",
+      },
+      {
+        time: "14:45 - 15:00",
+        title: "Conclusiones y cierre",
+        desc: "Hospital sin infecciones",
       },
     ],
   },
@@ -68,62 +79,70 @@ const agendaData = [
         desc: "",
       },
       {
-        time: "09:00 - 09:45",
-        title: "Panel: Prescripción de antibióticos en Consultorios Adyacentes a Farmacias (CAF's)",
-        desc:
-          "FUNSALUD, Dr. Miguel Ángel González Block, AMEIN, PUIREE UNAM. Modera: Dr. Samuel Ponce de León.",
+        time: "09:00 - 09:30",
+        title: "Conferencia",
+        desc: "Prof. Victor D. Rosenthal, MD, PhD <br> Fundador y CEO, International Nosocomial Infection Control Consortium (INICC). ",
       },
       {
-        time: "09:45 - 10:15",
+        time: "09:30 - 10:15",
+        title: "Panel: El riesgo de sobre prescripción de antibióticos en consultorios externos",
+        desc:
+          "FUNSALUD, Dr. Miguel Ángel González Block (Universidad Anáhuac), <br/>Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, <br/>Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes, PUIREE UNAM <br/> <strong>Modera:</strong> Universidad",
+      },
+      {
+        time: "10:15 - 10:45",
         title: "Conferencia: Cómo trabajar más y mejor en sitio quirúrgico contra las IAAS",
         desc:
           "Dr. Antonio Ramos-De la Medina, Hospital Español de Veracruz.",
       },
       {
-        time: "10:15 - 11:00",
+        time: "10:45 - 11:15",
+        title: "Networking",
+        desc: "",
+      },
+      {
+        time: "11:15 - 12:00",
         title: "Panel",
         desc: "Por definir.",
       },
       {
-        time: "11:20 - 11:50",
+        time: "12:00 - 12:30",
         title: "Conferencia: La vacunación como instrumento coadyuvante preventivo a la Resistencia Antimicrobiana",
         desc: "",
       },
       {
-        time: "11:50 - 12:35",
-        title: "Panel: Tecnología e inteligencia artificial en Infecciones Intrahospitalarias (IAAS)",
-        desc: "Dr.Gustavo Ross y especialistas de Harvard & MIT.",
+        time: "12:30 - 13:15",
+        title: "Panel: La vigilancia de enfermedades zoonóticas",
+        desc: `SENASICA<br/>
+Instituto Farmacéutico Veterinario <br/>
+<strong>Modera:</strong> Universidad (Facultad de Veterinaria)`,
       },
       {
-        time: "12:35 - 13:05",
-        title: "Conferencia: La vigilancia de enfermedades zoonóticas",
+        time: "13:15 - 13:30",
+        title: "Networking",
+        desc: "",
+      },
+      {
+        time: "13:30 - 14:00",
+        title: "Conferencia: La importancia de una política pública en Infecciones Asociadas a la Atención de la Salud",
         desc:
-          "SENASICA, Instituto Farmacéutico Veterinario, Facultades de Veterinaria.",
+          "",
       },
       {
-        time: "13:05 - 13:50",
+        time: "14:00 - 14:45",
         title: "Panel: Programa de Optimización de antibióticos en Hospitales",
         desc:
           "Ponentes: Dra. Anahí Dresser (INSP), Dr. Michel Martínez (TecSalud). Representantes hospitalarios.",
       },
       {
-        time: "13:50 - 14:20",
-        title: "Panel: Las infecciones y el desequilibrio de la microbiota",
+        time: "14:45 - 15:30",
+        title: "Control ambiental microbiano en áreas críticas hospitalarias",
         desc:
-          "Especialista por definir. Modera: Santiago March, FUNSALUD.",
+          "Especialista por definir. <br/><strong>Modera:</strong> Santiago March, FUNSALUD.",
       },
+      
       {
-        time: "14:20 - 14:40",
-        title: "Dinámica interactiva",
-        desc: "Por definir.",
-      },
-      {
-        time: "14:40 - 15:10",
-        title: "Conferencia: La importancia de una política pública en Infecciones Intrahospitalarias.",
-        desc: "Ponente por definir.",
-      },
-      {
-        time: "15:10",
+        time: "15:30",
         title: "Acto de clausura y brindis",
         desc:
           "Autoridades, Directivos Médica Sur, Hospitales sin Infecciones.",
@@ -218,9 +237,10 @@ export default function AgendaTabsIsland() {
                 className={`pt-2 md:block ${expandedPanels[activeTab] && expandedPanels[activeTab][eventIdx] ? 'block' : 'hidden'} md:!block`}
                 id={`panel-${agendaData[activeTab].id}-${eventIdx}`}
               >
-                <p className="text-base leading-relaxed m-0">
-                  {event.desc}
-                </p>
+                <p
+                  className="text-base leading-relaxed m-0"
+                  dangerouslySetInnerHTML={{ __html: event.desc }}
+                />
               </div>
             </article>
           ))}
