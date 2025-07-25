@@ -9,19 +9,19 @@ const agendaData = [
         time: "09:00 - 09:30",
         title: "Acto Inaugural",
         desc:
-          "Participa Consejo de Salubridad General, Consejo Técnico y directivos de Médica Sur.",
+          "Participa Autoridades, Consejo Técnico y directivos de Médica Sur.",
       },
       {
         time: "09:30 - 10:00",
         title: "Conferencia Magistral",
         desc:
-          "Dra. Patricia Clark, Titular del Consejo de Salubridad General.",
+          "Consejo de Salubridad General.",
       },
       {
         time: "10:00 - 10:30",
         title: "Conferencia: La leche materna en la prevención de IAAS. Caso de estudio.",
         desc:
-          "Dr. Iván Castillo, Jefe de Epidemiología Christus Muguerza Alta Especialidad",
+          "",
       },
       {
         time: "10:30 - 11:15",
@@ -55,7 +55,7 @@ const agendaData = [
         time: "13:45 - 14:15",
         title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes",
         desc:
-          "Dra. Celia Alpuche",
+          "",
       },
       {
         time: "14:15 - 14:45",
@@ -87,7 +87,7 @@ const agendaData = [
         time: "09:30 - 10:15",
         title: "Panel: El riesgo de sobre prescripción de antibióticos en consultorios externos",
         desc:
-          "FUNSALUD, Dr. Miguel Ángel González Block (Universidad Anáhuac), <br/>Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, <br/>Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes, PUIREE UNAM <br/> <strong>Modera:</strong> Universidad",
+          "FUNSALUD, <br/>Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, <br/>Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes, PUIREE UNAM <br/> <strong>Modera:</strong> Universidad",
       },
       {
         time: "10:15 - 10:45",
@@ -132,7 +132,7 @@ Instituto Farmacéutico Veterinario <br/>
         time: "14:00 - 14:45",
         title: "Panel: Programa de Optimización de antibióticos en Hospitales",
         desc:
-          "Ponentes: Dra. Anahí Dresser (INSP), Dr. Michel Martínez (TecSalud). Representantes hospitalarios.",
+          "Ponentes: Dr. Michel Martínez (TecSalud). Representantes hospitalarios.",
       },
       {
         time: "14:45 - 15:30",
