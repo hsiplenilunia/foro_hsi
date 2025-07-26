@@ -73,16 +73,16 @@ const buttonId = `button-${cardId}`;
   <!-- STATE 2: Info with NotasCardBg -->
   <div
     id={state2Id}
-    class="card-state state-2 absolute inset-0 z-10 opacity-0 transition-all duration-500 ease-in-out shadow-none"
+    class="card-state bg-navy state-2 absolute inset-0 z-10 opacity-0 transition-all duration-500 ease-in-out shadow-none"
   >
-    <div class="absolute inset-0 w-full h-full flex items-center justify-center overflow-hidden pointer-events-none">
+    <!-- <div class="absolute inset-0 w-full h-full flex items-center justify-center overflow-hidden pointer-events-none">
       <NotasCardBg class="w-full h-full max-w-[434px] max-h-[242px] object-cover mx-auto !shadow-none" />
-    </div>
+    </div> -->
     <div class="absolute inset-0 flex flex-col items-center justify-center h-full px-4">
-      <h2 class="text-purple-text text-xl md:text-2xl font-bold text-center leading-5 md:leading-6 mb-2 max-w-[90%]">
+      <h2 class="text-white text-xl md:text-xl font-bold text-center leading-5 md:leading-6 mb-2 max-w-[90%] uppercase">
         {title}
       </h2>
-      <span class="text-purple-text hover:text-light-text text-lg md:text-xl font-bold underline underline-offset-4 mb-2">
+      <span class="text-white hover:text-hsi-blue text-lg md:text-xl font-bold underline underline-offset-4 mb-2">
         <a href={link} target="_blank">{underlinedText}</a>
       </span>
       <!-- FAB button always visible on mobile, hidden on desktop -->
