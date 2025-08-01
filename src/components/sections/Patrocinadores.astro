@@ -1,17 +1,24 @@
 ---
 import { Image } from 'astro:assets';
-import logo_amein from '../../assets/patrocinadores/AMEIN.png';
-import logo_ampe from '../../assets/patrocinadores/AMPE-Móvil.jpg';
-import logo_asociacion from '../../assets/patrocinadores/AsociacionMexCalidadenSalud.jpg';
-import logo_colegio from '../../assets/patrocinadores/ColegioNacionalQuim.png';
-import logo_funsalud from '../../assets/patrocinadores/FUNSALUD.png';
-import logo_growing from '../../assets/patrocinadores/Growing-Fundation-Versión-Móvil.png';
-import logo_amimc from '../../assets/patrocinadores/LOGO-AMIMC.jpg';
-import logo_mexypidn from '../../assets/patrocinadores/logo-mexYpidn.jpg';
-import logo_sepsismx from '../../assets/patrocinadores/SepsisMX-Móvil.jpg';
-import logo_somib from '../../assets/patrocinadores/Somib.png';
-import logo_unursing from '../../assets/patrocinadores/U-nursign-Versión-Móvil.png';
+import logo_amein from '../../assets/patrocinadores/aliados/AMEIN.png';
+import logo_ampe from '../../assets/patrocinadores/aliados/AMPE-Móvil.jpg';
+import logo_asociacion from '../../assets/patrocinadores/aliados/AsociacionMexCalidadenSalud.jpg';
+import logo_colegio from '../../assets/patrocinadores/aliados/ColegioNacionalQuim.png';
+import logo_funsalud from '../../assets/patrocinadores/aliados/FUNSALUD.png';
+import logo_growing from '../../assets/patrocinadores/aliados/Growing-Fundation-Versión-Móvil.png';
+import logo_amimc from '../../assets/patrocinadores/aliados/LOGO-AMIMC.jpg';
+import logo_mexypidn from '../../assets/patrocinadores/aliados/logo-mexYpidn.jpg';
+import logo_sepsismx from '../../assets/patrocinadores/aliados/SepsisMX-Móvil.jpg';
+import logo_somib from '../../assets/patrocinadores/aliados/Somib.png';
+import logo_unursing from '../../assets/patrocinadores/aliados/U-nursign-Versión-Móvil.png';
+import logo_pfizer from '../../assets/patrocinadores/patrocinadores/Pfizer.png';
+import logo_medica_sur from '../../assets/patrocinadores/patrocinadores/Medica Sur.png';
+import logo_biomeriux from '../../assets/patrocinadores/patrocinadores/BIOMERIUX.png';
+import logo_sufacide from '../../assets/patrocinadores/patrocinadores/sufacide.png';
+import logo_tecsalud from '../../assets/patrocinadores/patrocinadores/tecsalud.png';
+
 import AliadosIsland from '../islands/AliadosIsland.jsx';
+import PatrocinadoresIsland from '../islands/PatrocinadoresIsland';
 
 const aliados = [
   { imgUrl: logo_amein, alt: 'AMEIN' },
@@ -28,8 +35,12 @@ const aliados = [
 ];
 
 const patrocinadores = [
-  
-  
+  { imgUrl: logo_pfizer, alt: 'Pfizer' },
+  { imgUrl: logo_medica_sur, alt: 'Medica Sur' },
+  { imgUrl: logo_biomeriux, alt: 'BIOMERIUX' },
+  { imgUrl: logo_sufacide, alt: 'Sufacide' },
+  { imgUrl: logo_tecsalud, alt: 'TecSalud' },
+
 ];
 
 
@@ -54,11 +65,12 @@ const sectionStyles = `landing-section bg-white min-h-screen w-screen flex flex-
 
   {patrocinadores.length > 0 && (
     <div class="container mx-auto mt-12 px-0 md:px-24">
-      <h2 id="speakers-title" class="text-navy text-4xl font-bold text-center mb-8 uppercase">
+      <h2 id="speakers-title" class="text-celeste-hsi text-4xl font-bold text-center mb-8 uppercase">
         patrocinadores
       </h2>
-
-      <div
+      <PatrocinadoresIsland client:idle />
+      {/* Uncomment the following block if you want to display logos in a grid format */}
+     {/*  <div
         class="grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 2xl:grid-cols-4"
       >
         {patrocinadores.map((aliado) => (
@@ -73,7 +85,7 @@ const sectionStyles = `landing-section bg-white min-h-screen w-screen flex flex-
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   )}
 </section>
