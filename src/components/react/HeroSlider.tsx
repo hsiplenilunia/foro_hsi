@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const images = [
   '/hero-logo-mobile-min.webp',
-  '/Auditorio-MedicaSur-scaled_28percent_transparent.webp',
+  'https://res.cloudinary.com/difrqz0ke/image/upload/v1754336318/AuditorioMedicasur2_hero_un25vw.webp',
 ];
 
 const SLIDER_HEIGHT = 220; // px, adjust as needed
