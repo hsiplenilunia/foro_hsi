@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 const images = [
   '/hero-logo-mobile-min.webp',
   'https://res.cloudinary.com/difrqz0ke/image/upload/v1754336318/AuditorioMedicasur2_hero_un25vw.webp',
+  'https://res.cloudinary.com/difrqz0ke/image/upload/v1754337172/slider_003__ojk3gd.webp',
+  'https://res.cloudinary.com/difrqz0ke/image/upload/v1754337173/slider_001__umnxqc.webp',
+  'https://res.cloudinary.com/difrqz0ke/image/upload/v1754337172/slider_002__pvmx3q.webp'
 ];
 
 const SLIDER_HEIGHT = 220; // px, adjust as needed
