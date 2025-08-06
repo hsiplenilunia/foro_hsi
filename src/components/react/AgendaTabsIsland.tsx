@@ -85,51 +85,51 @@ const agendaData = [
         desc: "",
       },
       {
-        time: "09:05 - 09:35",
+        time: "09:00 - 09:30",
         title: "Conferencia",
         desc: "Prof. Victor D. Rosenthal, MD, PhD <br> Fundador y CEO, International Nosocomial Infection Control Consortium (INICC). ",
       },
       {
-        time: "09:40 - 10:25",
+        time: "09:35 - 10:20",
         title: "Panel: El riesgo de sobre prescripción de antibióticos en consultorios externos",
         desc:
           "FUNSALUD, <br/>Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, <br/>Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes, PUIREE UNAM <br/> <strong>Modera:</strong> Universidad",
       },
       {
-        time: "10:30 - 11:00",
+        time: "10:25 - 10:55",
         title: "Conferencia: Cómo trabajar más y mejor en sitio quirúrgico contra las IAAS",
         desc:
           "Dr. Antonio Ramos-De la Medina, Hospital Español de Veracruz.",
       },
       {
-        time: "11:05 - 11:35",
+        time: "11:00 - 11:20",
         title: "Networking",
         desc: "",
       },
       {
-        time: "11:40 - 12:25",
+        time: "11:25 - 12:10",
         title: "Panel",
         desc: "Por definir.",
       },
       {
-        time: "12:30 - 13:00",
+        time: "12:15 - 12:45",
         title: "Conferencia: La vacunación como instrumento coadyuvante preventivo a la Resistencia Antimicrobiana",
         desc: "",
       },
       {
-        time: "13:05 - 13:50",
+        time: "12:50 - 13:20",
         title: "Panel: La vigilancia de enfermedades zoonóticas",
         desc: `SENASICA<br/>
 Instituto Farmacéutico Veterinario <br/>
 <strong>Modera:</strong> Universidad (Facultad de Veterinaria)`,
       },
       {
-        time: "13:55 - 14:10",
+        time: "13:25 - 13:55",
         title: "Networking",
         desc: "",
       },
       {
-        time: "14:15 - 14:45",
+        time: "14:00 - 14:45",
         title: "Conferencia: La importancia de una política pública en Infecciones Asociadas a la Atención de la Salud",
         desc:
           "",
@@ -141,14 +141,14 @@ Instituto Farmacéutico Veterinario <br/>
           "Ponentes: Dr. Michel Martínez (TecSalud). Representantes hospitalarios.",
       },
       {
-        time: "15:40 - 16:25",
+        time: "15:40 - 16:00",
         title: "Control ambiental microbiano en áreas críticas hospitalarias",
         desc:
           "Especialista por definir. <br/><strong>Modera:</strong> Santiago March, FUNSALUD.",
       },
       
       {
-        time: "16:30",
+        time: "16:00",
         title: "Acto de clausura y brindis",
         desc:
           "Autoridades, Directivos Médica Sur, Hospitales sin Infecciones.",
