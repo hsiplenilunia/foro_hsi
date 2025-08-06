@@ -6,7 +6,7 @@ import hsiBg from "../assets/hsi_bg.png";
 import heroLogo from "../assets/hero-logo.png";
 import heroLogoMobile from "../assets/hero-logo-mobile.png";
 import heroWoman from "../assets/hero-woman.png";
-import msLogo from "../assets/MS_logotipo-horizontal.png";
+import msLogo from "../assets/logos_avales.webp";
 import HeroSlider from "./react/HeroSlider.tsx";
 const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen text-center overflow-hidden relative pb-24 md:pb-0`;
 ---
@@ -98,17 +98,17 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
             class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2"
             >CON AVAL ACADÉMICO</span
           >
-         <!-- <Image
+          <Image
             src={msLogo}
             alt="Médica Sur"
-            class="h-10 w-auto"
+            class="h-20 w-auto"
             width={200}
-            height={50}
+            height={60}
             loading="lazy"
             decoding="async"
             format="webp"
             quality={80}
-          />  -->
+          />  
         </div>
       </div>
     </div>
@@ -181,6 +181,17 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
       class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end mt-10 mb-2"
       >CON AVAL ACADÉMICO</span
     >
+    <Image
+            src={msLogo}
+            alt="Médica Sur"
+            class="h-20 w-auto"
+            width={200}
+            height={60}
+            loading="lazy"
+            decoding="async"
+            format="webp"
+            quality={80}
+          />  
     <div class="mt-6">
       <Button href="#registro" label="REGÍSTRATE" />
     </div>
