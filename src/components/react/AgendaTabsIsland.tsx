@@ -9,61 +9,67 @@ const agendaData = [
         time: "09:00 - 09:30",
         title: "Acto Inaugural",
         desc:
-          "Participa Autoridades, Consejo Técnico y directivos de Médica Sur.",
+          "Participa Consejo Técnico y directivos de Médica Sur.",
       },
       {
-        time: "09:30 - 10:00",
+        time: "09:35 - 10:05",
         title: "Conferencia Magistral",
-        desc:
-          "Consejo de Salubridad General.",
-      },
-      {
-        time: "10:00 - 10:30",
-        title: "Conferencia: La leche materna en la prevención de IAAS. Caso de estudio.",
         desc:
           "",
       },
       {
-        time: "10:30 - 11:15",
-        title: "Panel: Ahorros por prevención de IAAS más allá del hospital",
-        desc: `Asociación Nacional de Hospitales Privados, Asociación de Hospitales Privados de Jalisco, Dr. Jorge Azpiri, TecSalud
-<br/> <strong>Modera:</strong> Centro de Investigación Económica y Presupuestaria, CIEP`,
+        time: "10:10 - 10:40",
+        title: "La vacunación como instrumento coadyuvante preventivo a la Resistencia Antimicrobiana",
+        desc: "",
       },
       {
-        time: "11:15 - 11:45",
+        time: "10:45 - 11:30",
+        title: "Los beneficios de invertir en prevención en el ámbito hospitalario, y más allá.",
+        desc: `Asociación Nacional de Hospitales Privados, 
+        <br/> Asociación de Hospitales Particulares de Jalisco, 
+        <br/>Dr. Jorge Azpiri, Director de Desarrollo y Expansión de TecSalud,
+        <br/>Dra. Judith Mendez, Directora adjunta de investigación y especialista en salud y finanzas públicas del Centro de Investigación Económica y Presupuestaria (CIEP)
+<br/> <strong>Modera:</strong> Carlos Contreras, Experto en prevención y salud ocupacional`,
+      },
+      {
+        time: "11:35 - 11:55",
         title: "Networking",
         desc: ``,
       },
       {
-        time: "11:45 - 12:30",
+        time: "12:00 - 12:45",
         title: "Panel: El papel de la enfermería en la prevención de infecciones intrahospitalarias",
         desc:
-          "Dra. Gudelia Bautista (Centro Médico ABC), Mtra. Martha Huertas (INCMNSZ),<br/> Mtra. Fabiola Casas, Mtra. Rosa Amarilis Zárate (FENO UNAM) <br/> <strong>Modera:</strong> Mtra. Margarita Torres, AMEIN.",
+          "Mtra. Martha Huertas, Subdirectora de Enfermería del Instituto Nacional de Ciencias Médicas y Nutrición,<br/> Universidad del Valle de México, <br/>Universidad Panamericana, <br/>UNITEC, <br/>Universidad La Salle,  <strong>Modera:</strong> Mtra. Margarita Torres, AMEIN.",
       },
       {
-        time: "12:30 - 13:00",
+        time: "12:50 - 13:20",
         title: "Conferencia: Uso de catéter y el riesgo de infecciones en procedimientos ambulatorios",
         desc: "",
       },
       {
-        time: "13:00 - 13:45",
+        time: "13:25 - 14:10",
         title: "Panel: El incremento de infecciones fúngicas en la era post COVID",
-        desc:
-          "",
-      },
-      {
-        time: "13:45 - 14:15",
-        title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes",
-        desc:
-          "",
+        desc:"",
       },
       {
         time: "14:15 - 14:45",
-        title: "Conferencia: Actualización de NOM 045 sobre vigilancia epidemiológica",
-        desc: "Miguel Ángel Lezana, titular Dirección General de Epidemiología",
+        title: "Networking",
+        desc:
+          "",
       },
       {
-        time: "14:45 - 15:00",
+        time: "14:50 - 15:20",
+        title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes",
+        desc: "Dra. Celia Alpuche",
+      },
+      {
+        time: "15:25 - 15:55",
+        title: "Conferencia: NOM045: actualización y retos",
+        desc: "Dr. Miguel Ángel Lezana, titular Dirección General de Epidemiología",
+      },
+      {
+        time: "15:25 - 15:55",
         title: "Conclusiones y cierre",
         desc: "Hospital sin infecciones",
       },
@@ -84,65 +90,65 @@ const agendaData = [
         desc: "Prof. Victor D. Rosenthal, MD, PhD <br> Fundador y CEO, International Nosocomial Infection Control Consortium (INICC). ",
       },
       {
-        time: "09:30 - 10:15",
+        time: "09:35 - 10:20",
         title: "Panel: El riesgo de sobre prescripción de antibióticos en consultorios externos",
         desc:
           "FUNSALUD, <br/>Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, <br/>Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes, PUIREE UNAM <br/> <strong>Modera:</strong> Universidad",
       },
       {
-        time: "10:15 - 10:45",
+        time: "10:25 - 10:55",
         title: "Conferencia: Cómo trabajar más y mejor en sitio quirúrgico contra las IAAS",
         desc:
           "Dr. Antonio Ramos-De la Medina, Hospital Español de Veracruz.",
       },
       {
-        time: "10:45 - 11:15",
+        time: "11:00 - 11:20",
         title: "Networking",
         desc: "",
       },
       {
-        time: "11:15 - 12:00",
+        time: "11:25 - 12:10",
         title: "Panel",
         desc: "Por definir.",
       },
       {
-        time: "12:00 - 12:30",
+        time: "12:15 - 12:45",
         title: "Conferencia: La vacunación como instrumento coadyuvante preventivo a la Resistencia Antimicrobiana",
         desc: "",
       },
       {
-        time: "12:30 - 13:15",
+        time: "12:50 - 13:20",
         title: "Panel: La vigilancia de enfermedades zoonóticas",
         desc: `SENASICA<br/>
 Instituto Farmacéutico Veterinario <br/>
 <strong>Modera:</strong> Universidad (Facultad de Veterinaria)`,
       },
       {
-        time: "13:15 - 13:30",
+        time: "13:25 - 13:55",
         title: "Networking",
         desc: "",
       },
       {
-        time: "13:30 - 14:00",
+        time: "14:00 - 14:45",
         title: "Conferencia: La importancia de una política pública en Infecciones Asociadas a la Atención de la Salud",
         desc:
           "",
       },
       {
-        time: "14:00 - 14:45",
+        time: "14:50 - 15:35",
         title: "Panel: Programa de Optimización de antibióticos en Hospitales",
         desc:
           "Ponentes: Dr. Michel Martínez (TecSalud). Representantes hospitalarios.",
       },
       {
-        time: "14:45 - 15:30",
+        time: "15:40 - 16:00",
         title: "Control ambiental microbiano en áreas críticas hospitalarias",
         desc:
           "Especialista por definir. <br/><strong>Modera:</strong> Santiago March, FUNSALUD.",
       },
       
       {
-        time: "15:30",
+        time: "16:00",
         title: "Acto de clausura y brindis",
         desc:
           "Autoridades, Directivos Médica Sur, Hospitales sin Infecciones.",
