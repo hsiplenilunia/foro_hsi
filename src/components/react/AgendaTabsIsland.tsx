@@ -29,7 +29,7 @@ const agendaData = [
         <br/> Asociación de Hospitales Particulares de Jalisco, 
         <br/>Dr. Jorge Azpiri, Director de Desarrollo y Expansión de TecSalud,
         <br/>Dra. Judith Mendez, Directora adjunta de investigación y especialista en salud y finanzas públicas del Centro de Investigación Económica y Presupuestaria (CIEP)
-<br/> <strong>Modera:</strong> Centro de Investigación Económica y Presupuestaria, CIEP`,
+<br/> <strong>Modera:</strong> Carlos Contreras, Experto en prevención y salud ocupacional`,
       },
       {
         time: "11:35 - 11:55",
@@ -40,7 +40,7 @@ const agendaData = [
         time: "12:00 - 12:45",
         title: "Panel: El papel de la enfermería en la prevención de infecciones intrahospitalarias",
         desc:
-          "Dra. Gudelia Bautista (Centro Médico ABC), Mtra. Martha Huertas (INCMNSZ),<br/> Mtra. Fabiola Casas, Mtra. Rosa Amarilis Zárate (FENO UNAM) <br/> <strong>Modera:</strong> Mtra. Margarita Torres, AMEIN.",
+          "Mtra. Martha Huertas, Subdirectora de Enfermería del Instituto Nacional de Ciencias Médicas y Nutrición,<br/> Universidad del Valle de México, <br/>Universidad Panamericana, <br/>UNITEC, <br/>Universidad La Salle,  <strong>Modera:</strong> Mtra. Margarita Torres, AMEIN.",
       },
       {
         time: "12:50 - 13:20",
