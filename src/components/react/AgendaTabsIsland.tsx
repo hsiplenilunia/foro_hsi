@@ -154,7 +154,7 @@ Instituto Farmacéutico Veterinario <br/>
 export default function AgendaTabsIsland() {
   const [activeTab, setActiveTab] = useState(0);
   const [expandedPanels, setExpandedPanels] = useState(
-    agendaData.map((day) => day.events.map(() => false))
+    agendaData.map((day) => day.events.map(() => true))
   );
   const [fadeState, setFadeState] = useState<'in' | 'out'>('in');
 
@@ -163,7 +163,7 @@ export default function AgendaTabsIsland() {
     setFadeState('out');
     setTimeout(() => {
       setActiveTab(idx);
-      setExpandedPanels(agendaData.map((day) => day.events.map(() => false)));
+      setExpandedPanels(agendaData.map((day) => day.events.map(() => true)));
       setFadeState('in');
     }, 250); // Duración del fadeOut
   };
