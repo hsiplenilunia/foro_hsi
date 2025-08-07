@@ -19,7 +19,7 @@ const agendaData = [
       },
       {
         time: "10:10 - 10:40",
-        title: "La vacunación como instrumento coadyuvante preventivo a la Resistencia Antimicrobiana",
+        title: "Vacunación: un pilar en la lucha contra la resistencia bacteriana y las infecciones",
         desc: "",
       },
       {
@@ -129,7 +129,7 @@ Hospital Infantil de México Federico Gómez`,
       },
       {
         time: "14:00 - 14:45",
-        title: "Panel: Programas de Optimización de Antimicrobianos en Hospitales",
+        title: "Panel Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana",
         desc:
           "Dr. Paulo Castañeda, Jefe de infectología Hospital Médica Sur",
       },
