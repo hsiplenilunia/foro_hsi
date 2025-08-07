@@ -20,7 +20,7 @@ const agendaData = [
       {
         time: "10:10 - 10:40",
         title: "Vacunación: un pilar en la lucha contra la resistencia bacteriana y las infecciones",
-        desc: "",
+        desc: "Dr. Rafael Franco Cendejas, Dra. Patricia Rodríguez Zulueta",
       },
       {
         time: "10:45 - 11:30",
