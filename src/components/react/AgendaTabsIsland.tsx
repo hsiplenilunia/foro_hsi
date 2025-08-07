@@ -91,15 +91,15 @@ const agendaData = [
       },
       {
         time: "09:35 - 10:20",
-        title: "Panel: El riesgo de sobre prescripción de antibióticos en consultorios externos",
+        title: "Panel: Detección de brotes y manejo de resistencias bacterianas utilizando soluciones IT",
         desc:
-          "FUNSALUD, <br/>Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, <br/>Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes, PUIREE UNAM <br/> <strong>Modera:</strong> Universidad",
+          "",
       },
       {
         time: "10:25 - 10:55",
         title: "Conferencia: Cómo trabajar más y mejor en sitio quirúrgico contra las IAAS",
         desc:
-          "Dr. Antonio Ramos-De la Medina, Hospital Español de Veracruz.",
+          "Dr. Antonio Ramos-De la Medina, Director de Investigación del Centro México del Global Surgery Unit del Instituto Nacional de Investigación en Salud del Reino Unido (NIHR).",
       },
       {
         time: "11:00 - 11:20",
@@ -113,46 +113,39 @@ const agendaData = [
       },
       {
         time: "12:15 - 12:45",
-        title: "Conferencia: La vacunación como instrumento coadyuvante preventivo a la Resistencia Antimicrobiana",
-        desc: "",
+        title: "Conferencia:",
+        desc: "Por definir.",
       },
       {
         time: "12:50 - 13:20",
-        title: "Panel: La vigilancia de enfermedades zoonóticas",
-        desc: `SENASICA<br/>
-Instituto Farmacéutico Veterinario <br/>
-<strong>Modera:</strong> Universidad (Facultad de Veterinaria)`,
+        title: "Networking",
+        desc: ``,
       },
       {
         time: "13:25 - 13:55",
-        title: "Networking",
-        desc: "",
+        title: "Conferencia",
+        desc: `Dra. Liliana Vargas Neri, jefa del Departamento de Investigación Epidemiológica
+Hospital Infantil de México Federico Gómez`,
       },
       {
         time: "14:00 - 14:45",
-        title: "Conferencia: La importancia de una política pública en Infecciones Asociadas a la Atención de la Salud",
+        title: "Panel: Programas de Optimización de Antimicrobianos en Hospitales",
+        desc:
+          "Dr. Paulo Castañeda, Jefe de infectología Hospital Médica Sur",
+      },
+      {
+        time: "14:50 - 15:35",
+        title: "Panel: Las infecciones y el desequilibrio de la microbiota.",
         desc:
           "",
       },
       {
-        time: "14:50 - 15:35",
-        title: "Panel: Programa de Optimización de antibióticos en Hospitales",
+        time: "15:40",
+        title: "Acto de clausura",
         desc:
-          "Ponentes: Dr. Michel Martínez (TecSalud). Representantes hospitalarios.",
+          "",
       },
-      {
-        time: "15:40 - 16:00",
-        title: "Control ambiental microbiano en áreas críticas hospitalarias",
-        desc:
-          "Especialista por definir. <br/><strong>Modera:</strong> Santiago March, FUNSALUD.",
-      },
-      
-      {
-        time: "16:00",
-        title: "Acto de clausura y brindis",
-        desc:
-          "Autoridades, Directivos Médica Sur, Hospitales sin Infecciones.",
-      },
+    
     ],
   },
 ];
