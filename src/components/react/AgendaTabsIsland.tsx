@@ -40,7 +40,7 @@ const agendaData = [
         time: "12:00 - 12:45",
         title: "Panel: El papel de la enfermería en la prevención de infecciones intrahospitalarias",
         desc:
-          "Mtra. Martha Huertas, Subdirectora de Enfermería del Instituto Nacional de Ciencias Médicas y Nutrición,<br/> Universidad del Valle de México, <br/>Universidad Panamericana, <br/>UNITEC, <br/>Universidad La Salle,  <strong>Modera:</strong> Mtra. Margarita Torres, AMEIN.",
+          "Mtra. Martha Huertas, Subdirectora de Enfermería del Instituto Nacional de Ciencias Médicas y Nutrición,<br/> Universidad del Valle de México, <br/>Universidad Panamericana, <br/>UNITEC, <br/>Universidad La Salle,<br/>  <strong>Modera:</strong> Mtra. Margarita Torres, AMEIN.",
       },
       {
         time: "12:50 - 13:20",
