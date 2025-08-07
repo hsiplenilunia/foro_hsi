@@ -20,7 +20,7 @@ const agendaData = [
       {
         time: "10:10 - 10:40",
         title: "Vacunación: un pilar en la lucha contra la resistencia bacteriana y las infecciones",
-        desc: "Dr. Rafael Franco Cendejas, Dra. Patricia Rodríguez Zulueta",
+        desc: "Dr. Rafael Franco Cendejas",
       },
       {
         time: "10:45 - 11:30",
@@ -131,7 +131,7 @@ Hospital Infantil de México Federico Gómez`,
         time: "14:00 - 14:45",
         title: "Panel Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana",
         desc:
-          "Dr. Paulo Castañeda, Jefe de infectología Hospital Médica Sur",
+          "Dra. Patricia Rodríguez Zulueta, <br/>Dr. Paulo Castañeda, Jefe de infectología Hospital Médica Sur",
       },
       {
         time: "14:50 - 15:35",
