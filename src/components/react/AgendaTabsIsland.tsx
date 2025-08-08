@@ -25,11 +25,12 @@ const agendaData = [
       {
         time: "10:45 - 11:30",
         title: "Los beneficios de invertir en prevención en el ámbito hospitalario, y más allá.",
-        desc: `Asociación Nacional de Hospitales Privados, 
-        <br/> Asociación de Hospitales Particulares de Jalisco, 
+        desc: ` 
         <br/>Dr. Jorge Azpiri, Director de Desarrollo y Expansión de TecSalud,
         <br/>Dra. Judith Mendez, Directora adjunta de investigación y especialista en salud y finanzas públicas del Centro de Investigación Económica y Presupuestaria (CIEP)
-<br/> <strong>Modera:</strong> Carlos Contreras, Experto en prevención y salud ocupacional`,
+        <br/> Asociación Nacional de Hospitales Privados,
+        <br/> Asociación de Hospitales Particulares de Jalisco, 
+        <br/> <strong>Modera:</strong> Carlos Contreras, Experto en prevención y salud ocupacional`,
       },
       {
         time: "11:35 - 11:55",
@@ -40,7 +41,7 @@ const agendaData = [
         time: "12:00 - 12:45",
         title: "Panel: El papel de la enfermería en la prevención de infecciones intrahospitalarias",
         desc:
-          "Mtra. Martha Huertas, Subdirectora de Enfermería del Instituto Nacional de Ciencias Médicas y Nutrición,<br/> Universidad del Valle de México, <br/>Universidad Panamericana, <br/>UNITEC, <br/>Universidad La Salle,<br/>  <strong>Modera:</strong> Mtra. Margarita Torres, AMEIN.",
+          "Mtra. Martha Huertas, Subdirectora de Enfermería del Instituto Nacional de Ciencias Médicas y Nutrición,<br/> Universidad del Valle de México, <br/>Universidad Panamericana, <br/>UNITEC, <br/>Universidad La Salle,<br/>  <strong>Modera:</strong> Mtra. Margarita Torres, Presidenta Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN.",
       },
       {
         time: "12:50 - 13:20",
@@ -86,7 +87,7 @@ const agendaData = [
       },
       {
         time: "09:00 - 09:30",
-        title: "Conferencia",
+        title: "Conferencia Magistral",
         desc: "Prof. Victor D. Rosenthal, MD, PhD <br> Fundador y CEO, International Nosocomial Infection Control Consortium (INICC). ",
       },
       {
@@ -123,7 +124,7 @@ const agendaData = [
       },
       {
         time: "13:25 - 13:55",
-        title: "Conferencia",
+        title: "Conferencia: Vigilancia del Consumo de Antimicrobianos, en el Sistema Global de Vigilancia de la Resistencia a los Antimicrobianos (GLASS)",
         desc: `Dra. Liliana Vargas Neri, jefa del Departamento de Investigación Epidemiológica
 Hospital Infantil de México Federico Gómez`,
       },
@@ -131,7 +132,7 @@ Hospital Infantil de México Federico Gómez`,
         time: "14:00 - 14:45",
         title: "Panel Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana",
         desc:
-          "Dra. Patricia Rodríguez Zulueta, <br/>Dr. Paulo Castañeda, Jefe de infectología Hospital Médica Sur",
+          "Dra. Patricia Rodríguez Zulueta, Jefa de infectología, Hospital General Dr. Manuel Gea González <br/>Dr. Paulo Castañeda, Jefe de infectología Hospital Médica Sur",
       },
       {
         time: "14:50 - 15:35",
