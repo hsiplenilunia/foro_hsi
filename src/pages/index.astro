@@ -20,6 +20,7 @@ import PageFooter from "../components/sections/PageFooter.astro";
 import Video from "../components/sections/Video.astro";
 import SpeakersPaginated from "../components/sections/SpeakersPaginated.astro";
 import Galeria from "../components/sections/Galeria.astro";
+import FloatingWhatsApp from "../components/islands/atoms/FloatingWhatsApp.tsx";
 ---
 
 <Layout title="Foro 2025 - Hospital sin infecciones">
@@ -63,6 +64,6 @@ import Galeria from "../components/sections/Galeria.astro";
     <div class="snap-center">
       <PageFooter />
     </div>
-    
+    <FloatingWhatsApp className="bg-green-hsi rounded-full" size={60} positionX="right" positionY="bottom" waNumber="525511355967" client:load/>
   </main>
 </Layout>
