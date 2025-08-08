@@ -22,6 +22,19 @@ import lcpMobileImage from "../assets/hero-logo-mobile.png";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link rel="preload" as="image" href={lcpMobileImage.src} />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PKV40R6BR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8PKV40R6BR");
+    </script>
   </head>
   <body>
     <slot />

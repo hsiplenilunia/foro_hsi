@@ -20,7 +20,7 @@ const agendaData = [
       {
         time: "10:10 - 10:40",
         title: "Vacunación: un pilar en la lucha contra la resistencia bacteriana y las infecciones",
-        desc: "Dr. Rafael Franco Cendejas",
+        desc: "Dr. Rafael Franco Cendejas, Subdirector de Investigación Biomédica del Instituto Nacional de Rehabilitación Luis Guillermo Ibarra Ibarra, INRLGII",
       },
       {
         time: "10:45 - 11:30",
