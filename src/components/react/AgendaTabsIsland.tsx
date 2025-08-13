@@ -9,7 +9,11 @@ const agendaData = [
         time: "09:00 - 09:30",
         title: "Acto Inaugural",
         desc:
-          "Participa Consejo Técnico y directivos de Médica Sur.",
+          `Dra. María Enriqueta Baridó Murguía, Coordinadora de la Comisión de Infectología Quirúrgica de la Asociación Mexicana de Cirugía General. 
+          <br/ >Dr. Samuel Ponce de León Rosales, Coordinador Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes (PUIREE)
+          <br/ >Dr. José Ignacio Santos Preciado, Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas
+          <br />Dr. Luis Fernando Pérez González, Jefe del Departamento de Pediatría UASLP.
+          <br />Directivos de Médica Sur.`
       },
       {
         time: "09:35 - 10:05",
@@ -27,10 +31,10 @@ const agendaData = [
         title: "Los beneficios de invertir en prevención en el ámbito hospitalario, y más allá.",
         desc: ` 
         <br/>Dr. Jorge Azpiri, Director de Desarrollo y Expansión de TecSalud,
-        <br/>Dra. Judith Mendez, Directora adjunta de investigación y especialista en salud y finanzas públicas del Centro de Investigación Económica y Presupuestaria (CIEP)
-        <br/> Asociación Nacional de Hospitales Privados,
-        <br/> Asociación de Hospitales Particulares de Jalisco, 
-        <br/> <strong>Modera:</strong> Carlos Contreras, Experto en prevención y salud ocupacional`,
+        <br/>Ing. Roberto Bonilla, director corporativo de Grupo San Ángel Inn Dalinde,
+        <br/>Asociación Nacional de Hospitales Privados,
+        <br/>Asociación de Hospitales Particulares de Jalisco, 
+        <br/><strong>Modera:</strong> Carlos Contreras, Colegio de Medicina Interna de México / American College of Physicians`,
       },
       {
         time: "11:35 - 11:55",
@@ -46,27 +50,26 @@ const agendaData = [
       {
         time: "12:50 - 13:20",
         title: "Conferencia: Uso de catéter y el riesgo de infecciones en procedimientos ambulatorios",
-        desc: "",
+        desc: ``,
       },
       {
         time: "13:25 - 14:10",
-        title: "Panel: El incremento de infecciones fúngicas en la era post COVID",
-        desc:"",
+        title: "Panel: El incremento de infecciones fúngicas durante y después de  COVID",
+        desc: `Dr. Alfredo Ponce de León, jefe de infectología del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán`,
       },
       {
         time: "14:15 - 14:45",
         title: "Networking",
-        desc:
-          "",
+        desc: ``,
       },
       {
         time: "14:50 - 15:20",
         title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes",
-        desc: "Dra. Celia Alpuche",
+        desc: "Dra. Celia Alpuche, Especialista en enfermedades infecciosas",
       },
       {
         time: "15:25 - 15:55",
-        title: "Conferencia: NOM045: actualización y retos",
+        title: "Conferencia: NOM 045, Actualización y retos",
         desc: "Dr. Miguel Ángel Lezana, titular Dirección General de Epidemiología",
       },
       {
@@ -83,7 +86,7 @@ const agendaData = [
       {
         time: "08:30 - 09:00",
         title: "Registro y bienvenida",
-        desc: "",
+        desc: ``,
       },
       {
         time: "09:00 - 09:30",
@@ -137,8 +140,8 @@ Hospital Infantil de México Federico Gómez`,
       {
         time: "14:50 - 15:35",
         title: "Panel: Las infecciones y el desequilibrio de la microbiota.",
-        desc:
-          "",
+        desc:`Dra. Rosa Salgado Brito, Directora de la Facultad de Ciencia y Tecnología Universidad Simón Bolivar,
+        <br/>Dr. Max Julio Schmulson Wasserman, jefe de Unidad de Medicina Experimental, Hospital General de México`,
       },
       {
         time: "15:40",
