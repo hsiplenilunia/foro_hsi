@@ -13,13 +13,12 @@ const agendaData = [
           <br/ >Dr. Samuel Ponce de León Rosales, Coordinador Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes (PUIREE)
           <br/ >Dr. José Ignacio Santos Preciado, Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas
           <br />Dr. Luis Fernando Pérez González, Jefe del Departamento de Pediatría UASLP.
-          <br />Directivos de Médica Sur.`
+          <br />Dr. Octavio González Chon, Director General de Médica Sur.`
       },
       {
         time: "09:35 - 10:05",
-        title: "Conferencia Magistral",
-        desc:
-          "",
+        title: "Conferencia",
+        desc: "Dr. Virgilio Lima Gómez, Director General de Coordinación Médica de Alta Especialidad CINSHAE",
       },
       {
         time: "10:10 - 10:40",
@@ -55,7 +54,9 @@ const agendaData = [
       {
         time: "13:25 - 14:10",
         title: "Panel: El incremento de infecciones fúngicas durante y después de  COVID",
-        desc: `Dr. Alfredo Ponce de León, jefe de infectología del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán`,
+        desc: `Dra. Patricia Cornejo, Jefa del departamento de infectología del Instituto Nacional de Cancerología
+        <br />Dra. Fernanda González Lara, Jefa del laboratorio de microbiología del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán.
+        <br /><strong>Modera:&nbsp;</strong>Dr. Alfredo Ponce de León, jefe de infectología del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán`,
       },
       {
         time: "14:15 - 14:45",
