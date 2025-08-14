@@ -30,9 +30,8 @@ const agendaData = [
         title: "Los beneficios de invertir en prevención en el ámbito hospitalario, y más allá.",
         desc: ` 
         <br/>Dr. Jorge Azpiri, Director de Desarrollo y Expansión de TecSalud,
+        <br/>Dr. Octavio González Chon, Director General de Médica Sur,
         <br/>Ing. Roberto Bonilla, director corporativo de Grupo San Ángel Inn Dalinde,
-        <br/>Asociación Nacional de Hospitales Privados,
-        <br/>Asociación de Hospitales Particulares de Jalisco, 
         <br/><strong>Modera:</strong> Carlos Contreras, Colegio de Medicina Interna de México / American College of Physicians`,
       },
       {
