@@ -17,8 +17,8 @@ const agendaData = [
       },
       {
         time: "09:35 - 10:05",
-        title: "Conferencia",
-        desc: "Dr. Virgilio Lima Gómez, Director General de Coordinación Médica de Alta Especialidad CINSHAE",
+        title: "Conferencia Magistral",
+        desc: "",
       },
       {
         time: "10:10 - 10:40",
