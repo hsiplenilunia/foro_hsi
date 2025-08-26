@@ -43,7 +43,7 @@ const agendaData = [
         time: "12:00 - 12:45",
         title: "Panel: El papel de la enfermería en la prevención de infecciones intrahospitalarias",
         desc:
-          "Mtra. Martha Huertas, Subdirectora de Enfermería del Instituto Nacional de Ciencias Médicas y Nutrición,<br/> Universidad del Valle de México, <br/>Universidad Panamericana, <br/>UNITEC, <br/>Universidad La Salle,<br/>  <strong>Modera:</strong> Mtra. Margarita Torres, Presidenta Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN.",
+          "Mtra. María de los Ángeles Franco Martínez, Jefe de Carrera de la Lic. en Enfermería, Universidad La Salle, <br/>Universidad Panamericana <br/><strong>Modera:</strong> Mtra. Margarita Torres, Presidenta Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN.",
       },
       {
         time: "12:50 - 13:20",
@@ -53,7 +53,7 @@ const agendaData = [
       {
         time: "13:25 - 14:10",
         title: "Panel: El incremento de infecciones fúngicas durante y después de  COVID",
-        desc: `Dra. Patricia Cornejo, Jefa del departamento de infectología del Instituto Nacional de Cancerología
+        desc: `Dr. Alexandro Bonifaz, jefe depto. de micología Hospital General de México Dr. Eduardo Liceaga
         <br />Dra. Fernanda González Lara, Jefa del laboratorio de microbiología del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán.
         <br /><strong>Modera:&nbsp;</strong>Dr. Alfredo Ponce de León, jefe de infectología del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán`,
       },
@@ -64,8 +64,8 @@ const agendaData = [
       },
       {
         time: "14:50 - 15:20",
-        title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes",
-        desc: "Dra. Celia Alpuche, Especialista en enfermedades infecciosas",
+        title: "Conferencia: Vigilancia del Consumo de Antimicrobianos, en el Sistema Global de Vigilancia de la Resistencia a los Antimicrobianos (GLASS)",
+        desc: "Dra. Liliana Vargas Neri, jefa del Departamento de Investigación Epidemiológica. <br/ >Hospital Infantil de México Federico Gómez",
       },
       {
         time: "15:25 - 15:55",
@@ -90,14 +90,15 @@ const agendaData = [
       },
       {
         time: "09:00 - 09:30",
-        title: "Conferencia Magistral",
-        desc: "Prof. Victor D. Rosenthal, MD, PhD <br> Fundador y CEO, International Nosocomial Infection Control Consortium (INICC). ",
+        title: "Panel: Limpieza, desinfección y esterilización",
+        desc: "<strong>Modera:</strong> Mtra. Marta Huertas, jefa de enfermería del INCMNSZ",
       },
       {
         time: "09:35 - 10:20",
         title: "Panel: Detección de brotes y manejo de resistencias bacterianas utilizando soluciones IT",
         desc:
-          "",
+          `Dr. Edgar González Villalobos, Profesor del Departamento de Salud Pública de la Facultad de Medicina de la UNAM
+          <br/><strong>Modera:</strong> Universidad Iberoamericana`,
       },
       {
         time: "10:25 - 10:55",
@@ -112,39 +113,41 @@ const agendaData = [
       },
       {
         time: "11:25 - 12:10",
-        title: "Panel",
-        desc: "Por definir.",
+        title: "Panel: Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana.",
+        desc: `Dra. Patricia Rodríguez Zulueta, jefa de infectología, Hospital General Dr. Manuel Gea González.
+
+<br/>Dr. Paulo Castañeda, jefe de infectología, Hospital Médica Sur.
+
+<br/><strong>Modera:</strong> Mtra. Juanita Jiménez, representante de la Red Latinoamericana de Enfermería de la Secretaría de Salud`,
       },
       {
         time: "12:15 - 12:45",
         title: "Conferencia:",
-        desc: "Por definir.",
+        desc: `Dra. Daniela de la Rosa, líder de la comisión de Resistencia Antimicrobiana del Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE`,
       },
       {
-        time: "12:50 - 13:20",
+        time: "13:00 - 13:30",
+        title: "Conferencia: Plan de Acción Mundial y Marco de Monitoreo sobre Prevención y Control de Infecciones",
+        desc: `Prof. Victor D. Rosenthal, MD, PhD, Fundador y presidente del Consorcio Internacional de Infecciones Hospitalarias`,
+      },
+      {
+        time: "13:35 - 14:05",
         title: "Networking",
         desc: ``,
       },
       {
-        time: "13:25 - 13:55",
-        title: "Conferencia: Vigilancia del Consumo de Antimicrobianos, en el Sistema Global de Vigilancia de la Resistencia a los Antimicrobianos (GLASS)",
-        desc: `Dra. Liliana Vargas Neri, jefa del Departamento de Investigación Epidemiológica
-Hospital Infantil de México Federico Gómez`,
+        time: "14:05 - 14:35",
+        title: "Conferencia: Aguas residuales como elemento para estrategias de detección oportuna de brotes.",
+        desc: `Dra. Celia Alpuche, investigadora del Instituto Nacional de Salud Pública.`,
       },
       {
-        time: "14:00 - 14:45",
-        title: "Panel Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana",
-        desc:
-          "Dra. Patricia Rodríguez Zulueta, Jefa de infectología, Hospital General Dr. Manuel Gea González <br/>Dr. Paulo Castañeda, Jefe de infectología Hospital Médica Sur",
-      },
-      {
-        time: "14:50 - 15:35",
-        title: "Panel: Las infecciones y el desequilibrio de la microbiota.",
+        time: "14:40 - 15:25",
+        title: "Panel: El equilibrio de la microbiota intestinal y su impacto en el desarrollo de infecciones",
         desc:`Dra. Rosa Salgado Brito, Directora de la Facultad de Ciencia y Tecnología Universidad Simón Bolivar,
         <br/>Dr. Max Julio Schmulson Wasserman, jefe de Unidad de Medicina Experimental, Hospital General de México`,
       },
       {
-        time: "15:40",
+        time: "15:30",
         title: "Acto de clausura",
         desc:
           "",
