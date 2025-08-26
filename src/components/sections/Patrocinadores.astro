@@ -54,17 +54,9 @@ const sectionStyles = `landing-section bg-white min-h-screen w-screen flex flex-
   data-header-color={`white`}
   id='aliados'
 >
-  {aliados.length > 0 && (
-    <div class="container mx-auto px-4">
-      <h2 id="speakers-title" class="text-celeste-hsi text-4xl font-bold text-center mb-8">
-        ALIADOS
-      </h2>
-        <AliadosIsland client:idle />
-      </div>
-  )}
 
   {patrocinadores.length > 0 && (
-    <div class="container mx-auto mt-12 px-0 md:px-24">
+    <div class="container mx-auto px-0 md:px-24">
       <h2 id="speakers-title" class="text-celeste-hsi text-4xl font-bold text-center mb-8 uppercase">
         patrocinadores
       </h2>
@@ -88,4 +80,15 @@ const sectionStyles = `landing-section bg-white min-h-screen w-screen flex flex-
       </div> */}
     </div>
   )}
+
+  {aliados.length > 0 && (
+    <div class="container mt-12 mx-auto px-4">
+      <h2 id="speakers-title" class="text-celeste-hsi text-4xl font-bold text-center mb-8">
+        ALIADOS
+      </h2>
+        <AliadosIsland client:idle />
+      </div>
+  )}
+
+  
 </section>
