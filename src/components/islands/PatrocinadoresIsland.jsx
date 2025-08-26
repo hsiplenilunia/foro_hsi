@@ -21,6 +21,14 @@ const patrocinadores = [
     imgUrl: '/img/patrocinadores/tecsalud.webp',
     alt: 'TecSalud',
   },
+  {
+    imgUrl: '/img/patrocinadores/nipro_tecnicare_vm.webp',
+    alt: 'Nipro Tecnicare',
+  },
+  {
+    imgUrl: '/img/patrocinadores/salud_aurea_patrocinador.webp',
+    alt: 'Salud Aurea',
+  },
 ];
 
 export default function PatrocinadoresIsland() {
