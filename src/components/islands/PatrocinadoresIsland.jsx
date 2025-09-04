@@ -29,6 +29,18 @@ const patrocinadores = [
     imgUrl: '/img/patrocinadores/salud_aurea_patrocinador.webp',
     alt: 'Salud Aurea',
   },
+  {
+    imgUrl: '/img/patrocinadores/asp.webp',
+    alt: 'ASP',
+  },
+  {
+    imgUrl: '/img/patrocinadores/vantive.webp',
+    alt: 'Vantive',
+  },
+  {
+    imgUrl: '/img/patrocinadores/sanieren.webp',
+    alt: 'Sanieren',
+  },
 ];
 
 export default function PatrocinadoresIsland() {
@@ -52,7 +64,7 @@ export default function PatrocinadoresIsland() {
 
   return (
     <div ref={containerRef}>
-      <div className="grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
+      <div className="grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-5">
         <div className="flex w-full min-h-[120px] max-h-[120px] items-center justify-center">
           <img
             src={patrocinadores[0].imgUrl}
