@@ -13,12 +13,13 @@ const agendaData = [
           <br/ >Dr. Samuel Ponce de León Rosales, Coordinador Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes (PUIREE)
           <br/ >Dr. José Ignacio Santos Preciado, Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas
           <br />Dr. Luis Fernando Pérez González, Jefe del Departamento de Pediatría UASLP.
-          <br />Dr. Octavio González Chon, Director General de Médica Sur.`
+          <br />Dr. Octavio González Chon, Director General de Médica Sur.
+          <br />Mtra. Maribel Ramírez Coronel, Directora General de Hospitales sin infecciones.`
       },
       {
         time: "09:35 - 10:05",
-        title: "Conferencia Magistral",
-        desc: "",
+        title: "Epidemiología de la Resistencia Antimicrobiana",
+        desc: "Dra. Rosa María Wong, presidenta de la Asociación Mexicana de Infectología y Microbiología Clínica",
       },
       {
         time: "10:10 - 10:40",
@@ -42,8 +43,11 @@ const agendaData = [
       {
         time: "12:00 - 12:45",
         title: "Panel: El papel de la enfermería en la prevención de infecciones intrahospitalarias",
-        desc:
-          "Mtra. María de los Ángeles Franco Martínez, Jefe de Carrera de la Lic. en Enfermería, Universidad La Salle, <br/>Universidad Panamericana <br/><strong>Modera:</strong> Mtra. Margarita Torres, Presidenta Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN.",
+        desc: `Mtra. María de los Ángeles Franco Martínez, Jefe de Carrera de la Lic. en Enfermería, Universidad La Salle, 
+        <br/>Universidad Panamericana 
+        <br/>Mtra. Monserrat Lourdes Puntunet Bates, Maestra en Administración de Operaciones de Salud de la Universidad Panamericana
+        <br/><strong>Modera:</strong> Mtra. Margarita Torres, Presidenta Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN.`
+
       },
       {
         time: "12:50 - 13:20",
@@ -63,17 +67,19 @@ const agendaData = [
         desc: ``,
       },
       {
-        time: "14:50 - 15:20",
-        title: "Conferencia: Vigilancia del Consumo de Antimicrobianos, en el Sistema Global de Vigilancia de la Resistencia a los Antimicrobianos (GLASS)",
-        desc: "Dra. Liliana Vargas Neri, jefa del Departamento de Investigación Epidemiológica. <br/ >Hospital Infantil de México Federico Gómez",
+        time: "14:50 - 15:35",
+        title: "Panel: Defunciones por IAAS: la necesidad de hacerlas visibles",
+        desc: `Dra. Isabel Villegas, Directora de la unidad de especialidades médicas Capacyt Cancún. 
+        <br/> Dr. Alejandro Sassoé,  Jefe de departamento de vigilancia de IAAS IMSS-Bienestar 
+        <br/> <strong>Modera:</strong> Maribel Ramírez Coronel`,
       },
       {
-        time: "15:25 - 15:55",
+        time: "15:40 - 16:10",
         title: "Conferencia: NOM 045, Actualización y retos",
         desc: "Dr. Miguel Ángel Lezana, titular Dirección General de Epidemiología",
       },
       {
-        time: "15:25 - 15:55",
+        time: "16:15",
         title: "Conclusiones y cierre",
         desc: "Hospital sin infecciones",
       },
@@ -143,7 +149,7 @@ const agendaData = [
       {
         time: "14:40 - 15:25",
         title: "Panel: El equilibrio de la microbiota intestinal y su impacto en el desarrollo de infecciones",
-        desc:`Dra. Rosa Salgado Brito, Directora de la Facultad de Ciencia y Tecnología Universidad Simón Bolivar,
+        desc: `Dra. Rosa Salgado Brito, Directora de la Facultad de Ciencia y Tecnología Universidad Simón Bolivar,
         <br/>Dr. Max Julio Schmulson Wasserman, jefe de Unidad de Medicina Experimental, Hospital General de México`,
       },
       {
@@ -152,7 +158,7 @@ const agendaData = [
         desc:
           "",
       },
-    
+
     ],
   },
 ];
@@ -179,8 +185,8 @@ export default function AgendaTabsIsland() {
       const newPanels = prev.map((dayPanels, i) =>
         i === activeTab
           ? dayPanels.map((expanded, j) =>
-              j === eventIdx ? !expanded : expanded
-            )
+            j === eventIdx ? !expanded : expanded
+          )
           : dayPanels
       );
       return newPanels;
@@ -201,9 +207,8 @@ export default function AgendaTabsIsland() {
               key={tab.id}
               aria-controls={tab.id}
               aria-selected={activeTab === idx}
-              className={`bg-[#002b5c] text-white border-none px-6 py-3 text-3xl rounded cursor-pointer transition-colors ${
-                activeTab === idx ? "bg-[#3b7d42]" : "hover:bg-celeste-hsi"
-              }`}
+              className={`bg-[#002b5c] text-white border-none px-6 py-3 text-3xl rounded cursor-pointer transition-colors ${activeTab === idx ? "bg-[#3b7d42]" : "hover:bg-celeste-hsi"
+                }`}
               id={`tab-${tab.id}`}
               role="tab"
               onClick={() => handleTabClick(idx)}
