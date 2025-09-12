@@ -95,41 +95,43 @@ const agendaData = [
         desc: ``,
       },
       {
-        time: "09:00 - 09:30",
+        time: "09:00 - 09:40",
         title: "Panel: Limpieza, desinfección y esterilización",
-        desc: "<strong>Modera:</strong> Mtra. Marta Huertas, jefa de enfermería del INCMNSZ",
+        desc: `IB Marco Guerrero, experto en desinfección UVC
+        <br/><strong>Modera:</strong> Mtra. Marta Huertas, jefa de enfermería del INCMNSZ`,
       },
       {
-        time: "09:35 - 10:20",
+        time: "09:45 - 10:30",
         title: "Panel: Detección de brotes y manejo de resistencias bacterianas utilizando soluciones IT",
         desc:
           `Dr. Edgar González Villalobos, Profesor del Departamento de Salud Pública de la Facultad de Medicina de la UNAM
-          <br/><strong>Modera:</strong> Universidad Iberoamericana`,
+          <br/><strong>Modera:</strong> Dra. Liliana Vargas Neri, jefa del Departamento de Investigación Epidemiológica.
+          <br/>Hospital Infantil de México Federico Gómez`,
       },
       {
-        time: "10:25 - 10:55",
+        time: "10:35 - 11:05",
         title: "Conferencia: Cómo trabajar más y mejor en sitio quirúrgico contra las IAAS",
         desc:
           "Dr. Antonio Ramos-De la Medina, Director de Investigación del Centro México del Global Surgery Unit del Instituto Nacional de Investigación en Salud del Reino Unido (NIHR).",
       },
       {
-        time: "11:00 - 11:20",
+        time: "11:05 - 11:30",
         title: "Networking",
         desc: "",
       },
       {
-        time: "11:25 - 12:10",
+        time: "11:35 - 12:20",
         title: "Panel: Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana.",
-        desc: `Dra. Patricia Rodríguez Zulueta, jefa de infectología, Hospital General Dr. Manuel Gea González.
+        desc: `Dra. Patricia Rodríguez Zulueta, Jefa de infectología, Hospital General Dr. Manuel Gea González.
 
-<br/>Dr. Paulo Castañeda, jefe de infectología, Hospital Médica Sur.
+<br/>Dr. Paulo Castañeda, Jefe de infectología, Hospital Médica Sur.
 
-<br/><strong>Modera:</strong> Mtra. Juanita Jiménez, representante de la Red Latinoamericana de Enfermería de la Secretaría de Salud`,
+<br/><strong>Modera:</strong> Mtra. Juanita Jiménez, Representante de la Red Latinoamericana de Enfermería de la Secretaría de Salud`,
       },
       {
-        time: "12:15 - 12:45",
-        title: "Conferencia:",
-        desc: `Dra. Daniela de la Rosa, líder de la comisión de Resistencia Antimicrobiana del Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE`,
+        time: "12:25 - 12:55",
+        title: "Conferencia: Uso y prescripción de antibióticos en consultorios externos.",
+        desc: `Dra. Daniela de la Rosa, Líder de Resistencia Antimicrobiana del Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE`,
       },
       {
         time: "13:00 - 13:30",
@@ -144,13 +146,14 @@ const agendaData = [
       {
         time: "14:05 - 14:35",
         title: "Conferencia: Aguas residuales como elemento para estrategias de detección oportuna de brotes.",
-        desc: `Dra. Celia Alpuche, investigadora del Instituto Nacional de Salud Pública.`,
+        desc: `Dra. Celia Alpuche, Investigadora del Instituto Nacional de Salud Pública.`,
       },
       {
         time: "14:40 - 15:25",
         title: "Panel: El equilibrio de la microbiota intestinal y su impacto en el desarrollo de infecciones",
         desc: `Dra. Rosa Salgado Brito, Directora de la Facultad de Ciencia y Tecnología Universidad Simón Bolivar,
-        <br/>Dr. Max Julio Schmulson Wasserman, jefe de Unidad de Medicina Experimental, Hospital General de México`,
+        <br/>Dr. Max Julio Schmulson Wasserman, Jefe de Unidad de Medicina Experimental, Hospital General de México
+        <br/><strong>Modera:</strong>  Dr. Santiago March, Coordinador del Consejo Promotor de Nuevas Tecnologías FUNSALUD`,
       },
       {
         time: "15:30",
