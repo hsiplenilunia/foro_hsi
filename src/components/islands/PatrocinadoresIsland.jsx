@@ -41,6 +41,10 @@ const patrocinadores = [
     imgUrl: '/img/patrocinadores/sanieren.webp',
     alt: 'Sanieren',
   },
+  {
+    imgUrl: '/img/patrocinadores/vitalmex.webp',
+    alt: 'Vitalmex',
+  },
 ];
 
 export default function PatrocinadoresIsland() {
