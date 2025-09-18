@@ -32,8 +32,7 @@ const agendaData = [
         desc: ` 
         <br/>Dr. Jorge Azpiri, Director de Desarrollo y Expansión de TecSalud,
         <br/>Dr. Octavio González Chon, Director General de Médica Sur,
-        <br/>Ing. Roberto Bonilla, director corporativo de Grupo San Ángel Inn Dalinde,
-        <br/><strong>Modera:</strong> Carlos Contreras, Colegio de Medicina Interna de México / American College of Physicians`,
+        <br/><strong>Modera:</strong> Dr. Alfredo Merino, maestro en Gestión de Negocios en Salud, ex director del CMN 20 de Noviembre`,
       },
       {
         time: "11:35 - 11:55",
@@ -71,12 +70,12 @@ const agendaData = [
         title: "Panel: Defunciones por IAAS: la necesidad de hacerlas visibles",
         desc: `Dra. Isabel Villegas, Directora de la unidad de especialidades médicas Capacyt Cancún. 
         <br/> Dr. Alejandro Sassoé,  Jefe de departamento de vigilancia de IAAS IMSS-Bienestar 
-        <br/> <strong>Modera:</strong> Maribel Ramírez Coronel`,
+        <br/> <strong>Modera:</strong>Mtra. Maribel Ramírez Coronel`,
       },
       {
         time: "15:40 - 16:10",
         title: "Conferencia: NOM 045, Actualización y retos",
-        desc: "Dr. Miguel Ángel Lezana, titular Dirección General de Epidemiología",
+        desc: "Dr. Miguel Ángel Lezana, titular Dirección General de Epidemiología de la Secretaría de Salud",
       },
       {
         time: "16:15",
@@ -110,7 +109,7 @@ const agendaData = [
       },
       {
         time: "10:35 - 11:05",
-        title: "Conferencia: Cómo trabajar más y mejor en sitio quirúrgico contra las IAAS",
+        title: "Conferencia: Investigación y prevención de infecciones de sitio quirúrgico en países de bajos y medianos ingresos",
         desc:
           "Dr. Antonio Ramos-De la Medina, Director de Investigación del Centro México del Global Surgery Unit del Instituto Nacional de Investigación en Salud del Reino Unido (NIHR).",
       },
