@@ -1,6 +1,6 @@
 export async function GET({ params, request }) {
   const fileId = "16ap4ggxrZBXFPkUKrfc351hGPLWWkGOL";
-  const directDownloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+  const directDownloadUrl = `/`;
   
   const response = await fetch(directDownloadUrl);
   const arrayBuffer = await response.arrayBuffer();
