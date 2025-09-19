@@ -49,9 +49,12 @@ const agendaData = [
 
       },
       {
-        time: "12:50 - 13:20",
-        title: "Conferencia: Uso de catéter y el riesgo de infecciones en procedimientos ambulatorios",
-        desc: ``,
+        time: "12:45 - 13:25",
+        title: "Panel: Limpieza, desinfección y esterilización",
+        desc: `Dra. Roxana Trejo, presidenta Asociación Mexicana para el Procesamiento Estéril, AMEXPE
+<br/>IB. Marco Guerrero, experto en desinfección UV-C
+<br/>Mtra. Lili Frías, Unidad de Vigilancia Epidemiológica Médica Sur
+<br/><strong>Modera:</strong> Mtra. Martha Huertas, subdirectora de enfermería del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán`,
       },
       {
         time: "13:25 - 14:10",
@@ -94,10 +97,9 @@ const agendaData = [
         desc: ``,
       },
       {
-        time: "09:00 - 09:40",
-        title: "Panel: Limpieza, desinfección y esterilización",
-        desc: `IB Marco Guerrero, experto en desinfección UVC
-        <br/><strong>Modera:</strong> Mtra. Marta Huertas, jefa de enfermería del INCMNSZ`,
+        time: "09:00 - 09:30",
+        title: "Conferencia: Desafío del Manejo del Paciente con Sepsis",
+        desc: `Dr. Miguel Ángel Flores, especialista en Soporte Multiorgánico`,
       },
       {
         time: "09:45 - 10:30",
