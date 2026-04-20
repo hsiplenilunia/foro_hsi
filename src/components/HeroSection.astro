@@ -29,8 +29,39 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
   <!-- Desktop Layout -->
   <div class="flex flex-col xl:mt-6">
     <div
-      class="hidden lg:flex justify-between items-stretch grow px-[10%] pt-32 z-30 relative min-h-[500px]"
+      class="hidden lg:flex justify-between items-stretch grow px-[10%] pt-32 z-30 relative min-h-[500px]">
+
+      <!-- Right image -->
+      <div
+        class="flex-1 h-full flex flex-col items-end gap-2"
+      >
+        <HeroSlider client:idle />
+        <div class="flex flex-col items-center mt-4 w-full">
+          <span
+            class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2"
+            >AVAL ACADÉMICO</span
+          >
+          <Image
+            src={msLogo}
+            alt="Médica Sur"
+            class="h-20 w-auto"
+            width={200}
+            height={80}
+            loading="lazy"
+            decoding="async"
+            format="webp"
+            quality={80}
+          />  
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full flex h-12 min-h-12 absolute bottom-0 bg-[url('/motivos_pattern.webp')] bg-repeat-x bg-contain bg-bottom"
     >
+      &nbsp;
+    </div>
+  </div>
+
       <!-- Left content -->
       <div
         class="flex flex-col w-[40vw] items-start max-w-[40vw] space-y-5 mb-5 h-full"
@@ -91,36 +122,6 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
         </div>
       </div>
 
-      <!-- Right image -->
-      <div
-        class="flex-1 h-full flex flex-col items-end gap-2"
-      >
-        <HeroSlider client:idle />
-        <div class="flex flex-col items-center mt-4 w-full">
-          <span
-            class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2"
-            >AVAL ACADÉMICO</span
-          >
-          <Image
-            src={msLogo}
-            alt="Médica Sur"
-            class="h-20 w-auto"
-            width={200}
-            height={80}
-            loading="lazy"
-            decoding="async"
-            format="webp"
-            quality={80}
-          />  
-        </div>
-      </div>
-    </div>
-    <div
-      class="w-full flex h-12 min-h-12 absolute bottom-0 bg-[url('/motivos_pattern.webp')] bg-repeat-x bg-contain bg-bottom"
-    >
-      &nbsp;
-    </div>
-  </div>
 
   <!-- Mobile Layout -->
   <div
