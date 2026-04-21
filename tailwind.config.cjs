@@ -16,6 +16,7 @@ module.exports = {
 				'apple-dark':"#B7D280",
 				'pink-fresh':"#F8C5FE",
 				'black-text': "#231F20",
+				'blue-text': "#204356",
 				capuchino: "#EBE5DD",
 				'light-text': "#FAF9F9",
 
