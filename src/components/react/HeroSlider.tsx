@@ -41,7 +41,7 @@ const HeroSlider: React.FC = () => {
             width: '100%',
             height: '100%',
             objectFit: 'contain',
-            position: 'absolute',
+            position: 'left',
             top: 0,
             left: 0,
             opacity: index === i && fade ? 1 : 0,
