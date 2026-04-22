@@ -1,95 +1,91 @@
 ---
-import { Image } from 'astro:assets';
-import logo_amein from '../../assets/patrocinadores/aliados/AMEIN.png';
-import logo_ampe from '../../assets/patrocinadores/aliados/AMPE-Móvil.jpg';
-import logo_asociacion from '../../assets/patrocinadores/aliados/AsociacionMexCalidadenSalud.jpg';
-import logo_colegio from '../../assets/patrocinadores/aliados/ColegioNacionalQuim.png';
-import logo_funsalud from '../../assets/patrocinadores/aliados/FUNSALUD.png';
-import logo_growing from '../../assets/patrocinadores/aliados/Growing-Fundation-Versión-Móvil.png';
-import logo_amimc from '../../assets/patrocinadores/aliados/LOGO-AMIMC.jpg';
-import logo_mexypidn from '../../assets/patrocinadores/aliados/logo-mexYpidn.jpg';
-import logo_sepsismx from '../../assets/patrocinadores/aliados/SepsisMX-Móvil.jpg';
-import logo_somib from '../../assets/patrocinadores/aliados/Somib.png';
-import logo_unursing from '../../assets/patrocinadores/aliados/U-nursign-Versión-Móvil.png';
-import logo_pfizer from '../../assets/patrocinadores/patrocinadores/Pfizer.png';
-import logo_medica_sur from '../../assets/patrocinadores/patrocinadores/Medica Sur.png';
-import logo_biomeriux from '../../assets/patrocinadores/patrocinadores/BIOMERIUX.png';
-import logo_sufacide from '../../assets/patrocinadores/patrocinadores/sufacide.png';
-import logo_tecsalud from '../../assets/patrocinadores/patrocinadores/tecsalud.png';
-import logo_vitalmex from '../../assets/patrocinadores/patrocinadores/vitalmex.webp';
-
-import AliadosIsland from '../islands/AliadosIsland.jsx';
-import PatrocinadoresIsland from '../islands/PatrocinadoresIsland';
-
-const aliados = [
-  { imgUrl: logo_amein, alt: 'AMEIN' },
-  { imgUrl: logo_ampe, alt: 'AMPE' },
-  { imgUrl: logo_asociacion, alt: 'Asociación Mexicana de Calidad en Salud' },
-  { imgUrl: logo_colegio, alt: 'Colegio Nacional Quím.' },
-  { imgUrl: logo_funsalud, alt: 'FUNSALUD' },
-  { imgUrl: logo_growing, alt: 'Growing Fundation' },
-  { imgUrl: logo_amimc, alt: 'AMIMC' },
-  { imgUrl: logo_mexypidn, alt: 'MexYpidn' },
-  { imgUrl: logo_sepsismx, alt: 'SepsisMX' },
-  { imgUrl: logo_somib, alt: 'Somib' },
-  { imgUrl: logo_unursing, alt: 'U-nursing' },
+// PatrocinadoresSlider.astro
+const logos = [
+  { src: "/logos/logo_bayer.png", alt: "Bayer" },
+  { src: "/logos/logo_lelo.png", alt: "Lelo" },
+  { src: "/logos/logo_Intima.png", alt: "Íntima" },
+  { src: "/logos/logo_exeltis.png", alt: "Exeltis" },
+  { src: "/logos/Logo TurnOververde .png", alt: "Turnover" },
+  { src: "/logos/LALA logo patrocinador.png", alt: "Lala" },
+  { src: "/logos/Astellas Logo Patrocinador.png", alt: "Astellas" },
+  { src: "/logos/cumlaude-removebg-preview.webp", alt: "Cumlaude" },
+  { src: "/logos/Logo_Koltin-01ok.png", alt: "Koltin" },
+  { src: "/logos/moore.png", alt: "Moore" },
+  { src: "/logos/lykadfinal.webp", alt: "Lykad" },
+  { src: "/logos/granagard.webp", alt: "Granagard" },
+  { src: "/logos/logo_vivien.webp", alt: "Vivien" },
+  { src: "/logos/logo_libdo.webp", alt: "Libdo" },
+  { src: "/logos/Natura.png", alt: "Natura" },
+  { src: "/logos/logo_botanical_wisdom_ok.png", alt: "Botanical Wisdom" },
+  { src: "/logos/logo_therbal.png", alt: "Therbal" },
+  { src: "/logos/koi_cafe_and_catering.webp", alt: "KOI Cafe" },
+  { src: "/logos/logo_krikketi.png", alt: "KRIKKETI" },
+  { src: "logos/SaludAureaPatrocinador300dpi (1).webp", alt: "Salud Áurea" },
+  { src: "logos/logo_holiherb.png", alt: "Holiherb" },
 ];
 
-const patrocinadores = [
-  { imgUrl: logo_pfizer, alt: 'Pfizer' },
-  { imgUrl: logo_medica_sur, alt: 'Medica Sur' },
-  { imgUrl: logo_biomeriux, alt: 'BIOMERIUX' },
-  { imgUrl: logo_sufacide, alt: 'Sufacide' },
-  { imgUrl: logo_tecsalud, alt: 'TecSalud' },
-
-];
-
-
-
-const sectionStyles = `landing-section bg-white min-h-screen w-screen flex flex-col items-center justify-center pt-24 px-8 relative overflow-y-hidden pb-8 md:pb-0`;
+// Dividi en dos grupos para las dos filas
+const mitad = Math.ceil(logos.length / 2);
+const filaUno = logos.slice(0, mitad);
+const filaDos = logos.slice(mitad);
 ---
 
-<!-- <section aria-labelledby="speakers-title" class="py-16 bg-purple"> -->
-<section
-  class={sectionStyles}
-  data-header-color={`white`}
-  id='aliados'
->
+<section class="w-full py-10 overflow-hidden bg-white" id="patrocinadores">
+  <h2 class="text-center text-2xl font-bold uppercase tracking-widest text-[#204356] mb-8">
+    Patrocinadores
+  </h2>
 
-  {patrocinadores.length > 0 && (
-    <div class="container mx-auto px-0 md:px-24">
-      <h2 id="speakers-title" class="text-celeste-hsi text-4xl font-bold text-center mb-8 uppercase">
-        patrocinadores
-      </h2>
-      <PatrocinadoresIsland client:idle />
-      {/* Uncomment the following block if you want to display logos in a grid format */}
-     {/*  <div
-        class="grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 2xl:grid-cols-4"
-      >
-        {patrocinadores.map((aliado) => (
-          <div class="flex w-full min-h-[162px] max-h-[162px] ">
-              <Image 
-              src={aliado.imgUrl}
-              alt={aliado.alt || 'Patrocinador'} 
-              class="object-contain w-full h-full rounded-md" 
-              loading="lazy"
-              width={320}
-              height={162}
-            />
-          </div>
-        ))}
-      </div> */}
+  <!-- Fila 1: izquierda → -->
+  <div class="relative flex overflow-hidden mb-6 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+    <div class="marquee-row marquee-left flex gap-12 w-max">
+      {[...filaUno, ...filaUno].map((logo) => (
+        <div class="flex-shrink-0 flex items-center justify-center h-16 w-32">
+          <img src={logo.src} alt={logo.alt} class="h-12 w-auto max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all duration-300" loading="lazy" />
+        </div>
+      ))}
     </div>
-  )}
+  </div>
 
-  {aliados.length > 0 && (
-    <div class="container mt-12 mx-auto px-4">
-      <h2 id="speakers-title" class="text-celeste-hsi text-4xl font-bold text-center mb-8">
-        ALIADOS
-      </h2>
-        <AliadosIsland client:idle />
-      </div>
-  )}
-
-  
+  <!-- Fila 2: derecha ← (sentido contrario) -->
+  <div class="relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+    <div class="marquee-row marquee-right flex gap-12 w-max">
+      {[...filaDos, ...filaDos].map((logo) => (
+        <div class="flex-shrink-0 flex items-center justify-center h-16 w-32">
+          <img src={logo.src} alt={logo.alt} class="h-12 w-auto max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all duration-300" loading="lazy" />
+        </div>
+      ))}
+    </div>
+  </div>
 </section>
+
+<style>
+  .marquee-row {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .marquee-left {
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+  }
+
+  .marquee-right {
+    animation-name: scrollRight;
+    animation-duration: 30s;
+  }
+
+  @keyframes scrollLeft {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes scrollRight {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  /* Pausa al hacer hover sobre toda la sección */
+  section:hover .marquee-row {
+    animation-play-state: paused;
+  }
+</style>
