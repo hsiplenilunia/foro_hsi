@@ -18,83 +18,94 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
   <div class="flex flex-col xl:mt-6">
     <div class="hidden lg:flex flex-row justify-between items-start grow px-0 pl-[5%] pr-[5%] pt-32 z-30 relative min-h-[500px]">
 
-      <!-- LEFT: Slider + Logo -->
-      <div class="flex-1 h-full flex flex-col items-start gap-2">
-        <HeroSlider client:idle />
-        <div class="flex flex-col items-start mt-4 w-full">
-          <span class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2">
-            AVAL ACADÉMICO
-          </span>
-          <Image
-            src={msLogo}
-            alt="Médica Sur"
-            class="h-20 w-auto"
-            width={250}
-            height={130}
-            loading="lazy"
-            decoding="async"
-            format="png"
-            quality={80}
-          />
-        </div>
-      </div>
-
-      <!-- RIGHT: Text content -->
-      <div class="flex flex-col w-[40vw] max-w-[40vw] items-end space-y-5 mb-5 h-full text-right">
-
-        <h1 class="text-green-600 text-5xl font-black uppercase">
-          <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">VI</span>
-          <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">Foro</span>
-          <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">2026</span>
-        </h1>
-
-        <div class="bg-[#204356] rounded-[20px] px-6 py-2 inline-block">
-          <p class="text-white font-extrabold uppercase lg:text-2xl leading-tight tracking-wide text-right">
-            El desafío de las infecciones
-          </p>
-        </div>
-
-        <h3 class="text-green-600 italic flex flex-col items-end justify-end leading-5 font-thin text-4xl">
-          <span>"UNA SOLA SALUD" ANTE LA</span><br/>
-          <span>RESISTENCIA MICROBIANA</span><br/>
-        </h3>
-
-        <div class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block">
-          <p class="text-white font-extrabold uppercase lg:text-2xl leading-tight tracking-wide text-right">
-            Evento Gratuito
-          </p>
-        </div>
-
-        <!-- Fecha, sede e institución -->
-        <div class="flex items-start gap-4">
-          <div class="space-y-1 flex flex-col items-end">
-
-            <p class="text-2xl tracking-wider font-bold text-blue-text">
-              27 Y 28 DE AGOSTO, 2026
-            </p>
-
-            <div class="flex flex-col items-end justify-end w-full">
-              <p class="text-black text-xl font-normal tracking-widest text-blue-text text-right">
-                SEDE | Auditorio del <strong class="font-extrabold">Hospital Médica Sur</strong>
-              </p>
-              <div class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"></div>
-            </div>
-
-            <div class="flex flex-col items-end justify-end w-full">
-              <p class="text-black text-xl font-normal text-blue-text tracking-widest text-right">
-                Institución comprometida con el combate a las infecciones
-              </p>
-              <div class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"></div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-      <!-- END RIGHT -->
-
-    </div>
+     <!-- LEFT: Slider + Logo -->
+<div class="flex-1 h-full flex flex-col items-start gap-2">
+  <HeroSlider client:idle />
+  <div class="flex flex-col items-start mt-4 w-full gap-2">
+    <span class="px-4 py-1 rounded-full text-white font-semibold text-sm shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b]">
+      AVAL ACADÉMICO
+    </span>
+    <Image
+      src={msLogo}
+      alt="CNSP"
+      class="h-24 w-auto"
+      width={180}
+      height={180}
+      loading="lazy"
+      decoding="async"
+      format="png"
+      quality={80}
+    />
   </div>
+</div>
+
+     <!-- RIGHT: Text content -->
+<div class="flex flex-col w-[50vw] items-center max-w-[50vw] space-y-4 mb-5 h-full text-center px-8">
+
+  <!-- VI Foro 2026 -->
+  <h1 class="text-center">
+    <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">VI</span>
+    <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">Foro</span>
+    <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">2026</span>
+  </h1>
+
+  <!-- Línea ondulada decorativa (puedes usar un SVG o imagen) -->
+  <img src="/wave-line.svg" alt="" class="w-24 opacity-70" aria-hidden="true" />
+
+  <!-- Badge oscuro con texto en cursiva -->
+  <div class="bg-[#204356] rounded-[20px] px-6 py-3 w-full">
+    <p class="text-white font-extrabold italic text-2xl leading-tight tracking-wide text-center">
+      El desafío de las Infecciones
+    </p>
+  </div>
+
+  <!-- Subtítulo verde en cursiva -->
+  <h3 class="text-green-600 italic font-semibold text-xl leading-snug text-center">
+    <span>"UNA SOLA SALUD" ANTE LA</span><br />
+    <span>RESISTENCIA ANTIMICROBIANA</span>
+  </h3>
+
+  <!-- Badge outline "EVENTO GRATUITO" -->
+  <div class="border-2 border-green-500 rounded-full px-5 py-1 inline-block">
+    <p class="text-green-600 font-bold uppercase text-sm tracking-widest">
+      Evento Gratuito
+    </p>
+  </div>
+
+  <!-- Fecha -->
+  <p class="text-3xl font-black text-gray-800 tracking-wide text-center">
+    27 Y 28 DE AGOSTO, 2026
+  </p>
+
+  <!-- Sede + línea ondulada -->
+  <div class="flex flex-col items-center w-full">
+    <p class="text-gray-700 text-lg font-normal tracking-widest text-center">
+      SEDE | <strong class="font-extrabold">Auditorio Médica Sur</strong>
+    </p>
+    <img src="/wave-line.svg" alt="" class="w-48 mt-2 opacity-60" aria-hidden="true" />
+  </div>
+
+  <!-- MédicaSur logo + texto institucional en fila -->
+  <div class="flex items-center gap-4 mt-2">
+    <Image
+      src={msLogoMedicaSur}
+      alt="Médica Sur"
+      class="h-16 w-auto"
+      width={160}
+      height={64}
+      loading="lazy"
+      format="webp"
+      quality={80}
+    />
+    <!-- Separador vertical -->
+    <div class="w-px h-14 bg-gray-400"></div>
+    <!-- Texto institucional -->
+    <p class="text-gray-700 font-bold italic text-base leading-snug text-left max-w-[180px]">
+      Institución sede comprometida<br />con el combate a las infecciones
+    </p>
+  </div>
+
+</div>
 
   <!-- Mobile Layout -->
   <div class="lg:hidden flex flex-col items-center text-center px-6 pt-40 z-30 relative h-full">
