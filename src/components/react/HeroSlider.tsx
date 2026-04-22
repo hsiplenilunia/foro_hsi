@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
- const images = [
+const images = [
   'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776880526/slider1.png',
   'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776884040/slider2.png',
 ];
-
-const SLIDER_HEIGHT = 220; // px, adjust as needed
 
 const HeroSlider: React.FC = () => {
   const [index, setIndex] = useState(0);
@@ -17,16 +15,15 @@ const HeroSlider: React.FC = () => {
       setTimeout(() => {
         setIndex((prev) => (prev + 1) % images.length);
         setFade(true);
-      }, 400); // fade out duration
+      }, 400);
     }, 3500);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div
-      className='flex'
       style={{
-        width: `100%`,
+        width: '100%',
         height: '320px',
         position: 'relative',
         overflow: 'hidden',
@@ -38,10 +35,11 @@ const HeroSlider: React.FC = () => {
           src={src}
           alt="Slider"
           style={{
-            width: '100%',
+            width: 'auto',
             height: '100%',
             objectFit: 'contain',
-            position: 'left',
+            objectPosition: 'left center',
+            position: 'absolute',
             top: 0,
             left: 0,
             opacity: index === i && fade ? 1 : 0,
