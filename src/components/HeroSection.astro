@@ -8,6 +8,7 @@ import heroWoman from "../assets/hero-woman.png";
 import msLogo from "../assets/logo_cnsp.png";
 import HeroSlider from "./react/HeroSlider.tsx";
 import DescargarAgendaButton from "./atoms/DescargarAgendaButton.astro";
+
 const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen text-center overflow-hidden relative pb-24 md:pb-0`;
 ---
 
@@ -15,18 +16,15 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
 
   <!-- Desktop Layout -->
   <div class="flex flex-col xl:mt-6">
-    <div
-      class="hidden lg:flex justify-start items-stretch grow px-[0%] pl-[5%] pt-32 z-30 relative min-h-[500px]">
+    <div class="hidden lg:flex flex-row justify-between items-start grow px-0 pl-[5%] pr-[5%] pt-32 z-30 relative min-h-[500px]">
 
-      <!-- Left image -->
-      <div
-        class="flex-1 h-full flex flex-col items-start gap-2">
+      <!-- LEFT: Slider + Logo -->
+      <div class="flex-1 h-full flex flex-col items-start gap-2">
         <HeroSlider client:idle />
         <div class="flex flex-col items-start mt-4 w-full">
-          <span
-            class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2"
-            >AVAL ACADÉMICO</span
-          >
+          <span class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-[#3bb3c3] to-[#6ec06b] mb-2">
+            AVAL ACADÉMICO
+          </span>
           <Image
             src={msLogo}
             alt="Médica Sur"
@@ -37,83 +35,75 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
             decoding="async"
             format="png"
             quality={80}
-          />  
+          />
         </div>
       </div>
-    </div>
-     <!--
-    <div
-      class="w-full flex h-12 min-h-12 absolute bottom-0 bg-[url('/motivos_pattern.webp')] bg-repeat-x bg-contain bg-bottom"
-    > -->
-      &nbsp;
 
-  </div>
+      <!-- RIGHT: Text content -->
+      <div class="flex flex-col w-[40vw] max-w-[40vw] items-end space-y-5 mb-5 h-full text-right">
 
-     <!-- Right content -->
-      <div class="flex flex-col w-[40vw] items-end max-w-[40vw] space-y-5 mb-5 h-full text-right">
         <h1 class="text-green-600 text-5xl font-black uppercase">
-          <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent text-5xl font-black uppercase leading-none">VI</span>
-          <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent text-5xl font-black uppercase leading-none">Foro</span> 
-          <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent text-5xl font-black uppercase leading-none">2026</span>
+          <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">VI</span>
+          <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">Foro</span>
+          <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">2026</span>
         </h1>
-      
+
         <div class="bg-[#204356] rounded-[20px] px-6 py-2 inline-block">
-          <p
-            class="text-white font-extrabold uppercase text-4xl lg:text-2xl leading-tight tracking-wide text-right"
-          >
+          <p class="text-white font-extrabold uppercase lg:text-2xl leading-tight tracking-wide text-right">
             El desafío de las infecciones
           </p>
         </div>
 
-        <h3
-          class="text-green-600 flex flex-col items-end justify-end leading-5 font-thin font-style: italic text-4xl"
-        >
-          <span>"UNA SOLA SALUD" ANTE LA </span><br />
-          <span>RESISTENCIA MICROBIANA</span><br />
+        <h3 class="text-green-600 italic flex flex-col items-end justify-end leading-5 font-thin text-4xl">
+          <span>"UNA SOLA SALUD" ANTE LA</span>
+          <span>RESISTENCIA MICROBIANA</span>
         </h3>
-<div class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block">
-        <p class="text-white font-extrabold uppercase text-4xl lg:text-2xl leading-tight tracking-wide text-right">
-          Evento Gratuito
-        </p>
-      </div>
 
-      <!-- Fecha, sede e institución -->
-      <div class="flex items-start gap-4">
-        <div class="space-y-1 flex flex-col items-end">
-          
-          <p class="text-2xl tracking-wider font-bold text-blue-text">
-            27 Y 28 DE AGOSTO, 2026
+        <div class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block">
+          <p class="text-white font-extrabold uppercase lg:text-2xl leading-tight tracking-wide text-right">
+            Evento Gratuito
           </p>
-<div class="flex flex-col items-end justify-end w-full">
-            <p class="text-black text-xl font-normal tracking-widest text-blue-text text-right">
-              SEDE | Auditorio del <strong class="font-extrabold">Hospital Médica Sur</strong>
-            </p>
-            <div class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"></div>
-          </div>
-
-          <div class="flex flex-col items-end justify-end w-full">
-            <p class="text-black text-xl font-normal text-blue-text tracking-widest text-right">
-              Institución comprometida con el combate a las infecciones
-            </p>
-            <div class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"></div>
-          </div>
-
         </div>
+
+        <!-- Fecha, sede e institución -->
+        <div class="flex items-start gap-4">
+          <div class="space-y-1 flex flex-col items-end">
+
+            <p class="text-2xl tracking-wider font-bold text-blue-text">
+              27 Y 28 DE AGOSTO, 2026
+            </p>
+
+            <div class="flex flex-col items-end justify-end w-full">
+              <p class="text-black text-xl font-normal tracking-widest text-blue-text text-right">
+                SEDE | Auditorio del <strong class="font-extrabold">Hospital Médica Sur</strong>
+              </p>
+              <div class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"></div>
+            </div>
+
+            <div class="flex flex-col items-end justify-end w-full">
+              <p class="text-black text-xl font-normal text-blue-text tracking-widest text-right">
+                Institución comprometida con el combate a las infecciones
+              </p>
+              <div class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"></div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
+      <!-- END RIGHT -->
 
     </div>
   </div>
-</div>
-</div>
+
   <!-- Mobile Layout -->
-  <div
-    class="lg:hidden flex flex-col items-center text-center px-6 pt-40 z-30 relative h-full"
-  >
+  <div class="lg:hidden flex flex-col items-center text-center px-6 pt-40 z-30 relative h-full">
     <h1 class="text-black text-3xl font-black uppercase">
-       <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent text-5xl font-black uppercase leading-none">VI</span>
-       <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent text-5xl font-black uppercase leading-none">Foro</span> 
-       <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent text-5xl font-black uppercase leading-none">2026</span>
+      <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">VI</span>
+      <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">Foro</span>
+      <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">2026</span>
     </h1>
+
     <Image
       src={heroLogoMobile}
       alt="Doctores"
@@ -125,59 +115,42 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
       quality={80}
     />
 
-    <h3
-      class="text-green-600 flex flex-col w-full items-\ justify-start leading-3 font-thin text-2xl text-black mt-3 mb-6"
-    >
-       <span>"UNA SOLA SALUD" ANTE LA </span><br />
-          <span>RESISTENCIA MICROBIANA</span><br />
+    <h3 class="text-green-600 flex flex-col w-full items-start justify-start leading-3 font-thin text-2xl mt-3 mb-6">
+      <span>"UNA SOLA SALUD" ANTE LA</span>
+      <span>RESISTENCIA MICROBIANA</span>
     </h3>
 
-    <div
-      class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block mb-3"
-    >
-      <p
-        class="text-white font-extrabold uppercase text-xl leading-tight tracking-wide text-left"
-      >
+    <div class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block mb-3">
+      <p class="text-white font-extrabold uppercase text-xl leading-tight tracking-wide text-left">
         El desafío de las infecciones
       </p>
-
     </div>
 
     <p class="text-black text-3xl font-bold">
       27 Y 28 DE <br />AGOSTO, 2026
     </p>
+
     <div class="flex flex-col items-start justify-start w-full">
-      <p
-        class="flex w-full flex-col text-black text-2xl text-center font-normal tracking-wide">
-        SEDE | Auditorio del <br /><strong class="font-extrabold"
-          >Hospital Médica Sur</strong
-        >
+      <p class="flex w-full flex-col text-black text-2xl text-center font-normal tracking-wide">
+        SEDE | Auditorio del <br /><strong class="font-extrabold">Hospital Médica Sur</strong>
       </p>
-      <div
-        class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"
-      >
-      </div>
+      <div class="h-1 w-full mt-1 rounded-full bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end"></div>
     </div>
 
-    <span
-      class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end mt-10 mb-2"
-      >AVAL ACADÉMICO</span
-    >
+    <span class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end mt-10 mb-2">
+      AVAL ACADÉMICO
+    </span>
     <Image
-            src={msLogo}
-            alt="Médica Sur"
-            class="h-20 w-auto"
-            width={200}
-            height={60}
-            loading="lazy"
-            decoding="async"
-            format="png"
-            quality={80}
-          />  
-          <!-- 
-    <div class="mt-6">
-      <Button href="#registro" label="REGÍSTRATE" />
-    </div>-->
-    
+      src={msLogo}
+      alt="Médica Sur"
+      class="h-20 w-auto"
+      width={200}
+      height={60}
+      loading="lazy"
+      decoding="async"
+      format="png"
+      quality={80}
+    />
   </div>
+
 </section>
