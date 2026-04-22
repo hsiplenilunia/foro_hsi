@@ -24,7 +24,7 @@ const HeroSlider: React.FC = () => {
     <div
       style={{
         width: '100%',
-        height: '320px',
+        height: '620px',
         position: 'relative',
         overflow: 'hidden',
       }}
