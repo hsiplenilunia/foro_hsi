@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
  const images = [
-  '../assets/slider1.png',
-  '../assets/slider2.png',
+  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776880526/slider1.png',
+  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776884040/slider2.png',
 ];
 
 const SLIDER_HEIGHT = 220; // px, adjust as needed
