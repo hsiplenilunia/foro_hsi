@@ -4,15 +4,15 @@ const logos = [
   { src: "/img/patrocinadores/asp.webp", alt: "Asp" },
   { src: "/img/patrocinadores/biomerieux.webp", alt: "Biomerieux" },
   { src: "/img/patrocinadores/inimed.webp", alt: "Inimed" },
-  { src: "/img/patrocinadores/logo_exeltis.png", alt: "Exeltis" },
-  { src: "/img/patrocinadores/Logo TurnOververde .png", alt: "Turnover" },
-  { src: "/img/patrocinadores/LALA logo patrocinador.png", alt: "Lala" },
-  { src: "/img/patrocinadores/Astellas Logo Patrocinador.png", alt: "Astellas" },
-  { src: "/img/patrocinadores/cumlaude-removebg-preview.webp", alt: "Cumlaude" },
-  { src: "/img/patrocinadores/Logo_Koltin-01ok.png", alt: "Koltin" },
-  { src: "/img/patrocinadores/moore.png", alt: "Moore" },
-  { src: "/img/patrocinadores/lykadfinal.webp", alt: "Lykad" },
-  { src: "/img/patrocinadores/granagard.webp", alt: "Granagard" },
+  { src: "/img/patrocinadores/medica_sur.webp", alt: "Médica Sur" },
+  { src: "/img/patrocinadores/nipro_tecnicare_vm.webp.png", alt: "Nipro" },
+  { src: "/img/patrocinadores/pfizer.webp", alt: "Pfizer" },
+  { src: "/img/patrocinadores/salud_aurea.webp", alt: "Salud Áurea" },
+  { src: "/img/patrocinadores/sanieren.webp", alt: "Sanieren" },
+  { src: "/img/patrocinadores/sufacide.webp", alt: "Sufacide" },
+  { src: "/img/patrocinadores/tecsalud.webp", alt: "Tecsalud" },
+  { src: "/img/patrocinadores/vantive.webp", alt: "Vantive" },
+  { src: "/img/patrocinadores/vitalmex.webp", alt: "Vitalmex" },
   { src: "/img/patrocinadores/logo_vivien.webp", alt: "Vivien" },
   { src: "/img/patrocinadores/logo_libdo.webp", alt: "Libdo" },
   { src: "/img/patrocinadores/Natura.png", alt: "Natura" },
@@ -40,7 +40,7 @@ const filaDos = logos.slice(mitad);
     <div class="marquee-row marquee-left flex gap-12 w-max">
       {[...filaUno, ...filaUno].map((logo) => (
         <div class="flex-shrink-0 flex items-center justify-center h-16 w-32">
-          <img src={logo.src} alt={logo.alt} class="h-12 w-auto max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all duration-300" loading="lazy" />
+          <img src={logo.src} alt={logo.alt} class="h-12 w-auto max-w-[120px] object-contain grayscale hover:scale-110 transition-all duration-300" loading="lazy" />
         </div>
       ))}
     </div>
@@ -53,7 +53,7 @@ const filaDos = logos.slice(mitad);
     <div class="marquee-row marquee-right flex gap-12 w-max">
       {[...filaDos, ...filaDos].map((logo) => (
         <div class="flex-shrink-0 flex items-center justify-center h-16 w-32">
-          <img src={logo.src} alt={logo.alt} class="h-12 w-auto max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all duration-300" loading="lazy" />
+          <img src={logo.src} alt={logo.alt} class="h-12 w-auto max-w-[120px] object-contain grayscale hover:scale-110 transition-all duration-300" loading="lazy" />
         </div>
       ))}
     </div>
