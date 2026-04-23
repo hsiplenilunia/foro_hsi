@@ -43,8 +43,8 @@ const filaDos = logos.slice(mitad);
   <div class="relative flex overflow-hidden mb-6 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
     <div class="marquee-row marquee-left flex gap-12 w-max">
       {[...filaUno, ...filaUno].map((logo) => (
-        <div class="flex-shrink-0 flex items-center justify-center h-40 w-72">
-          <img src={logo.src} alt={logo.alt} class="h-12 w-auto max-w-[120px] object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
+        <div class="flex-shrink-0 flex items-center justify-center h-24 w-44">
+          <img src={logo.src} alt={logo.alt} class="h-20 w-auto max-w-[120px] object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
         </div>
       ))}
     </div>
