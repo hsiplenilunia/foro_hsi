@@ -26,7 +26,7 @@ module.exports = {
         'celeste-hsi': "#00bbe7",
         'green-hsi': "#00B851",
 
-        // Gradiente actualizado — 6 paradas según diseñador
+        // Gradiente actualizado — 6 colores Figma
         'gradient-start':   "#67AC51",  // 0%
         'gradient-2':       "#55AC69",  // 11%
         'gradient-3':       "#2AAEA7",  // 34%
