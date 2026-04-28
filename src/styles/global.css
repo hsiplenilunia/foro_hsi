@@ -1,0 +1,9 @@
+/* Degradado textos */
+.text-gradient-vi {
+  background-image: linear-gradient(90deg, #00B4D8 0%, #2EC4B6 45%, #0077B6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "Geologica", sans-serif;
+  letter-spacing: -0.02em;
+}
