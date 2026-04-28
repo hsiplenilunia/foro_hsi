@@ -5,6 +5,7 @@ import hsiBg from "../assets/hsi_bg.png";
 import heroLogo from "../assets/hero-logo.png";
 import heroLogoMobile from "../assets/hero-logo-mobile-min.png";
 import heroWoman from "../assets/hero-woman.png";
+import VIForoHsi from "../assets/VIForo20262x.png";
 import msLogo from "../assets/logo_cnsp.png";
 import msLogoMedicaSur from "../assets/medica_sur.png";
 import HeroSlider from "./react/HeroSlider.tsx";
@@ -54,11 +55,17 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
  <br>
   <img src="/wave-line.svg" alt="" class="w-[142px] md:w-[280px]" aria-hidden="true" />
   <!-- VI Foro 2026 -->
-  <h1 class="text-justify italic font-black uppercase leading-tight pb-1">
-  <span class="text-6xl block bg-gradient-hsi bg-clip-text text-transparent italic font-black uppercase leading-tight pt-1">VI</span>
-  <span class="text-6xl block bg-gradient-hsi bg-clip-text text-transparent italic font-black uppercase leading-tight py-1">Foro</span>
-  <span class="text-6xl block bg-gradient-hsi bg-clip-text text-transparent italic font-black uppercase leading-tight pt-1">2026</span>
-</h1>
+    <Image
+      src={VIForoHsi}
+      alt="CNSP"
+      class="h-24 w-auto"
+      width={280}
+      height={280}
+      loading="lazy"
+      decoding="async"
+      format="png"
+      quality={80}
+    />
 
   <!-- Línea ondulada decorativa -->
   <img src="/wave-line.svg" alt="" class="w-[142px] md:w-[280px]" aria-hidden="true" />
