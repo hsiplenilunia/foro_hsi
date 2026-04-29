@@ -44,7 +44,7 @@ const HeroSlider: React.FC = () => {
             left: 0,
             opacity: index === i && fade ? 1 : 0,
             pointerEvents: index === i ? 'auto' : 'none',
-            transition: 'opacity 0.4s ease',
+            transition: 'opacity 0.10s ease',
           }}
           loading={i === 0 ? 'eager' : 'lazy'}
           fetchPriority={i === 0 ? 'high' : 'auto'}
