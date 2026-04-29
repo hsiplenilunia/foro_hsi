@@ -1,22 +1,50 @@
 ---
 import { Image } from "astro:assets";
-
-import logoHSI from "../assets/Logo-HSI-01-768x734.png";
-import VIForo from "../assets/VIForo2026.svg";
-import heroLogoMobile from "../assets/hero-logo-mobile-min.png";
-import msLogoMedicaSur from "../assets/medica_sur.png";
-
-
+import logoHSI from "../../assets/Logo-HSI-01-768x734.png";
+import VIForo from "../../assets/VIForo2026.svg";
+import heroLogoMobile from "../../assets/hero-logo-mobile.png";
 ---
 
-<section class="relative w-full min-h-[500px] flex items-center overflow-hidden py-12 px-6 md:px-12 bg-white">
-  
-  <!-- BACKGROUND LAYER (Cápsulas y Logo HSI) -->
-    <!-- Fondo del home -->
-  <div
-    class="absolute inset-0 z-0 bg-no-repeat bg-cover bg-center pointer-events-none"
-    style="background-image: url('/bg-agenda.png');"
-    aria-hidden="true"
-  ></div>
-
-</section>
+<div class="flex w-full justify-center gap-8">
+    <Image
+        src={VIForo}
+        width={82}
+        height={64}
+        alt="LogoVI Foro"
+        loading="lazy"
+        class="min-w-[84px] w-[84px] h-[64px]"
+    />
+    <div>
+        <h1 class="text-5xl md:text-6xl mb-8">Agenda</h1>
+        <h2 class="text-black-text text-3xl md:text-6xl font-black uppercase">
+            <span class="text-4xl md:text-7xl">Preliminar</span>
+        </h2>
+        <p class="text-2xl tracking-wider font-bold text-black-text mt-2">
+            25 Y 26 DE Agosto, 2026
+        </p>
+        <p class="text-black-text text-xl font-normal tracking-widest mt-1">
+            SEDE |Auditorio del <strong class="font-extrabold"
+                >Hospital Médica Sur</strong
+            >
+        </p>
+        <div>
+            <img src="/wave-line.svg" alt="" class="w-[142px] md:w-[300px]" aria-hidden="true" />
+        </div>
+    </div>
+    <Image
+        src={heroLogoMobile}
+        width={289}
+        height={105}
+        alt="Logotipo principal del Foro HSI para dispositivos móviles"
+        loading="lazy"
+        class="hidden md:block"
+    />
+    <Image
+        src={logoHSI}
+        width={69}
+        height={65}
+        alt="Logotipo institucional HSI"
+        loading="lazy"
+        class="hidden md:block w-[69px] h-[65px]"
+    />
+</div>
