@@ -49,12 +49,16 @@ import HeroSlider from "../react/HeroSlider";
       <img src="/wave-line.svg" alt="" class="w-full max-w-md mt-6" />
     </div>
 
-      <Image
-        src={heroLogoMobile}
-        alt="Doctores"
-        class="h-10 w-auto"
-        width={180}
-      />
+  <Image
+      src={heroLogoMobile}
+      alt="Doctores"
+      class="w-[200px] mt-4"
+      loading="eager"
+      fetchpriority="high"
+      width={320}
+      format="png"
+      quality={80}
+    />
 
 
 
