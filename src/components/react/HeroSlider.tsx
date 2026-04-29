@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 const images = [
   'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776880526/slider1.png',
   'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776884040/slider2.png',
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776880526/slider3.png',
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776884040/slider4.png',
+  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776880526/slider1.png',
+  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1776884040/slider2.png',
 ];
 
 const HeroSlider: React.FC = () => {
