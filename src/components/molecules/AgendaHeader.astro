@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import logoHSI from "../../assets/Logo-HSI-01-768x734.png";
 import VIForo from "../../assets/VIForo2026.svg";
 import heroLogoMobile from "../../assets/hero-logo-mobile-min.png";
+import msLogoMedicaSur from "../../assets/medica_sur.png";
 ---
 <section class="relative w-full bg-white overflow-hidden py-12 px-6 md:px-12 min-h-[450px] flex items-center">
 <div class="flex w-full justify-center gap-8">
@@ -28,8 +29,20 @@ import heroLogoMobile from "../../assets/hero-logo-mobile-min.png";
             >
         </p>
         <div>
-            <br>
             <img src="/wave-line.svg" alt="" class="w-[150px] md:w-[300px]" aria-hidden="true" />
+
+             <!-- MédicaSur logo + texto institucional -->
+  <div class="flex items-center gap-2 mt-2">
+    <Image
+      src={msLogoMedicaSur}
+      alt="Médica Sur"
+      class="h-12 w-auto"
+      width={224.6}
+      height={52}
+      loading="lazy"
+      format="png"
+      quality={80}
+    />
                  <!-- Separador vertical -->
             <div class="w-px h-14 bg-gray-400"></div>
             <!-- Texto institucional -->
@@ -37,8 +50,8 @@ import heroLogoMobile from "../../assets/hero-logo-mobile-min.png";
                 Institución sede comprometida<br/>con el combate a las infecciones
     </p>
 
+         </div>
         </div>
-
     </div>
     <Image
         src={heroLogoMobile}
