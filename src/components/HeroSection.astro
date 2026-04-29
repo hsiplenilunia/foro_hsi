@@ -26,8 +26,11 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
   <div class="flex flex-col xl:mt-6">
     <div class="hidden lg:flex flex-row justify-between items-start grow px-0 pl-[5%] pr-[5%] pt-32 z-30 relative min-h-[500px]">
 
-     <!-- LEFT: Slider -->
+     <!-- LEFT: Slider + Logo -->
+<div class="flex-1 h-full flex flex-col items-start gap-2">
+  <HeroSlider client:idle />
 
+</div>
 <!-- fin de lado izquierdo -->
 
      <!-- Lado Derecho: Textos -->
@@ -98,8 +101,7 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
     <p class="font-bold text-blue-text italic text-base leading-snug text-justify max-w-[280px]">
       Institución sede comprometida<br/>con el combate a las infecciones
     </p>
-<div class="flex-1 h-full flex flex-col items-start gap-2">
-  <HeroSlider client:idle />
+  </div>
   <div class="flex flex-col items-start mt-4 w-full gap-2">
     <span class="px-4 py-1 rounded-[5px] text-white font-semibold text-sm shadow bg-gradient-hsi">
       AVAL ACADÉMICO
@@ -116,9 +118,7 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-gray w-screen te
       quality={100}
     />
   </div>
-</div>
 
-  </div>
 </div>
 <!-- Termina Lado derecho -->
 </div>
