@@ -5,9 +5,23 @@ import VIForoHsi from "../assets/VIForo2026.svg";
 import heroLogoMobile from "../../assets/hero-logo-mobile-min.png";
 ---
 
-    <!-- Fondo del home -->
-  <div
-    class="absolute inset-0 z-0 bg-no-repeat bg-cover bg-center pointer-events-none"
-    style="background-image: url('/bg_agenda.png');"
-    aria-hidden="true"
-  ></div>
+<div class="flex flex-col w-[50vw] items-left max-w-[50vw] space-y-4 mb-5 h-full px-8">
+
+  <!-- VI Foro 2026 -->
+    <Image
+      src={VIForoHsi}
+      alt="VI Foro"
+      class="h-46 w-46"
+      width={177}
+      height={190}
+      loading="lazy"
+      decoding="async"
+      format="svg"
+      quality={80}
+    />
+
+<div class="bg-[#204356] rounded-full px-8 py-3 w-full max-w-[575px] h-12 flex items-center justify-center">
+    <p class="text-white font-bold italic leading-[114.9%] tracking-normal text-center whitespace-nowrap"
+     style="font-size: clamp(18px, 2.5vw, 36px);">
+    El desafío de las Infecciones</p>
+</div>
