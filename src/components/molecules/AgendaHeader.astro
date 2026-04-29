@@ -11,76 +11,9 @@ import msLogoMedicaSur from "../assets/medica_sur.png";
 <section class="relative w-full bg-white overflow-hidden py-12 px-6 md:px-12 min-h-[450px] flex items-center">
   
   <!-- FONDO -->
-  <div class="absolute right-0 top-0 h-full w-1/2 z-0 pointer-events-none opacity-80">
-   
-  </div>
-
-
-  <!-- Logo HSI superior derecho -->
-  <div class="absolute top-4 right-8 z-20">
-     <Image src={logoHSI} alt="Logo HSI" class="w-12 h-auto" width={50} height={50} />
-  </div>
-
-  <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-10 relative z-20">
-    
-    <!-- COLUMNA IZQUIERDA: LOGO VI FORO -->
-    <div class="flex flex-col items-center space-y-4">
-      <img src="/wave-line.svg" alt="" class="w-32 opacity-60" />
-      <Image 
-        src={VIForo} 
-        alt="VI Foro 2026" 
-        class="w-40 md:w-56 h-auto" 
-        width={236} 
-        height={253} 
-      />
-      <img src="/wave-line.svg" alt="" class="w-32 opacity-60" />
-    </div>
-
-    <!-- COLUMNA CENTRAL: TEXTOS -->
-    <div class="flex-1 flex flex-col items-start">
-      <h1 class="text-[#204356] text-6xl md:text-8xl font-black leading-none tracking-tighter">
-        AGENDA
-      </h1>
-      <h2 class="text-[#204356] text-3xl md:text-5xl font-light tracking-[0.2em] uppercase mt-[-5px] mb-8">
-        Preliminar
-      </h2>
-      
-      <div class="space-y-1">
-        <p class="text-[#204356] text-2xl md:text-3xl font-black">
-          27 Y 28 DE AGOSTO, 2026
-        </p>
-        <p class="text-gray-600 text-lg md:text-xl font-medium tracking-wide">
-          SEDE | <span class="font-bold">Auditorio Médica Sur</span>
-        </p>
-      </div>
-      
-      <img src="/wave-line.svg" alt="" class="w-full max-w-md mt-6" />
-
-      <!-- Logos Médica Sur (Pie de la columna central según el nuevo diseño) -->
-      <div class="flex items-center gap-4 mt-8 pt-6 border-t border-gray-100 w-full">
-        <Image
-          src={msLogoMedicaSur}
-          alt="Médica Sur"
-          class="h-10 w-auto"
-          width={180}
-        />
-        <div class="w-px h-10 bg-gray-300"></div>
-        <p class="text-[#204356] italic text-[12px] font-bold leading-tight max-w-[180px]">
-          Institución sede comprometida con el combate a las infecciones
-        </p>
-      </div>
-    </div>
-
-    <!-- COLUMNA DERECHA: DOCTORES -->
-    <div class="relative w-full md:w-[400px] flex justify-center">
-      <Image 
-        src={heroLogoMobile} 
-        alt="Equipo Médico" 
-        class="w-full h-auto drop-shadow-2xl z-30" 
-        width={500}
-      />
-
-    </div>
-  </div>
-
+    <div
+    class="absolute inset-0 z-0 bg-no-repeat bg-cover bg-center pointer-events-none"
+    style="background-image: url('/bg-agenda.png');"
+    aria-hidden="true"
+  ></div>
 </section>
