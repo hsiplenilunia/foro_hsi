@@ -2,7 +2,6 @@
 import { Image } from "astro:assets";
 import logoHSI from "../../assets/Logo-HSI-01-768x734.png";
 import VIForo from "../../assets/VIForo2026.svg";
-import heroLogoMobile from "../assets/hero-logo-mobile-min.png";
 import msLogoMedicaSur from "../../assets/medica_sur.png";
 
 ---
@@ -10,15 +9,14 @@ import msLogoMedicaSur from "../../assets/medica_sur.png";
 <section class="relative w-full bg-white overflow-hidden py-12 px-6 md:px-12">
   
   <div class="absolute top-4 right-8 flex items-center gap-4">
-
+     <div class="bg-[#00E676] w-6 h-6 rounded-full flex items-center justify-center text-[10px] text-white font-bold">S</div>
      <Image src={logoHSI} alt="Logo HSI" class="w-12 h-auto" width={50} height={50} />
   </div>
 
-  <!-- Logo VI Foro -->
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
     
     <div class="flex flex-col items-center space-y-2">
-
+      <img src="/wave-line.svg" alt="" class="w-32 opacity-60" />
       <Image 
         src={VIForo} 
         alt="VI Foro 2026" 
@@ -26,10 +24,9 @@ import msLogoMedicaSur from "../../assets/medica_sur.png";
         width={236} 
         height={253} 
       />
-  
+      <img src="/wave-line.svg" alt="" class="w-32 opacity-60" />
     </div>
-<!-- Fin Logo VI Foro -->
-<!-- Textos Agenda -->
+
     <div class="flex-1 flex flex-col items-start">
       <h1 class="text-[#204356] text-6xl md:text-8xl font-black leading-none tracking-tighter">
         AGENDA
@@ -49,21 +46,26 @@ import msLogoMedicaSur from "../../assets/medica_sur.png";
       
       <img src="/wave-line.svg" alt="" class="w-full max-w-md mt-6" />
     </div>
-<!-- Fin Textos Agenda -->
-<!-- Logo Doctores -->
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-    
-    <div class="flex flex-col items-center space-y-2">
 
-      <Image 
-        src={heroLogoMobile} 
-        alt="Logo Doctores" 
-        class="w-40 md:w-56 h-auto" 
-        width={236} 
-        height={253} 
+      <div class="absolute -top-10 -right-5 opacity-40 w-20 h-auto blur-[1px]">
+         <img src="/path-to-capsule.png" alt="" />
+      </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-100 flex flex-col md:flex-row items-center gap-6">
+    <div class="flex items-center gap-4">
+      <Image
+        src={msLogoMedicaSur}
+        alt="Médica Sur"
+        class="h-10 w-auto"
+        width={180}
       />
-  
+      <div class="w-px h-10 bg-gray-300 hidden md:block"></div>
+      <p class="text-[#204356] italic text-sm font-bold leading-tight max-w-[200px]">
+        Institución sede comprometida con el combate a las infecciones
+      </p>
     </div>
-</div>
-</div>
+  </div>
+
 </section>
