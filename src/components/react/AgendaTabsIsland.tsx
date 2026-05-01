@@ -88,7 +88,7 @@ const agendaData = [
     ],
   },
   {
-    label: "Día 2",
+    label: "Día 22",
     id: "agenda-dia2",
     events: [
       {
