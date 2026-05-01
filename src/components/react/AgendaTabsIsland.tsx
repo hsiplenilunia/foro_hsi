@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const agendaData = [
   {
-    label: "Día 1",
+    label: "Día | 27 DE AGOSTO",
     id: "agenda-dia1",
     events: [
       {
@@ -88,7 +88,7 @@ const agendaData = [
     ],
   },
   {
-    label: "Día 2",
+    label: "DÍA 2 | 28 DE AGOSTO",
     id: "agenda-dia2",
     events: [
       {
