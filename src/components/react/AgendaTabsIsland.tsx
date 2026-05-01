@@ -7,14 +7,13 @@ const agendaData = [
     events: [
       {
         time: "09:00 - 09:30",
-        title: "Acto Inaugural",
+        title: "APERTURA",
         desc:
-          `Dra. María Enriqueta Baridó Murguía, Coordinadora de la Comisión de Infectología Quirúrgica de la Asociación Mexicana de Cirugía General. 
-          <br/ >Dr. Samuel Ponce de León Rosales, Coordinador Programa Universitario de Investigación sobre Riesgos Epidemiológicos y Emergentes (PUIREE)
-          <br/ >Dr. José Ignacio Santos Preciado, Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas
-          <br />Dr. Luis Fernando Pérez González, Jefe del Departamento de Pediatría UASLP.
-          <br />Dr. Octavio González Chon, Director General de Médica Sur.
-          <br />Mtra. Maribel Ramírez Coronel, Directora General de Hospitales sin infecciones.`
+          `Dra. María Enriqueta Baridó Murguía
+          <br/ >Dr. Samuel Ponce de León Rosales
+          <br/ >Dr. José Ignacio Santos Preciado
+          <br />Dr. Octavio González Chon
+          <br />Mtra. Maribel Ramírez Coronel
       },
       {
         time: "09:35 - 10:05",
