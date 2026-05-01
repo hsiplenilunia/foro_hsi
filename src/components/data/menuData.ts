@@ -41,7 +41,7 @@ export const menu = [
     name: "Social Media",
     subOptions: [
       { name: "Facebook", link: "https://www.facebook.com/HospitalSinInfecciones/" },
-      { name: "X", link: "https://www.facebook.com/HospitalSinInfecciones/" },
+      { name: "X", link: "https://x.com/hsininfecciones" },
       { name: "LinkedIn", link: "https://www.linkedin.com/company/68233946/admin/dashboard/" },
       { name: "YouTube", link: "https://www.youtube.com/@hospitalsininfecciones7009" },
       { name: "WhatsApp", link: "https://api.whatsapp.com/send/?phone=5215511355967&text=%C2%BFPodemos+ayudarte%3F&type=phone_number&app_absent=0" },
