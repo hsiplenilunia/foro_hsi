@@ -9,7 +9,7 @@ const agendaData = [
         time: "09:00 - 09:30",
         title: "APERTURA",
         desc:
-          <p class="font-bold hsi-blue>`Consejo Técnico Hospitales sin Infecciones</p>
+          `Consejo Técnico Hospitales sin Infecciones
           <br />Dra. María Enriqueta Baridó Murguía
           <br/ >Dr. Samuel Ponce de León Rosales
           <br/ >Dr. José Ignacio Santos Preciado
