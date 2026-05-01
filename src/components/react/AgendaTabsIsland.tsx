@@ -200,7 +200,7 @@ export default function AgendaTabsIsland() {
   return (
     <section className="font-sans p-8 text-black-text" id="hsi-agenda">
       <header className="mb-8">
-        <h2 className="font-bold text-blue-text text-center text-5xl mb-4">Programa Preliminar</h2>
+        <h2 className="font-bold text-blue-text text-center text-5xl mb-4">AGENDA Preliminar</h2>
         <nav
           aria-label="Selector de día"
           className="flex justify-center gap-4 mb-6 flex-wrap"
