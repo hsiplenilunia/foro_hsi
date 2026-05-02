@@ -135,7 +135,7 @@ const agendaData = [
         isNetworking: false,
         participants: `Soc. Mex. de Salud Pública, CNSP, FAO<br/>
           <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          <br/><span class="font-bold text-[#25A64B]">MODERA:</span><br/>
           Nombre<br/>
           <span class="text-gray-500">Cargo</span>`,
       },
