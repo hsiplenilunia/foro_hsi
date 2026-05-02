@@ -153,7 +153,7 @@ const agendaData = [
         isNetworking: false,
         participants: `Dr. Edgar González Villalobos<br/>
           <span class="text-gray-500">Profesor Depto. Salud Pública, Facultad de Medicina UNAM</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          <br/><span class="font-bold text-[#25A64B]">MODERA:</span><br/>
           Dra. Liliana Vargas Neri<br/>
           <span class="text-gray-500">Hospital Infantil de México Federico Gómez</span>`,
       },
@@ -181,7 +181,7 @@ const agendaData = [
           <span class="text-gray-500">Jefa de infectología, Hospital General Dr. Manuel Gea González</span><br/>
           Dr. Paulo Castañeda<br/>
           <span class="text-gray-500">Jefe de infectología, Hospital Médica Sur</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          <br/><span class="font-bold text-[#25A64B]">MODERA:</span><br/>
           Mtra. Juanita Jiménez<br/>
           <span class="text-gray-500">Red Latinoamericana de Enfermería, Secretaría de Salud</span>`,
       },
@@ -225,7 +225,7 @@ const agendaData = [
           <span class="text-gray-500">Directora, Facultad de Ciencia y Tecnología, Universidad Simón Bolivar</span><br/>
           Dr. Max Julio Schmulson Wasserman<br/>
           <span class="text-gray-500">Jefe de Unidad de Medicina Experimental, Hospital General de México</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          <br/><span class="font-bold text-[#25A64B]">MODERA:</span><br/>
           Dr. Santiago March<br/>
           <span class="text-gray-500">Coordinador Consejo Promotor de Nuevas Tecnologías, FUNSALUD</span>`,
       },
