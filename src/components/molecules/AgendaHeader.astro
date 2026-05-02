@@ -5,61 +5,75 @@ import VIForo from "../../assets/VIForo2026.svg";
 import heroLogoMobile from "../../assets/hero-logo-mobile-min.png";
 import msLogoMedicaSur from "../../assets/medica-sur.svg";
 
+// Estilos base para la sección (opcional si decides usarlos en la etiqueta section)
 const sectionStyles = `landing-section bg-bg-white w-screen flex items-center justify-center pt-24 px-8 relative`;
 ---
+
 <section
-  class="relative w-full overflow-hidden py-12 px-6 md:px-12 min-h-[450px] flex items-center bg-white 
+  class="relative w-full overflow-hidden py-16 px-6 md:px-12 min-h-[500px] flex items-center bg-white 
          bg-[url('/bg-agenda.png')] bg-no-repeat
          bg-[length:auto_100%] bg-right 
          md:bg-cover md:bg-center"
 >
-<div class="flex w-full justify-center gap-8">
-    <Image
+  <!-- Contenedor Principal con Espaciado Reservado para Doctores -->
+  <div class="flex w-full max-w-7xl mx-auto justify-center md:justify-start items-center gap-8 md:pr-[400px]">
+    
+    <!-- Logo VI Foro -->
+    <div class="shrink-0">
+      <Image
         src={VIForo}
-        width={182}
-        height={164}
-        alt="LogoVI Foro"
+        width={236}
+        height={253}
+        alt="Logo VI Foro"
         loading="lazy"
-        class="min-w-[182px] w-[236px] h-[253px]"
-    />
-    <div>
-        <br>
-        <h1 class="text-blue-text text-5xl md:text-6xl font-bold leading-none">AGENDA</h1>
-        <h2 class="text-blue-text text-3xl font-normal mt-1">PRELIMINAR
-        </h2>
-        <p class="text-blue-text text-2xl tracking-wider font-bold mt-2">
-            27 Y 28 DE Agosto, 2026
-        </p>
-        <p class="text-blue-text text-xl font-normal tracking-widest mt-1">
-            SEDE | <strong class="font-extrabold">Auditorio del Hospital Médica Sur</strong>
-        </p>
-        <br>
-        <div>
-            <img src="/wave-line.svg" alt="" class="w-[180px] md:w-[450px] mt-[14px] mb-[14px] h-auto" aria-hidden="true" />
-        <br >
-             <!-- MédicaSur logo + texto institucional -->
-  <div class="flex items-center gap-2 mt-[14px]">
-    <Image
-      src={msLogoMedicaSur}
-      alt="Médica Sur"
-      class="h-12 w-auto"
-      width={224.6}
-      height={52}
-      loading="lazy"
-      format="svg"
-      quality={80}
-    />
-                 <!-- Separador vertical -->
-            <div class="w-px h-14 bg-gray-400"></div>
-            <!-- Texto institucional -->
-             <p class="font-bold text-blue-text italic text-base leading-snug text-justify max-w-[280px]">
-                Institución sede comprometida<br/>con el combate a las infecciones
-    </p>
-
-         </div>
-        </div>
+        class="w-[180px] md:w-[236px] h-auto"
+      />
     </div>
-<div class="hidden md:block absolute right-[10%] top-1/2 -translate-y-1/2 z-10">
+
+    <!-- Bloque de Texto Central -->
+    <div class="flex flex-col space-y-4">
+      <header>
+        <h1 class="text-blue-text text-5xl md:text-7xl font-bold leading-tight">AGENDA</h1>
+        <h2 class="text-blue-text text-3xl md:text-4xl font-light">PRELIMINAR</h2>
+      </header>
+
+      <div class="space-y-1">
+        <p class="text-blue-text text-2xl tracking-wider font-bold">
+          27 Y 28 DE Agosto, 2026
+        </p>
+        <p class="text-blue-text text-xl font-normal tracking-widest">
+          SEDE | <strong class="font-extrabold">Auditorio del Hospital Médica Sur</strong>
+        </p>
+      </div>
+
+      <!-- Línea decorativa -->
+      <img 
+        src="/wave-line.svg" 
+        alt="" 
+        class="w-[180px] md:w-[450px] py-4 h-auto" 
+        aria-hidden="true" 
+      />
+
+      <!-- MédicaSur logo + texto institucional -->
+      <div class="flex items-center gap-4">
+        <Image
+          src={msLogoMedicaSur}
+          alt="Médica Sur"
+          class="h-14 w-auto"
+          width={224}
+          height={52}
+          loading="lazy"
+        />
+        <div class="w-px h-14 bg-gray-400"></div>
+        <p class="font-bold text-blue-text italic text-base leading-snug max-w-[280px]">
+          Institución sede comprometida con el combate a las infecciones
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGEN DOCTORES: Posicionamiento Absoluto para crecer arriba/abajo -->
+  <div class="hidden md:block absolute right-[10%] top-1/2 -translate-y-1/2 z-10">
     <Image
       src={heroLogoMobile}
       alt="Doctores"
@@ -68,13 +82,16 @@ const sectionStyles = `landing-section bg-bg-white w-screen flex items-center ju
     />
   </div>
 
+  <!-- LOGO HSI: Posicionado en la esquina superior derecha -->
+  <div class="hidden md:block absolute top-8 right-12">
     <Image
-        src={logoHSI}
-        width={69}
-        height={65}
-        alt="HSI"
-        loading="lazy"
-        class="hidden md:block w-[69px] h-[65px]"
+      src={logoHSI}
+      width={80}
+      height={75}
+      alt="HSI"
+      loading="lazy"
+      class="w-[80px] h-auto"
     />
-</div>
+  </div>
+
 </section>
