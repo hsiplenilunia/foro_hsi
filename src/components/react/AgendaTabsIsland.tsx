@@ -129,7 +129,7 @@ const agendaData = [
     month: "AGOSTO",
     events: [
       {
-        time: "08:30 - 09:00",
+        time: "09:00 - 09:45",
         type: "PANEL",
         title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
         isNetworking: false,
@@ -140,9 +140,9 @@ const agendaData = [
           <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "09:00 - 09:30",
+        time: "09:45 - 10:30",
         type: "CONFERENCIA",
-        title: "Desafío del Manejo del Paciente con Sepsis",
+        title: "Invertir en higiene, no en errores: La ciencia de la desinfección proactiva",
         isNetworking: false,
         participants: `Dr. Miguel Ángel Flores<br/><span class="text-gray-500">Especialista en Soporte Multiorgánico</span>`,
       },
