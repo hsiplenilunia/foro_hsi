@@ -130,8 +130,8 @@ const agendaData = [
     events: [
       {
         time: "08:30 - 09:00",
-        type: "REGISTRO",
-        title: "Registro y bienvenida",
+        type: "PANEL",
+        title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
         isNetworking: false,
         participants: "",
       },
