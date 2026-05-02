@@ -2,264 +2,397 @@ import React, { useState } from "react";
 
 const agendaData = [
   {
-    label: "Día 1 | 27 DE AGOSTO",
+    label: "DÍA 1 | 27 DE AGOSTO",
     id: "agenda-dia1",
+    day: "27",
+    month: "AGOSTO",
     events: [
       {
-        time: "09:00 - 09:30",
-        title: "APERTURA",
-        desc:
-          `Consejo Técnico Hospitales sin Infecciones
-          <br />Dra. María Enriqueta Baridó Murguía
-          <br/ >Dr. Samuel Ponce de León Rosales
-          <br/ >Dr. José Ignacio Santos Preciado
-          <br />Dr. Octavio González Chon
-          <br />Mtra. Maribel Ramírez Coronel`
+        time: "9:00 - 9:30",
+        type: "APERTURA",
+        title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
+        isNetworking: false,
+        participants: `<span class="block font-bold text-[#3aaa5c]">Consejo Técnico Hospitales sin Infecciones</span>
+          Dra. Mercedes Juan López<br/>
+          Dra. María Enriqueta Baridó Murguía<br/>
+          Dr. José Ignacio Santos Preciado<br/>
+          Dr. Samuel Ponce de León Rosales<br/>
+          Dr. Luis Fernando Pérez<br/>
+          Dra. Daniela de la Rosa Zamboni<br/>
+          Dra. Juana Jiménez Sánchez<br/>
+          Dr. Paulo Castañeda<br/>
+          Mtra. Enf. Martha A. Huertas Jiménez<br/>
+          Dra. Isabel Villegas Mota<br/>
+          Dra. Liliana Vargas Neri<br/>
+          Maribel Ramírez Coronel`,
       },
       {
-        time: "09:35 - 10:05",
-        title: "Epidemiología de la Resistencia Antimicrobiana",
-        desc: "Dra. Rosa María Wong, presidenta de la Asociación Mexicana de Infectología y Microbiología Clínica",
+        time: "9:30 - 10:00",
+        type: "CONFERENCIA MAGISTRAL",
+        title: "Gobernanza y seguridad clínica: el sistema mexicano ante la Resistencia a los Antibióticos",
+        isNetworking: false,
+        participants: `Dra. Patricia Clark<br/><span class="text-gray-500">(CSG)</span>`,
       },
       {
-        time: "10:10 - 10:40",
-        title: "Vacunación: un pilar en la lucha contra la resistencia bacteriana y las infecciones",
-        desc: "Dr. Rafael Franco Cendejas, Subdirector de Investigación Biomédica del Instituto Nacional de Rehabilitación Luis Guillermo Ibarra Ibarra, INRLGII",
+        time: "10:00 - 10:30",
+        type: "CONFERENCIA",
+        title: "¿Quién paga la factura de las infecciones hospitalarias? Impacto en aseguradoras y pacientes",
+        isNetworking: false,
+        participants: `AMIS, AMASFAC<br/>Directores de siniestros<br/><span class="text-gray-500">(AXA | GNP)</span>`,
       },
       {
-        time: "10:45 - 11:30",
-        title: "Los beneficios de invertir en prevención en el ámbito hospitalario, y más allá.",
-        desc: ` 
-        <br/>Dr. Jorge Azpiri, Director de Desarrollo y Expansión de TecSalud,
-        <br/>Dr. Octavio González Chon, Director General de Médica Sur,
-        <br/><strong>Modera:</strong> Dr. Alfredo Merino, maestro en Gestión de Negocios en Salud, ex director del CMN 20 de Noviembre`,
+        time: "10:30 - 11:15",
+        type: "PANEL",
+        title: "¿Qué incentivos hacen faltan para invertir en prevención de infecciones?",
+        isNetworking: false,
+        participants: `Médica Sur, San Ángel Inn, CMH, Asociación de Hospitales Privados de Jalisco.<br/>
+          Directores de siniestros (AXA | GNP)<br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          CMECAC<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "11:35 - 11:55",
-        title: "Networking",
-        desc: ``,
+        time: "",
+        type: "",
+        title: "Networking 30'",
+        isNetworking: true,
+        participants: "",
       },
       {
-        time: "12:00 - 12:45",
-        title: "Panel: El papel de la enfermería en la prevención de infecciones intrahospitalarias",
-        desc: `Mtra. María de los Ángeles Franco Martínez, Jefe de Carrera de la Lic. en Enfermería, Universidad La Salle, 
-        <br/>Universidad Panamericana 
-        <br/>Mtra. Monserrat Lourdes Puntunet Bates, Maestra en Administración de Operaciones de Salud de la Universidad Panamericana
-        <br/><strong>Modera:</strong> Mtra. Margarita Torres, Presidenta Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN.`
-
+        time: "11:45 - 12:30",
+        type: "PANEL",
+        title: "Diagnóstico rápido: cómo la inteligencia de datos puede salvar vidas y bajar costos",
+        isNetworking: false,
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "12:45 - 13:25",
-        title: "Panel: Limpieza, desinfección y esterilización",
-        desc: `Dra. Roxana Trejo, presidenta Asociación Mexicana para el Procesamiento Estéril, AMEXPE
-<br/>IB. Marco Guerrero, experto en desinfección UV-C
-<br/>Mtra. Lili Frías, Unidad de Vigilancia Epidemiológica Médica Sur
-<br/><strong>Modera:</strong> Mtra. Martha Huertas, subdirectora de enfermería del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán`,
+        time: "12:30 - 13:15",
+        type: "PANEL",
+        title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
+        isNetworking: false,
+        participants: `Dr. Rafael Franco Cendejas<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          CMECAC<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "13:25 - 14:10",
-        title: "Panel: El incremento de infecciones fúngicas durante y después de  COVID",
-        desc: `Dr. Alexandro Bonifaz, jefe depto. de micología Hospital General de México Dr. Eduardo Liceaga
-        <br />Dra. Fernanda González Lara, Jefa del laboratorio de microbiología del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán.
-        <br /><strong>Modera:&nbsp;</strong>Dr. Alfredo Ponce de León, jefe de infectología del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán`,
+        time: "13:15 - 14:00",
+        type: "PANEL",
+        title: "Zonas de alto riesgo: el costo de un error en Cuidados Intensivos y quirófano",
+        isNetworking: false,
+        participants: `Sepsis México, Academia Mexicana de Cirugía<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "14:15 - 14:45",
-        title: "Networking",
-        desc: ``,
+        time: "",
+        type: "",
+        title: "Networking 30'",
+        isNetworking: true,
+        participants: "",
       },
       {
-        time: "14:50 - 15:35",
-        title: "Panel: Defunciones por IAAS: la necesidad de hacerlas visibles",
-        desc: `Dra. Isabel Villegas, Directora de la unidad de especialidades médicas Capacyt Cancún. 
-        <br/> Dr. Alejandro Sassoé,  Jefe de departamento de vigilancia de IAAS IMSS-Bienestar 
-        <br/> <strong>Modera:</strong>Mtra. Maribel Ramírez Coronel`,
+        time: "14:30 - 15:15",
+        type: "PANEL:",
+        title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
+        isNetworking: false,
+        participants: `Nombre<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          INVIFAR<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "15:40 - 16:10",
-        title: "Conferencia: NOM 045, Actualización y retos",
-        desc: "Dr. Miguel Ángel Lezana, titular Dirección General de Epidemiología de la Secretaría de Salud",
-      },
-      {
-        time: "16:15",
-        title: "Conclusiones y cierre",
-        desc: "Hospital sin infecciones",
+        time: "15:15 - 15:30",
+        type: "PANEL:",
+        title: "¿Porque las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.",
+        isNetworking: false,
+        participants: `Nombre<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          CANIFARMA / AMIIF / AMEPRES<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
     ],
   },
   {
     label: "DÍA 2 | 28 DE AGOSTO",
     id: "agenda-dia2",
+    day: "28",
+    month: "AGOSTO",
     events: [
       {
         time: "08:30 - 09:00",
+        type: "REGISTRO",
         title: "Registro y bienvenida",
-        desc: ``,
+        isNetworking: false,
+        participants: "",
       },
       {
         time: "09:00 - 09:30",
-        title: "Conferencia: Desafío del Manejo del Paciente con Sepsis",
-        desc: `Dr. Miguel Ángel Flores, especialista en Soporte Multiorgánico`,
+        type: "CONFERENCIA",
+        title: "Desafío del Manejo del Paciente con Sepsis",
+        isNetworking: false,
+        participants: `Dr. Miguel Ángel Flores<br/><span class="text-gray-500">Especialista en Soporte Multiorgánico</span>`,
       },
       {
         time: "09:45 - 10:30",
-        title: "Panel: Detección de brotes y manejo de resistencias bacterianas utilizando soluciones IT",
-        desc:
-          `Dr. Edgar González Villalobos, Profesor del Departamento de Salud Pública de la Facultad de Medicina de la UNAM
-          <br/><strong>Modera:</strong> Dra. Liliana Vargas Neri, jefa del Departamento de Investigación Epidemiológica.
-          <br/>Hospital Infantil de México Federico Gómez`,
+        type: "PANEL",
+        title: "Detección de brotes y manejo de resistencias bacterianas utilizando soluciones IT",
+        isNetworking: false,
+        participants: `Dr. Edgar González Villalobos<br/>
+          <span class="text-gray-500">Profesor Depto. Salud Pública, Facultad de Medicina UNAM</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Dra. Liliana Vargas Neri<br/>
+          <span class="text-gray-500">Hospital Infantil de México Federico Gómez</span>`,
       },
       {
         time: "10:35 - 11:05",
-        title: "Conferencia: Investigación y prevención de infecciones de sitio quirúrgico en países de bajos y medianos ingresos",
-        desc:
-          "Dr. Antonio Ramos-De la Medina, Director de Investigación del Centro México del Global Surgery Unit del Instituto Nacional de Investigación en Salud del Reino Unido (NIHR).",
+        type: "CONFERENCIA",
+        title: "Investigación y prevención de infecciones de sitio quirúrgico en países de bajos y medianos ingresos",
+        isNetworking: false,
+        participants: `Dr. Antonio Ramos-De la Medina<br/>
+          <span class="text-gray-500">Director de Investigación, Centro México, Global Surgery Unit, NIHR</span>`,
       },
       {
-        time: "11:05 - 11:30",
-        title: "Networking",
-        desc: "",
+        time: "",
+        type: "",
+        title: "Networking 30'",
+        isNetworking: true,
+        participants: "",
       },
       {
         time: "11:35 - 12:20",
-        title: "Panel: Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana.",
-        desc: `Dra. Patricia Rodríguez Zulueta, Jefa de infectología, Hospital General Dr. Manuel Gea González.
-
-<br/>Dr. Paulo Castañeda, Jefe de infectología, Hospital Médica Sur.
-
-<br/><strong>Modera:</strong> Mtra. Juanita Jiménez, Representante de la Red Latinoamericana de Enfermería de la Secretaría de Salud`,
+        type: "PANEL",
+        title: "Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana.",
+        isNetworking: false,
+        participants: `Dra. Patricia Rodríguez Zulueta<br/>
+          <span class="text-gray-500">Jefa de infectología, Hospital General Dr. Manuel Gea González</span><br/>
+          Dr. Paulo Castañeda<br/>
+          <span class="text-gray-500">Jefe de infectología, Hospital Médica Sur</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Mtra. Juanita Jiménez<br/>
+          <span class="text-gray-500">Red Latinoamericana de Enfermería, Secretaría de Salud</span>`,
       },
       {
         time: "12:25 - 12:55",
-        title: "Conferencia: Uso y prescripción de antibióticos en consultorios externos.",
-        desc: `Dra. Daniela de la Rosa, Líder de Resistencia Antimicrobiana del Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE`,
+        type: "CONFERENCIA",
+        title: "Uso y prescripción de antibióticos en consultorios externos.",
+        isNetworking: false,
+        participants: `Dra. Daniela de la Rosa<br/>
+          <span class="text-gray-500">Líder de Resistencia Antimicrobiana, CENAPRECE</span>`,
       },
       {
         time: "13:00 - 13:30",
-        title: "Conferencia: Plan de Acción Mundial y Marco de Monitoreo sobre Prevención y Control de Infecciones",
-        desc: `Prof. Victor D. Rosenthal, MD, PhD, Fundador y presidente del Consorcio Internacional de Infecciones Hospitalarias`,
+        type: "CONFERENCIA",
+        title: "Plan de Acción Mundial y Marco de Monitoreo sobre Prevención y Control de Infecciones",
+        isNetworking: false,
+        participants: `Prof. Victor D. Rosenthal, MD, PhD<br/>
+          <span class="text-gray-500">Fundador y presidente del Consorcio Internacional de Infecciones Hospitalarias</span>`,
       },
       {
-        time: "13:35 - 14:05",
-        title: "Networking",
-        desc: ``,
+        time: "",
+        type: "",
+        title: "Networking 30'",
+        isNetworking: true,
+        participants: "",
       },
       {
         time: "14:05 - 14:35",
-        title: "Conferencia: Aguas residuales como elemento para estrategias de detección oportuna de brotes.",
-        desc: `Dra. Celia Alpuche, Investigadora del Instituto Nacional de Salud Pública.`,
+        type: "CONFERENCIA",
+        title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes.",
+        isNetworking: false,
+        participants: `Dra. Celia Alpuche<br/>
+          <span class="text-gray-500">Investigadora del Instituto Nacional de Salud Pública</span>`,
       },
       {
         time: "14:40 - 15:25",
-        title: "Panel: El equilibrio de la microbiota intestinal y su impacto en el desarrollo de infecciones",
-        desc: `Dra. Rosa Salgado Brito, Directora de la Facultad de Ciencia y Tecnología Universidad Simón Bolivar,
-        <br/>Dr. Max Julio Schmulson Wasserman, Jefe de Unidad de Medicina Experimental, Hospital General de México
-        <br/><strong>Modera:</strong>  Dr. Santiago March, Coordinador del Consejo Promotor de Nuevas Tecnologías FUNSALUD`,
+        type: "PANEL",
+        title: "El equilibrio de la microbiota intestinal y su impacto en el desarrollo de infecciones",
+        isNetworking: false,
+        participants: `Dra. Rosa Salgado Brito<br/>
+          <span class="text-gray-500">Directora, Facultad de Ciencia y Tecnología, Universidad Simón Bolivar</span><br/>
+          Dr. Max Julio Schmulson Wasserman<br/>
+          <span class="text-gray-500">Jefe de Unidad de Medicina Experimental, Hospital General de México</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Dr. Santiago March<br/>
+          <span class="text-gray-500">Coordinador Consejo Promotor de Nuevas Tecnologías, FUNSALUD</span>`,
       },
       {
         time: "15:30",
+        type: "CLAUSURA",
         title: "Acto de clausura",
-        desc:
-          "",
+        isNetworking: false,
+        participants: "",
       },
-
     ],
   },
 ];
 
 export default function AgendaTabsIsland() {
   const [activeTab, setActiveTab] = useState(0);
-  const [expandedPanels, setExpandedPanels] = useState(
-    agendaData.map((day) => day.events.map(() => true))
-  );
-  const [fadeState, setFadeState] = useState<'in' | 'out'>('in');
+  const [fadeState, setFadeState] = useState<"in" | "out">("in");
 
   const handleTabClick = (idx: number) => {
     if (idx === activeTab) return;
-    setFadeState('out');
+    setFadeState("out");
     setTimeout(() => {
       setActiveTab(idx);
-      setExpandedPanels(agendaData.map((day) => day.events.map(() => true)));
-      setFadeState('in');
-    }, 250); // Duración del fadeOut
+      setFadeState("in");
+    }, 250);
   };
 
-  const handleToggle = (eventIdx: number) => {
-    setExpandedPanels((prev) => {
-      const newPanels = prev.map((dayPanels, i) =>
-        i === activeTab
-          ? dayPanels.map((expanded, j) =>
-            j === eventIdx ? !expanded : expanded
-          )
-          : dayPanels
-      );
-      return newPanels;
-    });
-  };
+  const currentDay = agendaData[activeTab];
 
   return (
-    <section className="font-sans p-8 text-black-text" id="hsi-agenda">
-      <header className="mb-8">
-        <h2 className="font-bold text-blue-text text-center text-5xl mb-4">AGENDA Preliminar</h2>
-        <nav
-          aria-label="Selector de día"
-          className="flex justify-center gap-4 mb-6 flex-wrap"
-          role="tablist"
-        >
-          {agendaData.map((tab, idx) => (
-            <button
-              key={tab.id}
-              aria-controls={tab.id}
-              aria-selected={activeTab === idx}
-              className={`bg-[#002b5c] text-white border-none px-6 py-3 text-3xl rounded cursor-pointer transition-colors ${activeTab === idx ? "bg-[#3b7d42]" : "hover:bg-celeste-hsi"
-                }`}
-              id={`tab-${tab.id}`}
-              role="tab"
-              onClick={() => handleTabClick(idx)}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </nav>
-      </header>
-      <div className="relative">
-        {/* Only render the active tab's content with fade transition */}
-        <section
-          aria-labelledby={`tab-${agendaData[activeTab].id}`}
-          className={`block transition-opacity duration-300 ${fadeState === 'in' ? 'opacity-100' : 'opacity-0'}`}
-          id={agendaData[activeTab].id}
-          role="tabpanel"
-        >
-          {agendaData[activeTab].events.map((event, eventIdx) => (
-            <article
-              key={`${activeTab}-${eventIdx}`}
-              className="border-l-4 border-[#56c4f2] bg-[#f9fbfc] mb-4 p-3 rounded"
-            >
-              <button
-                aria-controls={`panel-${agendaData[activeTab].id}-${eventIdx}`}
-                aria-expanded={expandedPanels[activeTab] ? expandedPanels[activeTab][eventIdx] : false}
-                className="w-full text-left cursor-pointer bg-transparent border-none p-0 md:pointer-events-none"
-                onClick={() => handleToggle(eventIdx)}
-              >
-                <time className="block font-bold text-[#002b5c] text-2xl">
-                  {event.time}
-                </time>
-                <h3 className="text-[#002b5c] text-xl font-semibold my-1">
-                  {event.title}
-                </h3>
-              </button>
+    <section className="font-sans px-4 md:px-8 py-8 bg-white text-black-text" id="hsi-agenda">
+
+      {/* Tabs */}
+      <nav
+        aria-label="Selector de día"
+        className="flex justify-center gap-3 mb-8 flex-wrap"
+        role="tablist"
+      >
+        {agendaData.map((tab, idx) => (
+          <button
+            key={tab.id}
+            role="tab"
+            aria-selected={activeTab === idx}
+            aria-controls={tab.id}
+            id={`tab-${tab.id}`}
+            onClick={() => handleTabClick(idx)}
+            className={`
+              px-6 py-2 rounded-full font-bold text-sm md:text-base tracking-wider
+              transition-all duration-200 border-2
+              ${activeTab === idx
+                ? "bg-gradient-hsi border-transparent text-white shadow-md"
+                : "bg-white border-[#00b0e4] text-[#00b0e4] hover:bg-[#00b0e4] hover:text-white"
+              }
+            `}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </nav>
+
+      {/* Cabecera PARTICIPANTES */}
+      <div className="hidden md:grid grid-cols-[1fr_1.2fr] gap-4 mb-2 px-2">
+        <div />
+        <div>
+          <span className="text-[#00b0e4] font-bold text-sm tracking-widest uppercase">
+            PARTICIPANTES
+          </span>
+        </div>
+      </div>
+
+      {/* Cards con fade */}
+      <div
+        className={`transition-opacity duration-300 ${fadeState === "in" ? "opacity-100" : "opacity-0"}`}
+        id={currentDay.id}
+        role="tabpanel"
+        aria-labelledby={`tab-${currentDay.id}`}
+      >
+        {currentDay.events.map((event, idx) => {
+
+          /* Card especial Networking */
+          if (event.isNetworking) {
+            return (
               <div
-                className={`pt-2 md:block ${expandedPanels[activeTab] && expandedPanels[activeTab][eventIdx] ? 'block' : 'hidden'} md:!block`}
-                id={`panel-${agendaData[activeTab].id}-${eventIdx}`}
+                key={idx}
+                className="bg-gradient-hsi rounded-xl mb-3 px-6 py-3 flex items-center justify-center"
               >
-                <p
-                  className="text-base leading-relaxed m-0"
-                  dangerouslySetInnerHTML={{ __html: event.desc }}
-                />
+                <span className="text-white font-bold text-lg tracking-wide">
+                  {event.title}
+                </span>
+              </div>
+            );
+          }
+
+          const isFirst = idx === 0;
+
+          return (
+            <article
+              key={idx}
+              className="bg-[#f5f7f8] rounded-xl mb-3 overflow-hidden"
+            >
+              <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-0">
+
+                {/* Columna izquierda — fecha + horario + tipo + título */}
+                <div className="p-4 flex gap-4 items-start">
+
+                  {/* Fecha grande — solo en la primera card */}
+                  {isFirst && (
+                    <div className="flex flex-col items-center min-w-[60px] text-center">
+                      <span className="text-[#00b0e4] font-black leading-none"
+                        style={{ fontSize: "clamp(40px, 5vw, 64px)" }}>
+                        {currentDay.day}
+                      </span>
+                      <span className="text-[#00b0e4] font-bold text-xs tracking-widest uppercase">
+                        {currentDay.month}
+                      </span>
+                      {event.time && (
+                        <span className="mt-2 bg-[#204356] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+                          {event.time}
+                        </span>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Horario badge — para cards que no son la primera */}
+                  {!isFirst && event.time && (
+                    <div className="min-w-[100px]">
+                      <span className="bg-[#204356] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+                        {event.time}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Tipo + Título */}
+                  <div className="flex flex-col">
+                    {event.type && (
+                      <span className="text-[#00b0e4] font-bold text-xs tracking-widest uppercase mb-1">
+                        {event.type}
+                      </span>
+                    )}
+                    <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
+                      {event.title}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Divisor vertical — solo desktop */}
+                <div className="hidden md:block border-l border-gray-200 pl-4 pr-4 py-4">
+                  {event.participants ? (
+                    <p
+                      className="text-sm leading-relaxed text-[#204356]"
+                      dangerouslySetInnerHTML={{ __html: event.participants }}
+                    />
+                  ) : (
+                    <span className="text-gray-400 text-sm italic">—</span>
+                  )}
+                </div>
+
+                {/* Participantes mobile */}
+                {event.participants && (
+                  <div className="md:hidden px-4 pb-4">
+                    <p
+                      className="text-sm leading-relaxed text-[#204356]"
+                      dangerouslySetInnerHTML={{ __html: event.participants }}
+                    />
+                  </div>
+                )}
+
               </div>
             </article>
-          ))}
-        </section>
+          );
+        })}
       </div>
     </section>
   );
