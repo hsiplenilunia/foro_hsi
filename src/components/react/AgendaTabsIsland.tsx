@@ -10,7 +10,9 @@ const agendaData = [
       {
         time: "9:00 - 9:30",
         type: "APERTURA",
-        title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
+        title: "Academia y sociedad civil: 
+        trabajando juntos contra <br/>
+        las infecciones resistentes",<br/>
         isNetworking: false,
         participants: `<span class="block font-bold text-[#3aaa5c]">Consejo Técnico Hospitales sin Infecciones</span>
           Dra. Mercedes Juan López<br/>
