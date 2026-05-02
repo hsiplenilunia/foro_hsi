@@ -12,7 +12,7 @@ const agendaData = [
         type: "APERTURA",
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
-        participants: `<span class="block font-bold text-[#3aaa5c]">Consejo Técnico Hospitales sin Infecciones</span>
+        participants: `<span class="block font-bold text-[#00b0e4]">Consejo Técnico Hospitales sin Infecciones</span>
           Dra. Mercedes Juan López<br/>
           Dra. María Enriqueta Baridó Murguía<br/>
           Dr. José Ignacio Santos Preciado<br/>
