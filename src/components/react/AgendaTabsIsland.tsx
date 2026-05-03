@@ -367,7 +367,7 @@ export default function AgendaTabsIsland() {
                   </div>
                 </div>
 
-                  {/* Tipo + Título */}
+                  {/* Tipo2 + Título2 */}
                   <div className="flex flex-col">
                     {event.type2 && (
                       <span className="text-[#00b0e4] font-bold text-xs tracking-widest uppercase mb-1">
