@@ -131,7 +131,7 @@ const agendaData = [
       {
         time: "09:00 - 09:45",
         type2: "PANEL",
-        title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
+        title2: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
         isNetworking: false,
         participants: `Soc. Mex. de Salud Pública, CNSP, FAO<br/>
           <span class="text-gray-500">Cargo del participante</span><br/>
@@ -380,7 +380,7 @@ export default function AgendaTabsIsland() {
                       </span>
                     )}
                     <h3 className="text-[#25A64B] font-bold text-sm md:text-base leading-snug">
-                      {event.title}
+                      {event.title2}
                     </h3>
                   </div>
                 </div>
