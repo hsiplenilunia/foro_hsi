@@ -322,7 +322,7 @@ export default function AgendaTabsIsland() {
             return (
               <div
                 key={idx}
-                className="bg-gradient-hsi rounded-xl mb-5 px-6 py-3 flex items-center justify-center"
+                className="bg-gradient-hsi rounded-xl mb-3 px-6 py-3 flex items-center justify-center"
               >
                 <span className="text-white font-bold text-lg tracking-wide">
                   {event.title}
@@ -336,7 +336,7 @@ export default function AgendaTabsIsland() {
           return (
             <article
               key={idx}
-              className="bg-[#f5f7f8] rounded-xl mb-5 overflow-hidden"
+              className="bg-[#f5f7f8] rounded-xl mb-3 overflow-hidden"
             >
               <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-0">
 
