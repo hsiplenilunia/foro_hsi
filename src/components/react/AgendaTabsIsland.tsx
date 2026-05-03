@@ -130,7 +130,7 @@ const agendaData = [
     events: [
       {
         time: "09:00 - 09:45",
-        type: "PANEL",
+        type2: "PANEL",
         title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
         isNetworking: false,
         participants: `Soc. Mex. de Salud Pública, CNSP, FAO<br/>
@@ -366,6 +366,20 @@ export default function AgendaTabsIsland() {
                       </span>
                     )}
                     <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
+                      {event.title}
+                    </h3>
+                  </div>
+                </div>
+
+
+                  {/* Tipo + Título */}
+                  <div className="flex flex-col">
+                    {event.type2 && (
+                      <span className="text-[#00b0e4] font-bold text-xs tracking-widest uppercase mb-1">
+                        {event.type2}
+                      </span>
+                    )}
+                    <h3 className="text-[#25A64B] font-bold text-sm md:text-base leading-snug">
                       {event.title}
                     </h3>
                   </div>
