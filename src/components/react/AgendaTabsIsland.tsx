@@ -242,10 +242,10 @@ const agendaData = [
           <span class="text-gray-500">Cargo</span>`,
           },
       {
-        time: "15:30",
-        type: "CLAUSURA",
+        time: "",
+        type: "",
         title: "Acto de clausura",
-        isNetworking: false,
+        isNetworking: true,
         participants: "",
       },
     ],
