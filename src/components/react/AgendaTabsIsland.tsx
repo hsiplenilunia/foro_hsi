@@ -133,7 +133,11 @@ const agendaData = [
         type: "PANEL",
         title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
         isNetworking: false,
-        participants: "",
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
         time: "09:00 - 09:30",
