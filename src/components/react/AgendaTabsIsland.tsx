@@ -12,7 +12,7 @@ const agendaData = [
         type: "APERTURA",
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
-        participants: `<span class="block font-bold text-[#00b0e4]">Consejo Técnico Hospitales sin Infecciones</span>
+        participants: `<span class="block font-bold text-[#3aaa5c]">Consejo Técnico Hospitales sin Infecciones</span>
           Dra. Mercedes Juan López<br/>
           Dra. María Enriqueta Baridó Murguía<br/>
           Dr. José Ignacio Santos Preciado<br/>
@@ -129,20 +129,16 @@ const agendaData = [
     month: "AGOSTO",
     events: [
       {
-        time: "09:00 - 09:45",
-        type2: "PANEL",
-        title2: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
+        time: "08:30 - 09:00",
+        type: "REGISTRO",
+        title: "Registro y bienvenida",
         isNetworking: false,
-        participants: `Soc. Mex. de Salud Pública, CNSP, FAO<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#25A64B]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
+        participants: "",
       },
       {
-        time: "09:45 - 10:30",
+        time: "09:00 - 09:30",
         type: "CONFERENCIA",
-        title: "Invertir en higiene, no en errores: La ciencia de la desinfección proactiva",
+        title: "Desafío del Manejo del Paciente con Sepsis",
         isNetworking: false,
         participants: `Dr. Miguel Ángel Flores<br/><span class="text-gray-500">Especialista en Soporte Multiorgánico</span>`,
       },
@@ -153,7 +149,7 @@ const agendaData = [
         isNetworking: false,
         participants: `Dr. Edgar González Villalobos<br/>
           <span class="text-gray-500">Profesor Depto. Salud Pública, Facultad de Medicina UNAM</span><br/>
-          <br/><span class="font-bold text-[#25A64B]">MODERA:</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           Dra. Liliana Vargas Neri<br/>
           <span class="text-gray-500">Hospital Infantil de México Federico Gómez</span>`,
       },
@@ -181,7 +177,7 @@ const agendaData = [
           <span class="text-gray-500">Jefa de infectología, Hospital General Dr. Manuel Gea González</span><br/>
           Dr. Paulo Castañeda<br/>
           <span class="text-gray-500">Jefe de infectología, Hospital Médica Sur</span><br/>
-          <br/><span class="font-bold text-[#25A64B]">MODERA:</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           Mtra. Juanita Jiménez<br/>
           <span class="text-gray-500">Red Latinoamericana de Enfermería, Secretaría de Salud</span>`,
       },
@@ -225,7 +221,7 @@ const agendaData = [
           <span class="text-gray-500">Directora, Facultad de Ciencia y Tecnología, Universidad Simón Bolivar</span><br/>
           Dr. Max Julio Schmulson Wasserman<br/>
           <span class="text-gray-500">Jefe de Unidad de Medicina Experimental, Hospital General de México</span><br/>
-          <br/><span class="font-bold text-[#25A64B]">MODERA:</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           Dr. Santiago March<br/>
           <span class="text-gray-500">Coordinador Consejo Promotor de Nuevas Tecnologías, FUNSALUD</span>`,
       },
@@ -367,20 +363,6 @@ export default function AgendaTabsIsland() {
                     )}
                     <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
                       {event.title}
-                    </h3>
-                  </div>
-                </div>
-
-
-                  {/* Tipo + Título */}
-                  <div className="flex flex-col">
-                    {event.type2 && (
-                      <span className="text-[#00b0e4] font-bold text-xs tracking-widest uppercase mb-1">
-                        {event.type2}
-                      </span>
-                    )}
-                    <h3 className="text-[#25A64B] font-bold text-sm md:text-base leading-snug">
-                      {event.title2}
                     </h3>
                   </div>
                 </div>
