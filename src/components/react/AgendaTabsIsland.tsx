@@ -129,7 +129,7 @@ const agendaData = [
     month: "AGOSTO",
     events: [
       {
-        time: "08:30 - 09:00",
+        time: "09:00 - 09:45",
         type: "PANEL",
         title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
         isNetworking: false,
@@ -140,16 +140,9 @@ const agendaData = [
           <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "09:00 - 09:30",
-        type: "CONFERENCIA",
-        title: "Desafío del Manejo del Paciente con Sepsis",
-        isNetworking: false,
-        participants: `Dr. Miguel Ángel Flores<br/><span class="text-gray-500">Especialista en Soporte Multiorgánico</span>`,
-      },
-      {
         time: "09:45 - 10:30",
         type: "PANEL",
-        title: "Detección de brotes y manejo de resistencias bacterianas utilizando soluciones IT",
+        title: "Invertir en higiene, no en errores: La ciencia de la desinfección proactiva",
         isNetworking: false,
         participants: `Nombre del participante<br/>
           <span class="text-gray-500">Cargo del participante</span><br/>
@@ -158,9 +151,20 @@ const agendaData = [
           <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "10:35 - 11:05",
-        type: "CONFERENCIA",
-        title: "Investigación y prevención de infecciones de sitio quirúrgico en países de bajos y medianos ingresos",
+        time: "10:30 - 11:15",
+        type: "PANEL",
+        title: "Hospitales más sustentables: reduciendo el impacto ambiental de la atención médica",
+        isNetworking: false,
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
+      },
+      {
+        time: "11:15 - 12:00",
+        type: "PANEL",
+        title: "Uso responsable de antibióticos: de la farmacia hasta el paciente",
         isNetworking: false,
         participants:`Nombre del participante<br/>
           <span class="text-gray-500">Cargo del participante</span><br/>
@@ -176,9 +180,9 @@ const agendaData = [
         participants: "",
       },
       {
-        time: "11:35 - 12:20",
+        time: "12:30 - 13:00",
         type: "PANEL",
-        title: "Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana.",
+        title: "La vacunación en poblaciones vulnerables y la prevención de infecciones",
         isNetworking: false,
         participants: `Nombre del participante<br/>
           <span class="text-gray-500">Cargo del participante</span><br/>
@@ -187,8 +191,8 @@ const agendaData = [
           <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "12:25 - 12:55",
-        type: "CONFERENCIA",
+        time: "13:00 - 13:45",
+        type: "PANEL",
         title: "Uso y prescripción de antibióticos en consultorios externos.",
         isNetworking: false,
         participants: `Nombre del participante<br/>
@@ -216,7 +220,7 @@ const agendaData = [
         participants: "",
       },
       {
-        time: "14:05 - 14:35",
+        time: "14:15 - 15:00",
         type: "CONFERENCIA",
         title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes.",
         isNetworking: false,
@@ -227,7 +231,7 @@ const agendaData = [
           <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "14:40 - 15:25",
+        time: "15:00 - 15:30",
         type: "PANEL",
         title: "El equilibrio de la microbiota intestinal y su impacto en el desarrollo de infecciones",
         isNetworking: false,
