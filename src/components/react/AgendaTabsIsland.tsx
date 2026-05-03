@@ -130,8 +130,8 @@ const agendaData = [
     events: [
       {
         time: "08:30 - 09:00",
-        type: "REGISTRO",
-        title: "Registro y bienvenida",
+        type: "PANEL",
+        title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
         isNetworking: false,
         participants: "",
       },
@@ -147,19 +147,22 @@ const agendaData = [
         type: "PANEL",
         title: "Detección de brotes y manejo de resistencias bacterianas utilizando soluciones IT",
         isNetworking: false,
-        participants: `Dr. Edgar González Villalobos<br/>
-          <span class="text-gray-500">Profesor Depto. Salud Pública, Facultad de Medicina UNAM</span><br/>
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          Dra. Liliana Vargas Neri<br/>
-          <span class="text-gray-500">Hospital Infantil de México Federico Gómez</span>`,
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
         time: "10:35 - 11:05",
         type: "CONFERENCIA",
         title: "Investigación y prevención de infecciones de sitio quirúrgico en países de bajos y medianos ingresos",
         isNetworking: false,
-        participants: `Dr. Antonio Ramos-De la Medina<br/>
-          <span class="text-gray-500">Director de Investigación, Centro México, Global Surgery Unit, NIHR</span>`,
+        participants:`Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
         time: "",
@@ -173,29 +176,33 @@ const agendaData = [
         type: "PANEL",
         title: "Infecciones invisibles, consecuencias visibles: la amenaza creciente de la resistencia bacteriana.",
         isNetworking: false,
-        participants: `Dra. Patricia Rodríguez Zulueta<br/>
-          <span class="text-gray-500">Jefa de infectología, Hospital General Dr. Manuel Gea González</span><br/>
-          Dr. Paulo Castañeda<br/>
-          <span class="text-gray-500">Jefe de infectología, Hospital Médica Sur</span><br/>
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          Mtra. Juanita Jiménez<br/>
-          <span class="text-gray-500">Red Latinoamericana de Enfermería, Secretaría de Salud</span>`,
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
         time: "12:25 - 12:55",
         type: "CONFERENCIA",
         title: "Uso y prescripción de antibióticos en consultorios externos.",
         isNetworking: false,
-        participants: `Dra. Daniela de la Rosa<br/>
-          <span class="text-gray-500">Líder de Resistencia Antimicrobiana, CENAPRECE</span>`,
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
         time: "13:00 - 13:30",
         type: "CONFERENCIA",
         title: "Plan de Acción Mundial y Marco de Monitoreo sobre Prevención y Control de Infecciones",
         isNetworking: false,
-        participants: `Prof. Victor D. Rosenthal, MD, PhD<br/>
-          <span class="text-gray-500">Fundador y presidente del Consorcio Internacional de Infecciones Hospitalarias</span>`,
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
         time: "",
@@ -209,22 +216,23 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes.",
         isNetworking: false,
-        participants: `Dra. Celia Alpuche<br/>
-          <span class="text-gray-500">Investigadora del Instituto Nacional de Salud Pública</span>`,
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
       },
       {
         time: "14:40 - 15:25",
         type: "PANEL",
         title: "El equilibrio de la microbiota intestinal y su impacto en el desarrollo de infecciones",
         isNetworking: false,
-        participants: `Dra. Rosa Salgado Brito<br/>
-          <span class="text-gray-500">Directora, Facultad de Ciencia y Tecnología, Universidad Simón Bolivar</span><br/>
-          Dr. Max Julio Schmulson Wasserman<br/>
-          <span class="text-gray-500">Jefe de Unidad de Medicina Experimental, Hospital General de México</span><br/>
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Cargo del participante</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          Dr. Santiago March<br/>
-          <span class="text-gray-500">Coordinador Consejo Promotor de Nuevas Tecnologías, FUNSALUD</span>`,
-      },
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
+          },
       {
         time: "15:30",
         type: "CLAUSURA",
