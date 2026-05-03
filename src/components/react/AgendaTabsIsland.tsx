@@ -361,6 +361,18 @@ export default function AgendaTabsIsland() {
                     </div>
                   )}
 
+                  {/* Fecha grande día 2 — VERDE */}
+                    <span
+                      className="font-black leading-none"
+                      style={{
+                      fontSize: "clamp(40px, 5vw, 64px)",
+                        color: activeTab === 1 ? "#3aaa5c" : "#00b0e4"
+                  }}
+                    >
+                    {currentDay.day}
+                      </span>
+
+
                   {/* Horario badge — para cards que no son la primera */}
                   {!isFirst && event.time && (
                     <div className="min-w-[100px]">
