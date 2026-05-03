@@ -26,6 +26,7 @@ const filaUno = speakers.slice(0);
 <section class="w-full py-10 overflow-hidden bg-white" id="speakers">
   <h2 class="text-center text-3xl font-bold uppercase tracking-widest text-[#204356] mb-8">
     Speakers
+    <br>
   </h2>
 
   <!-- Fila 1: izquierda → -->
@@ -33,7 +34,6 @@ const filaUno = speakers.slice(0);
     <div class="marquee-row marquee-left flex gap-12 w-max">
       {[...filaUno, ...filaUno].map((logo) => (
         <div class="flex-shrink-0 flex items-center justify-center h-36 w-56">
-          <br>
           <img src={logo.src} alt={logo.alt} class="h-50 w-auto max-w-[120px] object-contain hover:scale-130 transition-all duration-300" loading="lazy" />
         </div>
       ))}
