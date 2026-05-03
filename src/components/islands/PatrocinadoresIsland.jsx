@@ -22,14 +22,6 @@ const patrocinadores = [
     alt: 'TecSalud',
   },
   {
-    imgUrl: '/img/patrocinadores/nipro_tecnicare_vm.webp',
-    alt: 'Nipro Tecnicare',
-  },
-  {
-    imgUrl: '/img/patrocinadores/salud_aurea_patrocinador.webp',
-    alt: 'Salud Aurea',
-  },
-  {
     imgUrl: '/img/patrocinadores/asp.webp',
     alt: 'ASP',
   },
