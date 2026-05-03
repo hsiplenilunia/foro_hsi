@@ -367,19 +367,6 @@ export default function AgendaTabsIsland() {
                   </div>
                 </div>
 
-                  {/* Tipo2 + Título2 */}
-                  <div className="flex flex-col">
-                    {event.type2 && (
-                      <span className="text-[#00b0e4] font-bold text-xs tracking-widest uppercase mb-1">
-                        {event.type2}
-                      </span>
-                    )}
-                    <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
-                      {event.title2}
-                    </h3>
-                  </div>
-                </div>
-
                 {/* Divisor vertical — solo desktop */}
                 <div className="hidden md:block border-l border-gray-200 pl-4 pr-4 py-4">
                   {event.participants ? (
