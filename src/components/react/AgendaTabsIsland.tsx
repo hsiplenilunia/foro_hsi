@@ -341,7 +341,7 @@ export default function AgendaTabsIsland() {
               <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-0">
 
                 {/* Columna izquierda — fecha + horario + tipo + título */}
-                <div className="p-4 flex gap-4 items-start">
+                <div className="p-5 flex gap-4 items-start">
 
                   {/* Fecha grande — solo en la primera card */}
                   {isFirst && (
