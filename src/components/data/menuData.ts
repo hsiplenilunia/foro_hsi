@@ -23,7 +23,7 @@ export const menu = [
   },
   {
     name: "Aliados & patrocinadores",
-    link: "#aliados",
+    link: "#patrocinadores",
     className: "w-[180px] text-center", // 👈 Este también en dos líneas
   },
   {
