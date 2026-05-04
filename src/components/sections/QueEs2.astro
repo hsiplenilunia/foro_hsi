@@ -1,51 +1,109 @@
 ---
 import { Image } from "astro:assets";
 import pleniluniaLogo from "../../assets/Hospi-con-texto-correcion-2.png";
-import Button from "../Button.astro";
 import YouTubePlayer from "../YouTubePlayer.astro";
 
-//const sectionStyles = `landing-section bg-purple h-screen w-screen text-center overflow-hidden overflow-y-hidden relative`;
-//const sectionStyles = `landing-section bg-white  w-screen flex  justify-center pt-0 px-8 relative `;
 const sectionStyles = `landing-section bg-white w-full py-20 px-4 relative`;
 
-const {
-  videoId = "0k9FbACPenQ",
-  title = "Ocultar una infección hospitalaria complica la defensa legal de un profesional de la salud",
-} = Astro.props;
-const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-const url = "https://www.youtube.com/embed/0k9FbACPenQ?si=kWbF74RhI0rBO17S";
+// Arreglo de videos para la lista de reproducción
+const playlist = [
+  {
+    videoId: "0k9FbACPenQ",
+    title: "Ocultar una infección hospitalaria complica la defensa legal",
+    url: "https://www.youtube.com/embed/0k9FbACPenQ?si=kWbF74RhI0rBO17S"
+  },
+  {
+    videoId: "TC0DQYV90L0",
+    title: "Marco Regulatorio de las IAAS y los retos hacia adelante.",
+    url: "https://www.youtube.com/embed/TC0DQYV90L0?si=Z4pM9dIIADsZBbDj"
+  },
+  {
+    videoId: "IicVRMobHyQ",
+    title: "Retos para una colaboración multidisciplinaria en el combate a las IAAS",
+    url: "https://www.youtube.com/embed/IicVRMobHyQ?si=v2epdvGcEiFD6KTu"
+  },
+  {
+    videoId: "8wkryABJVtM",
+    title: "¿Cómo impactan las infecciones en las estancias hospitalarias?",
+    url: "https://www.youtube.com/embed/8wkryABJVtM?si=b-fuDJzXz8OYXiRo"
+  }
+];
 ---
 
 <section class={sectionStyles} data-header-color={`white`} id="que-es-2">
-  <div
-    class="flex flex-col items-center justify-center h-full space-y-8 z-10 relative"
-  >
-    <div class="flex flex-col">
-      <div class="flex mb-6 mt-20 flex-col md:flex-row">
-        <div
-          class="flex flex-col text-black-text text-lg min-w-[50%] max-w-[947px] px-[5%]"
-        >
-          <YouTubePlayer url={url} title={title} />
-          
-          <p class="md:px-8">
-            <strong>Comparte, aprende y relaciónate </strong>con los mejores
-            especialistas en vigilancia epidemiológica, infectología, calidad y
-            seguridad del paciente
-          </p>
-          <!-- <div class="flex justify-center mt-12">
-            <Button href="#registro" label="REGÍSTRATE" />
-          </div>-->
+  <div class="container mx-auto z-10 relative">
+    <div class="flex flex-col md:flex-row gap-8">
+      
+      <!-- Lado Izquierdo: Reproductor Principal y Lista -->
+      <div class="flex flex-col md:w-2/3 space-y-4">
+        <div id="main-player-container">
+            <!-- YouTubePlayer -->
+            <YouTubePlayer url={playlist[0].url} title={playlist[0].title} id="main-video-frame" />
         </div>
+        
+        <h3 id="current-video-title" class="text-xl font-bold text-blue-text px-2">
+            {playlist[0].title}
+        </h3>
 
-        <div class="flex min-w-[50%] justify-center items-center py-12 md:py-0">
-          <Image
-            src={pleniluniaLogo}
-            alt="Collage médico y enfermera"
-            width={750}
-            loading="lazy"
-          />
+        <!-- Lista de Reproducción (Thumbnails) -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-2 bg-gray-50 rounded-xl">
+          {playlist.map((video) => (
+            <button 
+              class="video-thumbnail-btn group relative overflow-hidden rounded-lg transition-all hover:ring-2 hover:ring-blue-500"
+              data-url={video.url}
+              data-title={video.title}
+            >
+              <img 
+                src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`} 
+                alt={video.title}
+                class="w-full h-auto object-cover group-hover:opacity-80 transition-opacity"
+              />
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                 <div class="bg-blue-600 p-2 rounded-full text-white">▶</div>
+              </div>
+            </button>
+          ))}
         </div>
       </div>
+
+      <!-- Lado Derecho: Imagen y Texto -->
+      <div class="flex flex-col md:w-1/3 items-center justify-center space-y-6">
+        <Image
+          src={pleniluniaLogo}
+          alt="Collage médico y enfermera"
+          width={500}
+          class="rounded-2xl shadow-lg"
+          loading="lazy"
+        />
+        <p class="text-black-text text-center text-lg italic">
+          "Comparte, aprende y relaciónate con los mejores especialistas en vigilancia epidemiológica e infectología."
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
+
+<script>
+  // Lógica para cambiar el video sin recargar la página
+  const buttons = document.querySelectorAll('.video-thumbnail-btn');
+  const iframe = document.querySelector('#main-video-frame iframe');
+  const titleDisplay = document.querySelector('#current-video-title');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const newUrl = button.getAttribute('data-url');
+      const newTitle = button.getAttribute('data-title');
+
+      if (iframe && newUrl) {
+        iframe.setAttribute('src', newUrl);
+      }
+      if (titleDisplay && newTitle) {
+        titleDisplay.textContent = newTitle;
+      }
+      
+      // Feedback visual opcional: scroll hacia arriba del reproductor
+      window.scrollTo({ top: document.getElementById('que-es-2').offsetTop - 100, behavior: 'smooth' });
+    });
+  });
+</script>
