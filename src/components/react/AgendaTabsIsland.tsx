@@ -305,13 +305,13 @@ export default function AgendaTabsIsland() {
         className="flex justify-center gap-3 mb-8 flex-wrap"
         role="tablist"
       >
-        {agendaData.map((tab2, idx) => (
+        {agendaData.map((tab, idx) => (
           <button
-            key={tab2.id2}
-            role="tab2"
+            key={tab.id2}
+            role="tab"
             aria-selected={activeTab === idx}
             aria-controls={tab.id2}
-            id={`tab-${tab2.id2}`}
+            id={`tab-${tab.id2}`}
             onClick={() => handleTabClick(idx)}
             className={`
               px-6 py-2 rounded-full font-bold text-sm md:text-base tracking-wider
@@ -322,7 +322,7 @@ export default function AgendaTabsIsland() {
               }
             `}
           >
-            {tab2.label}
+            {tab.label}
           </button>
         ))}
       </nav>
