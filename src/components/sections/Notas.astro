@@ -50,7 +50,7 @@ const cardData: CardData[] = [
   },
   
 ];
-const sectionStyles = `landing-section bg-white min-h-screen w-screen flex items-start justify-center pt-8 px-4 relative overflow-y-hidden`;
+const sectionStyles = `landing-section bg-white w-full py-20 px-4 relative`;
 ---
 
 <section
@@ -64,7 +64,7 @@ const sectionStyles = `landing-section bg-white min-h-screen w-screen flex items
     </h2>
 
     <div
-      class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
+      class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 items-stretch"
     >
       {cardData.map((card) => (
         <NotasCard
