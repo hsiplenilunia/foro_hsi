@@ -296,35 +296,7 @@ export default function AgendaTabsIsland() {
             {tab.label}
           </button>
         ))}
-
-{/* Tabs dia 2 */}
-      <nav
-        aria-label="Selector de día"
-        className="flex justify-center gap-3 mb-8 flex-wrap"
-        role="tablist"
-      >
-        {agendaData.map((tab, idx) => (
-          <button
-            key={tab.id2}
-            role="tab"
-            aria-selected={activeTab === idx}
-            aria-controls={tab.id2}
-            id={`tab-${tab.id2}`}
-            onClick={() => handleTabClick(idx)}
-            className={`
-              px-6 py-2 rounded-full font-bold text-sm md:text-base tracking-wider
-              transition-all duration-200 border-2
-              ${activeTab === idx
-                ? "bg-green-hsi border-transparent text-white shadow-md"
-                : "bg-white border-[#00b0e4] text-[#00b0e4] hover:bg-[#00b0e4] hover:text-white"
-              }
-            `}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </nav>
-
+        
       </nav>
 
 
