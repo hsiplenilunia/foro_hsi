@@ -296,10 +296,8 @@ export default function AgendaTabsIsland() {
             {tab.label}
           </button>
         ))}
-      </nav>
 
-
-      {/* Tabs dia 2 */}
+{/* Tabs dia 2 */}
       <nav
         aria-label="Selector de día"
         className="flex justify-center gap-3 mb-8 flex-wrap"
@@ -326,6 +324,11 @@ export default function AgendaTabsIsland() {
           </button>
         ))}
       </nav>
+
+      </nav>
+
+
+      
 
       {/* Cabecera PARTICIPANTES */}
       <div className="hidden md:grid grid-cols-[1fr_1.2fr] gap-4 mb-2 px-2">
