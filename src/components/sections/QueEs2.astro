@@ -1,81 +1,92 @@
 ---
 import { Image } from "astro:assets";
-import pleniluniaLogo from "../../assets/Hospi-con-texto-correcion-2.png";
+// Importa tu logo correcto (en la imagen que subiste aparece un hospital, no el logo de plenilunia, asegúrate de la ruta)
+import hospitalEdificio from "../../assets/edificio-hospital-info.png"; 
 import YouTubePlayer from "../YouTubePlayer.astro";
 
 const sectionStyles = `landing-section bg-white w-full py-20 px-4 relative`;
 
-// Arreglo de videos para la lista de reproducción
+// Arreglo de videos corregido (con autoplay=1 en la URL base)
 const playlist = [
   {
     videoId: "0k9FbACPenQ",
     title: "Ocultar una infección hospitalaria complica la defensa legal",
-    url: "https://www.youtube.com/embed/0k9FbACPenQ?si=kWbF74RhI0rBO17S"
+    // Base URL sin parámetros para la lógica de JS
+    baseUrl: "https://www.youtube.com/embed/0k9FbACPenQ"
   },
   {
     videoId: "TC0DQYV90L0",
     title: "Marco Regulatorio de las IAAS y los retos hacia adelante.",
-    url: "https://www.youtube.com/embed/TC0DQYV90L0?si=Z4pM9dIIADsZBbDj"
+    baseUrl: "https://www.youtube.com/embed/TC0DQYV90L0"
   },
   {
     videoId: "IicVRMobHyQ",
     title: "Retos para una colaboración multidisciplinaria en el combate a las IAAS",
-    url: "https://www.youtube.com/embed/IicVRMobHyQ?si=v2epdvGcEiFD6KTu"
+    baseUrl: "https://www.youtube.com/embed/IicVRMobHyQ"
   },
   {
     videoId: "8wkryABJVtM",
     title: "¿Cómo impactan las infecciones en las estancias hospitalarias?",
-    url: "https://www.youtube.com/embed/8wkryABJVtM?si=b-fuDJzXz8OYXiRo"
+    baseUrl: "https://www.youtube.com/embed/8wkryABJVtM"
   }
 ];
+
+// El primer video carga sin autoplay automático al inicio
+const initialUrl = `${playlist[0].baseUrl}?si=kWbF74RhI0rBO17S`;
 ---
 
-<section class={sectionStyles} data-header-color={`white`} id="que-es-2">
+<section class={sectionStyles} data-header-color={`white`} id="video-hub">
   <div class="container mx-auto z-10 relative">
     <div class="flex flex-col md:flex-row gap-8">
       
       <!-- Lado Izquierdo: Reproductor Principal y Lista -->
       <div class="flex flex-col md:w-2/3 space-y-4">
-        <div id="main-player-container">
-            <!-- YouTubePlayer -->
-            <YouTubePlayer url={playlist[0].url} title={playlist[0].title} id="main-video-frame" />
+        
+        <!-- CONTENEDOR CLAVE CON ID UNICO -->
+        <div id="main-player-wrapper" class="aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
+            <!-- Pasamos el ID al componente si lo soporta, o lo envolvemos -->
+            <YouTubePlayer url={initialUrl} title={playlist[0].title} />
         </div>
         
         <h3 id="current-video-title" class="text-xl font-bold text-blue-text px-2">
             {playlist[0].title}
         </h3>
 
-        <!-- Lista de Reproducción (Thumbnails) -->
+        <!-- Lista de Reproducción (Miniaturas) -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-2 bg-gray-50 rounded-xl">
-          {playlist.map((video) => (
+          {playlist.map((video, index) => (
             <button 
               class="video-thumbnail-btn group relative overflow-hidden rounded-lg transition-all hover:ring-2 hover:ring-blue-500"
-              data-url={video.url}
+              data-base-url={video.baseUrl}
               data-title={video.title}
+              aria-label={`Reproducir video: ${video.title}`}
             >
               <img 
                 src={`https://img.youtube.com/vi/${video.videoId}/mqdefault.jpg`} 
-                alt={video.title}
+                alt={`Miniatura de: ${video.title}`}
                 class="w-full h-auto object-cover group-hover:opacity-80 transition-opacity"
               />
-              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                 <div class="bg-blue-600 p-2 rounded-full text-white">▶</div>
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/30">
+                 <div class="bg-blue-600/90 p-3 rounded-full text-white scale-90 group-hover:scale-100 transition-transform">▶</div>
               </div>
+              {index === 0 && (
+                 <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full">Reproduciendo</div>
+              )}
             </button>
           ))}
         </div>
       </div>
 
-      <!-- Lado Derecho: Imagen y Texto -->
+      <!-- Lado Derecho: Imagen (Edificio del Hospital) y Texto -->
       <div class="flex flex-col md:w-1/3 items-center justify-center space-y-6">
         <Image
-          src={pleniluniaLogo}
-          alt="Collage médico y enfermera"
+          src={hospitalEdificio}
+          alt="Infografía del edificio del hospital y datos de IAAS"
           width={500}
-          class="rounded-2xl shadow-lg"
+          class="rounded-2xl shadow-lg border border-gray-100"
           loading="lazy"
         />
-        <p class="text-black-text text-center text-lg italic">
+        <p class="text-black-text text-center text-lg italic px-4">
           "Comparte, aprende y relaciónate con los mejores especialistas en vigilancia epidemiológica e infectología."
         </p>
       </div>
@@ -84,26 +95,56 @@ const playlist = [
   </div>
 </section>
 
-<script>
-  // Lógica para cambiar el video sin recargar la página
-  const buttons = document.querySelectorAll('.video-thumbnail-btn');
-  const iframe = document.querySelector('#main-video-frame iframe');
-  const titleDisplay = document.querySelector('#current-video-title');
+<!-- SCRIPT CORREGIDO PARA ASTRO -->
+<script is:inline>
+  // Usamos is:inline para asegurarnos de que el script se cargue tal cual en el cliente.
+  // Y envolvemos todo en DOMContentLoaded para garantizar que el iframe ya exista.
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    const wrapper = document.getElementById('main-player-wrapper');
+    const titleDisplay = document.getElementById('current-video-title');
+    const buttons = document.querySelectorAll('.video-thumbnail-btn');
+    
+    // Selector más genérico pero seguro dentro de nuestro wrapper
+    const iframe = wrapper ? wrapper.querySelector('iframe') : null;
 
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const newUrl = button.getAttribute('data-url');
-      const newTitle = button.getAttribute('data-title');
+    if (!iframe) {
+      console.error("Error del Video Hub: No se encontró el iframe dentro de #main-player-wrapper. Verifica el componente YouTubePlayer.");
+      return;
+    }
 
-      if (iframe && newUrl) {
-        iframe.setAttribute('src', newUrl);
-      }
-      if (titleDisplay && newTitle) {
-        titleDisplay.textContent = newTitle;
-      }
-      
-      // Feedback visual opcional: scroll hacia arriba del reproductor
-      window.scrollTo({ top: document.getElementById('que-es-2').offsetTop - 100, behavior: 'smooth' });
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        const baseUrl = button.getAttribute('data-base-url');
+        const newTitle = button.getAttribute('data-title');
+
+        if (baseUrl) {
+          // Construimos la URL final añadiendo autoplay=1 y quitando controles extras si queremos
+          const finalUrl = `${baseUrl}?autoplay=1&modestbranding=1&rel=0`;
+          
+          // LA CLAVE: Actualizar el atributo src del iframe existente
+          iframe.setAttribute('src', finalUrl);
+        }
+
+        if (titleDisplay && newTitle) {
+          titleDisplay.textContent = newTitle;
+        }
+        
+        // Opcional: Feedback visual en las miniaturas
+        buttons.forEach(b => b.querySelector('div.absolute.top-2')?.remove()); // Quita el tag de "Reproduciendo" de otros
+        if(!button.querySelector('div.absolute.top-2')){
+             const tag = document.createElement('div');
+             tag.className = "absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full";
+             tag.textContent = "Reproduciendo";
+             button.appendChild(tag);
+        }
+
+        // Scroll suave hacia el reproductor (UX para móviles)
+        window.scrollTo({ 
+          top: document.getElementById('video-hub').offsetTop - 50, 
+          behavior: 'smooth' 
+        });
+      });
     });
   });
 </script>
