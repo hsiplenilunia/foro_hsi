@@ -288,7 +288,7 @@ export default function AgendaTabsIsland() {
               px-6 py-2 rounded-full font-bold text-sm md:text-base tracking-wider
               transition-all duration-200 border-2
               ${activeTab === idx
-                ? "bg-gradient-hsi border-transparent text-white shadow-md"
+                ? "bg-hsi-blue border-transparent text-white shadow-md"
                 : "bg-white border-[#00b0e4] text-[#00b0e4] hover:bg-[#00b0e4] hover:text-white"
               }
             `}
@@ -322,7 +322,7 @@ export default function AgendaTabsIsland() {
             return (
               <div
                 key={idx}
-                className="bg-gradient-hsi rounded-xl mb-3 px-6 py-3 flex items-center justify-center"
+                className="bg-hsi-blue rounded-xl mb-3 px-6 py-3 flex items-center justify-center"
               >
                 <span className="text-white font-bold text-lg tracking-wide">
                   {event.title}
