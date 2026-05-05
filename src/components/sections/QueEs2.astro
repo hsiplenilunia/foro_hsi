@@ -9,11 +9,17 @@ import YouTubePlayer from "../YouTubePlayer.astro";
 const sectionStyles = `landing-section bg-white w-full py-20 px-4 relative`;
 
 const {
-  videoId = "0k9FbACPenQ",
-  title = "Ocultar una infección hospitalaria complica la defensa legal de un profesional de la salud",
+  videoId = "8jwCqR-sc0RZYJ1-SrbVyWck8ZEsTfT",
+  title = "Foro Hospitales sin Infecciones",
 } = Astro.props;
-const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-const url = "https://www.youtube.com/embed/0k9FbACPenQ?si=kWbF74RhI0rBO17S";
+
+const playlistUrl = "https://www.youtube.com/playlist?list=PL-8jwCqR-sc0RZYJ1-SrbVyWck8ZEsTfT";
+
+//const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+//const url = "https://www.youtube.com/embed/0k9FbACPenQ?si=kWbF74RhI0rBO17S";
+
+
+
 ---
 
 <section class={sectionStyles} data-header-color={`white`} id="que-es-2">
