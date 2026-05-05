@@ -387,9 +387,12 @@ export default function AgendaTabsIsland() {
                   {/* Tipo + Título */}
                   <div className="flex flex-col">
                     {event.type && (
-                      <span className="text-[#00b0e4] font-bold text-xs tracking-widest uppercase mb-1">
-                        {event.type}
-                      </span>
+                      <span
+    className="font-bold text-xs tracking-widest uppercase mb-1"
+    style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
+  >
+    {event.type}
+  </span>
                     )}
                     <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
                       {event.title}
