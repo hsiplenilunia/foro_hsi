@@ -1,21 +1,30 @@
 ---
 // SpeakersPaginated.astro
 const speakers = [
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861847/speaker_santiago_march_csvoed.webp", alt: "Santiago March" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861847/speakerr_roxana_trejo_forhdu.webp", alt: "Roxana Trejo" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861847/speaker_maribel_ramirez_yavpyb.webp", alt: "Maribel Ramírez" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861847/speaker_luis_galindo_zb9iyx.webp", alt: "Luis Galindo" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861847/speaker_hector_valle_comdzp.webp", alt: "Héctor Valle" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_fabiola_casas_ohhgal.webp", alt: "Fabiola Casas" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_fabiana_zepeda_e7vexy.webp", alt: "Fabiana Zepeda" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_eduardo_gonzalez_zuyzpy.webp", alt: "Eduardo González" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_eric_ochoa_loz2gx.webp", alt: "Eric Ochoa" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_celia_mercedes_vpqdsc.webp", alt: "Celia Mercedes" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861846/speaker_daniela_de_la_rosa_kbdhxe.webp", alt: "Daniela de la Rosa" },
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752861845/speaker_alejandro_macias_egwdei.webp", alt: "Alejandro Macías" },
-  //{ src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778020722/Alejandro_Macias.png", alt: "Alejandro Macías" },//
-  { src: "https://res.cloudinary.com/difrqz0ke/image/upload/v1752865731/speaker_juanita_jimenez_ygqzip.webp", alt: "Juanita Jiménez" },
-
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778020722/Alejandro_Macias.png", alt: "Alejandro Macías" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021865/Antonio_Ramos_de_la_Medina.png", alt: "Antonio Ramos de la Medina" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021865/Celia_Mercedes_Alpuche.png", alt: "Celia Mercedes Alpuche" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Eduardo_Gonzalez_Pier.png", alt: "Eduardo González Pier" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Eric_Ochoa_Hein.png", alt: "Eric Ochoa Hein" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Fabiana_Zepeda.png", alt: "Fabiana Zepeda" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Fabiola_Casas_Rodriguez.png", alt: "Fabiola Casas" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Hector_Valle.png", alt: "Héctor Valle" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021867/Isabel_Villegas.png", alt: "Isabel Villegas" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021867/Jorge_Azpiri.png", alt: "Jorge Azpiri" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021867/Jose_Ignacio_Santos_Preciado.png", alt: "José Ignacio Santos Preciado" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021868/Juana_Jimenez_Sanchez.png", alt: "Juana Jiménez Sánchez" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021869/Liliana_Vargas_Neri.png", alt: "Liliana Vargas Neri" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021869/Luis_Fernando_Perez.png", alt: "Luis Fernando Pérez" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021869/Maria_Enriqueta_Barido_Murguia.png", alt: "María Enriqueta Barido Murguía" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021870/Maribel_Ramirez_Coronel.png", alt: "Maribel Ramírez Coronel" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021870/Martha_Huertas_Jimenez.png", alt: "Martha Huertas Jiménez" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021870/Mercedes_Juan_Lopez.png", alt: "Mercedes Juan López" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021871/Octavio_Gonzalez_Chon.png", alt: "Octavio González Chon" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021871/Paulo_Castaneda.png", alt: "Paulo Castañeda" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021872/Rosa_Maria_Wong.png", alt: "Rosa María Wong" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021872/Roxana_Trejo.png", alt: "Roxana Trejo" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021872/Samuel_Ponce_de_Leon_Rosales.png", alt: "Samuel Ponce de León Rosales" },
+  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021873/Victor_Rosenthal.png", alt: "Victor Rosenthal" },
 
 ];
 
