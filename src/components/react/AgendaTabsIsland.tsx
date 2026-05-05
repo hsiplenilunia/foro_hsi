@@ -371,7 +371,7 @@ export default function AgendaTabsIsland() {
                           >
                              {currentDay.month}
                             </span>
-                      )}
+                      
                     </div>
                   )}
 
