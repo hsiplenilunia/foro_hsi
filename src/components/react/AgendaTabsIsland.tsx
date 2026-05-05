@@ -306,8 +306,6 @@ export default function AgendaTabsIsland() {
       </nav>
 
 
-      
-
       {/* Cabecera PARTICIPANTES */}
       <div className="hidden md:grid grid-cols-[1fr_1.2fr] gap-4 mb-2 px-2">
         <div />
@@ -401,7 +399,7 @@ export default function AgendaTabsIsland() {
                 </div>
 
                 {/* Divisor vertical — solo desktop */}
-                <div className="hidden md:block border-l border-gray-200 pl-5 pr-5 py-5">
+                <div className="hidden md:block border-l border-white-200 pl-5 pr-5 py-5">
                   {event.participants ? (
                     <p
                       className="text-sm leading-relaxed text-[#204356]"
