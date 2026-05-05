@@ -378,12 +378,9 @@ export default function AgendaTabsIsland() {
                   {/* Horario badge — para cards que no son la primera */}
                   {!isFirst && event.time && (
                     <div className="min-w-[100px]">
-                      <span
-  className="text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap"
-  style={{ backgroundColor: activeTab === 1 ? "#3aaa5c" : "#204356" }}
->
-  {event.time}
-</span>
+                      <span className="bg-[#204356] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+                        {event.time}
+                      </span>
                     </div>
                   )}
 
