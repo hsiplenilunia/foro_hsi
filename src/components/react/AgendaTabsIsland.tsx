@@ -399,7 +399,7 @@ export default function AgendaTabsIsland() {
                 </div>
 
                 {/* Divisor vertical — solo desktop */}
-                <div className="hidden md:block border-l border-white pl-5 pr-5 py-5">
+                <div className="hidden md:block border-l border-white pl-10 pr-10 py-10">
                   {event.participants ? (
                     <p
                       className="text-sm leading-relaxed text-[#204356]"
