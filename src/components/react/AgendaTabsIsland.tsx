@@ -331,13 +331,13 @@ export default function AgendaTabsIsland() {
           if (event.isNetworking) {
             return (
               <div
-                key={idx}
-                className="bg-hsi-blue rounded-xl mb-3 px-6 py-3 flex items-center justify-center"
-              >
-                <span className="text-white font-bold text-lg tracking-wide">
-                  {event.title}
-                </span>
-              </div>
+    className="rounded-xl mb-5 px-6 py-3 flex items-center justify-center"
+    style={{ backgroundColor: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
+  >
+    <span className="text-white font-bold text-lg tracking-wide">
+      {event.title}
+    </span>
+  </div>
             );
           }
 
@@ -388,11 +388,11 @@ export default function AgendaTabsIsland() {
                   <div className="flex flex-col">
                     {event.type && (
                       <span
-    className="font-bold text-xs tracking-widest uppercase mb-1"
-    style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
-  >
-    {event.type}
-  </span>
+                        className="font-bold text-xs tracking-widest uppercase mb-1"
+                        style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
+                        >
+                         {event.type}
+                          </span>
                     )}
                     <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
                       {event.title}
