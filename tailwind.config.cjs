@@ -24,7 +24,7 @@ module.exports = {
         'bg-gray': "#e9e9e9",
         'hsi-blue': "#00ccf2",
         'celeste-hsi': "#00bbe7",
-        'green-hsi': "#00B851",
+        'green-hsi': "#25A64B",
 
         // Gradiente actualizado — 6 colores Figma
         'gradient-start':   "#67AC51",  // 0%
