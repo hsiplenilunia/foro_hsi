@@ -1,61 +1,83 @@
 ---
-import { useState } from 'react';
 const { id, url, title = "Video de YouTube", class: className = "" } = Astro.props;
 
-function extractVideoId(url) {
-  // Soporta URLs tipo https://youtu.be/ID y https://www.youtube.com/watch?v=ID
-  const ytMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/))([\w-]{11})/);
-  return ytMatch ? ytMatch[1] : url;
+// Función mejorada para detectar tipo de contenido y extraer ID
+function getYouTubeData(url) {
+  const isPlaylist = url.includes('list=');
+  
+  if (isPlaylist) {
+    const listMatch = url.match(/[?&]list=([^#&?]+)/);
+    return {
+      id: listMatch ? listMatch[1] : null,
+      type: 'playlist',
+      // Miniatura por defecto para listas (puedes usar una propia del foro)
+      thumbnail: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" 
+    };
+  } else {
+    const ytMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/))([\w-]{11})/);
+    const vId = ytMatch ? ytMatch[1] : url;
+    return {
+      id: vId,
+      type: 'video',
+      thumbnail: `https://img.youtube.com/vi/${vId}/maxresdefault.jpg`
+    };
+  }
 }
 
-const videoId = extractVideoId(url);
-const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+const ytData = getYouTubeData(url);
 ---
 
-<div class={`aspect-video w-full max-w-md mx-auto md:mb-4 relative ${className}`}>
+<div class={`aspect-video w-full shadow-xl rounded-xl overflow-hidden relative ${className}`}>
   <div
     id={`yt-lite-${id}`}
-    class="absolute inset-0 w-full flex items-center justify-center cursor-pointer bg-black/40"
-    style={"background: url('" + thumbnail + "') center/cover no-repeat;"}
+    class="absolute inset-0 w-full flex items-center justify-center cursor-pointer bg-slate-900"
+    style={`background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('${ytData.thumbnail}') center/cover no-repeat;`}
     tabindex="0"
     role="button"
-    aria-label={`Reproducir video: ${title}`}
-    data-video-id={videoId}
+    data-yt-id={ytData.id}
+    data-yt-type={ytData.type}
     data-title={title}
   >
-    <div class="flex items-center justify-center w-[90px] h-[90px] rounded-full bg-navy">
-      <svg width="64" height="64" fill="white" viewBox="0 0 24 24">
+    <!-- Botón Play -->
+    <div class="group flex items-center justify-center w-20 h-20 rounded-full bg-blue-600 transition-transform group-hover:scale-110">
+      <svg width="40" height="40" fill="white" viewBox="0 0 24 24" class="ml-1">
         <path d="M8 5v14l11-7z"></path>
       </svg>
     </div>
+    
+    {ytData.type === 'playlist' && (
+      <div class="absolute bottom-4 right-4 bg-black/80 text-white text-xs px-3 py-1 rounded-full uppercase tracking-widest font-bold">
+        Lista de Reproducción
+      </div>
+    )}
   </div>
 </div>
 
 <script define:vars={{ id }}>
   document.addEventListener('DOMContentLoaded', function () {
-    const ytLite = document.getElementById(`yt-lite-${id}`);
+    const container = document.getElementById(`yt-lite-${id}`);
     
-    if (ytLite) {
-      // Leer los datos desde los atributos data-*
-      const videoId = ytLite.getAttribute('data-video-id');
-      const title = ytLite.getAttribute('data-title');
-      
-      ytLite.addEventListener('click', function () {
+    if (container) {
+      container.addEventListener('click', function () {
+        const ytId = container.getAttribute('data-yt-id');
+        const type = container.getAttribute('data-yt-type');
+        const title = container.getAttribute('data-title');
+        
+        // Construcción dinámica de la URL según el tipo
+        let embedPath = type === 'playlist' 
+          ? `videoseries?list=${ytId}` 
+          : `${ytId}?autoplay=1`;
+        
         const iframe = document.createElement('iframe');
-        iframe.className = 'w-full h-full';
-        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+        iframe.className = 'w-full h-full absolute inset-0';
+        iframe.src = `https://www.youtube.com/embed/${embedPath}&rel=0&modestbranding=1`;
         iframe.title = title;
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
         iframe.allowFullscreen = true;
         iframe.frameBorder = '0';
-        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-        ytLite.replaceWith(iframe);
-      });
-      
-      ytLite.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          ytLite.click();
-        }
+        
+        container.innerHTML = '';
+        container.appendChild(iframe);
       });
     }
   });
