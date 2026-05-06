@@ -16,7 +16,7 @@ const agendaData = [
           Dra. Mercedes Juan López<br/>
           Dra. María Enriqueta Baridó Murguía<br/>
           Dr. José Ignacio Santos Preciado<br/>
-          Dra. Ruth Arelllano<br/>
+          Dra. Samuel Ponce de León Rosales<br/>
           Dr. Luis Fernando Pérez<br/>
           Dra. Daniela de la Rosa Zamboni<br/>
           Dra. Juana Jiménez Sánchez<br/>
