@@ -56,9 +56,24 @@ const sectionStyles = `landing-section bg-bg-white w-screen flex items-center ju
                 Institución sede comprometida<br/>con el combate a las infecciones
     </p>
 
+<!-- Botón de Registro -->
+<a 
+  href="https://lu.ma/event/evt-K8l7I2uY8vW8Gv6" 
+  class="luma-checkout--button" 
+  data-luma-action="checkout" 
+  data-luma-event-id="evt-K8l7I2uY8vW8Gv6"
+  style="background: #111; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;"
+>
+  Registrarse al Foro
+</a>
+
+<!-- Script de Luma (Solo se carga una vez) -->
+<script is:inline id="luma-checkout" src="https://embed.lu.ma/checkout.js"></script>
+
          </div>
         </div>
     </div>
+    
     <!-- <Image
         src={heroLogoMobile}
         width={289}
