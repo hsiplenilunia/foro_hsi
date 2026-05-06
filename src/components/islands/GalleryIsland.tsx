@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 
 interface ImageItem {
   url: string;
@@ -10,7 +10,9 @@ interface GalleryIslandProps {
   imageItems: ImageItem[];
 }
 
-// FadeImage: transición suave al cambiar de imagen en el lightbox
+const IMAGE_HEIGHT = 160; // px, uniform row height
+
+// FadeImage: transición suave al cambiar de imagen
 type FadeImageProps = { src: string; alt: string; loaded?: boolean };
 const FadeImage = ({ src, alt, loaded }: FadeImageProps) => {
   const [visible, setVisible] = React.useState(false);
@@ -24,8 +26,8 @@ const FadeImage = ({ src, alt, loaded }: FadeImageProps) => {
       src={src}
       alt={alt}
       loading={loaded ? 'eager' : 'lazy'}
-      className={`max-h-[85vh] w-auto mx-auto rounded-xl shadow-2xl transition-opacity duration-500 ${visible ? 'opacity-100' : 'opacity-0'}`}
-      style={{ maxWidth: '90vw' }}
+      className={`max-h-[80vh] w-auto mx-auto rounded-xl shadow-2xl transition-opacity duration-500 ${visible ? 'opacity-100' : 'opacity-0'}`}
+      style={{ maxWidth: '90vw', position: 'relative' }}
     />
   );
 };
@@ -33,26 +35,34 @@ const FadeImage = ({ src, alt, loaded }: FadeImageProps) => {
 const GalleryIsland: React.FC<GalleryIslandProps> = ({ imageItems }) => {
   const [overlayIndex, setOverlayIndex] = useState<number | null>(null);
   const [loadedBig, setLoadedBig] = useState<{ [key: number]: boolean }>({});
-  
-  // Overlay navigation logic
+  const [visibleImages, setVisibleImages] = useState(20); // initial batch
+  const galleryRef = useRef<HTMLDivElement>(null);
+
+  // Infinite scroll handler
+  const handleScroll = useCallback(() => {
+    if (!galleryRef.current) return;
+    const { scrollTop, scrollHeight, clientHeight } = galleryRef.current;
+    if (scrollTop + clientHeight >= scrollHeight - 200) {
+      setVisibleImages((prev) => Math.min(imageItems.length, prev + 20));
+    }
+  }, [imageItems.length]);
+
+  // Overlay navigation
   const showOverlay = (idx: number) => {
     setOverlayIndex(idx);
     setLoadedBig((prev) => ({ ...prev, [idx]: true }));
     document.body.style.overflow = 'hidden';
   };
-
   const closeOverlay = () => {
     setOverlayIndex(null);
     document.body.style.overflow = '';
   };
-
   const nextImage = () => {
     if (overlayIndex === null) return;
     const next = (overlayIndex + 1) % imageItems.length;
     setOverlayIndex(next);
     setLoadedBig((prev) => ({ ...prev, [next]: true }));
   };
-
   const prevImage = () => {
     if (overlayIndex === null) return;
     const prev = (overlayIndex - 1 + imageItems.length) % imageItems.length;
@@ -60,7 +70,7 @@ const GalleryIsland: React.FC<GalleryIslandProps> = ({ imageItems }) => {
     setLoadedBig((prevLoaded) => ({ ...prevLoaded, [prev]: true }));
   };
 
-  // Keyboard Shortcuts
+  // Keyboard & click outside
   React.useEffect(() => {
     if (overlayIndex === null) return;
     const handleKey = (e: KeyboardEvent) => {
@@ -72,9 +82,11 @@ const GalleryIsland: React.FC<GalleryIslandProps> = ({ imageItems }) => {
     return () => document.removeEventListener('keydown', handleKey);
   }, [overlayIndex]);
 
-  // Touch/swipe for Mobile Overlay
+  // Touch/swipe
   const touchStart = useRef<number | null>(null);
-  const handleTouchStart = (e: React.TouchEvent) => { touchStart.current = e.touches[0].clientX; };
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStart.current = e.touches[0].clientX;
+  };
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (touchStart.current === null) return;
     const delta = e.changedTouches[0].clientX - touchStart.current;
@@ -83,50 +95,57 @@ const GalleryIsland: React.FC<GalleryIslandProps> = ({ imageItems }) => {
     touchStart.current = null;
   };
 
+  // Infinite scroll effect
+  React.useEffect(() => {
+    const ref = galleryRef.current;
+    if (!ref) return;
+    ref.addEventListener('scroll', handleScroll);
+    return () => ref.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
+
+  // Click outside overlay
   const overlayBgRef = useRef<HTMLDivElement>(null);
   const handleOverlayClick = (e: React.MouseEvent) => {
     if (e.target === overlayBgRef.current) closeOverlay();
   };
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto py-8">
-      {/* Grid de 5 Columnas (1 sola fila si hay 5 fotos) */}
+    <div className="w-full md:max-w-[1100px] mx-auto h-full" style={{ minHeight: '60vh' }}>
       <div
-        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4"
+        ref={galleryRef}
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 overflow-visible"
+        style={{ maxHeight: '70vh' }}
       >
-        {imageItems.map((img, idx) => (
+        {imageItems.slice(0, visibleImages).map((img, idx) => (
           <div
             key={img.url}
-            className="group cursor-pointer relative aspect-square overflow-hidden rounded-xl bg-gray-100 shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
+            className="flex relative group cursor-pointer items-center justify-center max-w-[220px] h-[150px] min-h-[150px] max-h-[200px]"
             onClick={() => showOverlay(idx)}
           >
             <img
               src={img.url}
               alt={img.alt}
               loading="lazy"
-              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
+              className="object-contain max-h-full max-w-full mx-auto my-auto rounded-lg transition-transform duration-300 group-hover:scale-110 group-hover:z-20 group-hover:shadow-2xl group-hover:-rotate-2 group-hover:brightness-110"
+              style={{ pointerEvents: 'none', background: 'transparent', display: 'block' }}
+              draggable={false}
             />
-            {/* Overlay sutil al hacer hover */}
-            <div className="absolute inset-0 bg-navy/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <span className="text-white bg-blue-600/80 p-2 rounded-full scale-50 group-hover:scale-100 transition-transform">
-                    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
-                </span>
-            </div>
           </div>
         ))}
       </div>
 
-      {/* Lightbox Overlay */}
+      {/* Overlay */}
       {overlayIndex !== null && (
         <div
           ref={overlayBgRef}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-navy/90 backdrop-blur-md"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-navy/70 backdrop-blur-lg"
           onClick={handleOverlayClick}
         >
-          <div
-            className="flex items-center justify-center w-full h-full p-4"
+            <div
+            className="flex items-center justify-center w-full h-full"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
+            style={{ position: 'relative' }}
           >
             <FadeImage
               key={overlayIndex}
@@ -135,31 +154,30 @@ const GalleryIsland: React.FC<GalleryIslandProps> = ({ imageItems }) => {
               loaded={loadedBig[overlayIndex]}
             />
           </div>
-
-          {/* Botones de Navegación */}
           <button
-            className="absolute top-6 right-8 w-12 h-12 flex items-center justify-center text-navy text-2xl bg-white rounded-full hover:bg-blue-100 transition-colors z-[110]"
-            onClick={closeOverlay}
+            className="absolute top-6 right-8 w-[52px] h-[52px] text-navy text-3xl bg-white rounded-full p-2 hover:bg-celeste-hsi transition"
+            onClick={e => { e.stopPropagation(); closeOverlay(); }}
+            onTouchEnd={e => { e.stopPropagation(); closeOverlay(); }}
+            onPointerUp={e => { e.stopPropagation(); closeOverlay(); }}
             aria-label="Cerrar"
           >
             &#10005;
           </button>
-          
           <button
-            className="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-navy text-3xl bg-white/90 rounded-full hover:bg-white transition-all shadow-lg hidden md:flex"
-            onClick={prevImage}
+            className="absolute left-4 bottom-12 md:top-1/2 -translate-y-1/2 w-[52px] h-[52px] text-navy text-4xl bg-white rounded-full p-2 hover:bg-celeste-hsi transition"
+            onClick={e => { e.stopPropagation(); prevImage(); }}
             aria-label="Anterior"
           >
             &#8592;
           </button>
-          
           <button
-            className="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-navy text-3xl bg-white/90 rounded-full hover:bg-white transition-all shadow-lg hidden md:flex"
-            onClick={nextImage}
+            className="absolute right-4 bottom-12 md:top-1/2 -translate-y-1/2 w-[52px] h-[52px] text-navy text-4xl bg-white rounded-full p-2 hover:bg-celeste-hsi transition"
+            onClick={e => { e.stopPropagation(); nextImage(); }}
             aria-label="Siguiente"
           >
             &#8594;
           </button>
+          
         </div>
       )}
     </div>
