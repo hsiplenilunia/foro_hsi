@@ -110,7 +110,7 @@ const GalleryIsland: React.FC<GalleryIslandProps> = ({ imageItems }) => {
   };
 
   return (
-    <div className="w-full md:max-w-[1100px] mx-auto h-auto" }}>
+    <div className="w-full md:max-w-[1100px] mx-auto h-auto">
       <div
         ref={galleryRef}
         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 overflow-visible"
