@@ -119,7 +119,7 @@ const GalleryIsland: React.FC<GalleryIslandProps> = ({ imageItems }) => {
         {imageItems.slice(0, visibleImages).map((img, idx) => (
           <div
             key={img.url}
-            className="flex relative group cursor-pointer items-center justify-center max-w-[240px] h-[150px] min-h-[150px] max-h-[220px]"
+            className="flex relative group cursor-pointer items-center justify-center max-w-[240px] h-[170px] min-h-[170px] max-h-[220px]"
             onClick={() => showOverlay(idx)}
           >
             <img
