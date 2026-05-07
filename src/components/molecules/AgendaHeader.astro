@@ -15,48 +15,44 @@ const sectionStyles = `landing-section bg-bg-white w-screen flex items-center ju
 >
 <div class="flex w-full justify-center gap-8">
     <Image
-        src={VIForo}
-        width={182}
-        height={164}
-        alt="LogoVI Foro"
-        loading="lazy"
-        class="min-w-[182px] w-[236px] h-[253px]"
+       src={VIForo}
+      width={182}
+      height={164}
+      alt="Logo VI Foro"
+      loading="lazy"
+      class="w-[140px] h-auto md:min-w-[182px] md:w-[236px] md:h-[253px]"
     />
-    <div>
-        <br>
-        <h1 class="text-blue-text text-5xl md:text-6xl font-bold leading-none">AGENDA</h1>
-        <h2 class="text-blue-text text-3xl font-normal mt-1">PRELIMINAR
-        </h2>
-        <p class="text-blue-text text-2xl tracking-wider font-bold mt-2">
-            27 Y 28 DE Agosto, 2026
-        </p>
-        <p class="text-blue-text text-xl font-normal tracking-widest mt-1">
-            SEDE | <strong class="font-extrabold">Auditorio del Hospital Médica Sur</strong>
-        </p>
-        <br>
-        <div>
-            <img src="/wave-line.svg" alt="" class="w-[180px] md:w-[450px] mt-[14px] mb-[14px] h-auto" aria-hidden="true" />
+       <div class="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-auto">
+      <h1 class="text-blue-text text-4xl md:text-6xl font-bold leading-none">AGENDA</h1>
+      <h2 class="text-blue-text text-2xl md:text-3xl font-normal mt-1">PRELIMINAR</h2>
+      <p class="text-blue-text text-xl md:text-2xl tracking-wider font-bold mt-2">
+        27 Y 28 DE AGOSTO, 2026
+      </p>
+      <p class="text-blue-text text-lg md:text-xl font-normal tracking-widest mt-1">
+        SEDE | <strong class="font-extrabold">Auditorio del Hospital Médica Sur</strong>
+      </p>
+            
+            <img src="/wave-line.svg" alt="" class="w-[180px] md:w-[450px] mt-4 mb-2 h-auto mx-auto md:mx-0" aria-hidden="true" />
         <br >
              <!-- MédicaSur logo + texto institucional.. -->
-  <div class="flex items-center gap-2 mt-[14px]">
-    <Image
-      src={msLogoMedicaSur}
-      alt="Médica Sur"
-      class="h-12 w-auto"
-      width={224.6}
-      height={52}
-      loading="lazy"
-      format="svg"
-      quality={80}
-    />
-                 <!-- Separador vertical -->
-            <div class="w-px h-14 bg-gray-400"></div>
-            <!-- Texto institucional -->
-             <p class="font-bold text-blue-text italic text-base leading-snug text-justify max-w-[280px]">
-                Institución sede comprometida<br/>con el combate a las infecciones
-    </p>
+<div class="flex items-center gap-2 mt-2 justify-center md:justify-start">
+        <Image
+          src={msLogoMedicaSur}
+          alt="Médica Sur"
+          class="h-10 md:h-12 w-auto"
+          width={224}
+          height={52}
+          loading="lazy"
+          format="svg"
+          quality={80}
+        />
+        <div class="w-px h-12 bg-gray-400"></div>
+        <p class="font-bold text-blue-text italic text-sm md:text-base leading-snug text-left max-w-[200px] md:max-w-[280px]">
+          Institución sede comprometida<br />con el combate a las infecciones
+        </p>
+      </div>
+    </div>
 
-         </div>
 
 <!-- Botón de Registro 
 <a 
