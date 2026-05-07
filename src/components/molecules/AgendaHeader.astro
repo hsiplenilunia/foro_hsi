@@ -118,4 +118,59 @@ const sectionStyles = `landing-section bg-bg-white w-screen flex items-center ju
         class="hidden md:block w-[69px] h-[65px]"
     />
 </div>
+
+ <!-- Mobile Layout -->
+  <div
+    class="absolute inset-0 z-0 bg-no-repeat bg-cover bg-center pointer-events-none"
+    style="background-image: url('/bg_home_mobile.png');"
+    aria-hidden="true"></div>
+
+
+ <div class="flex w-full justify-center gap-8">
+    <Image
+        src={VIForo}
+        width={182}
+        height={164}
+        alt="LogoVI Foro"
+        loading="lazy"
+        class="min-w-[182px] w-[236px] h-[253px]"
+    />
+    <div>
+        <br>
+        <h1 class="text-blue-text justify-center text-5xl md:text-6xl font-bold leading-none">AGENDA</h1>
+        <h2 class="text-blue-text justify-center text-3xl font-normal mt-1">PRELIMINAR
+        </h2>
+        <p class="text-blue-text justify-center text-2xl tracking-wider font-bold mt-2">
+            27 Y 28 DE Agosto, 2026
+        </p>
+        <p class="text-blue-text justify-center text-xl font-normal tracking-widest mt-1">
+            SEDE | <strong class="font-extrabold">Auditorio del Hospital Médica Sur</strong>
+        </p>
+        <br>
+        <div>
+            <img src="/wave-line.svg" alt="" class="w-[180px] md:w-[450px] mt-[14px] mb-[14px] h-auto" aria-hidden="true" />
+        <br >
+             <!-- MédicaSur logo + texto institucional.. -->
+  <div class="flex items-center gap-2 mt-[14px]">
+    <Image
+      src={msLogoMedicaSur}
+      alt="Médica Sur"
+      class="h-12 w-auto"
+      width={224.6}
+      height={52}
+      loading="lazy"
+      format="svg"
+      quality={80}
+    />
+                 <!-- Separador vertical -->
+            <div class="w-px h-14 bg-gray-400"></div>
+            <!-- Texto institucional -->
+             <p class="font-bold text-blue-text italic text-base leading-snug text-justify max-w-[280px]">
+                Institución sede comprometida<br/>con el combate a las infecciones
+    </p>
+
+         </div>
+
+<!-- END Mobile Layout -->
+
 </section>
