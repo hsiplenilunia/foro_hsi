@@ -134,13 +134,31 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
 </div>
 <!-- Fin desktop layout -->
 
+
+
+
   <!-- Mobile Layout -->
   <div class="lg:hidden flex flex-col items-center text-center px-6 pt-40 z-30 relative h-full">
-    <h1 class="text-black text-3xl font-black uppercase">
-      <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">VI</span>
-      <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">Foro</span>
-      <span class="text-6xl block bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end bg-clip-text text-transparent font-black uppercase leading-none">2026</span>
-    </h1>
+
+    <!-- Fondo del home -->
+  <div
+    class="absolute inset-0 z-0 bg-no-repeat bg-cover bg-center pointer-events-none"
+    style="background-image: url('/hero-bg.png');"
+    aria-hidden="true"></div>
+
+  <!-- VI Foro 2026 -->
+    <Image
+      src={VIForoHsi}
+      alt="VI Foro"
+      class="h-46 w-46"
+      width={182}
+      height={164}
+      loading="lazy"
+      decoding="async"
+      format="svg"
+      quality={80}
+    />
+
 
     <Image
       src={heroLogoMobile}
@@ -158,16 +176,17 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
       <span>RESISTENCIA MICROBIANA</span><br/>
     </h3>
 
-    <div class="bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end rounded-[20px] px-6 py-2 inline-block mb-3">
-      <p class="text-white font-extrabold uppercase text-xl leading-tight tracking-wide text-left">
-        El desafío de las infecciones.
-      </p>
-    </div>
+ <div class="bg-[#204356] rounded-full px-8 py-3 w-full max-w-[575px] h-12 flex items-center justify-center">
+    <p class="text-white font-bold italic leading-[114.9%] tracking-normal text-center whitespace-nowrap"
+     style="font-size: clamp(18px, 2.5vw, 36px);">
+    El desafío de las Infecciones</p>
+</div>
 
     <p class="text-blue-text text-3xl font-bold">
       27 Y 28 DE <br />AGOSTO, 2026
     </p>
 
+      <!-- Texto insticional -->
     <div class="flex flex-col items-center w-full mt-2">
       <p class="text-blue-text text-xl text-center font-normal tracking-wide">
         SEDE | Auditorio del <br /><strong class="font-extrabold">Hospital Médica Sur</strong>
@@ -178,15 +197,16 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
     <span class="px-4 py-1 rounded-full text-white font-semibold text-base shadow bg-gradient-to-r from-gradient-start via-gradient-center to-gradient-end mt-10 mb-2">
        AVAL ACADÉMICO
     </span>
+  <!-- MédicaSur logo -->
+  <div class="flex items-center gap-2 mt-[14px]">
     <Image
-      src={msLogo}
+      src={msLogoMedicaSur}
       alt="Médica Sur"
-      class="h-24 w-auto"
+      class="h-12 w-auto"
       width={200}
       height={60}
       loading="lazy"
-      decoding="async"
-      format="png"
+      format="svg"
       quality={80}
     />
   </div>
