@@ -113,8 +113,8 @@ const GalleryIsland: React.FC<GalleryIslandProps> = ({ imageItems }) => {
     <div className="w-full md:max-w-[1100px] mx-auto h-full" style={{ minHeight: '60vh' }}>
       <div
         ref={galleryRef}
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 overflow-visible"
-        style={{ maxHeight: '70vh' }}
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2"
+
       >
         {imageItems.slice(0, visibleImages).map((img, idx) => (
           <div
