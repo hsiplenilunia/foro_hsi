@@ -62,7 +62,7 @@ const imageItems = [
   }, */
 ];
 
-const sectionStyles = `landing-section bg-blue-light h-auto w-full pt-16 pb-16 md:pb-20 relative`;
+const sectionStyles = `landing-section bg-blue-light h-auto w-full pt-16 pb-8 md:pb-20 relative`;
 ---
 
 <!-- Sección    Galería -->
@@ -73,7 +73,7 @@ const sectionStyles = `landing-section bg-blue-light h-auto w-full pt-16 pb-16 m
             class="text-blue-text text-4xl font-bold text-center mt-20 md:mt-10 mb-10">
             GALERÍA
         </h2>
-       <div class="mb-16 md:mb-0"> <GalleryIsland client:load imageItems={imageItems} />
+       <div class="mb-8 md:mb-0"> <GalleryIsland client:load imageItems={imageItems} />
     </div>
     </div>
 </section>
