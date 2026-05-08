@@ -6,12 +6,12 @@ export const menu = [
   {
     name: "¿Por qué asistir?",
     link: "#porque-asistir",
-    className: "w-[120px] text-center", // 👈 Ancho y alineación personalizada
+    className: "w-[110px] text-center", // 👈 Ancho y alineación personalizada
   },
   {
     name: "Agenda y Speakers",
     link: "#agenda",
-    className: "w-[130px] text-center",
+    className: "w-[120px] text-center",
   },
   {
     name: "Medios",
@@ -24,7 +24,7 @@ export const menu = [
   {
     name: "Aliados & patrocinadores",
     link: "#patrocinadores",
-    className: "w-[180px] text-center", // 👈 Este también en dos líneas
+    className: "w-[160px] text-center", // 👈 Este también en dos líneas
   },
   {
     name: "Foros Anteriores",
