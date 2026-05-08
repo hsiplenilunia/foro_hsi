@@ -1,5 +1,6 @@
 ---
 import { menu } from "./data/menuData.ts";
+import logoHSI from "../assets/Logo-HSI.svg";
 import CloseIcon from "./icons/CloseIcon.astro";
 import DownTriangleIcon from "./icons/DownTriangleIcon.astro";
 import MailIcon from "./icons/MailIcon.astro";
@@ -17,7 +18,17 @@ import PhoneIcon from "./icons/PhoneIcon.astro";
     class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white/50 text-black-text flex flex-col transition-transform duration-300 ease-in-out transform translate-x-full"
   >
     <div class="flex items-center justify-between p-6 border-b border-white/10">
-      <img src="https://res.cloudinary.com/difrqz0ke/image/upload/v1752888449/Logo-HSI_1_lopusa.webp" alt="logo HSI">
+      <Image
+        src={logoHSI}
+        alt="HSI Logo"
+        width={90}
+        height={90}
+        class="h-[90px] w-[90px]"
+        format="svg"
+        loading="eager"
+        quality={90}
+        priority
+      />
       <button
         id="close-btn"
         aria-label="Cerrar menú"
