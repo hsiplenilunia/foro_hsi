@@ -16,9 +16,9 @@ export const menu = [
   {
     name: "Medios",
     subOptions: [
-      { name: "Prensa", link: "#prensa" },
+      //<{ name: "Prensa", link: "#prensa" },
       { name: "Galería", link: "#galeria" },
-      { name: "Video", link: "#video" },
+      //{ name: "Video", link: "#video" },
     ],
   },
   {
