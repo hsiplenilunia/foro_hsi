@@ -17,7 +17,7 @@ import PhoneIcon from "./icons/PhoneIcon.astro";
     class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white/50 text-black-text flex flex-col transition-transform duration-300 ease-in-out transform translate-x-full"
   >
     <div class="flex items-center justify-between p-6 border-b border-white/10">
-      <img src="https://res.cloudinary.com/dokvwbz1c/image/upload/v1778282889/LogoHSI.png" alt="logo HSI">
+      <img src="https://res.cloudinary.com/dokvwbz1c/image/upload/v1778282889/LogoHSI.png" alt="Logo HSI">
       <button
         id="close-btn"
         aria-label="Cerrar menú"
@@ -32,7 +32,7 @@ import PhoneIcon from "./icons/PhoneIcon.astro";
           menu.map((item) => (
             <li>
               {item.subOptions ? (
-                <details class="bg-green-hsi text-white tracking-wide rounded-lg shadow-2xl overflow-hidden group">
+                <details class="bg-hsi-blue text-white tracking-wide rounded-lg shadow-2xl overflow-hidden group">
                   <summary class="px-4 py-3 flex justify-between items-center cursor-pointer list-none">
                     <div class="flex flex-grow justify-center">
                       {item.name}
@@ -57,7 +57,7 @@ import PhoneIcon from "./icons/PhoneIcon.astro";
               ) : (
                 <a
                   href={item.link}
-                  class="block px-4 py-3 bg-green-hsi text-white tracking-wide shadow-xl rounded-lg text-center hover:bg-white/20 transition-colors"
+                  class="block px-4 py-3 bg-hsi-blue text-white tracking-wide shadow-xl rounded-lg text-center hover:bg-white/20 transition-colors"
                 >
                   {item.name}
                 </a>
