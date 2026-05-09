@@ -131,108 +131,103 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
 
 
   <!-- Mobile Layout -->
-
-   <!-- Fondo del home mobile -->
-  <div
-    class="absolute inset-0 z-0 bg-no-repeat bg-cover bg-center pointer-events-none"
-    style="background-image: url('/bg_home_mobile.png');"
-    aria-hidden="true"></div>
-
-
-  <div class="lg:hidden flex flex-col items-center text-center px-6 pt-40 z-30 relative h-full">
-
- 
-  <!-- VI Foro 2026 mobile -->
-    <Image
-      src={VIForoHsi}
-      alt="VI Foro"
-      class="h-46 w-46"
-      width={182}
-      height={164}
-      loading="lazy"
-      decoding="async"
-      format="svg"
-      quality={80}
-    />
-  <!-- FONDO DEGRADADO "EVENTO GRATUITO" -->
-  <div class="text-justify">
-  <span class="px-6 py-2 rounded-[5px] text-white font-bold tracking-widest shadow bg-gradient-hsi whitespace-nowrap"
-        style="font-size: clamp(12px, 1.2vw, 18px);">
-    EVENTO GRATUITO
-  </span>
-  </div>
-
-    <Image
-      src={heroLogoMobile}
-      alt="Doctores"
-      class="w-[290px] mt-4 mb-6"
-      loading="eager"
-      fetchpriority="high"
-      width={290}
-       height={239}
-      format="png"
-      quality={90}
-    />
-     <div class="bg-[#204356] rounded-full px-8 py-4 w-full max-w-[575px] flex items-center justify-center mt-2">
-       <p class="text-white font-bold italic leading-[114.9%] tracking-normal text-center whitespace-nowrap"
-     style="font-size: clamp(14px, 4vw, 36px);">
-    El desafío de las Infecciones</p>
-   
+<div
+  class="absolute inset-0 z-0 bg-no-repeat bg-cover bg-center pointer-events-none"
+  style="background-image: url('/bg_home_mobile.png');"
+  aria-hidden="true">
 </div>
 
-  <!-- Subtítulo Mobile -->
-  <h3 class="text-green-600 px-8 py-3 font-medium italic text-xl leading-snug text-center">
-    <span>“UNA SOLA SALUD” ANTE LA</span><br />
+<div class="lg:hidden flex flex-col items-center text-center px-6 pt-32 z-30 relative h-full">
+
+  <!-- VI Foro 2026 mobile -->
+  <Image
+    src={VIForoHsi}
+    alt="VI Foro"
+    class="w-[140px] h-auto"
+    width={182}
+    height={164}
+    loading="lazy"
+    decoding="async"
+    format="svg"
+    quality={80}
+  />
+
+  <!-- EVENTO GRATUITO -->
+  <div class="mt-3 mb-2">
+    <span class="px-6 py-2 rounded-full text-white font-bold tracking-widest shadow bg-gradient-hsi text-sm">
+      EVENTO GRATUITO
+    </span>
+  </div>
+
+  <!-- Imagen doctores -->
+  <Image
+    src={heroLogoMobile}
+    alt="Doctores"
+    class="w-[290px] h-auto my-4"
+    loading="eager"
+    fetchpriority="high"
+    width={290}
+    height={239}
+    format="png"
+    quality={90}
+  />
+
+  <!-- Badge "El desafío de las Infecciones" — ancho completo y texto escalable -->
+  <div class="bg-[#204356] rounded-full px-6 py-3 w-full flex items-center justify-center">
+    <p
+      class="text-white font-bold italic leading-snug tracking-normal text-center"
+      style="font-size: clamp(16px, 5.5vw, 36px);">
+      El desafío de las Infecciones
+    </p>
+  </div>
+
+  <!-- Subtítulo -->
+  <h3 class="text-green-600 mt-3 font-medium italic text-lg leading-snug text-center">
+    <span>"UNA SOLA SALUD" ANTE LA</span><br />
     <span>RESISTENCIA ANTIMICROBIANA</span>
   </h3>
-<!-- Fecha foro mobile -->
 
-    <p class="text-blue-text px-8 py-3 text-3xl font-bold">
-      27 Y 28 DE <br />AGOSTO, 2026
+  <!-- Fecha -->
+  <p class="text-blue-text mt-3 text-3xl font-bold">
+    27 Y 28 DE AGOSTO, 2026
+  </p>
+
+  <!-- SEDE -->
+  <div class="flex flex-col items-center w-full mt-2">
+    <p class="text-blue-text text-lg text-center font-normal tracking-wide">
+      SEDE | <strong class="font-extrabold">Auditorio Médica Sur</strong>
     </p>
+  </div>
 
-      <!-- Texto insticional mobile -->
-    <div class="flex flex-col items-center w-full mt-2">
-      <p class="text-blue-text text-xl text-center font-normal tracking-wide">
-        SEDE | Auditorio del <br /><strong class="font-extrabold">Hospital Médica Sur</strong>
-      </p>
-     
-      <!--    <img src="/wave-line.svg" alt="" class="w-36 mt-4 mb-4 opacity-80" aria-hidden="true" /> -->
-    </div>
-
-  <!-- MédicaSur logo mobile-->
-  <div class="flex items-center gap-2 mt-[14px]">
+  <!-- MédicaSur logo + texto — columna centrada como en el diseño -->
+  <div class="flex flex-col items-center mt-4 gap-2">
     <Image
       src={msLogoMedicaSur}
       alt="Médica Sur"
-      class="h-12 w-auto"
+      class="h-14 w-auto"
       width={200}
       height={60}
       loading="lazy"
       format="svg"
       quality={100}
     />
- </div>
-     <!-- Texto institucional -->
-<div class="px-6 py-2 flex items-center gap-4"> 
-<p class="font-bold text-blue-text italic text-center text-base leading-snug max-w-[280px]">
-        Institución sede comprometida<br class="hidden sm:block" /> con el combate a las infecciones
+    <p class="font-bold text-blue-text italic text-center text-base leading-snug">
+      Institución sede comprometida<br />con el combate a las infecciones
     </p>
-</div>
+  </div>
 
-     <!-- Degradado Aval Academico -->
-    <span class="px-6 py-2 rounded-[5px] text-white font-bold tracking-widest shadow bg-gradient-hsi whitespace-nowrap"
-        style="font-size: clamp(14px, 4vw, 36px);">
-       AVAL ACADÉMICO
+  <!-- AVAL ACADÉMICO -->
+  <div class="mt-5">
+    <span class="px-6 py-2 rounded-full text-white font-bold tracking-widest shadow bg-gradient-hsi text-sm">
+      AVAL ACADÉMICO
     </span>
-
+  </div>
 
   <!-- Logo CNSP -->
-   <div class="flex items-center gap-2 mt-[12px]"></div>
   <Image
     src={msLogo}
     alt="CNSP"
-    class="h-32 w-auto" 
+    class="h-32 w-auto mt-3 mb-8"
     width={125}
     height={125}
     loading="lazy"
@@ -240,5 +235,15 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
     quality={100}
   />
 
-  <!-- END Mobile Layout -->
+  <!-- Botón REGISTRO -->
+  <div class="w-full mb-10">
+    
+      href="#registro"
+      class="block w-full bg-gradient-hsi text-white font-bold text-xl tracking-widest py-4 rounded-full text-center shadow-lg">
+      REGISTRO
+    </a>
+  </div>
+
+</div>
+<!-- END Mobile Layout -->
 </section>
