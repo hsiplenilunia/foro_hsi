@@ -4,43 +4,43 @@ import logoHSI from "../../assets/Logo-HSI.svg";
 import VIForo from "../../assets/VIForo2026.svg";
 import heroLogoMobile from "../../assets/hero-logo-mobile-min.png";
 import msLogoMedicaSur from "../../assets/medica-sur.svg";
-
-const sectionStyles = `landing-section bg-bg-white w-screen flex items-center justify-center py-10 pt-10 px-8 relative`;
 ---
+
 <section
-  class="relative w-full overflow-hidden py-10 px-6 md:px-12 min-h-[450px] flex items-center bg-white 
+  class="relative w-full overflow-hidden py-10 px-6 md:px-12 min-h-[450px] bg-white
          bg-[url('/bg-agenda.png')] bg-no-repeat
-         bg-[length:auto_100%] bg-right 
-         md:bg-cover md:bg-center"        
+         bg-[length:auto_100%] bg-right
+         md:bg-cover md:bg-center"
 >
 
-<div class="flex flex-col md:flex-row w-full justify-center gap-6 md:gap-8 items-center md:items-start">
+  <!-- ===== DESKTOP LAYOUT ===== -->
+  <div class="hidden md:flex flex-row w-full justify-center gap-8 items-start">
+
     <Image
       src={VIForo}
       width={182}
       height={164}
       alt="Logo VI Foro"
       loading="lazy"
-      class="w-[140px] h-auto md:min-w-[182px] md:w-[236px] md:h-[253px]"
+      class="min-w-[182px] w-[236px] h-[253px]"
     />
-       <div class="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-auto">
-      <h1 class="text-blue-text text-4xl md:text-6xl font-bold leading-none">AGENDA</h1>
-      <h2 class="text-blue-text text-2xl md:text-3xl font-normal mt-1">PRELIMINAR</h2>
-      <p class="text-blue-text text-xl md:text-2xl tracking-wider font-bold mt-2">
+
+    <div class="flex flex-col items-start text-left w-auto">
+      <h1 class="text-blue-text text-6xl font-bold leading-none">AGENDA</h1>
+      <h2 class="text-blue-text text-3xl font-normal mt-1">PRELIMINAR</h2>
+      <p class="text-blue-text text-2xl tracking-wider font-bold mt-2">
         27 Y 28 DE AGOSTO, 2026
       </p>
-      <p class="text-blue-text text-lg md:text-xl font-thin tracking-widest mt-1">
+      <p class="text-blue-text text-xl font-thin tracking-widest mt-1">
         SEDE | <strong class="font-extrabold">Auditorio del Hospital Médica Sur</strong>
       </p>
-            
-            <img src="/wave-line.svg" alt="" class="w-[180px] md:w-[450px] mt-4 mb-2 h-auto mx-auto md:mx-0" aria-hidden="true" />
-        <br >
-             <!-- MédicaSur logo + texto institucional-->
-<div class="flex items-center gap-2 mt-2 justify-center md:justify-start">
+      <img src="/wave-line.svg" alt="" class="w-[450px] mt-4 mb-2 h-auto" aria-hidden="true" />
+      <!-- MédicaSur desktop — fila horizontal -->
+      <div class="flex items-center gap-2 mt-2">
         <Image
           src={msLogoMedicaSur}
           alt="Médica Sur"
-          class="h-10 md:h-12 w-auto"
+          class="h-12 w-auto"
           width={224}
           height={52}
           loading="lazy"
@@ -48,38 +48,79 @@ const sectionStyles = `landing-section bg-bg-white w-screen flex items-center ju
           quality={80}
         />
         <div class="w-px h-12 bg-gray-400"></div>
-        <p class="font-bold text-blue-text italic text-sm md:text-base leading-snug text-left max-w-[200px] md:max-w-[280px]">
+        <p class="font-bold text-blue-text italic text-base leading-snug text-left max-w-[280px]">
           Institución sede comprometida<br />con el combate a las infecciones
         </p>
       </div>
     </div>
 
-
-<!-- Botón de Registro 
-
--->
-<!-- Script de Luma (Solo se carga una vez) -->
-<!--<script is:inline id="luma-checkout" src="https://embed.lu.ma/checkout.js"></script> -->
-
-
-        </div>
-    </div>
-    
-<Image
-        src={heroLogoMobile}
-        alt="Doctores"
-        loading="lazy"
-        class="hidden md:block w-[334px] h-[406px]"
+    <Image
+      src={heroLogoMobile}
+      alt="Doctores"
+      loading="lazy"
+      class="w-[334px] h-[406px]"
     />
 
     <Image
-        src={logoHSI}
-        width={69}
-        height={65}
-        alt="HSI"
-        loading="lazy"
-        class="hidden md:block w-[69px] h-[65px]"
+      src={logoHSI}
+      width={69}
+      height={65}
+      alt="HSI"
+      loading="lazy"
+      class="w-[69px] h-[65px]"
     />
-</div>
+
+  </div>
+  <!-- END DESKTOP -->
+
+  <!-- ===== MOBILE LAYOUT ===== -->
+  <div class="md:hidden flex flex-col items-start text-left w-full gap-0">
+
+    <!-- VI Foro — alineado izquierda como en la propuesta -->
+    <Image
+      src={VIForo}
+      width={182}
+      height={164}
+      alt="Logo VI Foro"
+      loading="lazy"
+      class="w-[120px] h-auto mb-4"
+    />
+
+    <!-- AGENDA + PRELIMINAR -->
+    <h1 class="text-blue-text text-5xl font-bold leading-none">AGENDA</h1>
+    <h2 class="text-blue-text text-2xl font-normal mt-1">PRELIMINAR</h2>
+
+    <!-- Fecha -->
+    <p class="text-blue-text text-xl tracking-wider font-bold mt-3">
+      27 Y 28 DE AGOSTO, 2026
+    </p>
+
+    <!-- SEDE -->
+    <p class="text-blue-text text-lg font-thin tracking-widest mt-1">
+      SEDE | <strong class="font-extrabold">Auditorio Médica Sur</strong>
+    </p>
+
+    <!-- Wave line -->
+    <img src="/wave-line.svg" alt="" class="w-full mt-4 mb-4 h-auto" aria-hidden="true" />
+
+    <!-- MédicaSur mobile — columna centrada -->
+    <div class="flex flex-col items-center w-full gap-2 mt-2">
+      <Image
+        src={msLogoMedicaSur}
+        alt="Médica Sur"
+        class="h-14 w-auto"
+        width={224}
+        height={52}
+        loading="lazy"
+        format="svg"
+        quality={80}
+      />
+      <p class="font-bold text-blue-text italic text-base leading-snug text-center">
+        Institución sede comprometida<br />con el combate a las infecciones
+      </p>
+    </div>
+
+  </div>
+  <!-- END MOBILE -->
 
 </section>
