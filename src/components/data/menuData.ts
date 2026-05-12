@@ -32,7 +32,7 @@ export const menu = [
       { name: "2021", link: "https://hospitalsininfecciones.com/foro-abordando-el-desafio-de-las-infecciones-intrahospitalarias" },
       { name: "2022", link: "https://hospitalsininfecciones.com/foro-infecciones-en-la-atencion-medica-desafios-postpademia" },
       { name: "2023", link: "https://hospitalsininfecciones.com/abordando-el-desafio-de-las-infecciones-intrahospitalarias" },
-      { name: "2024", link: "https://hospitalsininfecciones.com/elementor-6054" },
+      { name: "2024", link: "https://hospitalsininfecciones.com/el-desafio-de-las-infecciones-hospitalarias" },
       
       
     ],
