@@ -33,11 +33,16 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
      <!-- Lado Derecho: Textos -->
 <div class="flex flex-col w-[50vw] items-left max-w-[50vw] space-y-4 mb-5 h-full px-8">
 
-  <!-- VI Foro 2026 -->
+  <!-- Lado Derecho: Textos -->
+<div class="flex flex-col w-full md:w-[50vw] items-start max-w-full md:max-w-[50vw] space-y-4 mb-5 h-full px-8">
+
+  <!-- Contenedor para Logo + Botón (Fila en Desktop) -->
+  <div class="flex flex-col md:flex-row md:items-center gap-6">
+    <!-- VI Foro 2026 -->
     <Image
       src={VIForoHsi}
       alt="VI Foro"
-      class="h-46 w-46"
+      class="h-auto w-40 md:w-46"
       width={182}
       height={164}
       loading="lazy"
@@ -45,6 +50,23 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
       format="svg"
       quality={80}
     />
+
+    <!-- Botón de Registro -->
+    <a 
+      href="https://luma.com/event/evt-zj3SHeoDaiIDIci" 
+      class="luma-checkout--button flex items-center justify-center bg-gradient-hsi text-white font-extrabold transition-all duration-300 uppercase tracking-wider shadow-md hover:shadow-xl hover:brightness-110 active:scale-95
+      /* Mobile: Botón más presente */
+      w-full py-4 text-xl rounded-full
+      /* Desktop: Medidas Figma (169x46px) */
+      md:w-[169px] md:h-[46px] md:text-[14px] md:py-0 md:rounded-full whitespace-nowrap"
+      data-luma-action="checkout" 
+      data-luma-event-id="evt-zj3SHeoDaiIDIci"
+    >
+      REGISTRO
+    </a>
+  </div>
+
+</div>
 
 <div class="bg-[#204356] rounded-full px-8 py-3 w-full max-w-[575px] h-12 flex items-center justify-center">
     <p class="text-white font-bold italic leading-[114.9%] tracking-normal text-center whitespace-nowrap"
