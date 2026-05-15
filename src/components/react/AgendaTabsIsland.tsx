@@ -60,15 +60,26 @@ const agendaData = [
       },
 
       {
-        time: "11:30 - 12:00",
+        time: "12:00 - 12:45",
         type: "PANEL",
-        title: "¿Qué incentivos hacen faltan para invertir en prevención de infecciones?",
+        title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/>
-          <span class="text-gray-500">Director de Calidad Médica Sur</span><br/>
+        participants: `Dr. Rafael Franco Cendejas<br/>
+          <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación </span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          Dra. Mariana Barraza Llórens <br/>
-          <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
+          Dr. Luis Fernando Pérez González <br/>
+          <span class="text-gray-500">Jefe del Departamento de Pediatría de la Facultad de Medicina de la Universidad Autónoma de San Luis Potosí</span>`,
+      },
+      {
+        time: "12:45 - 13:30",
+        type: "PANEL",
+        title: "Diagnóstico rápido: cómo la inteligencia de datos puede salvar vidas y bajar costos",
+        isNetworking: false,
+        participants: `<br/>
+          <span class="text-gray-500"></span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+           <br/>
+          <span class="text-gray-500"></span>`,
       },
       {
         time: "",
