@@ -14,25 +14,39 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="block font-bold text-[#00b0e4]">Consejo Técnico Hospitales sin Infecciones</span>
           Dr. José Gerardo Moya Medina<br/>
-          Consejo Técnico Hospitales sin Infecciones <br/>`,
+          <span class="text-gray-500">Consejo de Salubridad General </span><br/>
+          Consejo Técnico Hospitales sin Infecciones <br/>
+           <span class="text-gray-500">Representante de la OPS/OMS en México</span>`,
       },
       {
         time: "9:30 - 10:00",
         type: "CONFERENCIA MAGISTRAL",
-        title: "Conferencia magistral: Impacto de la Estrategia Nacional contra la Resistencia Antimicrobiana",
+        title: "Impacto de la Estrategia Nacional contra la Resistencia Antimicrobiana",
         isNetworking: false,
         participants: `Dra. Patricia Clark<br/><span class="text-gray-500">Consejo de Salubridad General </span>`,
       },
       {
         time: "10:00 - 10:45",
         type: "Panel",
-        title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
+        title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
         isNetworking: false,
-        participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/><span class="text-gray-500">Director de Calidad Médica Sur </span>`,
+        participants: `<br/>
+          <span class="text-gray-500"></span><br/>
+          <br/><span class="font-bold text-[#00b0e4]"></span><br/>
+         <br/>
+          <span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span>`,
         
       },
+ {
+        time: "",
+        type: "",
+        title: "Networking 30'",
+        isNetworking: true,
+        participants: "",
+      },
+
       {
-        time: "10:30 - 11:15",
+        time: "11:30 - 12:00",
         type: "PANEL",
         title: "¿Qué incentivos hacen faltan para invertir en prevención de infecciones?",
         isNetworking: false,
