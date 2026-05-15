@@ -10,35 +10,25 @@ const agendaData = [
       {
         time: "9:00 - 9:30",
         type: "APERTURA",
-        title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
+        title: "Apertura: Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
         participants: `<span class="block font-bold text-[#00b0e4]">Consejo Técnico Hospitales sin Infecciones</span>
-          Dra. Mercedes Juan López<br/>
-          Dra. María Enriqueta Baridó Murguía<br/>
-          Dr. José Ignacio Santos Preciado<br/>
-          Dra. Samuel Ponce de León Rosales<br/>
-          Dr. Luis Fernando Pérez<br/>
-          Dra. Daniela de la Rosa Zamboni<br/>
-          Dra. Juana Jiménez Sánchez<br/>
-          Dr. Paulo Castañeda<br/>
-          Mtra. Enf. Martha A. Huertas Jiménez<br/>
-          Dra. Isabel Villegas Mota<br/>
-          Dra. Liliana Vargas Neri<br/>
-          Maribel Ramírez Coronel`,
+          Dr. José Gerardo Moya Medina<br/>
+          Consejo Técnico Hospitales sin Infecciones <br/>`,
       },
       {
         time: "9:30 - 10:00",
         type: "CONFERENCIA MAGISTRAL",
-        title: "Gobernanza y seguridad clínica: el sistema mexicano ante la Resistencia a los Antibióticos",
+        title: "Conferencia magistral: Impacto de la Estrategia Nacional contra la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `Dra. Patricia Clark<br/><span class="text-gray-500">(CSG)</span>`,
+        participants: `Dra. Patricia Clark<br/><span class="text-gray-500">Consejo de Salubridad General </span>`,
       },
       {
-        time: "10:00 - 10:30",
-        type: "CONFERENCIA",
-        title: "¿Quién paga la factura de las infecciones hospitalarias? Impacto en aseguradoras y pacientes",
+        time: "10:00 - 10:45",
+        type: "Panel",
+        title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,
-        participants: `AMIS, AMASFAC<br/>Directores de siniestros<br/><span class="text-gray-500">(AXA | GNP)</span>`,
+        participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/><span class="text-gray-500">Director de Calidad Médica Sur </span>`,
       },
       {
         time: "10:30 - 11:15",
