@@ -10,7 +10,7 @@ const agendaData = [
       {
         time: "9:00 - 9:30",
         type: "APERTURA",
-        title: "Apertura: Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
+        title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
         participants: `<span class="block font-bold text-[#00b0e4]">Consejo Técnico Hospitales sin Infecciones</span>
           Dr. José Gerardo Moya Medina<br/>
@@ -29,17 +29,18 @@ const agendaData = [
         title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,
         participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/><span class="text-gray-500">Director de Calidad Médica Sur </span>`,
+        
       },
       {
         time: "10:30 - 11:15",
         type: "PANEL",
         title: "¿Qué incentivos hacen faltan para invertir en prevención de infecciones?",
         isNetworking: false,
-        participants: `Médica Sur, San Ángel Inn, CMH, Asociación de Hospitales Privados de Jalisco.<br/>
-          Directores de siniestros (AXA | GNP)<br/>
+        participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/>
+          <span class="text-gray-500">Director de Calidad Médica Sur</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          CMECAC<br/>
-          <span class="text-gray-500">Cargo</span>`,
+          Dra. Mariana Barraza Llórens <br/>
+          <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
       },
       {
         time: "",
