@@ -34,6 +34,9 @@ const agendaData = [
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#00b0e4]"></span><br/>
          <br/>
+          <span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
+          <span class="text-gray-500">Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
+          <span class="text-gray-500">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
           <span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span>`,
         
       },
