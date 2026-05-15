@@ -30,7 +30,7 @@ const agendaData = [
         type: "Panel",
         title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
         isNetworking: false,
-        participants: `<br/>
+        participants: `Nombre del participante<br/>
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#00b0e4]"></span><br/>
          <br/>
@@ -75,10 +75,10 @@ const agendaData = [
         type: "PANEL",
         title: "Diagnóstico rápido: cómo la inteligencia de datos puede salvar vidas y bajar costos",
         isNetworking: false,
-        participants: `<br/>
+        participants: `Nombre del participante<br/>
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-           <br/>
+            Nombre<br/>
           <span class="text-gray-500"></span>`,
       },
       {
@@ -89,66 +89,29 @@ const agendaData = [
         participants: "",
       },
       {
-        time: "11:45 - 12:30",
+        time: "14:00 - 14:45",
         type: "PANEL",
-        title: "Diagnóstico rápido: cómo la inteligencia de datos puede salvar vidas y bajar costos",
+        title: "¿Qué incentivos hacen falta para invertir en prevención de infecciones?",
         isNetworking: false,
         participants: `Nombre del participante<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
+          <span class="text-gray-500">Corporativo San Ángel Inn</span><br/>
+          <span class="text-gray-500">Asociación Nacional de Hospitales de Jalisco</span><br/>
+          <span class="text-gray-500">Presidenta Colegio Médico de Especialistas en Calidad de la Atención Clinica</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/
+          Dra. Cristina Gonzalez de Jesús<br/>
+          <span class="text-gray-500">Presidenta Colegio Médico de Especialistas en Calidad de la Atención Clinica</span>`,
       },
       {
-        time: "12:30 - 13:15",
+        time: "14:45 - 15:15",
         type: "PANEL",
-        title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
-        isNetworking: false,
-        participants: `Dr. Rafael Franco Cendejas<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          CMECAC<br/>
-          <span class="text-gray-500">Cargo</span>`,
-      },
-      {
-        time: "13:15 - 14:00",
-        type: "PANEL",
-        title: "Zonas de alto riesgo: el costo de un error en Cuidados Intensivos y quirófano",
-        isNetworking: false,
-        participants: `Sepsis México, Academia Mexicana de Cirugía<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
-      },
-      {
-        time: "",
-        type: "",
-        title: "Networking 30'",
-        isNetworking: true,
-        participants: "",
-      },
-      {
-        time: "14:30 - 15:15",
-        type: "PANEL:",
-        title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
-        isNetworking: false,
-        participants: `Nombre<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          INVIFAR<br/>
-          <span class="text-gray-500">Cargo</span>`,
-      },
-      {
-        time: "15:15 - 15:30",
-        type: "PANEL:",
         title: "¿Porque las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.",
         isNetworking: false,
         participants: `Nombre<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
+          <span class="text-gray-500">Asociación Mexicana de Industrias de Investigación Farmacéutica, AMIIF</span><br/>
+          <span class="text-gray-500">Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          CANIFARMA / AMIIF / AMEPRES<br/>
-          <span class="text-gray-500">Cargo</span>`,
+          Dra. Liliana Vargas Neri<br/>
+          <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez (HIMFG)</span>`,
       },
     ],
   },
