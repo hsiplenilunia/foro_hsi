@@ -40,6 +40,17 @@ const agendaData = [
           <span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span>`,
         
       },
+      {
+        time: "10:45 - 11:30",
+        type: "Panel",
+        title: "¿Quién paga la factura de las infecciones hospitalarias? Impacto en aseguradoras, hospitales y pacientes",
+        isNetworking: false,
+        participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/><span class="text-gray-500">Director de Calidad Médica Sur </span>
+        <span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          Dra. Mariana Barraza Llórens <br/>
+          <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
+        
+      },
  {
         time: "",
         type: "",
