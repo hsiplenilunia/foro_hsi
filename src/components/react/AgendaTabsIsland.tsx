@@ -177,25 +177,19 @@ const agendaData = [
       },
       {
         time: "12:30 - 13:00",
-        type: "PANEL",
+        type: "CONFERENCIA",
         title: "La vacunación en poblaciones vulnerables y la prevención de infecciones",
         isNetworking: false,
-        participants: `Nombre del participante<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
+        participants: `Dra. Sandra Rajme López<br/>
+          <span class="text-gray-500">Investigadora en el Departamento de Infectología, Instituto Nacional de Ciencias y Nutricion "Salvador Zubirán" </span><br/>`,
       },
       {
         time: "13:00 - 13:45",
         type: "PANEL",
-        title: "Uso y prescripción de antibióticos en consultorios externos.",
+        title: "Intersección entre el activismo profesional y el enfoque “Una Salud”",
         isNetworking: false,
-        participants: `Nombre del participante<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
+        participants: `Mtra. Margarita Torres García<br/>
+          <span class="text-gray-500">Presidenta de la Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN</span><br/>`,
       },
       {
         time: "13:00 - 13:30",
