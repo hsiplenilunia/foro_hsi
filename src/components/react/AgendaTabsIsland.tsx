@@ -128,30 +128,32 @@ const agendaData = [
         participants: `Nombre del participante<br/>
           <span class="text-gray-500">Cargo del participante</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
+          Dr. Rufino Luna Gordillo<br/>
+          <span class="text-gray-500">Presidente del Consejo Nacional de Salud Pública</span>`,
       },
       {
         time: "09:45 - 10:30",
         type: "PANEL",
-        title: "Invertir en higiene, no en errores: La ciencia de la desinfección proactiva",
+        title: "Invertir en higiene, no en errores: la ciencia de la desinfección proactiva",
         isNetworking: false,
         participants: `Nombre del participante<br/>
           <span class="text-gray-500">Cargo del participante</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
+          Mtra. Enf. Martha A. Huertas Jiménez<br/>
+          <span class="text-gray-500">Subdirectora de Enfermería, INCMNSZ</span>`,
       },
       {
         time: "10:30 - 11:15",
         type: "PANEL",
-        title: "Hospitales más sustentables: reduciendo el impacto ambiental de la atención médica",
+        title: "El impacto ambiental de la atención médica.",
         isNetworking: false,
         participants: `Nombre del participante<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
+          <span class="text-gray-500">Comisión Coordinadora de los Institutos Nacionales de Salud y Hospitales de Alta Especialidad, CCINSHAE-SSa</span><br/>
+          Enf. Rachel Campos Jimenez<br/>
+          <span class="text-gray-500">Presidenta de Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
+          Dra. Ma. Enriqueta Barido Murguía<br/>
+          <span class="text-gray-500">Academia Mexicana de Cirugía AMC</span>`,
       },
       {
         time: "11:15 - 12:00",
