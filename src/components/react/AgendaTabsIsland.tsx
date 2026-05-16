@@ -105,7 +105,7 @@ const agendaData = [
         type: "PANEL",
         title: "¿Porque las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.",
         isNetworking: false,
-        participants: `Nombre<br/>
+        participants: `Nombre del participante<br/>
           <span class="text-gray-500">Asociación Mexicana de Industrias de Investigación Farmacéutica, AMIIF</span><br/>
           <span class="text-gray-500">Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
