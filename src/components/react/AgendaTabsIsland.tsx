@@ -235,7 +235,7 @@ const agendaData = [
         time: "16:15 - 16:30",
         type: "CLAUSURA",
         title: "Acto de clausura",
-        isNetworking: true,
+        isNetworking: false,
         participants: `Lic. Maribel Ramírez Coronel<br/>
           <span class="text-gray-500">Directora Fundadora de la iniciativa Hospitales sin Infecciones</span><br/>`,
       },
