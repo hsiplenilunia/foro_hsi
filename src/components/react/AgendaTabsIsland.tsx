@@ -27,7 +27,7 @@ const agendaData = [
       },
       {
         time: "10:00 - 10:45",
-        type: "Panel",
+        type: "PANEL",
         title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
         isNetworking: false,
         participants: `Nombre del participante<br/>
@@ -42,9 +42,9 @@ const agendaData = [
       },
       {
         time: "10:45 - 11:30",
-        type: "Panel",
-        title: "¿Quién paga la factura de las infecciones hospitalarias? Impacto en aseguradoras, hospitales y pacientes",
-        isNetworking: false,
+        type: "PANEL",
+        title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
+        isNetworking: false,  
         participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/><span class="text-gray-500">Director de Calidad Médica Sur </span><br/>
         <span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           Dra. Mariana Barraza Llórens <br/>
