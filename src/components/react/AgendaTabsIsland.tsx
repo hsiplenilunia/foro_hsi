@@ -231,6 +231,13 @@ const agendaData = [
         Dra. Juana Jiménez Sánchez<br/>
           <span class="text-gray-500">Directora Regional de U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>`,
           },
+          {
+        time: "",
+        type: "",
+        title: "Clausura",
+        isNetworking: true,
+        participants: "",
+      },
       {
         time: "16:15 - 16:30",
         type: "CLAUSURA",
