@@ -96,7 +96,7 @@ const agendaData = [
         participants: `Nombre del participante<br/>
           <span class="text-gray-500">Corporativo San Ángel Inn</span><br/>
           <span class="text-gray-500">Asociación Nacional de Hospitales de Jalisco</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           Dra. Cristina Gonzalez de Jesús<br/>
           <span class="text-gray-500">Presidenta Colegio Médico de Especialistas en Calidad de la Atención Clinica</span>`,
       },
