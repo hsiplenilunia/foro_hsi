@@ -191,18 +191,7 @@ const agendaData = [
         participants: `Mtra. Margarita Torres García<br/>
           <span class="text-gray-500">Presidenta de la Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN</span><br/>`,
       },
-      {
-        time: "13:00 - 13:30",
-        type: "CONFERENCIA",
-        title: "Plan de Acción Mundial y Marco de Monitoreo sobre Prevención y Control de Infecciones",
-        isNetworking: false,
-        participants: `Nombre del participante<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
-      },
-      {
+       {
         time: "",
         type: "",
         title: "Networking 30'",
@@ -210,33 +199,45 @@ const agendaData = [
         participants: "",
       },
       {
-        time: "14:15 - 15:00",
-        type: "CONFERENCIA",
-        title: "Aguas residuales como elemento para estrategias de detección oportuna de brotes.",
+        time: "14:15 - 15:15",
+        type: "PANEL",
+        title: "El costo del silencio: las consecuencias de no actuar contra las infecciones resistentes.",
         isNetworking: false,
         participants: `Nombre del participante<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
+          <span class="text-gray-500">Dirección General de Epidemiología, SSa</span><br/>
+          <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
+          Nombre<br/>
+          <span class="text-gray-500">Cargo</span>`,
+      },
+
+      {
+        time: "15:15 - 15:45",
+        type: "CONFERENCIA",
+        title: "Radiografía del uso racional de antimicrobianos en América Latina",
+        isNetworking: false,
+        participants: `Nombre del participante<br/>
+          <span class="text-gray-500">Organización Panamericana de la Salud </span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           Nombre<br/>
           <span class="text-gray-500">Cargo</span>`,
       },
       {
-        time: "15:00 - 15:30",
-        type: "PANEL",
-        title: "El equilibrio de la microbiota intestinal y su impacto en el desarrollo de infecciones",
+        time: "15:45 - 16:15",
+        type: "PREMIACIÓN",
+        title: "1er. Concurso “Heridas sin Infecciones“",
         isNetworking: false,
-        participants: `Nombre del participante<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
-          <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
+        participants: `Mtra. Guillermina Vela Anaya<br/>
+          <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
+        Dra. Juana Jiménez Sánchez<br/>
+          <span class="text-gray-500">Directora Regional de U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>`,
           },
       {
-        time: "",
-        type: "",
+        time: "16:15 - 16:30",
+        type: "CLAUSURA",
         title: "Acto de clausura",
         isNetworking: true,
-        participants: "",
+        participants: `Lic. Maribel Ramírez Coronel<br/>
+          <span class="text-gray-500">Directora Fundadora de la iniciativa Hospitales sin Infecciones</span><br/>`,
       },
     ],
   },
