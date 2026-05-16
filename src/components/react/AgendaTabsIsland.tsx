@@ -47,7 +47,7 @@ const agendaData = [
         title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,  
         participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/><span class="text-gray-500">Director de Calidad Médica Sur </span><br/>
-        <span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+        <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           Dra. Mariana Barraza Llórens <br/>
           <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
         
