@@ -240,7 +240,7 @@ const agendaData = [
       },
       {
         time: "16:15 - 16:30",
-        type: "CLAUSURA",
+        type: "",
         title: "Acto de clausura",
         isNetworking: false,
         participants: `Lic. Maribel Ramírez Coronel<br/>
