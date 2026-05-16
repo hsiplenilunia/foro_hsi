@@ -23,7 +23,7 @@ const agendaData = [
         type: "CONFERENCIA MAGISTRAL",
         title: "Impacto de la Estrategia Nacional contra la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `Dra. Patricia Clark<br/><span class="text-gray-500">Consejo de Salubridad General </span>`,
+        participants: `Nombre del Participante<br/><span class="text-gray-500">Consejo de Salubridad General </span>`,
       },
       {
         time: "10:00 - 10:45",
