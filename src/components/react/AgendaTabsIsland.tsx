@@ -162,9 +162,11 @@ const agendaData = [
         isNetworking: false,
         participants:`Nombre del participante<br/>
           <span class="text-gray-500">Cargo del participante</span><br/>
+          <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX<br/></span><br/>
+          <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Nombre<br/>
-          <span class="text-gray-500">Cargo</span>`,
+          Dr. Paulo Francisco Castañeda Méndez<br/>
+          <span class="text-gray-500">Jefe de Infectología del Hospital Médica Sur</span>`,
       },
       {
         time: "",
