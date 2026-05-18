@@ -12,11 +12,10 @@ const agendaData = [
         type: "APERTURA",
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
-        participants: `<span class="block font-bold text-[#00b0e4]">Consejo Técnico Hospitales sin Infecciones</span>
-          Dr. José Gerardo Moya Medina<br/>
-          <span class="text-gray-500">Consejo de Salubridad General </span><br/>
-          Consejo Técnico Hospitales sin Infecciones <br/>
-           <span class="text-gray-500">Representante de la OPS/OMS en México</span>`,
+        participants: `Dr. José Gerardo Moya Medina<br/>
+          <span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
+           <br/>
+           <span class="text-gray-500">Consejo Técnico Hospitales sin Infecciones</span>`,
       },
       {
         time: "9:30 - 10:00",
