@@ -37,7 +37,7 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
 <div class="flex flex-col w-full md:w-[50vw] items-start max-w-full md:max-w-[50vw] space-y-4 mb-5 h-full px-8">
 
   <!-- Contenedor para Logo + Botón (Fila en Desktop) -->
-  <div class="flex flex-col md:flex-row md:items-center gap-6">
+  <div class="flex flex-col md:flex-row md:items-center justify-between w-full gap-6">
     <!-- VI Foro 2026 -->
     <Image
       src={VIForoHsi}
@@ -69,15 +69,23 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
     border-radius: 32px; 
     text-transform: uppercase; 
     text-decoration: none; 
-    font-weight: 900; 
-    font-size: 24px; 
+    font-weight: 400; 
+    font-size: 16px; 
     letter-spacing: 0.05em; 
     text-align: center; 
     white-space: nowrap;
     transition: transform 0.2s ease;
   "
-  onmouseover="this.style.transform='scale(1.03)'"
-  onmouseout="this.style.transform='scale(1)'"
+   onmouseover="
+      this.style.background='#25A64B'; 
+      this.style.fontWeight='900'; 
+      this.style.transform='scale(1.03)';
+    "
+    onmouseout="
+      this.style.background='#00B0E4'; 
+      this.style.fontWeight='400'; 
+      this.style.transform='scale(1)';
+    "
 >
   REGISTRO
 </a>
