@@ -14,7 +14,6 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
           <span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
-           <br/>
            <br/><span class="font-bold text-[#00b0e4]">Consejo Técnico Hospitales sin Infecciones</span><br/>
            <span class="text-gray-500"></span>`,
       },
