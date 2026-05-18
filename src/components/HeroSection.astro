@@ -285,14 +285,39 @@ const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen t
 
    <!-- Botón de Registro -->
     <a 
-      href="https://luma.com/event/evt-zj3SHeoDaiIDIci" 
-      class="luma-checkout--button flex items-center justify-center bg-registro-hsi text-white font-bold 
-      /* Mobile: Botón más presente */
-      w-full py-4 text-xl rounded-full
-
-      data-luma-action="checkout" 
-      data-luma-event-id="evt-zj3SHeoDaiIDIci"
-    >
+    href="https://luma.com/event/evt-zj3SHeoDaiIDIci" 
+    class="luma-checkout--button" 
+    data-luma-action="checkout" 
+    data-luma-event-id="evt-zj3SHeoDaiIDIci"
+    style="
+      background: #00B0E4; 
+      color: #fff; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      width: 169px; 
+      height: 46px; 
+      border-radius: 32px; 
+      text-transform: uppercase; 
+      text-decoration: none; 
+      font-weight: 400; 
+      font-size: 16px; 
+      letter-spacing: 0.05em; 
+      text-align: center; 
+      white-space: nowrap;
+      transition: all 0.3s ease;
+    "
+    onmouseover="
+      this.style.background='#25A64B'; 
+      this.style.fontWeight='900'; 
+      this.style.transform='scale(1.03)';
+    "
+    onmouseout="
+      this.style.background='#00B0E4'; 
+      this.style.fontWeight='400'; 
+      this.style.transform='scale(1)';
+    "
+  >
       REGISTRO
     </a>
 
