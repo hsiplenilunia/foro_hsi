@@ -39,13 +39,10 @@ const agendaData = [
         time: "10:00 - 10:45",
         type: "PANEL",
         title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
-        participants: `<br/><span class="font-bold text-[#00b0e4]">MODERA</span><br/>
-        Nombre<br/>
-         <span class="text-[#204356]">CARGO</span><br/>`,
         isNetworking: false,
-        participants: `Nombre del participante<br/>
+        participants: `<span class="font-bold text-[#204356]">Nombre<br/></span><span class="text-[#204356]">CARGO</span><br/>
           <span class="text-[#204356]"></span><br/>
-          <br/><span class="font-bold text-[#00b0e4]"></span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA</span><br/>
          <br/>
           <span class="text-[#204356]">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
           <span class="text-[#204356]">Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
