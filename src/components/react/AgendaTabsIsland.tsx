@@ -15,7 +15,10 @@ const agendaData = [
         participants: `<span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
           <span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
            <br/><span class="font-bold text-[#00b0e4]">Consejo Técnico Hospitales sin Infecciones</span><br/>
-           <span class="text-gray-500"></span>`,
+           <span class="font-bold text-[#204356]">Dra. Mercedes Juan López</span><br/>
+           <span class="font-bold text-[#204356]">Dra. María Enriqueta Baridó Murguía</span><br/>
+           <span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
+           <span class="font-bold text-[#204356]">Dr. Samuel Ponce de León Rosales</span><br/>`,
       },
       {
         time: "9:30 - 10:00",
