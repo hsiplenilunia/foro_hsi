@@ -33,7 +33,7 @@ const agendaData = [
         type: "CONFERENCIA MAGISTRAL",
         title: "Impacto de la Estrategia Nacional contra la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `Dra. Patricia Elena Clark Peralta<br/><span class="text-[#204356]">Consejo de Salubridad General </span>`,
+        participants: `<span class="font-bold text-[#204356]">Dra. Patricia Elena Clark Peralta<br/></span><span class="text-[#204356]">Consejo de Salubridad General </span>`,
       },
       {
         time: "10:00 - 10:45",
