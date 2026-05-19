@@ -16,6 +16,8 @@ const agendaData = [
         <span class="text-gray-500">Secretaria del Consejo de Salubridad General </span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
         <span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
+        <br/><span class="font-bold text-[#204356]">Dr. Octavio Gonzalez Chon</span><br/>
+        <span class="text-gray-500">Director General de Médica Sur  </span><br/>
 
            <br/><span class="font-bold text-[#00b0e4]">Consejo Técnico HSI</span><br/>
            <span class="font-bold text-[#204356]">Dra. Mercedes Juan López</span><br/>
