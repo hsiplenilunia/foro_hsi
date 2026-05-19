@@ -1,0 +1,96 @@
+# ============================================================
+#  netlify.toml — foro.hospitalsininfecciones.com
+#  Configuración de headers de seguridad
+#  Versión 2 — Mayo 2026
+# ============================================================
+
+# ------------------------------------------------------------
+# HEADERS DE SEGURIDAD — aplicados a todas las rutas
+# ------------------------------------------------------------
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+
+    # Fuerza HTTPS por 1 año en todo el dominio y subdominios.
+    # Verifica en https://hstspreload.org antes de activar preload.
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # Impide que el sitio sea embebido en iframes externos (anti-clickjacking).
+    X-Frame-Options = "DENY"
+
+    # Evita que el navegador adivine el tipo de contenido (anti MIME-sniffing).
+    X-Content-Type-Options = "nosniff"
+
+    # En cross-origin solo envía esquema+host, sin path ni query string.
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Protección XSS para navegadores legacy que no entienden CSP.
+    X-XSS-Protection = "1; mode=block"
+
+    # Deshabilita APIs del navegador que este sitio no utiliza.
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), bluetooth=(), accelerometer=(), gyroscope=(), magnetometer=()"
+
+    # Aísla el contexto de navegación del sitio.
+    Cross-Origin-Opener-Policy = "same-origin"
+
+    # unsafe-none permite cargar recursos externos (Cloudinary, YouTube, etc.)
+    # sin requerir que esos servidores envíen CORP headers.
+    Cross-Origin-Embedder-Policy = "unsafe-none"
+
+    # cross-origin permite que recursos propios sean cargados desde otros orígenes.
+    Cross-Origin-Resource-Policy = "cross-origin"
+
+    # ── Content Security Policy ───────────────────────────────────────────────
+    # Una sola línea para garantizar compatibilidad con Netlify.
+    #
+    #  script-src  → JS propio + inline de Astro + Google Tag Manager + Analytics
+    #  style-src   → CSS propio + estilos inline de Astro/Tailwind
+    #  img-src     → imágenes propias + Cloudinary (todas las cuentas bajo res.cloudinary.com)
+    #                + data: para SVGs inline
+    #  connect-src → fetch/XHR propio + Cloudinary + Google Analytics (eventos GA4)
+    #  media-src   → audio/video propio + YouTube
+    #  frame-src   → iframes: solo YouTube
+    #  object-src  → deshabilita plugins Flash/Java
+    #  base-uri    → evita ataques de base-tag injection
+    #  form-action → formularios solo al propio dominio
+    # ─────────────────────────────────────────────────────────────────────────
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://res.cloudinary.com; font-src 'self'; connect-src 'self' https://res.cloudinary.com https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; media-src 'self' https://www.youtube.com https://youtu.be; frame-src https://www.youtube.com https://youtu.be; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;"
+
+# ------------------------------------------------------------
+# CACHE — assets con hash de Astro (inmutables)
+# Astro genera nombres con hash en /_astro/, seguros para
+# cachear indefinidamente.
+# ------------------------------------------------------------
+[[headers]]
+  for = "/_astro/*"
+
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ------------------------------------------------------------
+# CACHE — imágenes propias
+# ------------------------------------------------------------
+[[headers]]
+  for = "/img/*"
+
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# ------------------------------------------------------------
+# CACHE — fuentes propias (inmutables)
+# ------------------------------------------------------------
+[[headers]]
+  for = "/fonts/*"
+
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ------------------------------------------------------------
+# CACHE — SVGs estáticos en raíz
+# ------------------------------------------------------------
+[[headers]]
+  for = "/*.svg"
+
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
