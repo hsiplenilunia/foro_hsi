@@ -148,7 +148,7 @@ const agendaData = [
         title: "Invertir en higiene, no en errores: la ciencia de la desinfección proactiva",
         isNetworking: false,
         participants: `<br/>
-          <span class="text-gray-500">/span><br/>
+          <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           Mtra. Enf. Martha A. Huertas Jiménez<br/>
           <span class="text-gray-500">Subdirectora de Enfermería, INCMNSZ</span>`,
