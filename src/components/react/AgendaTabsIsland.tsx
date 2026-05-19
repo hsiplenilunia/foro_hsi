@@ -218,7 +218,7 @@ const agendaData = [
           <span class="text-gray-500">Dirección General de Epidemiología, SSa</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
-          <span class="text-gray-500">Cargo</span>`,
+          <span class="text-gray-500"></span>`,
       },
 
       {
