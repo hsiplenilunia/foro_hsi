@@ -370,14 +370,14 @@ export default function AgendaTabsIsland() {
                               {currentDay.day}
                                   </span>
                       <span
-                            className="font-bold text-xs tracking-widest uppercase"
+                            className="font-normal text-xs tracking-widest uppercase"
                           style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
                           >
                              {currentDay.month}
                             </span>
 
                           {event.time && (
-                        <span className="mt-2 bg-[#204356] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+                        <span className="mt-2 bg-[#204356] text-white text-xs font-normal px-3 py-1 rounded-full whitespace-nowrap">
                           {event.time}
                         </span>   
                       )}
