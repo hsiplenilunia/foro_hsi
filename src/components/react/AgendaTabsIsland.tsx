@@ -18,7 +18,15 @@ const agendaData = [
            <span class="font-bold text-[#204356]">Dra. Mercedes Juan López</span><br/>
            <span class="font-bold text-[#204356]">Dra. María Enriqueta Baridó Murguía</span><br/>
            <span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
-           <span class="font-bold text-[#204356]">Dr. Samuel Ponce de León Rosales</span><br/>`,
+           <span class="font-bold text-[#204356]">Dr. Samuel Ponce de León Rosales</span><br/>
+           <span class="font-bold text-[#204356]">Dr. Luis Fernando Pérez</span><br/>
+           <span class="font-bold text-[#204356]">Dra. Daniela de la Rosa Zamboni</span><br/>
+           <span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez</span><br/>
+           <span class="font-bold text-[#204356]">Dr. Paulo Castañeda</span><br/>
+           <span class="font-bold text-[#204356]">Mtra. Enf. Martha A. Huertas Jiménez</span><br/>
+           <span class="font-bold text-[#204356]">Dra. Isabel Villegas Mota</span><br/>
+           <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
+           <span class="font-bold text-[#204356]">Maribel Ramírez Coronel</span><br/>`,
       },
       {
         time: "9:30 - 10:00",
