@@ -375,7 +375,12 @@ export default function AgendaTabsIsland() {
                           >
                              {currentDay.month}
                             </span>
-                      
+
+                          {event.time && (
+                        <span className="mt-2 bg-[#204356] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+                          {event.time}
+                        </span>   
+                      )}
                     </div>
                   )}
 
