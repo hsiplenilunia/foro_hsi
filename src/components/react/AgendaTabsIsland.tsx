@@ -56,7 +56,7 @@ const agendaData = [
         type: "PANEL",
         title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,  
-        participants: `<span class="font-bold text-[#204356]">Mtro. Dr. Omar Galil Barrientos Salas</span><br/><span class="text-gray-500">Director de Calidad Médica Sur </span><br/>
+        participants: `<span class="font-bold text-[#204356]"></span><br/><span class="text-gray-500">Tec Salud</span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Mariana Barraza Llórens</span><br/>
           <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
@@ -76,10 +76,12 @@ const agendaData = [
         title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas<br/></span>
-          <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación </span><br/>
+          <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación</span><br/>
+          <span class="text-gray-500">Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
+          <span class="text-gray-500">Asociación Mexicana de Infectología y Microbiología</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dr. Luis Fernando Pérez González</span> <br/>
-          <span class="text-gray-500">Jefe del Departamento de Pediatría de la Facultad de Medicina de la Universidad Autónoma de San Luis Potosí</span>`,
+          <span class="text-gray-500">Jefe del Departamento de Pediatría, Facultad de Medicina, Universidad Autónoma de San Luis Potosí</span>`,
       },
       {
         time: "12:45 - 13:30",
@@ -105,23 +107,23 @@ const agendaData = [
         title: "¿Qué incentivos hacen falta para invertir en prevención de infecciones?",
         isNetworking: false,
         participants: `<br/>
-          <span class="text-gray-500">Corporativo San Ángel Inn</span><br/>
           <span class="text-gray-500">Asociación Nacional de Hospitales de Jalisco</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Cristina Gonzalez de Jesús</span><br/>
-          <span class="text-gray-500">Presidenta Colegio Médico de Especialistas en Calidad de la Atención Clinica</span>`,
+          <span class="text-gray-500">Presidenta, Colegio Médico de Especialistas en Calidad de la Atención Clinica</span>`,
       },
       {
         time: "14:45 - 15:15",
         type: "PANEL",
-        title: "¿Porque las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.",
+        title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500">Asociación Mexicana de Industrias de Investigación Farmacéutica, AMIIF</span><br/>
+          <span class="text-gray-500">Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C AMIIF</span><br/>
+          <span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos</span><br/>
           <span class="text-gray-500">Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
-          <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez (HIMFG)</span>`,
+          <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez, HIMFG</span>`,
       },
     ],
   },
