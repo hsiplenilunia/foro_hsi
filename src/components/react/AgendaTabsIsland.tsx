@@ -13,7 +13,7 @@ const agendaData = [
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
-          <span class="text-[#204356]">Representante de la OPS/OMS en México</span><br/>
+          <span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
            <br/><span class="font-bold text-[#00b0e4]">Consejo Técnico Hospitales sin Infecciones</span><br/>
            <span class="font-bold text-[#204356]">Dra. Mercedes Juan López</span><br/>
            <span class="font-bold text-[#204356]">Dra. María Enriqueta Baridó Murguía</span><br/>
@@ -26,7 +26,7 @@ const agendaData = [
            <span class="font-bold text-[#204356]">Mtra. Enf. Martha A. Huertas Jiménez</span><br/>
            <span class="font-bold text-[#204356]">Dra. Isabel Villegas Mota</span><br/>
            <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
-           <span class="font-bold text-[#204356]">Maribel Ramírez Coronel</span><br/>`,
+           <span class="font-bold text-[#204356]">M.A.S.S. Maribel Ramírez Coronel</span><br/>`,
       },
       {
         time: "9:30 - 10:00",
@@ -251,7 +251,7 @@ const agendaData = [
         type: "",
         title: "Acto de clausura",
         isNetworking: false,
-        participants: `Lic. Maribel Ramírez Coronel<br/>
+        participants: `M.A.S.S. Maribel Ramírez Coronel<br/>
           <span class="text-gray-500">Directora Fundadora de la iniciativa Hospitales sin Infecciones</span><br/>`,
       },
     ],
