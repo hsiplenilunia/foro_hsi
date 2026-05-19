@@ -108,7 +108,7 @@ const agendaData = [
           <span class="text-gray-500">Corporativo San Ángel Inn</span><br/>
           <span class="text-gray-500">Asociación Nacional de Hospitales de Jalisco</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          Dra. Cristina Gonzalez de Jesús<br/>
+          <span class="font-bold text-[#204356]">Dra. Cristina Gonzalez de Jesús</span><br/>
           <span class="text-gray-500">Presidenta Colegio Médico de Especialistas en Calidad de la Atención Clinica</span>`,
       },
       {
@@ -120,7 +120,7 @@ const agendaData = [
           <span class="text-gray-500">Asociación Mexicana de Industrias de Investigación Farmacéutica, AMIIF</span><br/>
           <span class="text-gray-500">Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          Dra. Liliana Vargas Neri<br/>
+          <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
           <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez (HIMFG)</span>`,
       },
     ],
@@ -139,7 +139,7 @@ const agendaData = [
         participants: `<br/>
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Dr. Rufino Luna Gordillo<br/>
+          <span class="font-bold text-[#204356]">Dr. Rufino Luna Gordillo</span><br/>
           <span class="text-gray-500">Presidente del Consejo Nacional de Salud Pública</span>`,
       },
       {
@@ -150,7 +150,7 @@ const agendaData = [
         participants: `<br/>
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Mtra. Enf. Martha A. Huertas Jiménez<br/>
+          <span class="font-bold text-[#204356]">Mtra. Enf. Martha A. Huertas Jiménez</span><br/>
           <span class="text-gray-500">Subdirectora de Enfermería, INCMNSZ</span>`,
       },
       {
@@ -163,7 +163,7 @@ const agendaData = [
           <span class="font-bold text-[#204356]">Enf. Rachel Campos Jimenez</span><br/>
           <span class="text-gray-500">Presidenta de Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Dra. Ma. Enriqueta Barido Murguía<br/>
+          <span class="font-bold text-[#204356]">Dra. Ma. Enriqueta Barido Murguía</span><br/>
           <span class="text-gray-500">Academia Mexicana de Cirugía AMC</span>`,
       },
       {
@@ -176,7 +176,7 @@ const agendaData = [
           <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX<br/></span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          Dr. Paulo Francisco Castañeda Méndez<br/>
+          <span class="font-bold text-[#204356]">Dr. Paulo Francisco Castañeda Méndez</span><br/>
           <span class="text-gray-500">Jefe de Infectología del Hospital Médica Sur</span>`,
       },
       {
@@ -214,7 +214,7 @@ const agendaData = [
         type: "PANEL",
         title: "El costo del silencio: las consecuencias de no actuar contra las infecciones resistentes.",
         isNetworking: false,
-        participants: `br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Carlos Rodríguez Martínez</span><br/>
           <span class="text-gray-500">Dirección General de Epidemiología, SSa</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
