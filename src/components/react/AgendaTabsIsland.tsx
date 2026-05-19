@@ -360,89 +360,133 @@ export default function AgendaTabsIsland() {
           return (
             <article
               key={idx}
-              className="bg-[#f5f7f8] rounded-xl mb-3 overflow-hidden"
+              className="bg-white rounded-xl mb-5 overflow-hidden shadow-sm border border-gray-100"
+             >
+  {/* MOBILE: columna vertical */}
+  <div className="flex flex-col md:hidden p-4 gap-2">
+    
+    {/* Fila superior: fecha grande (solo primera card) + badge horario */}
+    <div className="flex items-center gap-3">
+      {isFirst && (
+        <div className="flex flex-col items-center min-w-[50px]">
+          <span
+            className="font-black leading-none"
+            style={{
+              fontSize: "clamp(36px, 8vw, 52px)",
+              color: activeTab === 1 ? "#3aaa5c" : "#00b0e4",
+            }}
+          >
+            {currentDay.day}
+          </span>
+          <span
+            className="font-bold text-[10px] tracking-widest uppercase"
+            style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
+          >
+            {currentDay.month}
+          </span>
+        </div>
+      )}
+      {event.time && (
+        <span
+          className="text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap"
+          style={{ backgroundColor: activeTab === 1 ? "#3aaa5c" : "#204356" }}
+        >
+          {event.time}
+        </span>
+      )}
+    </div>
+
+    {/* Tipo + Título */}
+    <div>
+      {event.type && (
+        <span
+          className="font-bold text-xs tracking-widest uppercase block mb-1"
+          style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
+        >
+          {event.type}
+        </span>
+      )}
+      <h3 className="text-[#204356] font-bold text-sm leading-snug">
+        {event.title}
+      </h3>
+    </div>
+
+    {/* Participantes mobile — debajo del título */}
+    {event.participants && (
+      <p
+        className="text-sm leading-relaxed text-[#204356] pt-1 border-t border-gray-100"
+        dangerouslySetInnerHTML={{ __html: event.participants }}
+      />
+    )}
+  </div>
+
+  {/* DESKTOP: grid 2 columnas — sin cambios */}
+  <div className="hidden md:grid grid-cols-[1fr_1.2fr] gap-0">
+    <div className="p-5 flex gap-4 items-start">
+      {isFirst && (
+        <div className="flex flex-col items-center min-w-[60px] text-center">
+          <span
+            className="font-black leading-none"
+            style={{
+              fontSize: "clamp(40px, 5vw, 64px)",
+              color: activeTab === 1 ? "#3aaa5c" : "#00b0e4",
+            }}
+          >
+            {currentDay.day}
+          </span>
+          <span
+            className="font-bold text-xs tracking-widest uppercase"
+            style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
+          >
+            {currentDay.month}
+          </span>
+          {event.time && (
+            <span
+              className="mt-2 text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap"
+              style={{ backgroundColor: activeTab === 1 ? "#3aaa5c" : "#204356" }}
             >
-              <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-0">
+              {event.time}
+            </span>
+          )}
+        </div>
+      )}
+      {!isFirst && event.time && (
+        <div className="min-w-[100px]">
+          <span
+            className="text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap"
+            style={{ backgroundColor: activeTab === 1 ? "#3aaa5c" : "#204356" }}
+          >
+            {event.time}
+          </span>
+        </div>
+      )}
+      <div className="flex flex-col">
+        {event.type && (
+          <span
+            className="font-bold text-xs tracking-widest uppercase mb-1"
+            style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
+          >
+            {event.type}
+          </span>
+        )}
+        <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
+          {event.title}
+        </h3>
+      </div>
+    </div>
+    <div className="border-l border-white pl-5 pr-5 py-5">
+      {event.participants ? (
+        <p
+          className="text-sm leading-relaxed text-[#204356]"
+          dangerouslySetInnerHTML={{ __html: event.participants }}
+        />
+      ) : (
+        <span className="text-gray-400 text-sm italic">—</span>
+      )}
+    </div>
+  </div>
 
-                {/* Columna izquierda — fecha + horario + tipo + título */}
-                <div className="p-5 flex gap-4 items-start">
-
-                  {/* Fecha grande — solo en la primera card */}
-                  {isFirst && (
-                    <div className="flex flex-col items-center min-w-[60px] text-center">
-                      <span
-                        className="font-weight: 400; leading-none"
-                        style={{
-                          fontSize: "clamp(40px, 5vw, 64px)",
-                            color: activeTab === 1 ? "#3aaa5c" : "#00b0e4",
-                            }}
-                            >
-                              {currentDay.day}
-                                  </span>
-                      <span
-                            className="font-weight: 400; text-xs tracking-widest uppercase"
-                          style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
-                          >
-                             {currentDay.month}
-                            </span>
-
-                          {event.time && (
-                        <span className="mt-2 bg-[#204356] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
-                          {event.time}
-                        </span>   
-                      )}
-                    </div>
-                  )}
-
-                  {/* Horario badge — para cards que no son la primera */}
-                  {!isFirst && event.time && (
-                    <div className="min-w-[100px]">
-                      <span className="bg-[#204356] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
-                        {event.time}
-                      </span>
-                    </div>
-                  )}
-
-                  {/* Tipo + Título */}
-                  <div className="flex flex-col">
-                    {event.type && (
-                      <span
-                        className="font-bold text-xs tracking-widest uppercase mb-1"
-                        style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
-                        >
-                         {event.type}
-                          </span>
-                    )}
-                    <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
-                      {event.title}
-                    </h3>
-                  </div>
-                </div>
-
-                {/* Divisor vertical — solo desktop */}
-                <div className="hidden md:block border-l border-white pl-5 pr-5 py-5">
-                  {event.participants ? (
-                    <p
-                      className="text-sm leading-relaxed text-[#204356]"
-                      dangerouslySetInnerHTML={{ __html: event.participants }}
-                    />
-                  ) : (
-                    <span className="text-gray-400 text-sm italic">—</span>
-                  )}
-                </div>
-
-                {/* Participantes mobile */}
-                {event.participants && (
-                  <div className="md:hidden px-4 pb-4">
-                    <p
-                      className="text-sm leading-relaxed text-[#204356]"
-                      dangerouslySetInnerHTML={{ __html: event.participants }}
-                    />
-                  </div>
-                )}
-
-              </div>
-            </article>
+</article>
           );
         })}
       </div>
