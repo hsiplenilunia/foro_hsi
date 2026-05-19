@@ -13,11 +13,11 @@ const agendaData = [
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. Patricia Elena Clark Peralta</span><br/>
+        <span class="text-gray-500">Secretaria del Consejo de Salubridad General </span><br/>
         <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
           <br/><span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
            <br/><span class="font-bold text-[#00b0e4]">Consejo Técnico</span><br/>
            <span class="font-bold text-[#204356]">Dra. Mercedes Juan López</span><br/>
-           <span class="text-gray-500">Secretaria del Consejo de Salubridad General </span><br/>
            <span class="font-bold text-[#204356]">Dra. María Enriqueta Baridó Murguía</span><br/>
            <span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
            <span class="font-bold text-[#204356]">Dr. Samuel Ponce de León Rosales</span><br/>
