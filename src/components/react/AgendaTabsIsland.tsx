@@ -191,7 +191,7 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "La vacunación en poblaciones vulnerables y la prevención de infecciones",
         isNetworking: false,
-        participants: `Dra. Sandra Rajme López<br/>
+        participants: `<span class="font-bold text-[#204356]">Dra. Sandra Rajme López<br/></span>
           <span class="text-gray-500">Investigadora en el Departamento de Infectología, Instituto Nacional de Ciencias y Nutricion "Salvador Zubirán" </span><br/>`,
       },
       {
@@ -199,7 +199,7 @@ const agendaData = [
         type: "PANEL",
         title: "Intersección entre el activismo profesional y el enfoque “Una Salud”",
         isNetworking: false,
-        participants: `Mtra. Margarita Torres García<br/>
+        participants: `<span class="font-bold text-[#204356]">Mtra. Margarita Torres García<br/></span>
           <span class="text-gray-500">Presidenta de la Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN</span><br/>`,
       },
        {
@@ -237,9 +237,9 @@ const agendaData = [
         type: "PREMIACIÓN",
         title: "1er. Concurso “Heridas sin Infecciones“",
         isNetworking: false,
-        participants: `Mtra. Guillermina Vela Anaya<br/>
+        participants: `<span class="font-bold text-[#204356]">Mtra. Guillermina Vela Anaya</span><br/>
           <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
-        Dra. Juana Jiménez Sánchez<br/>
+          <span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez</span><br/>
           <span class="text-gray-500">Directora Regional de U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>`,
           },
           {
@@ -254,7 +254,7 @@ const agendaData = [
         type: "",
         title: "Acto de clausura",
         isNetworking: false,
-        participants: `M.A.S.S. Maribel Ramírez Coronel<br/>
+        participants: `<span class="font-bold text-[#204356]">M.A.S.S. Maribel Ramírez Coronel</span><br/>
           <span class="text-gray-500">Directora Fundadora de la iniciativa Hospitales sin Infecciones</span><br/>`,
       },
     ],
