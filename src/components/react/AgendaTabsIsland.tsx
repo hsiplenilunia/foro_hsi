@@ -361,7 +361,7 @@ export default function AgendaTabsIsland() {
                   {isFirst && (
                     <div className="flex flex-col items-center min-w-[60px] text-center">
                       <span
-                        className="font-normal leading-none"
+                        className="font-weight: 400; leading-none"
                         style={{
                           fontSize: "clamp(40px, 5vw, 64px)",
                             color: activeTab === 1 ? "#3aaa5c" : "#00b0e4",
@@ -370,7 +370,7 @@ export default function AgendaTabsIsland() {
                               {currentDay.day}
                                   </span>
                       <span
-                            className="font-normal text-xs tracking-widest uppercase"
+                            className="font-weight: 400; text-xs tracking-widest uppercase"
                           style={{ color: activeTab === 1 ? "#3aaa5c" : "#00b0e4" }}
                           >
                              {currentDay.month}
