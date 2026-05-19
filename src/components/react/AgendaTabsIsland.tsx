@@ -56,7 +56,7 @@ const agendaData = [
         type: "PANEL",
         title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,  
-        participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/><span class="text-gray-500">Director de Calidad Médica Sur </span><br/>
+        participants: `<span class="font-bold text-[#204356]">Mtro. Dr. Omar Galil Barrientos Salas</span><br/><span class="text-gray-500">Director de Calidad Médica Sur </span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Mariana Barraza Llórens</span><br/>
           <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
@@ -75,7 +75,7 @@ const agendaData = [
         type: "PANEL",
         title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `Dr. Rafael Franco Cendejas<br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas<br/></span>
           <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación </span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dr. Luis Fernando Pérez González</span> <br/>
@@ -116,7 +116,7 @@ const agendaData = [
         type: "PANEL",
         title: "¿Porque las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.",
         isNetworking: false,
-        participants: `Nombre del participante<br/>
+        participants: `<span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500">Asociación Mexicana de Industrias de Investigación Farmacéutica, AMIIF</span><br/>
           <span class="text-gray-500">Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
@@ -160,7 +160,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<br/>
           <span class="text-gray-500">Comisión Coordinadora de los Institutos Nacionales de Salud y Hospitales de Alta Especialidad, CCINSHAE-SSa</span><br/>
-          Enf. Rachel Campos Jimenez<br/>
+          <span class="font-bold text-[#204356]">Enf. Rachel Campos Jimenez</span><br/>
           <span class="text-gray-500">Presidenta de Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           Dra. Ma. Enriqueta Barido Murguía<br/>
