@@ -361,7 +361,7 @@ export default function AgendaTabsIsland() {
                   {isFirst && (
                     <div className="flex flex-col items-center min-w-[60px] text-center">
                       <span
-                        className="font-black leading-none"
+                        className="font-normal leading-none"
                         style={{
                           fontSize: "clamp(40px, 5vw, 64px)",
                             color: activeTab === 1 ? "#3aaa5c" : "#00b0e4",
@@ -377,7 +377,7 @@ export default function AgendaTabsIsland() {
                             </span>
 
                           {event.time && (
-                        <span className="mt-2 bg-[#204356] text-white text-xs font-normal px-3 py-1 rounded-full whitespace-nowrap">
+                        <span className="mt-2 bg-[#204356] text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
                           {event.time}
                         </span>   
                       )}
