@@ -360,7 +360,7 @@ export default function AgendaTabsIsland() {
           return (
             <article
               key={idx}
-              className="bg-white rounded-xl mb-5 overflow-hidden shadow-sm border border-gray-100"
+              className="bg-[#f5f7f8] rounded-xl mb-5 overflow-hidden shadow-sm border border-gray-100"
              >
   {/* MOBILE: columna vertical */}
   <div className="flex flex-col md:hidden p-4 gap-2">
