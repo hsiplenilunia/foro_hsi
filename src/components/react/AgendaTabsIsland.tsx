@@ -39,6 +39,9 @@ const agendaData = [
         time: "10:00 - 10:45",
         type: "PANEL",
         title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
+        participants: `<br/><span class="font-bold text-[#00b0e4]">MODERA</span><br/>
+        Nombre<br/>
+         <span class="text-[#204356]">CARGO</span><br/>`,
         isNetworking: false,
         participants: `Nombre del participante<br/>
           <span class="text-[#204356]"></span><br/>
