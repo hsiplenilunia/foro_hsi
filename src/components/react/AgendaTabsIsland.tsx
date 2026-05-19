@@ -42,7 +42,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
         <span class="font-bold text-[#204356]">Nombre<br/></span><span class="text-[#204356]">CARGO</span><br/>
-          <span class="text-[#204356]">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
+          <br/><span class="text-[#204356]">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
           <span class="text-[#204356]">Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
           <span class="text-[#204356]">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
           <span class="text-[#204356]">Red Temática de Investigación y Vigilancia de la Farmacorresistencia, INVIFAR</span>`,
