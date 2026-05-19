@@ -141,8 +141,8 @@ const agendaData = [
         participants: `<br/>
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Dr. Rufino Luna Gordillo</span><br/>
-          <span class="text-gray-500">Presidente del Consejo Nacional de Salud Pública</span>`,
+          <span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span>`,
       },
       {
         time: "09:45 - 10:30",
@@ -153,7 +153,7 @@ const agendaData = [
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Mtra. Enf. Martha A. Huertas Jiménez</span><br/>
-          <span class="text-gray-500">Subdirectora de Enfermería, INCMNSZ</span>`,
+          <span class="text-gray-500">Subdirectora de Enfermería, Instituto Nacional de Ciencias Médicas y Nutición "Salvador Zubirán", INCMNSZ</span>`,
       },
       {
         time: "10:30 - 11:15",
@@ -163,7 +163,7 @@ const agendaData = [
         participants: `<br/>
           <span class="text-gray-500">Comisión Coordinadora de los Institutos Nacionales de Salud y Hospitales de Alta Especialidad, CCINSHAE-SSa</span><br/>
           <span class="font-bold text-[#204356]">Enf. Rachel Campos Jimenez</span><br/>
-          <span class="text-gray-500">Presidenta de Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
+          <span class="text-gray-500">Presidenta, Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Ma. Enriqueta Barido Murguía</span><br/>
           <span class="text-gray-500">Academia Mexicana de Cirugía AMC</span>`,
@@ -174,12 +174,13 @@ const agendaData = [
         title: "Uso responsable de antibióticos: de la farmacia hasta el paciente",
         isNetworking: false,
         participants:`<br/>
-          <span class="text-gray-500">Cargo del participante</span><br/>
+          <span class="text-gray-500"></span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX<br/></span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
+          <span class="text-gray-500"><span class="text-gray-500">Colegio de Químicos, Farmacéuticos, Biologos de Mexico, CQFBM</span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dr. Paulo Francisco Castañeda Méndez</span><br/>
-          <span class="text-gray-500">Jefe de Infectología del Hospital Médica Sur</span>`,
+          <span class="text-gray-500">Jefe de Infectología, Hospital Médica Sur</span>`,
       },
       {
         time: "",
@@ -194,7 +195,7 @@ const agendaData = [
         title: "La vacunación en poblaciones vulnerables y la prevención de infecciones",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. Sandra Rajme López<br/></span>
-          <span class="text-gray-500">Investigadora en el Departamento de Infectología, Instituto Nacional de Ciencias y Nutricion "Salvador Zubirán" </span><br/>`,
+          <span class="text-gray-500">Departamento de Infectología, Instituto Nacional de Ciencias y Nutricion "Salvador Zubirán", INCMNSZ</span><br/>`,
       },
       {
         time: "13:00 - 13:45",
@@ -216,7 +217,7 @@ const agendaData = [
         type: "PANEL",
         title: "El costo del silencio: las consecuencias de no actuar contra las infecciones resistentes.",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. Carlos Rodríguez Martínez</span><br/>
+        participants: `<span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500">Dirección General de Epidemiología, SSa</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
@@ -241,8 +242,10 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtra. Guillermina Vela Anaya</span><br/>
           <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
+          <span class="font-bold text-[#204356]">Dra. Daniela de la Rosa Zamboni</span><br/>
+          <span class="text-gray-500">Lider del Subcomite de Resistencia a los Antimicrobianos, Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
           <span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez</span><br/>
-          <span class="text-gray-500">Directora Regional de U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>`,
+          <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>`,
           },
           {
         time: "",
