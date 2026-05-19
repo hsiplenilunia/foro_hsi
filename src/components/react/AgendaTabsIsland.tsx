@@ -33,7 +33,7 @@ const agendaData = [
         type: "CONFERENCIA MAGISTRAL",
         title: "Impacto de la Estrategia Nacional contra la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dra. Patricia Elena Clark Peralta<br/></span><span class="text-[#204356]">Consejo de Salubridad General </span>`,
+        participants: `<span class="font-bold text-[#204356]">Dra. Patricia Elena Clark Peralta<br/></span><span class="text-gray-500">Secretaria, Consejo de Salubridad General </span>`,
       },
       {
         time: "10:00 - 10:45",
@@ -41,11 +41,11 @@ const agendaData = [
         title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
         isNetworking: false,
         participants: `<span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-        <span class="font-bold text-[#204356]">Nombre<br/></span><span class="text-[#204356]">CARGO</span><br/>
-          <br/><span class="text-[#204356]">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
-          <span class="text-[#204356]">Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
-          <span class="text-[#204356]">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
-          <span class="text-[#204356]">Red Temática de Investigación y Vigilancia de la Farmacorresistencia, INVIFAR</span>`,
+        <span class="font-bold text-[#204356]">Nombre<br/></span><span class="text-gray-500">CARGO</span><br/>
+          <br/><span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
+          <span class="text-gray-500">Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
+          <span class="text-gray-500">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
+          <span class="text-gray-500">Red Temática de Investigación y Vigilancia de la Farmacorresistencia, INVIFAR</span>`,
         
       },
       {
@@ -53,10 +53,10 @@ const agendaData = [
         type: "PANEL",
         title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,  
-        participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/><span class="text-[#204356]">Director de Calidad Médica Sur </span><br/>
+        participants: `Mtro. Dr. Omar Galil Barrientos Salas<br/><span class="text-gray-500">Director de Calidad Médica Sur </span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           Dra. Mariana Barraza Llórens <br/>
-          <span class="text-[#204356]">Socia Fundadora Blutitude</span>`,
+          <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
         
       },
  {
@@ -73,10 +73,10 @@ const agendaData = [
         title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
         isNetworking: false,
         participants: `Dr. Rafael Franco Cendejas<br/>
-          <span class="text-[#204356]">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación </span><br/>
+          <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación </span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           Dr. Luis Fernando Pérez González <br/>
-          <span class="text-[#204356]">Jefe del Departamento de Pediatría de la Facultad de Medicina de la Universidad Autónoma de San Luis Potosí</span>`,
+          <span class="text-gray-500">Jefe del Departamento de Pediatría de la Facultad de Medicina de la Universidad Autónoma de San Luis Potosí</span>`,
       },
       {
         time: "12:45 - 13:30",
@@ -84,7 +84,7 @@ const agendaData = [
         title: "Diagnóstico rápido: cómo la inteligencia de datos puede salvar vidas y bajar costos",
         isNetworking: false,
         participants: `Nombre del participante<br/>
-          <span class="text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
             Nombre<br/>
           <span class="text-gray-500"></span>`,
