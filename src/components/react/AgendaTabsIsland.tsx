@@ -112,7 +112,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtro. Omar Galil Barrientos Salas </span><br/>
         <span class="text-gray-500">Director de Calidad, Médica Sur</span><br/>
-          <span class="text-gray-500">Asociación Nacional de Hospitales de Jalisco</span><br/>
+          <br/><span class="text-gray-500">Asociación Nacional de Hospitales de Jalisco</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Cristina Gonzalez de Jesús</span><br/>
           <span class="text-gray-500">Presidenta, Colegio Médico de Especialistas en Calidad de la Atención Clinica</span>`,
