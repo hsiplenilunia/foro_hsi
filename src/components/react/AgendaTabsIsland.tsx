@@ -46,7 +46,7 @@ const agendaData = [
         title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
         isNetworking: false,
         participants: `<span class="font-bold text-[#00b0e4]"></span><br/>
-        <span class="font-bold text-[#204356]"><br/></span><span class="text-gray-500">MODERA</span><br/>
+         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
         <span class="font-bold text-[#204356]">Lic. Esperanza Alemán Aguilar</span><br/>
           <span class="text-gray-500">Coordinadora de Calidad, Médica Sur </span> <br/>
           <br/><span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
