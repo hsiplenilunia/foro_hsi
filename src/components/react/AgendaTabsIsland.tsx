@@ -79,9 +79,9 @@ const agendaData = [
         type: "PANEL",
         title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas<br/></span>
+        participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas</span><br/>
           <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación</span><br/>
-          <span class="text-gray-500">Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
+          <br/><span class="text-gray-500">Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
           <span class="text-gray-500">Asociación Mexicana de Infectología y Microbiología</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dr. Luis Fernando Pérez González</span> <br/>
