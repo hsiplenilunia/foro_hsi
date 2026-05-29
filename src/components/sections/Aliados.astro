@@ -26,15 +26,15 @@ const filaUno = logos.slice(0);
     Aliados
   </h2>
 
-  <!-- Fila 1: izquierda → -->
-  <div class="relative flex overflow-hidden mb-6 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)] py-3">
-    <div class="marquee-row marquee-left flex gap-12 w-max">
-      {[...filaUno, ...filaUno].map((logo) => (
-        <div class="flex-shrink-0 flex items-center justify-center h-64 w-64">
-          <img src={logo.src} alt={logo.alt} class="h-full w-auto max-w-full object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
+  <!-- Fila 2: derecha → -->
+  <div class="relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+    <div class="marquee-row marquee-right flex gap-12 w-max">
+      {[...filaDos, ...filaDos].map((logo) => (
+        <div class="flex-shrink-0 flex items-center justify-center h-24 w-44">
+          <img src={logo.src} alt={logo.alt} class="h-24 w-auto max-w-[120px] object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
         </div>
       ))}
-    </div>
+    </div>s
   </div>
 
 </section>
@@ -48,11 +48,6 @@ const filaUno = logos.slice(0);
   .marquee-left {
     animation-name: scrollLeft;
     animation-duration: 50s;
-  }
-  
-  @keyframes scrollLeft {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
   }
 
   @keyframes scrollRight {
