@@ -30,8 +30,8 @@ const filaUno = logos.slice(0);
   <div class="relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
     <div class="marquee-row marquee-right flex gap-12 w-max">
       {[...filaDos, ...filaDos].map((logo) => (
-        <div class="flex-shrink-0 flex items-center justify-center h-24 w-44">
-          <img src={logo.src} alt={logo.alt} class="h-24 w-auto max-w-[120px] object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
+        <div class="flex-shrink-0 flex items-center justify-center h-32 w-52">
+          <img src={logo.src} alt={logo.alt} class="h-30 w-auto max-w-[120px] object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
         </div>
       ))}
     </div>s
@@ -49,10 +49,9 @@ const filaUno = logos.slice(0);
     animation-name: scrollLeft;
     animation-duration: 50s;
   }
-
-  @keyframes scrollRight {
-    0%   { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
+  @keyframes scrollLeft {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
 
   /* Pausa al hacer hover sobre toda la sección */
