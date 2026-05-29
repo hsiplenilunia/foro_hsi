@@ -9,26 +9,12 @@ const logos = [
   { src: "/img/patrocinadores/sanieren.webp", alt: "Sanieren" },
   { src: "/img/patrocinadores/tecsalud.webp", alt: "Tecsalud" },
 
-
-  
-  { src: "/img/asociados/logo_MexY-PIDN.webp", alt: "México y PIDN" },
-  { src: "/img/asociados/logo_ampre.webp", alt: "AMPRE" },
-  { src: "/img/asociados/logo_colegio_nacional_quim.webp", alt: "Colegio Nacional de Químicos" },
-  { src: "/img/asociados/logo_growingup.webp", alt: "Growing Up" },
-  { src: "/img/asociados/logo_sepsis.webp", alt: "Sepsis" },
-  { src: "/img/asociados/logo_sociacion_mexicana_por_la_calidad_en_salud_y_seguridad_del_paciente.webp", alt: "Sociación Mexicana por la Calidad en Salud y Seguridad del Paciente" },
-  { src: "/img/asociados/logo_somib.webp", alt: "SOMIB" },
-  { src: "/img/asociados/logo_u-nursing-latam.webp", alt: "U-Nursing Latam" },
-  { src: "/img/asociados/LogoBlutitude.webp", alt: "Blutitude" },
-  { src: "/img/asociados/logo_amimc.webp", alt: "ANIMC" },
-  { src: "/img/asociados/logo_amein.webp", alt: "Amein" },
   
 ];
 
 // Dividi en dos grupos para las dos filas
 const mitad = Math.ceil(logos.length / 2);
 const filaUno = logos.slice(0, mitad);
-const filaDos = logos.slice(mitad);
 ---
 
 <section class="w-full py-10 overflow-hidden bg-white" id="patrocinadores">
@@ -49,7 +35,7 @@ const filaDos = logos.slice(mitad);
   <h2 class="text-center text-2xl font-bold uppercase tracking-widest text-[#204356] mb-8">
     Aliados
   </h2>
-  <!-- Fila 2: derecha ← (sentido contrario) -->
+  <!-- Fila 2: derecha ← (sentido contrario) 
   <div class="relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
     <div class="marquee-row marquee-right flex gap-12 w-max">
       {[...filaDos, ...filaDos].map((logo) => (
@@ -58,7 +44,7 @@ const filaDos = logos.slice(mitad);
         </div>
       ))}
     </div>s
-  </div>
+  </div>-->
 </section>
 
 <style>
