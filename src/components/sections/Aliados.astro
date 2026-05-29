@@ -1,0 +1,85 @@
+---
+// AliadosSlider.astro
+const logos = [
+
+  { src: "/img/asociados/logo_MexY-PIDN.webp", alt: "México y PIDN" },
+  { src: "/img/asociados/logo_ampre.webp", alt: "AMPRE" },
+  { src: "/img/asociados/logo_colegio_nacional_quim.webp", alt: "Colegio Nacional de Químicos" },
+  { src: "/img/asociados/logo_growingup.webp", alt: "Growing Up" },
+  { src: "/img/asociados/logo_sepsis.webp", alt: "Sepsis" },
+  { src: "/img/asociados/logo_sociacion_mexicana_por_la_calidad_en_salud_y_seguridad_del_paciente.webp", alt: "Sociación Mexicana por la Calidad en Salud y Seguridad del Paciente" },
+  { src: "/img/asociados/logo_somib.webp", alt: "SOMIB" },
+  { src: "/img/asociados/logo_u-nursing-latam.webp", alt: "U-Nursing Latam" },
+  { src: "/img/asociados/LogoBlutitude.webp", alt: "Blutitude" },
+  { src: "/img/asociados/logo_amimc.webp", alt: "ANIMC" },
+  { src: "/img/asociados/logo_amein.webp", alt: "Amein" },
+  
+];
+
+// Dividi en dos grupos para las dos filas
+const mitad = Math.ceil(logos.length / 2);
+const filaUno = logos.slice(0, mitad);
+const filaDos = logos.slice(mitad);
+---
+
+<section class="w-full py-10 overflow-hidden bg-white" id="patrocinadores">
+  <h2 class="text-center text-2xl font-bold uppercase tracking-widest text-[#204356] mb-8">
+    Patrocinadores
+  </h2>
+
+  <!-- Fila 1: izquierda → -->
+  <div class="relative flex overflow-hidden mb-6 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+    <div class="marquee-row marquee-left flex gap-12 w-max">
+      {[...filaUno, ...filaUno].map((logo) => (
+        <div class="flex-shrink-0 flex items-center justify-center h-32 w-52">
+          <img src={logo.src} alt={logo.alt} class="h-30 w-auto max-w-[120px] object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
+        </div>
+      ))}
+    </div>
+  </div>
+  <h2 class="text-center text-2xl font-bold uppercase tracking-widest text-[#204356] mb-8">
+    Aliados
+  </h2>
+  <!-- Fila 2: derecha ← (sentido contrario) -->
+  <div class="relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+    <div class="marquee-row marquee-right flex gap-12 w-max">
+      {[...filaDos, ...filaDos].map((logo) => (
+        <div class="flex-shrink-0 flex items-center justify-center h-24 w-44">
+          <img src={logo.src} alt={logo.alt} class="h-24 w-auto max-w-[120px] object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
+        </div>
+      ))}
+    </div>s
+  </div>
+</section>
+
+<style>
+  .marquee-row {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .marquee-left {
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+  }
+
+  .marquee-right {
+    animation-name: scrollRight;
+    animation-duration: 30s;
+  }
+
+  @keyframes scrollLeft {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes scrollRight {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  /* Pausa al hacer hover sobre toda la sección */
+  section:hover .marquee-row {
+    animation-play-state: paused;
+  }
+</style>
