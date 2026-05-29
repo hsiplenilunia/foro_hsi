@@ -16,40 +16,29 @@ const logos = [
   
 ];
 
-// Dividi en dos grupos para las dos filas
-const mitad = Math.ceil(logos.length / 2);
-const filaUno = logos.slice(0, mitad);
-const filaDos = logos.slice(mitad);
+// Una Sola Fila
+
+const filaUno = speakers.slice(0);
 ---
 
-<section class="w-full py-10 overflow-hidden bg-white" id="patrocinadores">
-  <h2 class="text-center text-2xl font-bold uppercase tracking-widest text-[#204356] mb-8">
-    Patrocinadores
+<section class="w-full py-10 overflow-hidden bg-white" id="speakers">
+  <h2 class="text-center text-3xl font-bold uppercase tracking-widest text-[#204356] mb-8">
+    Speakers 
+    <br>
+    Anteriores
   </h2>
 
   <!-- Fila 1: izquierda → -->
-  <div class="relative flex overflow-hidden mb-6 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+  <div class="relative flex overflow-hidden mb-6 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)] py-3">
     <div class="marquee-row marquee-left flex gap-12 w-max">
       {[...filaUno, ...filaUno].map((logo) => (
-        <div class="flex-shrink-0 flex items-center justify-center h-32 w-52">
-          <img src={logo.src} alt={logo.alt} class="h-30 w-auto max-w-[120px] object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
+        <div class="flex-shrink-0 flex items-center justify-center h-64 w-64">
+          <img src={logo.src} alt={logo.alt} class="h-full w-auto max-w-full object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
         </div>
       ))}
     </div>
   </div>
-  <h2 class="text-center text-2xl font-bold uppercase tracking-widest text-[#204356] mb-8">
-    Aliados
-  </h2>
-  <!-- Fila 2: derecha ← (sentido contrario) -->
-  <div class="relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
-    <div class="marquee-row marquee-right flex gap-12 w-max">
-      {[...filaDos, ...filaDos].map((logo) => (
-        <div class="flex-shrink-0 flex items-center justify-center h-24 w-44">
-          <img src={logo.src} alt={logo.alt} class="h-24 w-auto max-w-[120px] object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
-        </div>
-      ))}
-    </div>s
-  </div>
+
 </section>
 
 <style>
@@ -60,14 +49,9 @@ const filaDos = logos.slice(mitad);
 
   .marquee-left {
     animation-name: scrollLeft;
-    animation-duration: 30s;
+    animation-duration: 50s;
   }
-
-  .marquee-right {
-    animation-name: scrollRight;
-    animation-duration: 30s;
-  }
-
+  
   @keyframes scrollLeft {
     0%   { transform: translateX(0); }
     100% { transform: translateX(-50%); }
