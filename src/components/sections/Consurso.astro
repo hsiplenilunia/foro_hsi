@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import BGConcurso from "../../assets/bg_concurso_2026.svg";
+import BGConcursoM from "../../assets/bg_concurso_2026.svg";
+import Button from "../Button.astro";
+
+//const sectionStyles = `landing-section bg-purple h-screen w-screen text-center overflow-hidden overflow-y-hidden relative`;
+const sectionStyles = `landing-section bg-bg-white w-screen flex items-center justify-center pt-16 px-8 relative`;
+---
+
+<section class={sectionStyles} data-header-color={`bg-white`} id="concurso">
+  <div
+    class="flex flex-col items-center justify-center h-full space-y-8 z-10 relative"
+  >
+    <div
+      class="text-navy text-3xl text-center font-bold uppercase mt-0 md:mt-4 mb-0 md:mb-0"
+    >
+      <h2>CONSURSO DE TRABAJOS LIBRES</h2>
+    </div>
+    <div class="flex flex-col px-[10%] text-black-text">
+      <p class="text-center text-lg">
+        Prevención de escaras e infecciones de heridas
+      </p>
+    </div>
+    <div class="w-full flex justify-center">
+      {/* Imagen para pantallas horizontales (aspect-ratio >= 1) */}
+      <div class="w-full">
+        <Image
+          src={BGConcurso}
+          alt="BGConcurso"
+          class="w-full h-auto max-w-[1920px] hidden md:block aspect-video"
+          width={833}
+          loading="lazy"
+        />
+        {/* Imagen para pantallas verticales (aspect-ratio < 1) */}
+        <img
+        src={BGConcursoM}
+          alt="BGConcursoM"
+          class="w-full h-auto max-w-[600px] block md:hidden aspect-[3/4]"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>
