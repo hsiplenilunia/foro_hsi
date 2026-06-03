@@ -53,7 +53,7 @@ module.exports = {
         )`,
       },
 // Gradiente Textos concurso
-      backgroundText: {
+      backgroundImage: {
         'gradient-concurso': `linear-gradient(
           to right,
           #07A2D2 0%,
