@@ -53,6 +53,22 @@ module.exports = {
         )`,
       },
 
+// tailwind.config.mjs
+export default {
+  theme: {
+    extend: {
+      backgroundImage: {
+        
+        // El nuevo gradiente exclusivo para el texto del Concurso
+        // Usamos un azul brillante y un tono cian para alta legibilidad
+        'gradient-concurso': 'linear-gradient(to right, #07A2D2, #000000)',
+      },
+    },
+  },
+};
+
+
+
     },
   },
   plugins: [],
