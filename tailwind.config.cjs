@@ -26,10 +26,10 @@ module.exports = {
         'celeste-hsi': "#00bbe7",
         'green-hsi': "#25A64B",
         'registro-hsi': "#00B0E4",
-        'registro-concurso': "#3B82F6",
-        'registro-concurso-hover': "#1E3A8A",
-        'bases-concurso': "#E5E7EB",
-        'bases-concurso-hover': "#3B82F6",
+        'btn-registro-concurso': "#3B82F6",
+        'btn-registro-concurso-hover': "#1E3A8A",
+        'btn-bases-concurso': "#E5E7EB",
+        'btn-bases-concurso-hover': "#3sB82F6",
 
         // Gradiente actualizado — 6 colores Figma
         'gradient-start':   "#67AC51",  // 0%
