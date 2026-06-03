@@ -52,14 +52,14 @@ module.exports = {
           #334756 100%
         )`,
       },
-// Gradiente Textos concurso
-     //  backgroundImage: {
-       // 'gradient-concurso': `linear-gradient(
-       //    to right,
-       //    #07A2D2 0%,
-        //   #000000 100%,
-      //   )`,
-       //  },
+// Gradiente listo para usar como clase de Tailwind
+      backgroundImage: {
+        'gradient-heridas': `linear-gradient(
+          to right,
+          #26617A 0%,
+          #334756 100%
+        )`,
+      },
 
     },
   },
