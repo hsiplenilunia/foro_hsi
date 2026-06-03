@@ -6,10 +6,11 @@
   const sectionStyles = `landing-section bg-bg-white w-screen flex items-center justify-center pt-16 px-8 relative`;
   ---
 
-  <section
-  class="relative w-full py-16 px-6 md:px-12
+<section
+  class="relative w-full overflow-hidden py-10 px-6 md:px-12 min-h-[450px] bg-white
          bg-[url('/bg_concurso_2026.svg')] bg-no-repeat
-         bg-[length:auto_100%] bg-right"
+         bg-[length:auto_100%] bg-right
+         md:bg-cover md:bg-center"
 >
   <div class="flex flex-col gap-6">
     <h2 class="text-3xl font-bold text-gray-800">
@@ -24,7 +25,8 @@
          onmouseover="this.style.background='#1D5168'; this.style.color='#fff'; this.style.fontWeight='900'; this.style.transform='scale(1.03)';"
          onmouseout="this.style.background='#0AB1E5'; this.style.color='#000'; this.style.fontWeight='400'; this.style.transform='scale(1)';"
       >Registro concurso</a>
-
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
       <a href="..." class="luma-checkout--button"
          style="background: #D9D9D9; color: #000; display: flex; align-items: center; justify-content: center; width: 200px; height: 32px; border-radius: 32px; text-transform: capitalize; text-decoration: none; font-weight: 400; font-size: 16px; transition: all 0.3s ease;"
          onmouseover="this.style.background='#D9D9D9'; this.style.color='#0AB1E5'; this.style.fontWeight='900'; this.style.transform='scale(1.03)';"
