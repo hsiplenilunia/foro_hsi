@@ -51,7 +51,7 @@ module.exports = {
           #26617A 89%,
           #334756 100%
         )`,
-
+      },
 // Gradiente Textos concurso
       backgroundText: {
         'gradient-concurso': `linear-gradient(
@@ -59,8 +59,8 @@ module.exports = {
           #07A2D2 0%,
           #000000 100%,
         )`,
+        },
 
-      },
     },
   },
   plugins: [],
