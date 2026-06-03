@@ -52,14 +52,6 @@ module.exports = {
           #334756 100%
         )`,
       },
-// Gradiente listo para usar como clase de Tailwind
-      backgroundImage: {
-        'gradient-heridas': `linear-gradient(
-          to right,
-          #26617A 0%,
-          #334756 100%
-        )`,
-      },
 
     },
   },
