@@ -55,7 +55,8 @@ module.exports = {
           // Nuevo gradiente para concurso
         'gradient-concurso': `linear-gradient(
           to right, 
-          #07A2D2, #000000
+          #07A2D2 0%, 
+          #000000 100%
         )`,
       },
 
