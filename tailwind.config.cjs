@@ -29,7 +29,7 @@ module.exports = {
         'btn-registro-concurso': "#3B82F6",
         'btn-registro-concurso-hover': "#1E3A8A",
         'btn-bases-concurso': "#E5E7EB",
-        'btn-bases-concurso-hover': "#3sB82F6",
+        'btn-bases-concurso-hover': "#3SB82F6",
 
         // Gradiente actualizado — 6 colores Figma
         'gradient-start':   "#67AC51",  // 0%

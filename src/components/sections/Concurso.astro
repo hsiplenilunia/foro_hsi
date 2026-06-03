@@ -22,7 +22,7 @@ const sectionStyles = `landing-section bg-bg-white w-screen flex items-center ju
     
     <div class="flex flex-col sm:flex-row gap-4">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7eKjd95ZBHlT3GroRk2lhezZS7Y_STZHOnA5Q8VNDtYKHYg/viewform?usp=sharing&ouid=108928240711952588233" class="btn-registro-concurso"
-      style="
+    style="
     background: #3B82F6; 
     color: #000; 
     display: flex; 
@@ -54,7 +54,37 @@ const sectionStyles = `landing-section bg-bg-white w-screen flex items-center ju
       >Registro concurso</a>
     </div>
     <div class="flex flex-col sm:flex-row gap-4">
-      <a href="https://docs.google.com/document/d/1SnlxwnpopZM9UVwbhURhBPzo0z690vXG/edit" class="btn-bases-concurso">Bases del Concurso</a>
+      <a href="https://docs.google.com/document/d/1SnlxwnpopZM9UVwbhURhBPzo0z690vXG/edit" class="btn-bases-concurso"
+      style="
+    background: #E5E7EB; 
+    color: #000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 220px; 
+    height: 46px;
+    border-radius: 32px; 
+    text-transform: lowercase; 
+    text-decoration: none; 
+    font-weight: 400; 
+    font-size: 16px; 
+    letter-spacing: 0.05em; 
+    text-align: center; 
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+  "
+   onmouseover="
+      this.style.background='#3sB82F6'; 
+      this.style.fontWeight='900'; 
+      this.style.transform='scale(1.03)';
+    "
+    onmouseout="
+      this.style.background='#E5E7EB'; 
+      this.style.fontWeight='400'; 
+      this.style.transform='scale(1)';
+    "
+        
+      >Bases del Concurso</a>
     </div>
 
   </div>
