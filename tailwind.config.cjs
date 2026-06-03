@@ -53,13 +53,13 @@ module.exports = {
         )`,
       },
 // Gradiente Textos concurso
-      backgroundImage: {
-        'gradient-concurso': `linear-gradient(
-          to right,
-          #07A2D2 0%,
-          #000000 100%,
-        )`,
-        },
+     //  backgroundImage: {
+       // 'gradient-concurso': `linear-gradient(
+       //    to right,
+       //    #07A2D2 0%,
+        //   #000000 100%,
+      //   )`,
+       //  },
 
     },
   },
