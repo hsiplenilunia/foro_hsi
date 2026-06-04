@@ -124,7 +124,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500">Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C AMIIF</span><br/>
-          <span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos</span><br/>
+          <br/><span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos</span><br/>
           <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
