@@ -112,7 +112,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtro. Omar Galil Barrientos Salas </span><br/>
         <span class="text-gray-500">Director de Calidad, Médica Sur</span><br/>
-          <br/><span class="text-gray-500">Asociación Nacional de Hospitales de Jalisco</span><br/>
+          <br/><span class="text-gray-500">Asociación de Hospitales Particulares de Jalisco</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Cristina Gonzalez de Jesús</span><br/>
           <span class="text-gray-500">Presidenta, Colegio Médico de Especialistas en Calidad de la Atención Clinica</span>`,
@@ -125,7 +125,7 @@ const agendaData = [
         participants: `<span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500">Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C AMIIF</span><br/>
           <span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos</span><br/>
-          <span class="text-gray-500">Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
+          <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
           <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez, HIMFG</span>`,
@@ -157,8 +157,8 @@ const agendaData = [
         participants: `<br/>
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Mtra. Enf. Martha A. Huertas Jiménez</span><br/>
-          <span class="text-gray-500">Subdirectora de Enfermería, Instituto Nacional de Ciencias Médicas y Nutición "Salvador Zubirán", INCMNSZ</span>`,
+          <span class="font-bold text-[#204356]">Dra. Daniela de la Rosa Zamboni</span><br/>
+          <span class="text-gray-500">Lider del Subcomité de Resistencia a los Antimicrobianos, del Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span>`,
       },
       {
         time: "10:30 - 11:15",
@@ -247,8 +247,8 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtra. Guillermina Vela Anaya</span><br/>
           <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
-          <span class="font-bold text-[#204356]">Dra. Daniela de la Rosa Zamboni</span><br/>
-          <span class="text-gray-500">Lider del Subcomite de Resistencia a los Antimicrobianos, Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
+          <span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span><br/>
           <span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez</span><br/>
           <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>`,
           },
