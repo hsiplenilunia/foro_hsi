@@ -49,6 +49,7 @@ const agendaData = [
         <br/><span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
           <span class="text-gray-500">Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
           <span class="text-gray-500">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
+          <span class="text-gray-500">Plan Universitario de Control de la Resistencia Antimicrobiana, PUCRA-UNAM</span><br/>
           <span class="text-gray-500">Red Temática de Investigación y Vigilancia de la Farmacorresistencia, INVIFAR</span><br/>
          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
         <span class="font-bold text-[#204356]">Lic. Esperanza Alemán Aguilar</span><br/>
@@ -60,9 +61,10 @@ const agendaData = [
         type: "PANEL",
         title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,  
-        participants: `<span class="font-bold text-[#204356]"></span><br/><span class="text-gray-500">Tec Salud</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Horacio Garza Ghio</span><br/><span class="text-gray-500">Director General de Sistema de Salud Christus Muguerzas</span><br/>
+        <br/><span class="text-gray-500">Tec Salud</span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Dra. Mariana Barraza Llórens</span><br/>
+          <span class="font-bold text-[#204356]">Dra. Mariana Barraza Lloréns</span><br/>
           <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
         
       },
@@ -81,6 +83,9 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas</span><br/>
           <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación, INR</span><br/>
+          <span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
+          <span class="text-gray-500">Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM </span><br/>
+
           <br/><span class="text-gray-500">Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
           <span class="text-gray-500">Asociación Mexicana de Infectología y Microbiología</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
@@ -114,8 +119,8 @@ const agendaData = [
         <span class="text-gray-500">Director de Calidad, Médica Sur</span><br/>
           <br/><span class="text-gray-500">Asociación de Hospitales Particulares de Jalisco</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Dra. Cristina Gonzalez de Jesús</span><br/>
-          <span class="text-gray-500">Presidenta, Colegio Médico de Especialistas en Calidad de la Atención Clinica</span>`,
+          <span class="font-bold text-[#204356]">Dra. Cristina González de Jesús</span><br/>
+          <span class="text-gray-500">Presidenta, Colegio Médico de Especialistas en Calidad de la Atención Clinica, CMECAC</span>`,
       },
       {
         time: "14:45 - 15:15",
@@ -167,10 +172,10 @@ const agendaData = [
         isNetworking: false,
         participants: `<br/>
           <span class="text-gray-500">Comisión Coordinadora de los Institutos Nacionales de Salud y Hospitales de Alta Especialidad, CCINSHAE-SSa</span><br/>
-          <span class="font-bold text-[#204356]">Enf. Rachel Campos Jimenez</span><br/>
+          <span class="font-bold text-[#204356]">Enf. Rachel Campos Jiménez</span><br/>
           <span class="text-gray-500">Presidenta, Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Dra. Ma. Enriqueta Barido Murguía</span><br/>
+          <span class="font-bold text-[#204356]">Dra. Ma. Enriqueta Baridó Murguía</span><br/>
           <span class="text-gray-500">Academia Mexicana de Cirugía AMC</span>`,
       },
       {
