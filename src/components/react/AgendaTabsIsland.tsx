@@ -173,10 +173,12 @@ const agendaData = [
         participants: `<br/>
           <span class="text-gray-500">Comisión Coordinadora de los Institutos Nacionales de Salud y Hospitales de Alta Especialidad, CCINSHAE-SSa</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-           <span class="font-bold text-[#204356]">Enf. Rachel Campos Jiménez</span><br/>
-          <span class="text-gray-500">Presidenta, Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
+         
           <span class="font-bold text-[#204356]">Dra. Ma. Enriqueta Baridó Murguía</span><br/>
-          <span class="text-gray-500">Academia Mexicana de Cirugía AMC</span>`,
+          <span class="text-gray-500">Academia Mexicana de Cirugía AMC</span>
+          <span class="font-bold text-[#204356]">Enf. Rachel Campos Jiménez</span><br/>
+          <span class="text-gray-500">Presidenta, Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>`
+          ,
       },
       {
         time: "11:15 - 12:00",
