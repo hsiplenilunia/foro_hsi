@@ -43,11 +43,11 @@ const agendaData = [
       {
         time: "10:00 - 10:45",
         type: "PANEL",
-        title: "Vigilancia epidemiológica 360. Modelo Una Salud en México: Integración multisectorial",
+        title: "Vigilancia epidemiológica 360. Modelo “Una sola Salud“ en México: Integración multisectorial",
         isNetworking: false,
         participants: `<span class="font-bold text-[#00b0e4]"></span><br/>
-        <br/><span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
-          <span class="text-gray-500">Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
+        <br/><span class="text-gray-500"></span><br/>
+          <span class="text-gray-500"></span><br/>
           <span class="text-gray-500">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
           <span class="text-gray-500">Plan Universitario de Control de la Resistencia Antimicrobiana, PUCRA-UNAM</span><br/>
           <span class="text-gray-500">Red Temática de Investigación y Vigilancia de la Farmacorresistencia, INVIFAR</span><br/>
@@ -59,7 +59,7 @@ const agendaData = [
       {
         time: "10:45 - 11:30",
         type: "PANEL",
-        title: "¿Quién paga la factura de las infecciones? Impacto en aseguradoras, hospitales y pacientes",
+        title: "¿Quién paga la factura de las infecciones hospitalarias? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,  
         participants: `<span class="font-bold text-[#204356]">Dr. Horacio Garza Ghio</span><br/><span class="text-gray-500">Director General de Sistema de Salud Christus Muguerzas</span><br/>
         <br/><span class="text-gray-500">Tec Salud</span><br/>
@@ -132,8 +132,8 @@ const agendaData = [
           <br/><span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos</span><br/>
           <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
-          <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez, HIMFG</span>`,
+          <span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span>`,
       },
     ],
   },
@@ -168,15 +168,15 @@ const agendaData = [
       {
         time: "10:30 - 11:15",
         type: "PANEL",
-        title: "El impacto ambiental de la atención médica.",
+        title: "El impacto ambiental de la atención médica",
         isNetworking: false,
         participants: `<br/>
-          <span class="text-gray-500">Comisión Coordinadora de los Institutos Nacionales de Salud y Hospitales de Alta Especialidad, CCINSHAE-SSa</span><br/>
+          <span class="text-gray-500">Colegio de Químicos, Farmacéuticos, Biólogos de México, CNQFB</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <br/><span class="font-bold text-[#204356]">Enf. Rachel Campos Jiménez</span><br/>
           <span class="text-gray-500">Presidenta, Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
           <br/><span class="font-bold text-[#204356]">Dra. Ma. Enriqueta Baridó Murguía</span><br/>
-          <span class="text-gray-500">Academia Mexicana de Cirugía AMC</span>`,
+          <span class="text-gray-500">Tesorera, Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN</span>`,
       },
       {
         time: "11:15 - 12:00",
@@ -187,10 +187,10 @@ const agendaData = [
           <span class="text-gray-500"></span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX<br/></span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
-          <span class="text-gray-500"><span class="text-gray-500">Colegio de Químicos, Farmacéuticos, Biologos de Mexico, CQFBM</span><br/></span><br/>
+          <span class="text-gray-500"><span class="text-gray-500"></span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Dr. Paulo Francisco Castañeda Méndez</span><br/>
-          <span class="text-gray-500">Jefe de Infectología, Hospital Médica Sur</span>`,
+          <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
+          <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez, HIMFG</span>`,
       },
       {
         time: "",
@@ -223,9 +223,9 @@ const agendaData = [
         participants: "",
       },
       {
-        time: "14:15 - 15:15",
+        time: "14:15 - 15:00",
         type: "PANEL",
-        title: "El costo del silencio: las consecuencias de no actuar contra las infecciones resistentes.",
+        title: "El costo del silencio: las consecuencias de no actuar contra las infecciones resistentes",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500">Dirección General de Epidemiología, SSa</span><br/>
