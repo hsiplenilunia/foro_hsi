@@ -172,9 +172,9 @@ const agendaData = [
         isNetworking: false,
         participants: `<br/>
           <span class="text-gray-500">Colegio de Químicos, Farmacéuticos, Biólogos de México, CNQFB</span><br/>
-          <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <br/><span class="font-bold text-[#204356]">Enf. Rachel Campos Jiménez</span><br/>
           <span class="text-gray-500">Presidenta, Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
+          <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <br/><span class="font-bold text-[#204356]">Dra. Ma. Enriqueta Baridó Murguía</span><br/>
           <span class="text-gray-500">Tesorera, Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN</span>`,
       },
