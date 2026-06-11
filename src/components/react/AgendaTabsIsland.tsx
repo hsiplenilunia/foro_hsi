@@ -188,7 +188,6 @@ const agendaData = [
           <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX<br/></span><br/>
           <span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
-          <span class="text-gray-500"><span class="text-gray-500"></span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
           <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez, HIMFG</span>`,
