@@ -186,7 +186,7 @@ const agendaData = [
         participants:`<br/>
           <span class="text-gray-500"></span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX<br/></span><br/>
-          span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
+          <span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
           <span class="text-gray-500"><span class="text-gray-500"></span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
@@ -215,7 +215,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtra. Margarita Torres García<br/></span>
           <span class="text-gray-500">Presidenta de la Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN</span><br/>
-          
+
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]"Mtro. Omar Galil Barrientos Salas</span><br/>
           <span class="text-gray-500">Director de Calidad, Médica Sur </span>`,
