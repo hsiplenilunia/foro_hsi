@@ -217,8 +217,8 @@ const agendaData = [
           <span class="text-gray-500">Presidenta de la Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN</span><br/>
 
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]"Mtro. Omar Galil Barrientos Salas</span><br/>
-          <span class="text-gray-500">Director de Calidad, Médica Sur </span>`,
+          <span class="font-bold text-[#204356]">Mtro. Omar Galil Barrientos Salas</span><br/>
+          <span class="text-gray-500">Director de Calidad, Médica Sur</span>`,
       },
        {
         time: "",
@@ -236,7 +236,7 @@ const agendaData = [
           <span class="text-gray-500">Dirección General de Epidemiología, SSa</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
-          <span class="text-gray-500"></span>`,
+          <span class="text-gray-500"></span><br/>`,
       },
 
       {
