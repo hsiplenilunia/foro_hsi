@@ -84,7 +84,9 @@ const agendaData = [
         participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas</span><br/>
           <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación, INR</span><br/>
           <span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
-          <span class="text-gray-500">Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM </span><br/>
+          <span class="text-gray-500">Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
+          <span class="font-bold text-[#204356]">Dra. Rosa Maria Wong Chew</span><br/>
+          <span class="text-gray-500">Presidenta, Asociación Mexicana de Infectología y Microbiología</span><br/>
 
           <br/><span class="text-gray-500">Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
           <span class="text-gray-500">Asociación Mexicana de Infectología y Microbiología</span><br/>
@@ -188,7 +190,6 @@ const agendaData = [
           <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX<br/></span><br/>
           <span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
-          <span class="text-gray-500"><span class="text-gray-500"></span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
           <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez, HIMFG</span>`,
