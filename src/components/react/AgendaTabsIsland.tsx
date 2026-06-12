@@ -83,13 +83,10 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas</span><br/>
           <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación, INR</span><br/>
-          <span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
           <span class="text-gray-500">Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
-          <span class="font-bold text-[#204356]">Dra. Rosa Maria Wong Chew</span><br/>
+         <br/><span class="font-bold text-[#204356]">Dra. Rosa Maria Wong Chew</span><br/>
           <span class="text-gray-500">Presidenta, Asociación Mexicana de Infectología y Microbiología</span><br/>
-
-          <br/><span class="text-gray-500">Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
-          <span class="text-gray-500">Asociación Mexicana de Infectología y Microbiología</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dr. Luis Fernando Pérez González</span> <br/>
           <span class="text-gray-500">Jefe del Departamento de Pediatría, Facultad de Medicina, Universidad Autónoma de San Luis Potosí</span>`,
