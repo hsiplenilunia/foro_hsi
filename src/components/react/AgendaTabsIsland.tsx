@@ -24,7 +24,7 @@ const agendaData = [
            <span class="font-bold text-[#204356]">Dra. María Enriqueta Baridó Murguía</span><br/>
            <span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
            <span class="font-bold text-[#204356]">Dr. Samuel Ponce de León Rosales</span><br/>
-           <span class="font-bold text-[#204356]">Dr. Luis Fernando Pérez</span><br/>
+           <span class="font-bold text-[#204356]">Dr. Luis Fernando Pérez González</span><br/>
            <span class="font-bold text-[#204356]">Dra. Daniela de la Rosa Zamboni</span><br/>
            <span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez</span><br/>
            <span class="font-bold text-[#204356]">Dr. Paulo Francisco Castañeda Méndez</span><br/>
@@ -114,8 +114,8 @@ const agendaData = [
         type: "PANEL",
         title: "¿Qué incentivos hacen falta para invertir en prevención de infecciones?",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Mtro. Omar Galil Barrientos Salas </span><br/>
-        <span class="text-gray-500">Director de Calidad, Médica Sur</span><br/>
+        participants: `<span class="font-bold text-[#204356]"></span><br/>
+        <span class="text-gray-500"></span><br/>
           <br/><span class="text-gray-500">Asociación de Hospitales Particulares de Jalisco</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Cristina González de Jesús</span><br/>
@@ -145,10 +145,10 @@ const agendaData = [
       {
         time: "09:00 - 09:45",
         type: "PANEL",
-        title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente.",
+        title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente",
         isNetworking: false,
         participants: `<br/>
-          <span class="text-gray-500"></span><br/>
+          <span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
@@ -231,7 +231,8 @@ const agendaData = [
         title: "El costo del silencio: las consecuencias de no actuar contra las infecciones resistentes",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500">Dirección General de Epidemiología, SSa</span><br/>
+          <span class="text-gray-500">Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
+          <br/><span class="text-gray-500">Dirección General de Epidemiología, SSa</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
           <span class="text-gray-500"></span><br/>`,
