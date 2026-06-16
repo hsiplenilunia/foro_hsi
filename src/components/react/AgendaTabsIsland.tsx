@@ -189,7 +189,7 @@ const agendaData = [
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
-          <span class="text-gray-500">Jefa del Departamento de Investigación Epidemiológica,  Hospital Infantil de México Federico Gómez, HIMFG</span>`,
+          <span class="text-gray-500">Profesor de TC Departamento de Farmacia, Facultad de Química, UNAM</span>`,
       },
       {
         time: "",
@@ -243,7 +243,7 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "Radiografía del uso racional de antimicrobianos en América Latina",
         isNetworking: false,
-        participants: `<br/>
+        participants: `<span class="font-bold text-[#204356]">Dra. María Morales Betoulle<br/></span>
           <span class="text-gray-500">Organización Panamericana de la Salud </span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
