@@ -59,9 +59,12 @@ const agendaData = [
       {
         time: "10:45 - 11:30",
         type: "PANEL",
-        title: "¿Quién paga la factura de las infecciones hospitalarias? Impacto en aseguradoras, hospitales y pacientes",
+        title: "Impacto de las IAAS en los costos de atención médica de los pacientes en hospitales públicos y privados",
         isNetworking: false,  
-        participants: `<span class="font-bold text-[#204356]">Dr. Horacio Garza Ghio</span><br/><span class="text-gray-500">Director General de Sistema de Salud Christus Muguerzas</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Horacio Garza Ghio</span><br/>
+        <span class="text-gray-500">Director General de Sistema de Salud Christus Muguerzas</span><br/>
+        <span class="font-bold text-[#204356]">Dr. Jorge Azpiri López</span><br/>
+        <span class="text-gray-500">Director de Desarrollo y Expansión de TecSalud</span><br/>
         <br/><span class="text-gray-500">Tec Salud</span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Mariana Barraza Lloréns</span><br/>
@@ -141,7 +144,7 @@ const agendaData = [
     id2: "agenda-dia2",
     day: "28",
     month: "AGOSTO",
-    events: [
+    events: [ 
       {
         time: "09:00 - 09:45",
         type: "PANEL",
@@ -203,8 +206,8 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "La vacunación en poblaciones vulnerables y la prevención de infecciones",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dra. Sandra Rajme López<br/></span>
-          <span class="text-gray-500">Departamento de Infectología, Instituto Nacional de Ciencias y Nutricion "Salvador Zubirán", INCMNSZ</span><br/>`,
+        participants: `<span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span><br/>`,
       },
       {
         time: "13:00 - 13:45",
@@ -241,10 +244,10 @@ const agendaData = [
       {
         time: "15:15 - 15:45",
         type: "CONFERENCIA",
-        title: "Radiografía del uso racional de antimicrobianos en América Latina",
+        title: "Conferencia magistral: La RAM y Una sola Salud en América Latina desde la perspectiva de la OPS",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. María Morales Betoulle<br/></span>
-          <span class="text-gray-500">Organización Panamericana de la Salud </span><br/>
+          <span class="text-gray-500">Experta Técnica Internacional, Una Salud Oficina de OPS/OMS en México</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
           <span class="text-gray-500"></span>`,
