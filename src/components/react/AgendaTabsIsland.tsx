@@ -65,7 +65,6 @@ const agendaData = [
         <span class="text-gray-500">Director General de Sistema de Salud Christus Muguerzas</span><br/>
         <span class="font-bold text-[#204356]">Dr. Jorge Azpiri López</span><br/>
         <span class="text-gray-500">Director de Desarrollo y Expansión de TecSalud</span><br/>
-        <br/><span class="text-gray-500">Tec Salud</span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Mariana Barraza Lloréns</span><br/>
           <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
