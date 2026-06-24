@@ -53,7 +53,7 @@ const agendaData = [
           <span class="text-gray-500">Red Temática de Investigación y Vigilancia de la Farmacorresistencia, INVIFAR</span><br/>
          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
         <span class="font-bold text-[#204356]">Lic. Esperanza Alemán Aguilar</span><br/>
-          <span class="text-gray-500">Coordinadora de Calidad, Médica Sur </span> <br/>`,
+          <span class="text-gray-500">Coordinadora de Calidad, Médica Sur </span> <br/>`, 
         
       },
       {
