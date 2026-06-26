@@ -41,10 +41,6 @@ const asociados = [
     imgUrl: '/img/asociados/logo_u-nursing-latam.webp',
     alt: 'U-nursing LATAM',
   },
-  {
-    imgUrl: '/img/asociados/logo_sociacion_mexicana_por_la_calidad_en_salud_y_seguridad_del_paciente.webp',
-    alt: 'Asociación Mexicana por la Calidad en Salud y Seguridad del Paciente',
-  },
 ];
 
 export default function AliadosIsland() {
