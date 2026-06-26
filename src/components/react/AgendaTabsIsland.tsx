@@ -59,12 +59,14 @@ const agendaData = [
       {
         time: "10:45 - 11:30",
         type: "PANEL",
-        title: "Impacto de las IAAS en los costos de atención médica de los pacientes en hospitales públicos y privados",
+        title: "¿Quién paga la factura de las infecciones ? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,  
         participants: `<span class="font-bold text-[#204356]">Dr. Horacio Garza Ghio</span><br/>
         <span class="text-gray-500">Director General de Sistema de Salud Christus Muguerzas</span><br/>
         <span class="font-bold text-[#204356]">Dr. Jorge Azpiri López</span><br/>
         <span class="text-gray-500">Director de Desarrollo y Expansión de TecSalud</span><br/>
+        <span class="text-gray-500">Asociación Mexicana de Instituciones de Seguro AMIS</span><br/>
+        <span class="text-gray-500">Directivo de Hospital Público</span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Mariana Barraza Lloréns</span><br/>
           <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
@@ -159,10 +161,12 @@ const agendaData = [
       {
         time: "09:45 - 10:30",
         type: "PANEL",
-        title: "Invertir en higiene, no en errores: la ciencia de la desinfección proactiva",
+        title: "Desinfección de lo básico: de la toallita hasta los robots con IA. Ciencia y experiencia de la vida real",
         isNetworking: false,
-        participants: `<br/>
-          <span class="text-gray-500"></span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Arturo Galindo Fraga</span><br/>
+          <span class="text-gray-500">Subdirector de Epidemiología Hospitalaria y Control de la Calidad de la Atención Médica,  Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
+          <span class="font-bold text-[#204356]">M. en C. Tatiana Chávez Heres</span><br/>
+          <span class="text-gray-500">Jefe de Servicio, Unidad de Vigilancia Epidemiológica Hospitalaria, Instituto Nacional de Rehabilitación</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Daniela de la Rosa Zamboni</span><br/>
           <span class="text-gray-500">Lider del Subcomité de Resistencia a los Antimicrobianos, del Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span>`,
@@ -185,7 +189,7 @@ const agendaData = [
         type: "PANEL",
         title: "Uso responsable de antibióticos: de la farmacia hasta el paciente",
         isNetworking: false,
-        participants:`<span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria </span><br/>
+        participants:`<span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria</span><br/>
           <span class="text-gray-500">Comisión Federal para la Protección contra Riesgos Sanitarios, COFEPRIS</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX<br/></span><br/>
           <span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
