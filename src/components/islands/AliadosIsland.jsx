@@ -41,22 +41,6 @@ const asociados = [
     imgUrl: '/img/asociados/logo_u-nursing-latam.webp',
     alt: 'U-nursing LATAM',
   },
-  {
-    imgUrl: '/img/asociados/logo_sociacion_mexicana_por_la_calidad_en_salud_y_seguridad_del_paciente.webp',
-    alt: 'Asociación Mexicana por la Calidad en Salud y Seguridad del Paciente',
-  },
-    {
-    imgUrl: '/img/asociados/asiege.webp',
-    alt: 'Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopía, ASIEGE',
-  },
-  {
-    imgUrl: '/img/asociados/colegio-medico-especialistas.webp',
-    alt: 'Colegio Médico de Especialistas en Calidad de la Atención Clínica, CEMECAC',
-  },
-  {
-    imgUrl: '/img/asociados/femap.webp',
-    alt: 'Hospital de la Familia, FEMAP',
-  },
 ];
 
 export default function AliadosIsland() {
