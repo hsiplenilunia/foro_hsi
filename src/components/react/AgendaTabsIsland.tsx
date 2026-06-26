@@ -62,7 +62,7 @@ const agendaData = [
         title: "¿Quién paga la factura de las infecciones ? Impacto en aseguradoras, hospitales y pacientes",
         isNetworking: false,  
         participants: `<span class="font-bold text-[#204356]">Dr. Horacio Garza Ghio</span><br/>
-        <span class="text-gray-500">Director General de Sistema de Salud Christus Muguerzas</span><br/>
+        <span class="text-gray-500">Director General de Sistema de Salud Christus Muguerza</span><br/>
         <span class="font-bold text-[#204356]">Dr. Jorge Azpiri López</span><br/>
         <span class="text-gray-500">Director de Desarrollo y Expansión de TecSalud</span><br/>
         <span class="text-gray-500">Asociación Mexicana de Instituciones de Seguro AMIS</span><br/>
