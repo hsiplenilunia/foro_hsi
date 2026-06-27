@@ -157,6 +157,7 @@ const agendaData = [
         <span class="text-gray-500">Coordinador del Subcomité de RAM en Salud Animal (SCRAM-V)</span><br/>
         <br/><span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
         <br/><span class="font-bold text-[#204356]">Dra. Irma Egoavil Medina</span><br/>
+        <span class="text-gray-500">Zoetis</span><br/>
         <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
         <span class="font-bold text-[#204356]">Dr. Rufino Luna Gordillo</span><br/>
         <span class="text-gray-500">Presidente del Consejo Nacional de Salud Pública</span>`,
@@ -194,7 +195,7 @@ const agendaData = [
         isNetworking: false,
         participants:`<span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria</span><br/>
           <span class="text-gray-500">Comisión Federal para la Protección contra Riesgos Sanitarios, COFEPRIS</span><br/>
-          <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX<br/></span><br/>
+          <br/><span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX</span><br/>
           <span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
