@@ -63,10 +63,10 @@ const agendaData = [
         isNetworking: false,  
         participants: `<span class="font-bold text-[#204356]">Dr. Horacio Garza Ghio</span><br/>
         <span class="text-gray-500">Director General de Sistema de Salud Christus Muguerza</span><br/>
-        <span class="font-bold text-[#204356]">Dr. Jorge Azpiri López</span><br/>
+        <br/><span class="font-bold text-[#204356]">Dr. Jorge Azpiri López</span><br/>
         <span class="text-gray-500">Director de Desarrollo y Expansión de TecSalud</span><br/>
-        <span class="text-gray-500">Asociación Mexicana de Instituciones de Seguro AMIS</span><br/>
-        <span class="text-gray-500">Directivo de Hospital Público</span><br/>
+        <br/><span class="text-gray-500">Asociación Mexicana de Instituciones de Seguro AMIS</span><br/>
+        <br/><span class="text-gray-500">Directivo de Hospital Público</span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Mariana Barraza Lloréns</span><br/>
           <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
@@ -128,12 +128,14 @@ const agendaData = [
       {
         time: "14:45 - 15:15",
         type: "PANEL",
-        title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.",
+        title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500">Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C AMIIF</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Jorge Tanaka Kido</span><br/>
+          <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
           <br/><span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos</span><br/>
           <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. Sergio Ivan Valdes Ferrer</span><br/>
+          <span class="text-gray-500">Director General de Políticas de Investigación en Salud</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
@@ -153,10 +155,11 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Carlos Jasso Villazul</span><br/>
         <span class="text-gray-500">Coordinador del Subcomité de RAM en Salud Animal (SCRAM-V)</span>
-          <span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
-          <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
-          <span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500"></span>`,
+        <br/>span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
+        <br/><span class="font-bold text-[#3aaa5c]">Dra. Irma Egoavil Medina</span><br/>
+        <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
+        <span class="font-bold text-[#204356]">Dr. Rufino Luna Gordillo</span><br/>
+        <span class="text-gray-500">Presidente del Consejo Nacional de Salud Pública</span>`,
       },
       {
         time: "09:45 - 10:30",
@@ -165,7 +168,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Arturo Galindo Fraga</span><br/>
           <span class="text-gray-500">Subdirector de Epidemiología Hospitalaria y Control de la Calidad de la Atención Médica,  Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
-          <span class="font-bold text-[#204356]">M. en C. Tatiana Chávez Heres</span><br/>
+          <br/><span class="font-bold text-[#204356]">M. en C. Tatiana Chávez Heres</span><br/>
           <span class="text-gray-500">Jefe de Servicio, Unidad de Vigilancia Epidemiológica Hospitalaria, Instituto Nacional de Rehabilitación</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Daniela de la Rosa Zamboni</span><br/>
