@@ -154,7 +154,7 @@ const agendaData = [
         title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Carlos Jasso Villazul</span><br/>
-        <span class="text-gray-500">Coordinador del Subcomité de RAM en Salud Animal (SCRAM-V)</span>
+        <span class="text-gray-500">Coordinador del Subcomité de RAM en Salud Animal (SCRAM-V)</span><br/>
         <br/><span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
         <br/><span class="font-bold text-[#204356]">Dra. Irma Egoavil Medina</span><br/>
         <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
