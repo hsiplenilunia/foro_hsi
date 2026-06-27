@@ -155,7 +155,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Carlos Jasso Villazul</span><br/>
         <span class="text-gray-500">Coordinador del Subcomité de RAM en Salud Animal (SCRAM-V)</span>
-        <br/>span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
+        <br/><span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
         <br/><span class="font-bold text-[#3aaa5c]">Dra. Irma Egoavil Medina</span><br/>
         <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
         <span class="font-bold text-[#204356]">Dr. Rufino Luna Gordillo</span><br/>
