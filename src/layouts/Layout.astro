@@ -22,12 +22,24 @@ import lcpMobileImage from "../assets/hero-logo-mobile.png";
     <meta name="generator" content={Astro.generator} />
     
     <title>{title}</title>
-    
+
+    <!-- METADATOS OPEN GRAPH (Garantía total para la vista previa de WhatsApp, Facebook, Telegram) -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://foro.hospitalsininfecciones.com/" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content="27 Y 28 de Agosto, 2026. SEDE Auditorio Médica Sur" />
-    <meta property="og:image" content="https://foro.hospitalsininfecciones.com/og-image.jpg" />
+    <meta property="og:image" content="https://foro.hospitalsininfecciones.com/og-image-forohsi.jpg" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="543" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <!-- Twitter / X previstas -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://foro.hospitalsininfecciones.com/" />
+    <meta property="twitter:title" content="VI Foro Hospital sin Infecciones" />
+    <meta property="twitter:description" content="27 Y 28 de Agosto, 2026. SEDE Auditorio Médica Sur" />
+    <meta property="twitter:image" content="https://foro.hospitalsininfecciones.com/og-image-forohsi.jpg" />
+
 
     <link rel="preload" as="image" href={lcpMobileImage.src} />
 
