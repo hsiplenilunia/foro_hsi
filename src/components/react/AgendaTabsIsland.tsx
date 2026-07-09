@@ -50,6 +50,7 @@ const agendaData = [
           <span class="text-gray-500"></span><br/>
           <span class="text-gray-500">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
           <span class="text-gray-500">Plan Universitario de Control de la Resistencia Antimicrobiana, PUCRA-UNAM</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. Luis Esau López Jacome</span><br/>
           <span class="text-gray-500">Red Temática de Investigación y Vigilancia de la Farmacorresistencia, INVIFAR</span><br/>
          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
         <span class="font-bold text-[#204356]">Lic. Esperanza Alemán Aguilar</span><br/>
@@ -65,7 +66,7 @@ const agendaData = [
         <span class="text-gray-500">Director General de Sistema de Salud Christus Muguerza</span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. Jorge Azpiri López</span><br/>
         <span class="text-gray-500">Director de Desarrollo y Expansión de TecSalud</span><br/>
-        <br/><span class="text-gray-500">Asociación Mexicana de Instituciones de Seguro AMIS</span><br/>
+        <br/><span class="text-gray-500">Aseguradora</span><br/>
         <br/><span class="text-gray-500">Directivo de Hospital Público</span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Mariana Barraza Lloréns</span><br/>
@@ -136,6 +137,19 @@ const agendaData = [
           <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Sergio Ivan Valdes Ferrer</span><br/>
           <span class="text-gray-500">Profesor Investigador del Tecnológico del Monterrey</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          <span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span>`,
+      },
+    {
+        time: "15:15 - 15:45",
+        type: "CONFERENCIA",
+        title: "Conferencia: El rol de los biomarcadores en la práctica clínica y la prevención de IAAS",
+        isNetworking: false,
+        participants: `<span class="font-bold text-[#204356]">Dra. Graciela Merinos</span><br/>
+          <span class="text-gray-500">Directora Académica, Sepsis México</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Del Sol</span><br/>
+          <span class="text-gray-500">Unidad de Cuidados Intensivos Adultos, Hospital Juárez de México</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
@@ -220,7 +234,7 @@ const agendaData = [
       {
         time: "13:00 - 13:45",
         type: "PANEL",
-        title: "Intersección entre el activismo profesional y el enfoque “Una Salud”",
+        title: "Retos de implementación del PROA a partir de su obligatoriedad ",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtra. Margarita Torres García<br/></span>
           <span class="text-gray-500">Presidenta de la Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN</span><br/>
@@ -248,9 +262,24 @@ const agendaData = [
           <br/>
           <span class="text-gray-500"></span><br/>`,
       },
+    {
+        time: "15:15 - 15:45",
+        type: "CONCURSO",
+        title: "Prevención de escaras e infecciones de heridas: Lanzamiento de Convocatoria ",
+        isNetworking: false,
+        participants: `<span class="font-bold text-[#204356]">Mtra. Guillermina Vela Anaya<br/></span>
+          <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
+          <span class="font-bold text-[#204356]">E.T.E. Nancy Fonceca López <br/></span>
+          <span class="text-gray-500">Jefe de la Clínica de Heridas Hospital Regional Iztapalapa, Secretaria de Salud</span><br/>
+          <span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez <br/></span>
+          <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>
+          <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
+          <br/>
+          <span class="text-gray-500"></span>`,
+      }, 
 
       {
-        time: "15:15 - 15:45",
+        time: "15:45 - 16:15",
         type: "CONFERENCIA",
         title: "Conferencia magistral: La RAM y Una sola Salud en América Latina desde la perspectiva de la OPS",
         isNetworking: false,
@@ -261,7 +290,7 @@ const agendaData = [
           <span class="text-gray-500"></span>`,
       },
       {
-        time: "15:45 - 16:15",
+        time: "16:15 - 16:30",
         type: "PREMIACIÓN",
         title: "1er. Concurso “Heridas sin Infecciones“",
         isNetworking: false,
