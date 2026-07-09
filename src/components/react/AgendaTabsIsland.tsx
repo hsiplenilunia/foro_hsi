@@ -263,7 +263,7 @@ const agendaData = [
           <span class="text-gray-500"></span><br/>`,
       },
     {
-        time: "15:15 - 15:45",
+        time: "15:00 - 15:45",
         type: "CONCURSO",
         title: "Prevención de escaras e infecciones de heridas: Lanzamiento de Convocatoria ",
         isNetworking: false,
