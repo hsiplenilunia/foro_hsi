@@ -137,7 +137,7 @@ const agendaData = [
           <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Sergio Ivan Valdes Ferrer</span><br/>
           <span class="text-gray-500">Profesor Investigador del Tecnológico del Monterrey</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
       },
