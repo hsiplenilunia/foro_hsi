@@ -168,8 +168,7 @@ const agendaData = [
         title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Carlos Jasso Villazul</span><br/>
-        <span class="text-gray-500">Coordinador del Subcomité de RAM en Salud Animal (SCRAM-V)</span><br/>
-        <br/><span class="text-gray-500">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA</span><br/>
+        <span class="text-gray-500">Coordinador del Subcomité de RAM en Salud Animal (SCRAM-V). Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA </span><br/>
         <br/><span class="font-bold text-[#204356]">Dra. Irma Egoavil Medina</span><br/>
         <span class="text-gray-500">Zoetis</span><br/>
         <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
@@ -207,10 +206,11 @@ const agendaData = [
         type: "PANEL",
         title: "Uso responsable de antibióticos: de la farmacia hasta el paciente",
         isNetworking: false,
-        participants:`<span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria</span><br/>
-          <span class="text-gray-500">Comisión Federal para la Protección contra Riesgos Sanitarios, COFEPRIS</span><br/>
+        participants:`<span class="font-bold text-[#204356]">Mtro. Yoab Yael Hernández Luna</span><br/>
+          <span class="text-gray-500">Comisión de Evidencia y Manejo de Riesgos, COFEPRIS</span><br/>
+          <br/><span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria </span><br/>
           <br/><span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX</span><br/>
-          <span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
@@ -269,9 +269,9 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtra. Guillermina Vela Anaya<br/></span>
           <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
-          <span class="font-bold text-[#204356]">E.T.E. Nancy Fonceca López <br/></span>
+          <br/><span class="font-bold text-[#204356]">E.T.E. Nancy Fonceca López <br/></span>
           <span class="text-gray-500">Jefe de la Clínica de Heridas Hospital Regional Iztapalapa, Secretaria de Salud</span><br/>
-          <span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez <br/></span>
+          <br/><span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez <br/></span>
           <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
