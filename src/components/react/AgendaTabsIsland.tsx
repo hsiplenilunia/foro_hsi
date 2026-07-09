@@ -150,7 +150,7 @@ const agendaData = [
           <span class="text-gray-500">Directora Académica, Sepsis México</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Del Sol</span><br/>
           <span class="text-gray-500">Unidad de Cuidados Intensivos Adultos, Hospital Juárez de México</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
       },
@@ -290,18 +290,6 @@ const agendaData = [
           <span class="text-gray-500"></span>`,
       },
       {
-        time: "16:15 - 16:30",
-        type: "PREMIACIÓN",
-        title: "1er. Concurso “Heridas sin Infecciones“",
-        isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Mtra. Guillermina Vela Anaya</span><br/>
-          <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
-          <span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500"></span><br/>
-          <span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez</span><br/>
-          <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>`,
-          },
-          {
         time: "",
         type: "",
         title: "Clausura",
