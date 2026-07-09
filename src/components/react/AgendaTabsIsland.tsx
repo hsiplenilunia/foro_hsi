@@ -209,7 +209,7 @@ const agendaData = [
         participants:`<span class="font-bold text-[#204356]">Mtro. Yoab Yael Hernández Luna</span><br/>
           <span class="text-gray-500">Comisión de Evidencia y Manejo de Riesgos, COFEPRIS</span><br/>
           <br/><span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria </span><br/>
-          <br/><span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX</span><br/>
+          <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
