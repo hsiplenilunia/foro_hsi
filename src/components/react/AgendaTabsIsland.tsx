@@ -137,7 +137,7 @@ const agendaData = [
           <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
           <br/><span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos</span><br/>
           <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dr. Sergio Ivan Valdes Ferrer</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. Sergio Iván Valdés Ferrer</span><br/>
           <span class="text-gray-500">Investigador en Ciencias Médicas, Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
           <br/><span class="font-bold text-[#00b0e4]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
@@ -148,7 +148,7 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "Conferencia: El rol de los biomarcadores en la práctica clínica y la prevención de IAAS",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Del Sol</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Delsol</span><br/>
           <span class="text-gray-500">Unidad de Cuidados Intensivos Adultos, Hospital Juárez de México</span><br/>
           <br/><span class="font-bold text-[#204356]">Dra. Graciela Merinos Sánchez</span><br/>
           <span class="text-gray-500">Directora Académica, Sepsis México</span><br/>
