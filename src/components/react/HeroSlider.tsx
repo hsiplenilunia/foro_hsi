@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 const images = [
-  '../assets/slider1.webp',
-  '../assets/slider2.webp',
-  '../assets/slider1.webp',
-  '../assets/slider2.webp',
+  'https://res.cloudinary.com/dokvwbz1c/image/upload/slider1.webp',
+  'https://res.cloudinary.com/dokvwbz1c/image/upload/slider2.webp',
+  'https://res.cloudinary.com/dokvwbz1c/image/upload/slider1.webp',
+  'https://res.cloudinary.com/dokvwbz1c/image/upload/slider2.webp',
 ];
 
 const HeroSlider: React.FC = () => {
