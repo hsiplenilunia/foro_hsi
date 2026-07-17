@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 const images = [
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1777430525/slider1.png',
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1777430555/slider2.png',
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1777430525/slider1.png',
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/v1777430555/slider2.png',
+  '../assets/images/slider1.webp',
+  '../assets/images/slider2.webp',
+  '../assets/images/slider1.webp',
+  '../assets/images/slider2.webp',
 ];
 
 const HeroSlider: React.FC = () => {
