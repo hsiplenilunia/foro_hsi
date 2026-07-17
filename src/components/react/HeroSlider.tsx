@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 const images = [
-  '../assets/images/slider1.webp',
-  '../assets/images/slider2.webp',
-  '../assets/images/slider1.webp',
-  '../assets/images/slider2.webp',
+  '../assets/slider1.webp',
+  '../assets/slider2.webp',
+  '../assets/slider1.webp',
+  '../assets/slider2.webp',
 ];
 
 const HeroSlider: React.FC = () => {
