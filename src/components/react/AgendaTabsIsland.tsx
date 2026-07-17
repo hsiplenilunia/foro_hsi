@@ -123,7 +123,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"></span><br/>
         <span class="text-gray-500"></span><br/>
-          <br/><span class="text-gray-500">Asociación de Hospitales Particulares de Jalisco</span><br/>
+          <br/><span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Cristina González de Jesús</span><br/>
           <span class="text-gray-500">Presidenta, Colegio Médico de Especialistas en Calidad de la Atención Clinica, CMECAC</span>`,
@@ -234,16 +234,30 @@ const agendaData = [
           <span class="text-gray-500"></span><br/>`,
       },
       {
-        time: "13:00 - 13:45",
-        type: "PANEL",
-        title: "Retos de implementación del PROA a partir de su obligatoriedad ",
+        time: "13:00 - 13:30",
+        type: "CONVERSATORIO",
+        title: "Retos de implementación del PROA a partir de su obligatoriedad  ",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtra. Margarita Torres García<br/></span>
           <span class="text-gray-500">Presidenta de la Asociación Mexicana para el Estudio de las Infecciones Nosocomiales, AMEIN</span><br/>
+          <br/><span class="font-bold text-[#204356]">Mtro. Omar Galil Barrientos Salas</span><br/>
+          <span class="text-gray-500">Director de Calidad Médica Sur </span><br/>
 
-          <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Mtro. Omar Galil Barrientos Salas</span><br/>
-          <span class="text-gray-500">Director de Calidad, Médica Sur</span>`,
+          <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
+          <span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span>`,
+      },
+      {
+        time: "13:30 - 14:00",
+        type: "PANEL",
+        title: " El costo del silencio: las consecuencias de no actuar contra las infecciones resistentes",
+        isNetworking: false,
+        participants: `<span class="font-bold text-[#204356]"></span>
+          <span class="text-gray-500"></span><br/>
+
+          <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
+          <span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span>`,
       },
        {
         time: "",
@@ -253,15 +267,14 @@ const agendaData = [
         participants: "",
       },
       {
-        time: "14:15 - 15:00",
-        type: "PANEL",
-        title: "El costo del silencio: las consecuencias de no actuar contra las infecciones resistentes",
+        time: "14:30 - 15:00",
+        type: "CONFERENCIA",
+        title: "El impacto de la biodescontaminación integral: evidencia en hospitales de Guerrero",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500">Centro Nacional de Prevención y Control de Enfermedades, CENAPRECE</span><br/>
-          <br/><span class="text-gray-500">Dirección General de Epidemiología, SSa</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Ing. Biotecnólogo Topiltzin Rea Reyes</span><br/>
+          <span class="text-gray-500">Coordinador de Desinfección del Estado de Guerrero </span><br/>
+          <br/><span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
-          <br/>
           <span class="text-gray-500"></span><br/>`,
       },
     {
