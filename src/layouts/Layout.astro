@@ -6,7 +6,7 @@ export interface Props {
 const { title } = Astro.props;
 
 import { Image } from "astro:assets";
-import lcpMobileImage from "../assets/hero-logo-mobile.png";
+
 ---
 
 <!doctype html>
@@ -41,7 +41,7 @@ import lcpMobileImage from "../assets/hero-logo-mobile.png";
     <meta property="twitter:image" content="https://foro.hospitalsininfecciones.com/og-image-forohsi.jpg" />
 
 
-    <link rel="preload" as="image" href={lcpMobileImage.src} />
+
 
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-8PKV40R6BR"></script>
     <script is:inline>
