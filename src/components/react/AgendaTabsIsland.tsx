@@ -12,9 +12,7 @@ const agendaData = [
         type: "APERTURA",
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dra. Patricia Elena Clark Peralta</span><br/>
-        <span class="text-gray-500">Secretaria del Consejo de Salubridad General </span><br/>
-        <br/><span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
         <span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. Octavio González Chon</span><br/>
         <span class="text-gray-500">Director General de Médica Sur</span><br/>
@@ -38,15 +36,15 @@ const agendaData = [
         type: "CONFERENCIA MAGISTRAL",
         title: "Impacto de la Estrategia Nacional contra la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dra. Patricia Elena Clark Peralta<br/></span><span class="text-gray-500">Secretaria, Consejo de Salubridad General </span>`,
+        participants: `<span class="font-bold text-[#204356]"><br/></span>
+        <span class="text-gray-500"></span>`,
       },
       {
         time: "10:00 - 10:45",
         type: "PANEL",
         title: "Vigilancia epidemiológica 360. Modelo “Una sola Salud“ en México: Integración multisectorial",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#00b0e4]"></span><br/>
-        <br/><span class="text-gray-500"></span><br/>
+        participants: `<span class="font-bold text-[#00b0e4]">Dr. Vladimir González Cortés</span><br/>
           <span class="text-gray-500">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Mauricio Rodríguez Álvarez</span><br/>
           <span class="text-gray-500">Plan Universitario de Control de la Resistencia Antimicrobiana, PUCRA-UNAM</span><br/>
@@ -148,10 +146,10 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "Conferencia: El rol de los biomarcadores en la práctica clínica y la prevención de IAAS",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Delsol</span><br/>
-          <span class="text-gray-500">Unidad de Cuidados Intensivos Adultos, Hospital Juárez de México</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dra. Graciela Merinos Sánchez</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dra. Graciela Merinos Sánchez</span><br/>
           <span class="text-gray-500">Directora Académica, Sepsis México</span><br/>
+          <span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Delsol</span><br/>
+          <span class="text-gray-500">Unidad de Cuidados Intensivos Adultos, Hospital Juárez de México</span><br/>
           <br/><span class="font-bold text-[#00b0e4]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
