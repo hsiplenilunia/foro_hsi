@@ -49,16 +49,15 @@
     #
     #  script-src  → JS propio + inline de Astro + Google Tag Manager + Analytics
     #  style-src   → CSS propio + estilos inline de Astro/Tailwind
-    #  img-src     → imágenes propias + Cloudinary (todas las cuentas bajo res.cloudinary.com)
-    #                + data: para SVGs inline
-    #  connect-src → fetch/XHR propio + Cloudinary + Google Analytics (eventos GA4)
+    #  img-src     → imágenes propias + Cloudinary + placehold + miniaturas YouTube + data: para SVGs inline
+    #  connect-src → fetch/XHR propio + Cloudinary + Google Analytics + Tag Manager
     #  media-src   → audio/video propio + YouTube
     #  frame-src   → iframes: solo YouTube
     #  object-src  → deshabilita plugins Flash/Java
     #  base-uri    → evita ataques de base-tag injection
     #  form-action → formularios solo al propio dominio
     # ─────────────────────────────────────────────────────────────────────────
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://res.cloudinary.com; font-src 'self'; connect-src 'self' https://res.cloudinary.com https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; media-src 'self' https://www.youtube.com https://youtu.be; frame-src https://www.youtube.com https://youtu.be; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://res.cloudinary.com https://placehold.co https://img.youtube.com; font-src 'self'; connect-src 'self' https://res.cloudinary.com https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; media-src 'self' https://www.youtube.com https://youtu.be; frame-src https://www.youtube.com https://youtu.be; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests;"
 
 # ------------------------------------------------------------
 # CACHE — assets con hash de Astro (inmutables)
