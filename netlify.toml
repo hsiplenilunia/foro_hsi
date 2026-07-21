@@ -28,6 +28,9 @@
     # Protección XSS para navegadores legacy que no entienden CSP.
     X-XSS-Protection = "1; mode=block"
 
+    # Seguridad adicional para XML
+    X-Permitted-Cross-Domain-Policies = "none"
+
     # Deshabilita APIs del navegador que este sitio no utiliza.
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), bluetooth=(), accelerometer=(), gyroscope=(), magnetometer=()"
 
