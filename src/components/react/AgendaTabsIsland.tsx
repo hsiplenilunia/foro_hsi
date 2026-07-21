@@ -44,7 +44,7 @@ const agendaData = [
         type: "PANEL",
         title: "Vigilancia epidemiológica 360. Modelo “Una sola Salud“ en México: Integración multisectorial",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#00b0e4]">Dr. Vladimir González Cortés</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Vladimir González Cortés</span><br/>
           <span class="text-gray-500">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Mauricio Rodríguez Álvarez</span><br/>
           <span class="text-gray-500">Plan Universitario de Control de la Resistencia Antimicrobiana, PUCRA-UNAM</span><br/>
