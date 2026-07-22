@@ -463,11 +463,11 @@ export default function AgendaTabsIsland() {
           {event.type}
         </span>
       )}
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col">
         {eventTitles.map((titleItem, titleIdx) => (
           <h3
             key={`${idx}-${titleIdx}`}
-            className="text-[#204356] font-bold text-sm leading-snug"
+            className={`text-[#204356] font-bold text-sm leading-snug ${titleIdx === 0 ? "mb-2" : ""}`}
           >
             {titleItem}
           </h3>
@@ -533,11 +533,11 @@ export default function AgendaTabsIsland() {
             {event.type}
           </span>
         )}
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col">
           {eventTitles.map((titleItem, titleIdx) => (
             <h3
               key={`${idx}-${titleIdx}`}
-              className="text-[#204356] font-bold text-sm md:text-base leading-snug"
+              className={`text-[#204356] font-bold text-sm md:text-base leading-snug ${titleIdx === 0 ? "mb-2" : ""}`}
             >
               {titleItem}
             </h3>
