@@ -145,7 +145,7 @@ const agendaData = [
         time: "15:15 - 15:45",
         type: "CONFERENCIA",
         title: [
-          "Clínica y biomarcadores: la combinación contra las infecciones",
+          "Carga de la sepsis: cuando las IAAS son una emergencia",
           "Biomarcadores: papel en el diagnóstico oportuno de IAAS",
         ],
         isNetworking: false,
