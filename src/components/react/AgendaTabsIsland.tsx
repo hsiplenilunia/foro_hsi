@@ -144,7 +144,7 @@ const agendaData = [
     {
         time: "15:15 - 15:45",
         type: "CONFERENCIA",
-        title: "El rol de los biomarcadores en la práctica clínica y la prevención de IAAS <br/> Biomarcadores: papel en el diagnóstico oportuno de IAAS <br/> Biomarcadores: papel en el diagnóstico oportuno de IAAS",
+        title: "El rol de los biomarcadores en la práctica clínica y la prevención de IAAS",
         isNetworking: false,
         participants: `<br/><span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Delsol</span><br/>
           <span class="text-gray-500">Unidad de Cuidados Intensivos Adultos, Hospital Juárez de México</span><br/>
