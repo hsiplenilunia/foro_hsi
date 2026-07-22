@@ -34,7 +34,7 @@ const agendaData = [
       {
         time: "9:30 - 10:00",
         type: "CONFERENCIA MAGISTRAL",
-        title: "Impacto de la Estrategia Nacional contra la Resistencia Antimicrobiana",
+        title: "",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"><br/></span>
         <span class="text-gray-500"></span>`,
@@ -90,8 +90,8 @@ const agendaData = [
           <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación, INR</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
           <span class="text-gray-500">Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
-         <br/><span class="font-bold text-[#204356]">Dra. Rosa Maria Wong Chew</span><br/>
-          <span class="text-gray-500">Presidenta, Asociación Mexicana de Infectología y Microbiología</span><br/>
+         <br/><span class="font-bold text-[#204356]">Dra. Claudia López Enriquez </span><br/>
+          <span class="text-gray-500">Asociación Mexicana de Infectología y Microbiología</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dr. Luis Fernando Pérez González</span> <br/>
           <span class="text-gray-500">Jefe del Departamento de Pediatría, Facultad de Medicina, Universidad Autónoma de San Luis Potosí</span>`,
@@ -144,13 +144,16 @@ const agendaData = [
     {
         time: "15:15 - 15:45",
         type: "CONFERENCIA",
-        title: "Conferencia: El rol de los biomarcadores en la práctica clínica y la prevención de IAAS",
+        title: [
+          "Carga de la sepsis: cuando las IAAS son una emergencia",
+          "Biomarcadores: papel en el diagnóstico oportuno de IAAS",
+        ],
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dra. Graciela Merinos Sánchez</span><br/>
-          <span class="text-gray-500">Directora Académica, Sepsis México</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Delsol</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Delsol</span><br/>
           <span class="text-gray-500">Unidad de Cuidados Intensivos Adultos, Hospital Juárez de México</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]"></span><br/>
+          <br/><span class="font-bold text-[#204356]">Dra. Graciela Merinos Sánchez</span><br/>
+          <span class="text-gray-500">Directora Académica, Sepsis México</span><br/>
+          <span class="font-bold text-[#00b0e4]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
       },
@@ -158,7 +161,7 @@ const agendaData = [
   },
   {
     label: "DÍA 2 | 28 DE AGOSTO",
-    id2: "agenda-dia2",
+    id: "agenda-dia2",
     day: "28",
     month: "AGOSTO",
     events: [ 
@@ -409,6 +412,7 @@ export default function AgendaTabsIsland() {
           }
 
           const isFirst = idx === 0;
+          const eventTitles = Array.isArray(event.title) ? event.title : [event.title];
 
           return (
             <article
@@ -459,9 +463,16 @@ export default function AgendaTabsIsland() {
           {event.type}
         </span>
       )}
-      <h3 className="text-[#204356] font-bold text-sm leading-snug">
-        {event.title}
-      </h3>
+      <div className="flex flex-col">
+        {eventTitles.map((titleItem, titleIdx) => (
+          <h3
+            key={`${idx}-${titleIdx}`}
+            className={`text-[#204356] font-bold text-sm leading-snug ${titleIdx === 0 ? "mb-2" : ""}`}
+          >
+            {titleItem}
+          </h3>
+        ))}
+      </div>
     </div>
 
     {/* Participantes mobile — debajo del título */}
@@ -522,9 +533,16 @@ export default function AgendaTabsIsland() {
             {event.type}
           </span>
         )}
-        <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
-          {event.title}
-        </h3>
+        <div className="flex flex-col">
+          {eventTitles.map((titleItem, titleIdx) => (
+            <h3
+              key={`${idx}-${titleIdx}`}
+              className={`text-[#204356] font-bold text-sm md:text-base leading-snug ${titleIdx === 0 ? "mb-2" : ""}`}
+            >
+              {titleItem}
+            </h3>
+          ))}
+        </div>
       </div>
     </div>
     <div className="border-l border-white pl-5 pr-5 py-5">
