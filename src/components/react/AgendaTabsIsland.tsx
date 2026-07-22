@@ -34,7 +34,7 @@ const agendaData = [
       {
         time: "9:30 - 10:00",
         type: "CONFERENCIA MAGISTRAL",
-        title: "Impacto de la Estrategia Nacional contra la Resistencia Antimicrobiana",
+        title: "",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"><br/></span>
         <span class="text-gray-500"></span>`,
