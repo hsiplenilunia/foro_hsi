@@ -146,11 +146,11 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "El rol de los biomarcadores en la práctica clínica y la prevención de IAAS <br/> Biomarcadores: papel en el diagnóstico oportuno de IAAS <br/> Biomarcadores: papel en el diagnóstico oportuno de IAAS",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dra. Graciela Merinos Sánchez</span><br/>
-          <span class="text-gray-500">Directora Académica, Sepsis México</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Delsol</span><br/>
+        participants: `<br/><span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Delsol</span><br/>
           <span class="text-gray-500">Unidad de Cuidados Intensivos Adultos, Hospital Juárez de México</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]"></span><br/>
+          <span class="font-bold text-[#204356]">Dra. Graciela Merinos Sánchez</span><br/>
+          <br/><span class="text-gray-500">Directora Académica, Sepsis México</span><br/>
+          <span class="font-bold text-[#00b0e4]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
       },
