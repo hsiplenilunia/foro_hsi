@@ -144,7 +144,10 @@ const agendaData = [
     {
         time: "15:15 - 15:45",
         type: "CONFERENCIA",
-        title: "El rol de los biomarcadores en la práctica clínica y la prevención de IAAS",
+        title: [
+          "Clínica y biomarcadores: la combinación contra las infecciones",
+          "Biomarcadores: papel en el diagnóstico oportuno de IAAS",
+        ],
         isNetworking: false,
         participants: `<br/><span class="font-bold text-[#204356]">Dr. Luis Antonio Gorordo Delsol</span><br/>
           <span class="text-gray-500">Unidad de Cuidados Intensivos Adultos, Hospital Juárez de México</span><br/>
@@ -158,7 +161,7 @@ const agendaData = [
   },
   {
     label: "DÍA 2 | 28 DE AGOSTO",
-    id2: "agenda-dia2",
+    id: "agenda-dia2",
     day: "28",
     month: "AGOSTO",
     events: [ 
@@ -409,6 +412,7 @@ export default function AgendaTabsIsland() {
           }
 
           const isFirst = idx === 0;
+          const eventTitles = Array.isArray(event.title) ? event.title : [event.title];
 
           return (
             <article
@@ -459,9 +463,16 @@ export default function AgendaTabsIsland() {
           {event.type}
         </span>
       )}
-      <h3 className="text-[#204356] font-bold text-sm leading-snug">
-        {event.title}
-      </h3>
+      <div className="flex flex-col gap-1">
+        {eventTitles.map((titleItem, titleIdx) => (
+          <h3
+            key={`${idx}-${titleIdx}`}
+            className="text-[#204356] font-bold text-sm leading-snug"
+          >
+            {titleItem}
+          </h3>
+        ))}
+      </div>
     </div>
 
     {/* Participantes mobile — debajo del título */}
@@ -522,9 +533,16 @@ export default function AgendaTabsIsland() {
             {event.type}
           </span>
         )}
-        <h3 className="text-[#204356] font-bold text-sm md:text-base leading-snug">
-          {event.title}
-        </h3>
+        <div className="flex flex-col gap-1">
+          {eventTitles.map((titleItem, titleIdx) => (
+            <h3
+              key={`${idx}-${titleIdx}`}
+              className="text-[#204356] font-bold text-sm md:text-base leading-snug"
+            >
+              {titleItem}
+            </h3>
+          ))}
+        </div>
       </div>
     </div>
     <div className="border-l border-white pl-5 pr-5 py-5">
