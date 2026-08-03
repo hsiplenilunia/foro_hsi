@@ -12,8 +12,8 @@ const agendaData = [
         type: "APERTURA",
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Mtro. Zoé Robledo Aburto</span><br/>
-        <br/><span class="text-gray-500">Director General del Instituto Mexicano del Seguro Social (IMSS)</span>
+        participants: `<span class="font-bold text-[#204356]">/span><br/>
+        <br/><span class="text-gray-500"></span>
         <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
         <br/><span class="text-gray-500">Representante de la OPS/OMS en México<br/></span>
         <span class="font-bold text-[#204356]">Dr. Octavio González Chon</span><br/>
@@ -38,8 +38,8 @@ const agendaData = [
         type: "CONFERENCIA MAGISTRAL",
         title: "El rol del IMSS en la Estrategia Nacional contra las Infecciones y la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Mtro. Zoé Robledo Aburto<br/></span>
-        <span class="text-gray-500">Director General del Instituto Mexicano del Seguro Social (IMSS)</span><br/>`,
+        participants: `<span class="font-bold text-[#204356]"><br/></span>
+        <span class="text-gray-500"><br/></span>`,
       },
       {
         time: "10:00 - 10:45",
