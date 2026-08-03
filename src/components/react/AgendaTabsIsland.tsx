@@ -189,7 +189,7 @@ const agendaData = [
         title: "Desinfección de lo básico: de la toallita hasta los robots con IA. Ciencia y experiencia de la vida real",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Arturo Galindo Fraga</span><br/>
-          <span class="text-gray-500">Subdirector de Epidemiología Hospitalaria y Control de la Calidad de la Atención Médica,  Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
+          <span class="text-gray-500">Hospital Angeles Acoxpa</span><br/>
           <br/><span class="font-bold text-[#204356]">M. en C. Tatiana Chávez Heres</span><br/>
           <span class="text-gray-500">Jefe de Servicio, Unidad de Vigilancia Epidemiológica Hospitalaria, Instituto Nacional de Rehabilitación</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
@@ -292,11 +292,11 @@ const agendaData = [
           <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
           <br/><span class="font-bold text-[#204356]">Mtra. Nancy Fonceca López <br/></span>
           <span class="text-gray-500">Jefe de la Clínica de Heridas Hospital Regional Iztapalapa, Secretaria de Salud</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez <br/></span>
-          <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>
-          <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
-          <br/>
-          <span class="text-gray-500"></span>`,
+          <br/><span class="font-bold text-[#204356]">Dr. Isauro Emmanuel Rendón Oliva<br/></span>
+          <span class="text-gray-500">Jefe de la Unidad de Cirugía Reconstructiva y Unidad de Quemados del Hospital de Traumatología y Ortopedia de los Servicio de Salud del Estado de Puebla</span><br/>
+          <br/><span class="font-bold text-[#3aaa5c]">MODERA: </span><br/>
+         <br/><span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez<br/></span>
+          <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>`,
       }, 
 
       {
