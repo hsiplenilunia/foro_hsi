@@ -12,10 +12,10 @@ const agendaData = [
         type: "APERTURA",
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Mtro. Zoé Robledo Aburto</span><br/>
-        <span class="text-gray-500">Director General del Instituto Mexicano del Seguro Social (IMSS) </span><br/>
-        <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
-        <span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
+        participants: `<span class="font-bold text-[#204356]"><br/></span>
+        <br/><span class="text-gray-500"></span>
+        <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina<br/></span>
+        <span class="text-gray-500">Representante de la OPS/OMS en México<br/></span>
         <br/><span class="font-bold text-[#204356]">Dr. Octavio González Chon</span><br/>
         <span class="text-gray-500">Director General de Médica Sur</span><br/>
 
@@ -38,8 +38,8 @@ const agendaData = [
         type: "CONFERENCIA MAGISTRAL",
         title: "El rol del IMSS en la Estrategia Nacional contra las Infecciones y la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Mtro. Zoé Robledo Aburto<br/></span>
-        <span class="text-gray-500">Director General del Instituto Mexicano del Seguro Social (IMSS)</span><br/>`,
+        participants: `<span class="font-bold text-[#204356]"><br/></span>
+        <span class="text-gray-500"><br/></span>`,
       },
       {
         time: "10:00 - 10:45",
@@ -122,9 +122,9 @@ const agendaData = [
         title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.?",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Jorge Tanaka Kido<br/></span>
-        <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
-        <span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos<br/></span>
-          <br/><span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
+         <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
+         <br/><span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos<br/></span>
+          <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Sergio Iván Valdés Ferrer<br/></span>
           <span class="text-gray-500">Investigador en Ciencias Médicas, Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
           <br/><span class="font-bold text-[#00b0e4]"></span><br/>
