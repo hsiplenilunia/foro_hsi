@@ -16,7 +16,7 @@ const agendaData = [
         <br/><span class="text-gray-500"></span>
         <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina<br/></span>
         <span class="text-gray-500">Representante de la OPS/OMS en México<br/></span>
-        <span class="font-bold text-[#204356]">Dr. Octavio González Chon</span><br/>
+        <br/><span class="font-bold text-[#204356]">Dr. Octavio González Chon</span><br/>
         <span class="text-gray-500">Director General de Médica Sur</span><br/>
 
            <br/><span class="font-bold text-[#00b0e4]">Consejo Técnico HSI</span><br/>
