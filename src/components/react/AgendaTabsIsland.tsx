@@ -12,7 +12,7 @@ const agendaData = [
         type: "APERTURA",
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">/span><br/>
+        participants: `<span class="font-bold text-[#204356]"><br/></span>
         <br/><span class="text-gray-500"></span>
         <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
         <br/><span class="text-gray-500">Representante de la OPS/OMS en México<br/></span>
