@@ -201,7 +201,7 @@ const agendaData = [
         type: "PANEL",
         title: "El impacto ambiental de la atención médica",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. Leobardo M. Gomez Oliván<br/></span>
+        participants: `<span class="font-bold text-[#204356]">Dr. Leobardo M. Gómez Oliván<br/></span>
           <span class="text-gray-500">Colegio de Químicos, Farmacéuticos, Biólogos de México, CNQFB</span><br/>
           <br/><span class="font-bold text-[#204356]">Enf. Rachel Campos Jiménez</span><br/>
           <span class="text-gray-500">Presidenta, Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
