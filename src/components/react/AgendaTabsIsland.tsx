@@ -189,7 +189,7 @@ const agendaData = [
         title: "Desinfección de lo básico: de la toallita hasta los robots con IA. Ciencia y experiencia de la vida real",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Arturo Galindo Fraga</span><br/>
-          <span class="text-gray-500">Subdirector de Epidemiología Hospitalaria y Control de la Calidad de la Atención Médica,  Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
+          <span class="text-gray-500">Hospital Angeles Acoxpa</span><br/>
           <br/><span class="font-bold text-[#204356]">M. en C. Tatiana Chávez Heres</span><br/>
           <span class="text-gray-500">Jefe de Servicio, Unidad de Vigilancia Epidemiológica Hospitalaria, Instituto Nacional de Rehabilitación</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
