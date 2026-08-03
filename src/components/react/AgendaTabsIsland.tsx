@@ -122,9 +122,9 @@ const agendaData = [
         title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.?",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Jorge Tanaka Kido<br/></span>
-        <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
-        <span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos<br/></span>
-          <br/><span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
+         <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
+         <br/><span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos<br/></span>
+          <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Sergio Iván Valdés Ferrer<br/></span>
           <span class="text-gray-500">Investigador en Ciencias Médicas, Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
           <br/><span class="font-bold text-[#00b0e4]"></span><br/>
