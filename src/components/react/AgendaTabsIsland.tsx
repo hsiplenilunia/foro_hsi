@@ -12,7 +12,9 @@ const agendaData = [
         type: "APERTURA",
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Mtro. Zoé Robledo Aburto</span><br/>
+        <span class="text-gray-500">Director General del Instituto Mexicano del Seguro Social (IMSS) </span><br/>
+        <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
         <span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. Octavio González Chon</span><br/>
         <span class="text-gray-500">Director General de Médica Sur</span><br/>
@@ -34,10 +36,10 @@ const agendaData = [
       {
         time: "9:30 - 10:00",
         type: "CONFERENCIA MAGISTRAL",
-        title: "",
+        title: "El rol del IMSS en la Estrategia Nacional contra las Infecciones y la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"><br/></span>
-        <span class="text-gray-500"></span>`,
+        participants: `<span class="font-bold text-[#204356]">Mtro. Zoé Robledo Aburto<br/></span>
+        <span class="text-gray-500">Director General del Instituto Mexicano del Seguro Social (IMSS)</span><br/>`,
       },
       {
         time: "10:00 - 10:45",
@@ -99,7 +101,7 @@ const agendaData = [
       {
         time: "12:45 - 13:30",
         type: "PANEL",
-        title: "Diagnóstico rápido: cómo la inteligencia de datos puede salvar vidas y bajar costos",
+        title: "Ciencia de datos y tecnologías de la informacion para el abordaje de las enfermedades infecciosas ",
         isNetworking: false,
         participants: `<br/>
           <span class="text-gray-500"></span><br/>
@@ -117,26 +119,29 @@ const agendaData = [
       {
         time: "14:00 - 14:45",
         type: "PANEL",
-        title: "¿Qué incentivos hacen falta para invertir en prevención de infecciones?",
+        title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.?",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span><br/>
-        <span class="text-gray-500"></span><br/>
-          <br/><span class="text-gray-500"></span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Dra. Cristina González de Jesús</span><br/>
-          <span class="text-gray-500">Presidenta, Colegio Médico de Especialistas en Calidad de la Atención Clinica, CMECAC</span>`,
+        participants: `<span class="font-bold text-[#204356]">Dr. Jorge Tanaka Kido<br/></span>
+        <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
+        <span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos<br/></span>
+          <br/><span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. Sergio Iván Valdés Ferrer<br/></span>
+          <span class="text-gray-500">Investigador en Ciencias Médicas, Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]"></span><br/>
+          <span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span>`,
       },
       {
         time: "14:45 - 15:15",
-        type: "PANEL",
-        title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar",
+        type: "CONFERENCIA",
+        title: "",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. Jorge Tanaka Kido</span><br/>
-          <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
-          <br/><span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos</span><br/>
-          <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dr. Sergio Iván Valdés Ferrer</span><br/>
-          <span class="text-gray-500">Investigador en Ciencias Médicas, Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
+        participants: `<span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span><br/>
+          <br/><span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span><br/>
+          <br/><span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#00b0e4]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
@@ -196,7 +201,7 @@ const agendaData = [
         type: "PANEL",
         title: "El impacto ambiental de la atención médica",
         isNetworking: false,
-        participants: `<br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Leobardo M. Gomez Oliván<br/></span>
           <span class="text-gray-500">Colegio de Químicos, Farmacéuticos, Biólogos de México, CNQFB</span><br/>
           <br/><span class="font-bold text-[#204356]">Enf. Rachel Campos Jiménez</span><br/>
           <span class="text-gray-500">Presidenta, Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
@@ -231,8 +236,8 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "La vacunación en poblaciones vulnerables y la prevención de infecciones",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500"></span><br/>`,
+        participants: `<span class="font-bold text-[#204356]">Dra. Sandra Rajme López<br/></span>
+          <span class="text-gray-500">Departamento de Infectología, Instituto Nacional de Ciencias y Nutrición "Salvador Zubirán", INCMNSZ</span><br/>`,
       },
       {
         time: "13:00 - 13:30",
@@ -285,7 +290,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtra. Guillermina Vela Anaya<br/></span>
           <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
-          <br/><span class="font-bold text-[#204356]">E.T.E. Nancy Fonceca López <br/></span>
+          <br/><span class="font-bold text-[#204356]">Mtra. Nancy Fonceca López <br/></span>
           <span class="text-gray-500">Jefe de la Clínica de Heridas Hospital Regional Iztapalapa, Secretaria de Salud</span><br/>
           <br/><span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez <br/></span>
           <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>
