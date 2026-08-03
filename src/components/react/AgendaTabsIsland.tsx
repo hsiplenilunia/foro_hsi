@@ -14,8 +14,8 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"><br/></span>
         <br/><span class="text-gray-500"></span>
-        <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
-        <br/><span class="text-gray-500">Representante de la OPS/OMS en México<br/></span>
+        <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina<br/></span>
+        <span class="text-gray-500">Representante de la OPS/OMS en México<br/></span>
         <span class="font-bold text-[#204356]">Dr. Octavio González Chon</span><br/>
         <span class="text-gray-500">Director General de Médica Sur</span><br/>
 
