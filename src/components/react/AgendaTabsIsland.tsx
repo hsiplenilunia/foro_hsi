@@ -12,8 +12,10 @@ const agendaData = [
         type: "APERTURA",
         title: "Academia y sociedad civil: trabajando juntos contra las infecciones resistentes",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina</span><br/>
-        <span class="text-gray-500">Representante de la OPS/OMS en México</span><br/>
+        participants: `<span class="font-bold text-[#204356]"><br/></span>
+        <br/><span class="text-gray-500"></span>
+        <span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina<br/></span>
+        <span class="text-gray-500">Representante de la OPS/OMS en México<br/></span>
         <br/><span class="font-bold text-[#204356]">Dr. Octavio González Chon</span><br/>
         <span class="text-gray-500">Director General de Médica Sur</span><br/>
 
@@ -34,10 +36,10 @@ const agendaData = [
       {
         time: "9:30 - 10:00",
         type: "CONFERENCIA MAGISTRAL",
-        title: "",
+        title: "El rol del IMSS en la Estrategia Nacional contra las Infecciones y la Resistencia Antimicrobiana",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"><br/></span>
-        <span class="text-gray-500"></span>`,
+        <span class="text-gray-500"><br/></span>`,
       },
       {
         time: "10:00 - 10:45",
@@ -46,8 +48,8 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Vladimir González Cortés</span><br/>
           <span class="text-gray-500">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dr. Mauricio Rodríguez Álvarez</span><br/>
-          <span class="text-gray-500">Plan Universitario de Control de la Resistencia Antimicrobiana, PUCRA-UNAM</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. Samuel Ponce de León Rosales</span><br/>
+          <span class="text-gray-500">Coordinador del Plan Universitario de Control de la Resistencia Antimicrobiana, PUCRA-UNAM</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Luis Esau López Jacome</span><br/>
           <span class="text-gray-500">Coordinador de la Red Temática de Investigación y Vigilancia de la Farmacorresistencia, INVIFAR</span><br/>
          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
@@ -87,7 +89,7 @@ const agendaData = [
         title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas</span><br/>
-          <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación, INR</span><br/>
+          <span class="text-gray-500">Hospital Angeles Acoxpa</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
           <span class="text-gray-500">Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
          <br/><span class="font-bold text-[#204356]">Dra. Claudia López Enriquez </span><br/>
@@ -99,7 +101,7 @@ const agendaData = [
       {
         time: "12:45 - 13:30",
         type: "PANEL",
-        title: "Diagnóstico rápido: cómo la inteligencia de datos puede salvar vidas y bajar costos",
+        title: "Ciencia de datos y tecnologías de la informacion para el abordaje de las enfermedades infecciosas ",
         isNetworking: false,
         participants: `<br/>
           <span class="text-gray-500"></span><br/>
@@ -117,26 +119,29 @@ const agendaData = [
       {
         time: "14:00 - 14:45",
         type: "PANEL",
-        title: "¿Qué incentivos hacen falta para invertir en prevención de infecciones?",
+        title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.?",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span><br/>
-        <span class="text-gray-500"></span><br/>
-          <br/><span class="text-gray-500"></span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
-          <span class="font-bold text-[#204356]">Dra. Cristina González de Jesús</span><br/>
-          <span class="text-gray-500">Presidenta, Colegio Médico de Especialistas en Calidad de la Atención Clinica, CMECAC</span>`,
+        participants: `<span class="font-bold text-[#204356]">Dr. Jorge Tanaka Kido<br/></span>
+         <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
+         <br/><span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos<br/></span>
+          <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. Sergio Iván Valdés Ferrer<br/></span>
+          <span class="text-gray-500">Investigador en Ciencias Médicas, Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]"></span><br/>
+          <span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span>`,
       },
       {
         time: "14:45 - 15:15",
-        type: "PANEL",
-        title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar",
+        type: "CONFERENCIA",
+        title: "Conferencia Más allá del antibiótico: nuevas tendencias en el manejo de la sepsis con la membrana hemoadsorción oXiris",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. Jorge Tanaka Kido</span><br/>
-          <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
-          <br/><span class="font-bold text-[#204356]">Ing. Patricia Faci Villalobos</span><br/>
-          <span class="text-gray-500">Expresidenta, Cámara Nacional de la Industria Farmacéutica, CANIFARMA</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dr. Sergio Iván Valdés Ferrer</span><br/>
-          <span class="text-gray-500">Investigador en Ciencias Médicas, Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dra. Olynka Vega Vega<br/></span>
+          <span class="text-gray-500">Presidenta de IMIN y Coordinadora en el Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán.</span><br/>
+          <br/><span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span><br/>
+          <br/><span class="font-bold text-[#204356]"></span><br/>
+          <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#00b0e4]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
@@ -184,7 +189,7 @@ const agendaData = [
         title: "Desinfección de lo básico: de la toallita hasta los robots con IA. Ciencia y experiencia de la vida real",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Arturo Galindo Fraga</span><br/>
-          <span class="text-gray-500">Subdirector de Epidemiología Hospitalaria y Control de la Calidad de la Atención Médica,  Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
+          <span class="text-gray-500">Subdirector de Epidemiología Hospitalaria y Control de la Calidad de la Atención Médica, Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
           <br/><span class="font-bold text-[#204356]">M. en C. Tatiana Chávez Heres</span><br/>
           <span class="text-gray-500">Jefe de Servicio, Unidad de Vigilancia Epidemiológica Hospitalaria, Instituto Nacional de Rehabilitación</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
@@ -196,7 +201,7 @@ const agendaData = [
         type: "PANEL",
         title: "El impacto ambiental de la atención médica",
         isNetworking: false,
-        participants: `<br/>
+        participants: `<span class="font-bold text-[#204356]">Dr. Leobardo M. Gómez Oliván<br/></span>
           <span class="text-gray-500">Colegio de Químicos, Farmacéuticos, Biólogos de México, CNQFB</span><br/>
           <br/><span class="font-bold text-[#204356]">Enf. Rachel Campos Jiménez</span><br/>
           <span class="text-gray-500">Presidenta, Asociación Iberoamericana de Enfermeras en Gastroenterología y Endoscopia, ASIEGE</span><br/>
@@ -211,7 +216,9 @@ const agendaData = [
         isNetworking: false,
         participants:`<span class="font-bold text-[#204356]">Mtro. Yoab Yael Hernández Luna</span><br/>
           <span class="text-gray-500">Comisión de Evidencia y Manejo de Riesgos, COFEPRIS</span><br/>
-          <br/><span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria </span><br/>
+          <br/><span class="font-bold text-[#204356]">Mtro. César Manuel Nava Gómez</span><br/>
+          <span class="text-gray-500"><span class="text-gray-500">Subdirector de Autorización y Vigilancia, en la Comisión de Operación Sanitaria</span><br/>
+          <br/><span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
@@ -231,8 +238,8 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "La vacunación en poblaciones vulnerables y la prevención de infecciones",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500"></span><br/>`,
+        participants: `<span class="font-bold text-[#204356]">Dra. Sandra Rajme López<br/></span>
+          <span class="text-gray-500">Departamento de Infectología, Instituto Nacional de Ciencias y Nutrición "Salvador Zubirán", INCMNSZ</span><br/>`,
       },
       {
         time: "13:00 - 13:30",
@@ -285,13 +292,13 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtra. Guillermina Vela Anaya<br/></span>
           <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
-          <br/><span class="font-bold text-[#204356]">E.T.E. Nancy Fonceca López <br/></span>
+          <br/><span class="font-bold text-[#204356]">Mtra. Nancy Fonceca López <br/></span>
           <span class="text-gray-500">Jefe de la Clínica de Heridas Hospital Regional Iztapalapa, Secretaria de Salud</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez <br/></span>
-          <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>
-          <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
-          <br/>
-          <span class="text-gray-500"></span>`,
+          <br/><span class="font-bold text-[#204356]">Dr. Isauro Emmanuel Rendón Oliva<br/></span>
+          <span class="text-gray-500">Jefe de la Unidad de Cirugía Reconstructiva y Unidad de Quemados del Hospital de Traumatología y Ortopedia de los Servicio de Salud del Estado de Puebla</span><br/>
+          <br/><span class="font-bold text-[#3aaa5c]">MODERA: </span><br/>
+         <br/><span class="font-bold text-[#204356]">Dra. Juana Jiménez Sánchez<br/></span>
+          <span class="text-gray-500">Directora Regional, U-Nursing-LatAm México, Centroamérica y El Caribe</span><br/>`,
       }, 
 
       {
