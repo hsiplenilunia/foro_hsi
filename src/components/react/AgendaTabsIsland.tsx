@@ -134,10 +134,10 @@ const agendaData = [
       {
         time: "14:45 - 15:15",
         type: "CONFERENCIA",
-        title: "",
+        title: "Conferencia Más allá del antibiótico: nuevas tendencias en el manejo de la sepsis con la membrana hemoadsorción oXiris",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500"></span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dra. Olynka Vega Vega<br/></span>
+          <span class="text-gray-500">Presidenta de IMIN y Coordinadora en el Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán.</span><br/>
           <br/><span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#204356]"></span><br/>
@@ -216,7 +216,9 @@ const agendaData = [
         isNetworking: false,
         participants:`<span class="font-bold text-[#204356]">Mtro. Yoab Yael Hernández Luna</span><br/>
           <span class="text-gray-500">Comisión de Evidencia y Manejo de Riesgos, COFEPRIS</span><br/>
-          <br/><span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria </span><br/>
+          <br/><span class="font-bold text-[#204356]">Mtro. César Manuel Nava Gómez</span><br/>
+          <span class="text-gray-500"><span class="text-gray-500">Subdirector de Autorización y Vigilancia, en la Comisión de Operación Sanitaria</span><br/>
+          <br/><span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
