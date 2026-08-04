@@ -48,8 +48,8 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Vladimir González Cortés</span><br/>
           <span class="text-gray-500">Red Hospitalaria de Vigilancia Epidemiológica, RHOVE</span><br/>
-          <br/><span class="font-bold text-[#204356]">Dr. Mauricio Rodríguez Álvarez</span><br/>
-          <span class="text-gray-500">Plan Universitario de Control de la Resistencia Antimicrobiana, PUCRA-UNAM</span><br/>
+          <br/><span class="font-bold text-[#204356]">Dr. Samuel Ponce de León Rosales</span><br/>
+          <span class="text-gray-500">Coordinador del Plan Universitario de Control de la Resistencia Antimicrobiana, PUCRA-UNAM</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Luis Esau López Jacome</span><br/>
           <span class="text-gray-500">Coordinador de la Red Temática de Investigación y Vigilancia de la Farmacorresistencia, INVIFAR</span><br/>
          <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
@@ -89,7 +89,7 @@ const agendaData = [
         title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas</span><br/>
-          <span class="text-gray-500">Subdirector de Investigación Biomédica, Instituto Nacional de Rehabilitación, INR</span><br/>
+          <span class="text-gray-500">Hospital Angeles Acoxpa</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
           <span class="text-gray-500">Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
          <br/><span class="font-bold text-[#204356]">Dra. Claudia López Enriquez </span><br/>
@@ -189,7 +189,7 @@ const agendaData = [
         title: "Desinfección de lo básico: de la toallita hasta los robots con IA. Ciencia y experiencia de la vida real",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Arturo Galindo Fraga</span><br/>
-          <span class="text-gray-500">Hospital Angeles Acoxpa</span><br/>
+          <span class="text-gray-500">Subdirector de Epidemiología Hospitalaria y Control de la Calidad de la Atención Médica, Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán</span><br/>
           <br/><span class="font-bold text-[#204356]">M. en C. Tatiana Chávez Heres</span><br/>
           <span class="text-gray-500">Jefe de Servicio, Unidad de Vigilancia Epidemiológica Hospitalaria, Instituto Nacional de Rehabilitación</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
