@@ -134,10 +134,10 @@ const agendaData = [
       {
         time: "14:45 - 15:15",
         type: "CONFERENCIA",
-        title: "",
+        title: "Conferencia Más allá del antibiótico: nuevas tendencias en el manejo de la sepsis con la membrana hemoadsorción oXiris",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500"></span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dra. Olynka Vega Vega<br/></span>
+          <span class="text-gray-500">Presidenta de IMIN y Coordinadora en el Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán.</span><br/>
           <br/><span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#204356]"></span><br/>
