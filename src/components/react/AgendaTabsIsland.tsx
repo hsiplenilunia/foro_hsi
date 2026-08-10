@@ -119,7 +119,7 @@ const agendaData = [
       {
         time: "14:00 - 14:45",
         type: "PANEL",
-        title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.?",
+        title: "¿Por qué las farmacéuticas ya no desarrollan antibióticos? Innovación disruptiva contra infecciones difíciles de tratar.",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Jorge Tanaka Kido<br/></span>
          <span class="text-gray-500">Director de Investigación Clinica, Asociación Mexicana de Industrias de Investigación Farmacéutica, A. C. AMIIF</span><br/>
