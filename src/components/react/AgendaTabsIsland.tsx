@@ -336,6 +336,14 @@ const agendaData = [
         participants: `<span class="font-bold text-[#204356]">M.A.S.S. Maribel Ramírez Coronel</span><br/>
           <span class="text-gray-500">Directora Fundadora de la iniciativa Hospitales sin Infecciones</span><br/>`,
       },
+        {
+        time: "",
+        type: "",
+        title: "",
+        isNetworking: false,
+        participants: `<span class="font-bold text-[#204356]">Dr. Fernando Fon, Director Ejecutivo de AFAMELA A.C.</span><br/>
+          <span class="text-gray-500">Maestro de Ceremonias</span><br/>`,
+      },    
     ],
   },
 ];
