@@ -163,6 +163,14 @@ const agendaData = [
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
       },
+    {
+        time: "",
+        type: "",
+        title: "",
+        isNetworking: false,
+        participants: `<span class="font-bold text-[#204356]">Dr. Fernando Fon, Director Ejecutivo de AFAMELA A.C.</span><br/>
+          <span class="text-gray-500">Maestro de Ceremonias</span><br/>`,
+      },  
     ],
   },
   {
