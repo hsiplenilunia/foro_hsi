@@ -266,10 +266,10 @@ const agendaData = [
       },
       {
         time: "13:30 - 14:00",
-        type: "PANEL",
-        title: " ",
+        type: "CONFERENCIA",
+        title: "Conferencia:  Impacto de las infecciones asociadas al reprocesamiento de endoscopios flexibles",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span>
+        participants: `<span class="font-bold text-[#204356]">Dra. Julieta Cervigni</span>
           <span class="text-gray-500"></span><br/>
 
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
