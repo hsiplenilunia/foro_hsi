@@ -39,7 +39,7 @@ const agendaData = [
         title: "El rol del IMSS en la Estrategia Nacional contra las Infecciones y la Resistencia Antimicrobiana",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"></span>
-        <span class="text-gray-500">)</span>`,
+        <span class="text-gray-500"></span>`,
       },
       {
         time: "10:00 - 10:45",
