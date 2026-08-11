@@ -135,7 +135,7 @@ const agendaData = [
       {
         time: "14:45 - 15:15",
         type: "CONFERENCIA",
-        title: "Conferencia Más allá del antibiótico: nuevas tendencias en el manejo de la sepsis con la membrana hemoadsorción oXiris",
+        title: "Más allá del antibiótico: nuevas tendencias en el manejo de la sepsis con la membrana hemoadsorción oXiris",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. Olynka Vega Vega<br/></span>
           <span class="text-gray-500">Presidenta de IMIN y Coordinadora en el Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán.</span><br/>
@@ -184,8 +184,8 @@ const agendaData = [
         type: "PANEL",
         title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span><br/>
-        <span class="text-gray-500"></span><br/>
+        participants: `<span class="font-bold text-[#204356]">MVZ Sandra Cruz López</span><br/>
+        <span class="text-gray-500">Responsable del Área de Bacteriología del Centro Nacional de Servicios de Diagnostico de Salud Animal, SENASICA</span><br/>
         <br/><span class="font-bold text-[#204356]">Dra. Irma Egoavil Medina</span><br/>
         <span class="text-gray-500">Directora General Zoetis</span><br/>
         <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
@@ -222,15 +222,15 @@ const agendaData = [
         time: "11:15 - 12:00",
         type: "PANEL",
         title: "Uso responsable de antibióticos: de la farmacia hasta el paciente",
-        isNetworking: false,
+        isNetworking: false,  
         participants:`<span class="font-bold text-[#204356]">Mtro. Yoab Yael Hernández Luna</span><br/>
           <span class="text-gray-500">Comisión de Evidencia y Manejo de Riesgos, COFEPRIS</span><br/>
           <br/><span class="font-bold text-[#204356]">Mtro. César Manuel Nava Gómez</span><br/>
-          <span class="text-gray-500"><span class="text-gray-500">Subdirector de Autorización y Vigilancia, en la Comisión de Operación Sanitaria</span><br/>
+          <span class="text-gray-500"><span class="text-gray-500">Subdirector de Autorización y Vigilancia, en la Comisión de Operación Sanitaria, COFEPRIS</span><br/>
           <br/><span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria</span><br/>
-          <span class="text-gray-500"><span class="text-gray-500">Asociación Nacional de Farmacias de México, ANAFARMEX</span><br/>
+          <span class="text-gray-500"><span class="text-gray-500">Presidente, Asociación Nacional de Farmacias de México, ANAFARMEX</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
-          <span class="text-gray-500"><span class="text-gray-500">Asociacion Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
+          <span class="text-gray-500"><span class="text-gray-500">Presidente, Asociación Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Liliana Vargas Neri</span><br/>
           <span class="text-gray-500">Profesor de TC Departamento de Farmacia, Facultad de Química, UNAM</span>`,
@@ -267,7 +267,7 @@ const agendaData = [
       {
         time: "13:30 - 14:00",
         type: "CONFERENCIA",
-        title: "Conferencia:  Impacto de las infecciones asociadas al reprocesamiento de endoscopios flexibles",
+        title: "Impacto de las infecciones asociadas al reprocesamiento de endoscopios flexibles",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. Julieta Cervigni</span>
           <span class="text-gray-500"></span><br/>
@@ -315,8 +315,8 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "Conferencia magistral: La RAM y Una sola Salud en América Latina desde la perspectiva de la OPS",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"><br/></span>
-          <span class="text-gray-500"></span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dra. Mónica Guardo<br/></span>
+          <span class="text-gray-500">Asesora Internacional de Enfermedades Transmisibles y Determinantes Ambientales de la Salud de la OPS/OMS</span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
           <span class="text-gray-500"></span>`,
