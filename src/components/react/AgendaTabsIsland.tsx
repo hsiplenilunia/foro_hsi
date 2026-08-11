@@ -66,7 +66,8 @@ const agendaData = [
         <span class="text-gray-500">Director General de Sistema de Salud Christus Muguerza</span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. Jorge Azpiri López</span><br/>
         <span class="text-gray-500">Director de Desarrollo y Expansión de TecSalud</span><br/>
-        <br/><span class="text-gray-500">Aseguradora</span><br/>
+        <br/><span class="font-bold text-[#204356]">M. en C. Omar Bernardo Viveros Cano</span><br/>
+        <br/><span class="text-gray-500">Head of Health & Human Capital, Mexico, Caribbean and Central America, AON</span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. Gustavo Sánchez Huerta</span><br/>
         <span class="text-gray-500">Director General del Hospital de Infectología del CMN La Raza</span><br/>
         <br/><span class="text-gray-500">Directivo de Hospital Público</span><br/>
@@ -175,8 +176,8 @@ const agendaData = [
         type: "PANEL",
         title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dr. Carlos Jasso Villazul</span><br/>
-        <span class="text-gray-500">Coordinador del Subcomité de RAM en Salud Animal (SCRAM-V). Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria, SENASICA </span><br/>
+        participants: `<span class="font-bold text-[#204356]"></span><br/>
+        <span class="text-gray-500"></span><br/>
         <br/><span class="font-bold text-[#204356]">Dra. Irma Egoavil Medina</span><br/>
         <span class="text-gray-500">Directora General Zoetis</span><br/>
         <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
@@ -258,7 +259,7 @@ const agendaData = [
       {
         time: "13:30 - 14:00",
         type: "PANEL",
-        title: " El costo del silencio: las consecuencias de no actuar contra las infecciones resistentes",
+        title: " ",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]"></span>
           <span class="text-gray-500"></span><br/>
@@ -306,8 +307,8 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "Conferencia magistral: La RAM y Una sola Salud en América Latina desde la perspectiva de la OPS",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dra. María Morales Betoulle<br/></span>
-          <span class="text-gray-500">Experta Técnica Internacional, Una Salud Oficina de OPS/OMS en México</span><br/>
+        participants: `<span class="font-bold text-[#204356]"><br/></span>
+          <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <br/>
           <span class="text-gray-500"></span>`,
