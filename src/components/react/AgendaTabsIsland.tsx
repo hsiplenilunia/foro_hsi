@@ -163,6 +163,14 @@ const agendaData = [
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
       },
+    {
+        time: "",
+        type: "",
+        title: "",
+        isNetworking: false,
+        participants: `<span class="font-bold text-[#204356]">Dr. Fernando Fon, Director Ejecutivo de AFAMELA A.C.</span><br/>
+          <span class="text-gray-500">Maestro de Ceremonias</span><br/>`,
+      },  
     ],
   },
   {
@@ -258,10 +266,10 @@ const agendaData = [
       },
       {
         time: "13:30 - 14:00",
-        type: "PANEL",
-        title: " ",
+        type: "CONFERENCIA",
+        title: "Conferencia:  Impacto de las infecciones asociadas al reprocesamiento de endoscopios flexibles",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span>
+        participants: `<span class="font-bold text-[#204356]">Dra. Julieta Cervigni</span>
           <span class="text-gray-500"></span><br/>
 
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
@@ -328,6 +336,14 @@ const agendaData = [
         participants: `<span class="font-bold text-[#204356]">M.A.S.S. Maribel Ramírez Coronel</span><br/>
           <span class="text-gray-500">Directora Fundadora de la iniciativa Hospitales sin Infecciones</span><br/>`,
       },
+        {
+        time: "",
+        type: "",
+        title: "",
+        isNetworking: false,
+        participants: `<span class="font-bold text-[#204356]">Dr. Fernando Fon, Director Ejecutivo de AFAMELA A.C.</span><br/>
+          <span class="text-gray-500">Maestro de Ceremonias</span><br/>`,
+      },    
     ],
   },
 ];
