@@ -227,7 +227,7 @@ const agendaData = [
           <span class="text-gray-500">Comisión de Evidencia y Manejo de Riesgos, COFEPRIS</span><br/>
           <br/><span class="font-bold text-[#204356]">Mtro. César Manuel Nava Gómez</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Subdirector de Autorización y Vigilancia, en la Comisión de Operación Sanitaria, COFEPRIS</span><br/>
-          <br/><span class="font-bold text-[#204356]">Mtro. Antonio Pascual Feria</span><br/>
+          <br/><span class="font-bold text-[#204356]">Sr. Antonio Pascual Feria</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Presidente, Asociación Nacional de Farmacias de México, ANAFARMEX</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Luis Ernesto Rozo Maragua</span><br/>
           <span class="text-gray-500"><span class="text-gray-500">Presidente, Asociación Mexicana de Farmacovigilancia, AMFV</span><br/></span><br/>
