@@ -70,7 +70,6 @@ const agendaData = [
         <span class="text-gray-500">Head of Health & Human Capital, Mexico, Caribbean and Central America, AON</span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. Gustavo Sánchez Huerta</span><br/>
         <span class="text-gray-500">Director General del Hospital de Infectología del CMN La Raza, IMSS</span><br/>
-        <br/><span class="text-gray-500">Directivo de Hospital Público</span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Mtra. Mariana Barraza Lloréns</span><br/>
           <span class="text-gray-500">Socia Fundadora Blutitude</span>`,
