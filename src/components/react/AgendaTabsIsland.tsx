@@ -104,14 +104,12 @@ const agendaData = [
         type: "PANEL",
         title: "Ciencia de datos y tecnologías de la informacion para el abordaje de las enfermedades infecciosas ",
         isNetworking: false,
-        participants: `<br/>
-          <span class="text-gray-500">QFB Mario Alberto Mujica Sánchez</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">Coordinador del Departamento de Microbiología Clínica, Instituto Nacional de Enfermedades Respiratorias, INER</span><br/>
-
-          <span class="text-gray-500">Dr. German Alberto Venegas Esquivel</span>
-          <br/><span class="font-bold text-[#00b0e4]">CServicio de Infectología, Hospital para el Niño del Instituto Materno Infantil del Estado de México / Hospital de Ginecología y Obstetricia 221, IMSS, Toluca, Edo. Mex.</span><br/>
-          <span class="text-gray-500">MSP Christian Daniel Mireles Dávalos</span><br/>
-          <br/><span class="font-bold text-[#00b0e4]">Microbiologo comisionado en el PROA y subcomité de antimicrobianos, Instituto Nacional de Enfermedades Respiratorias, INER</span><br/>
+        participants: `<span class="font-bold text-[#204356]">QFB Mario Alberto Mujica Sánchez</span><br/>
+          <br/><span class="text-gray-500">Coordinador del Departamento de Microbiología Clínica, Instituto Nacional de Enfermedades Respiratorias, INER</span><br/>
+          <span class="font-bold text-[#204356]">Dr. German Alberto Venegas Esquivel</span>
+          <br/><span class="text-gray-500">CServicio de Infectología, Hospital para el Niño del Instituto Materno Infantil del Estado de México / Hospital de Ginecología y Obstetricia 221, IMSS, Toluca, Edo. Mex.</span><br/>
+          <span class="font-bold text-[#204356]">MSP Christian Daniel Mireles Dávalos</span><br/>
+          <br/><span class="text-gray-500">Microbiologo comisionado en el PROA y subcomité de antimicrobianos, Instituto Nacional de Enfermedades Respiratorias, INER</span><br/>
            <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Janeth Carolina Nevárez Luján</span><br/>
           <span class="text-gray-500">Medical Affairs Manager, bioMérieux</span>`,
