@@ -69,7 +69,7 @@ const agendaData = [
         <br/><span class="font-bold text-[#204356]">M. en C. Omar Bernardo Viveros Cano</span><br/>
         <span class="text-gray-500">Head of Health & Human Capital, Mexico, Caribbean and Central America, AON</span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. Gustavo Sánchez Huerta</span><br/>
-        <span class="text-gray-500">Director General del Hospital de Infectología del CMN La Raza</span><br/>
+        <span class="text-gray-500">Director General del Hospital de Infectología del CMN La Raza, IMSS</span><br/>
         <br/><span class="text-gray-500">Directivo de Hospital Público</span><br/>
         <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Mariana Barraza Lloréns</span><br/>
@@ -90,7 +90,7 @@ const agendaData = [
         title: "El impacto de la vacunación en la Resistencia Antimicrobiana",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dr. Rafael Franco Cendejas</span><br/>
-          <span class="text-gray-500">Hospital Angeles Acoxpa</span><br/>
+          <span class="text-gray-500">Hospital Ángeles Acoxpa</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. José Ignacio Santos Preciado</span><br/>
           <span class="text-gray-500">Presidente Comité Normativo Nacional de Consejos de Especialidades Médicas, CONACEM</span><br/>
          <br/><span class="font-bold text-[#204356]">Dra. Claudia López Enriquez </span><br/>
@@ -105,10 +105,16 @@ const agendaData = [
         title: "Ciencia de datos y tecnologías de la informacion para el abordaje de las enfermedades infecciosas ",
         isNetworking: false,
         participants: `<br/>
-          <span class="text-gray-500"></span><br/>
-          <br/><span class="font-bold text-[#00b0e4]"></span><br/>
-            <br/>
-          <span class="text-gray-500"></span>`,
+          <span class="text-gray-500">QFB Mario Alberto Mujica Sánchez</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">Coordinador del Departamento de Microbiología Clínica, Instituto Nacional de Enfermedades Respiratorias, INER</span><br/>
+
+          <span class="text-gray-500">Dr. German Alberto Venegas Esquivel</span>
+          <br/><span class="font-bold text-[#00b0e4]">CServicio de Infectología, Hospital para el Niño del Instituto Materno Infantil del Estado de México / Hospital de Ginecología y Obstetricia 221, IMSS, Toluca, Edo. Mex.</span><br/>
+          <span class="text-gray-500">MSP Christian Daniel Mireles Dávalos</span><br/>
+          <br/><span class="font-bold text-[#00b0e4]">Microbiologo comisionado en el PROA y subcomité de antimicrobianos, Instituto Nacional de Enfermedades Respiratorias, INER</span><br/>
+           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
+          <span class="font-bold text-[#204356]">Dra. Janeth Carolina Nevárez Luján</span><br/>
+          <span class="text-gray-500">Medical Affairs Manager, bioMérieux</span>`,
       },
       {
         time: "",
@@ -185,9 +191,11 @@ const agendaData = [
         title: "La pandemia invisible: rastreando la resistencia desde el ambiente hasta el paciente",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">MVZ Sandra Cruz López</span><br/>
-        <span class="text-gray-500">Responsable del Área de Bacteriología del Centro Nacional de Servicios de Diagnostico de Salud Animal, SENASICA</span><br/>
+        <span class="text-gray-500">Responsable del Área de Bacteriología del Centro Nacional de Servicios de Diagnóstico de Salud Animal, SENASICA</span><br/>
         <br/><span class="font-bold text-[#204356]">Dra. Irma Egoavil Medina</span><br/>
         <span class="text-gray-500">Directora General Zoetis</span><br/>
+          <br/><span class="font-bold text-[#204356]">MVZ Rocío Reyes Pérez Jiménez</span><br/>
+        <span class="text-gray-500">Directora Ejecutiva de la Insdustria Farmacéutica Veterinaria INFARVET CANIFARMA</span><br/>
         <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
         <span class="font-bold text-[#204356]">Dr. Rufino Luna Gordillo</span><br/>
         <span class="text-gray-500">Presidente del Consejo Nacional de Salud Pública</span>`,
@@ -248,7 +256,7 @@ const agendaData = [
         title: "La vacunación en poblaciones vulnerables y la prevención de infecciones",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. Sandra Rajme López<br/></span>
-          <span class="text-gray-500">Departamento de Infectología, Instituto Nacional de Ciencias y Nutrición "Salvador Zubirán", INCMNSZ</span><br/>`,
+          <span class="text-gray-500">Departamento de Infectología, Instituto Nacional de Ciencias Médicas y Nutrición "Salvador Zubirán", INCMNSZ</span><br/>`,
       },
       {
         time: "13:00 - 13:30",
@@ -269,8 +277,8 @@ const agendaData = [
         type: "CONFERENCIA",
         title: "Impacto de las infecciones asociadas al reprocesamiento de endoscopios flexibles",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dra. Julieta Cervigni</span>
-          <span class="text-gray-500"></span><br/>
+        participants: `<span class="font-bold text-[#204356]">Dra. Julieta Cervigni</span><br/>
+          <span class="text-gray-500">Gerente de Marketing, Advanced Sterilization Products México </span><br/>
 
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
