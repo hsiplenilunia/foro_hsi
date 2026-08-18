@@ -109,7 +109,7 @@ const agendaData = [
           <br/><span class="font-bold text-[#204356]">Dr. German Alberto Venegas Esquivel</span><br/>
           <span class="text-gray-500">Servicio de Infectología, Hospital para el Niño del Instituto Materno Infantil del Estado de México / Hospital de Ginecología y Obstetricia 221, IMSS, Toluca, Edo. Mex.</span><br/>
           <br/><span class="font-bold text-[#204356]">MSP Christian Daniel Mireles Dávalos</span><br/>
-          <span class="text-gray-500">Microbiologo comisionado en el PROA y subcomité de antimicrobianos, Instituto Nacional de Enfermedades Respiratorias, INER</span><br/>
+          <span class="text-gray-500">Microbiólogo comisionado en el PROA y subcomité de antimicrobianos, Instituto Nacional de Enfermedades Respiratorias, INER</span><br/>
           <br/><span class="font-bold text-[#00b0e4]">MODERA:</span><br/>
           <span class="font-bold text-[#204356]">Dra. Janeth Carolina Nevárez Luján</span><br/>
           <span class="text-gray-500">Medical Affairs Manager, bioMérieux</span>`,
@@ -139,7 +139,7 @@ const agendaData = [
       {
         time: "14:45 - 15:15",
         type: "CONFERENCIA",
-        title: "Más allá del antibiótico: nuevas tendencias en el manejo de la sepsis con la membrana hemoadsorción oXiris",
+        title: "Más allá del antibiótico: nuevas tendencias en el manejo de la sepsis con la membrana hemoadsorción oXiris®",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. Olynka Vega Vega<br/></span>
           <span class="text-gray-500">Presidenta de IMIN y Coordinadora en el Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán.</span><br/>
@@ -193,7 +193,7 @@ const agendaData = [
         <br/><span class="font-bold text-[#204356]">Dra. Irma Egoavil Medina</span><br/>
         <span class="text-gray-500">Directora General Zoetis</span><br/>
           <br/><span class="font-bold text-[#204356]">MVZ Rocío Reyes Pérez Jiménez</span><br/>
-        <span class="text-gray-500">Directora Ejecutiva de la Insdustria Farmacéutica Veterinaria INFARVET CANIFARMA</span><br/>
+        <span class="text-gray-500">Directora Ejecutiva de la Industria Farmacéutica Veterinaria INFARVET CANIFARMA</span><br/>
         <br/><span class="font-bold text-[#3aaa5c]">MODERA:</span><br/>
         <span class="font-bold text-[#204356]">Dr. Rufino Luna Gordillo</span><br/>
         <span class="text-gray-500">Presidente del Consejo Nacional de Salud Pública</span>`,
