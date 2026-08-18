@@ -142,10 +142,6 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. Olynka Vega Vega<br/></span>
           <span class="text-gray-500">Presidenta de IMIN y Coordinadora en el Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán.</span><br/>
-          <br/><span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500"></span><br/>
-          <br/><span class="font-bold text-[#204356]"></span><br/>
-          <span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#00b0e4]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
           <span class="text-gray-500"></span>`,
