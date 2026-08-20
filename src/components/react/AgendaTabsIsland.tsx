@@ -291,7 +291,6 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Ing. Biotecnólogo Topiltzin Rea Reyes</span><br/>
           <span class="text-gray-500">Coordinador de Desinfección del Estado de Guerrero </span><br/>
-          <br/><span class="text-gray-500"></span><br/>
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <span class="text-gray-500"></span><br/>`,
       },
@@ -302,7 +301,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Mtra. Guillermina Vela Anaya<br/></span>
           <span class="text-gray-500">Coordinadora Normativa de la Dirección de Enfermería, SSa</span><br/>
-          <br/><span class="font-bold text-[#204356]">Mtra. Nancy Fonceca López <br/></span>
+          <br/><span class="font-bold text-[#204356]">Mtra. Nancy Fonseca López<br/></span>
           <span class="text-gray-500">Jefe de la Clínica de Heridas Hospital General Iztapalapa,IMSS Bienestar, CDMX</span><br/>
           <br/><span class="font-bold text-[#204356]">Dr. Isauro Emmanuel Rendón Oliva<br/></span>
           <span class="text-gray-500">Jefe de la Unidad de Cirugía Reconstructiva y Unidad de Quemados del Hospital de Traumatología y Ortopedia de los Servicio de Salud del Estado de Puebla</span><br/>
