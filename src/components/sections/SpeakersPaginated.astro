@@ -1,34 +1,60 @@
 ---
-// SpeakersPaginated.astro
+import SpeakerOrganicBg from "../atoms/SpeakerOrganicBg.astro";
+import { Image } from "astro:assets";
+
+import speaker_01 from "../../assets/speakers/Alejandro_Macias.webp";
+import speaker_02 from "../../assets/speakers/Antonio_Ramos_de_la_Medina.webp";
+import speaker_03 from "../../assets/speakers/Celia_Mercedes_Alpuche.webp";
+import speaker_04 from "../../assets/speakers/Eduardo_Gonzalez_Pier.webp";
+import speaker_05 from "../../assets/speakers/Eric_Ochoa_Hein.webp";
+import speaker_06 from "../../assets/speakers/Fabiana_Zepeda.webp";
+import speaker_07 from "../../assets/speakers/Fabiola_Casas_Rodriguez.webp";
+import speaker_08 from "../../assets/speakers/Hector_Valle.webp";
+import speaker_09 from "../../assets/speakers/Isabel_Villegas.webp";
+import speaker_10 from "../../assets/speakers/Jorge_Azpiri.webp";
+import speaker_11 from "../../assets/speakers/Jose_Ignacio_Santos_Preciado.webp";
+import speaker_12 from "../../assets/speakers/Juana_Jimenez_Sanchez.webp";
+import speaker_13 from "../../assets/speakers/Liliana_Vargas_Neri.webp";
+import speaker_14 from "../../assets/speakers/Luis_Fernando_Perez.webp";
+import speaker_15 from "../../assets/speakers/Maria_Enriqueta_Barido_Murguia.webp";
+import speaker_16 from "../../assets/speakers/Maribel_Ramirez_Coronel.webp";
+import speaker_17 from "../../assets/speakers/Martha_Huertas_Jimenez.webp";
+import speaker_18 from "../../assets/speakers/Mercedes_Juan_Lopez.webp";
+import speaker_19 from "../../assets/speakers/Octavio_Gonzalez_Chon.webp";
+import speaker_20 from "../../assets/speakers/Paulo_Castaneda.webp";
+import speaker_21 from "../../assets/speakers/Rosa_Maria_Wong.webp";
+import speaker_22 from "../../assets/speakers/Roxana_Trejo.webp";
+import speaker_23 from "../../assets/speakers/Samuel_Ponce_de_Leon_Rosales.webp";
+import speaker_24 from "../../assets/speakers/Victor_Rosenthal.webp";
+import speaker_25 from "../../assets/speakers/Daniela_de_la_Rosa.webp";
+
 const speakers = [
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778020722/Alejandro_Macias.png", alt: "Alejandro Macías" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021865/Antonio_Ramos_de_la_Medina.png", alt: "Antonio Ramos de la Medina" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021865/Celia_Mercedes_Alpuche.png", alt: "Celia Mercedes Alpuche" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Eduardo_Gonzalez_Pier.png", alt: "Eduardo González Pier" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Eric_Ochoa_Hein.png", alt: "Eric Ochoa Hein" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Fabiana_Zepeda.png", alt: "Fabiana Zepeda" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Fabiola_Casas_Rodriguez.png", alt: "Fabiola Casas" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021866/Hector_Valle.png", alt: "Héctor Valle" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021867/Isabel_Villegas.png", alt: "Isabel Villegas" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021867/Jorge_Azpiri.png", alt: "Jorge Azpiri" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021867/Jose_Ignacio_Santos_Preciado.png", alt: "José Ignacio Santos Preciado" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021868/Juana_Jimenez_Sanchez.png", alt: "Juana Jiménez Sánchez" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021869/Liliana_Vargas_Neri.png", alt: "Liliana Vargas Neri" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021869/Luis_Fernando_Perez.png", alt: "Luis Fernando Pérez" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021869/Maria_Enriqueta_Barido_Murguia.png", alt: "María Enriqueta Barido Murguía" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021870/Maribel_Ramirez_Coronel.png", alt: "Maribel Ramírez Coronel" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021870/Martha_Huertas_Jimenez.png", alt: "Martha Huertas Jiménez" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021870/Mercedes_Juan_Lopez.png", alt: "Mercedes Juan López" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021871/Octavio_Gonzalez_Chon.png", alt: "Octavio González Chon" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021871/Paulo_Castaneda.png", alt: "Paulo Castañeda" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021872/Rosa_Maria_Wong.png", alt: "Rosa María Wong" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021872/Roxana_Trejo.png", alt: "Roxana Trejo" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021872/Samuel_Ponce_de_Leon_Rosales.png", alt: "Samuel Ponce de León Rosales" },
-  { src: "https://res.cloudinary.com/dokvwbz1c/image/upload/v1778021873/Victor_Rosenthal.png", alt: "Victor Rosenthal" },
-
+  { name: "Alejandro Macias", imgSrc: speaker_01 },
+  { name: "Antonio Ramos de la Medina", imgSrc: speaker_02 },
+  { name: "Celia Mercedes Alpuche", imgSrc: speaker_03 },
+  { name: "Eduardo Gonzalez Pier", imgSrc: speaker_04 },
+  { name: "Eric Ochoa Hein", imgSrc: speaker_05 },
+  { name: "Fabiana Zepeda", imgSrc: speaker_06 },
+  { name: "Fabiola Casas Rodriguez", imgSrc: speaker_07 },
+  { name: "Hector Valle", imgSrc: speaker_08 },
+  { name: "Isabel Villegas", imgSrc: speaker_09 },
+  { name: "Jorge Azpiri", imgSrc: speaker_10 },
+  { name: "Jose Ignacio Santos Preciado", imgSrc: speaker_11 },
+  { name: "Juana Jimenez Sanchez", imgSrc: speaker_12 },
+  { name: "Liliana Vargas Neri", imgSrc: speaker_13 },
+  { name: "Luis Fernando Perez", imgSrc: speaker_14 },
+  { name: "Maria Enriqueta Barido Murguia", imgSrc: speaker_15 },
+  { name: "Maribel Ramirez Coronel", imgSrc: speaker_16 },
+  { name: "Martha Huertas Jimenez", imgSrc: speaker_17 },
+  { name: "Mercedes Juan Lopez", imgSrc: speaker_18 },
+  { name: "Octavio Gonzalez Chon", imgSrc: speaker_19 },
+  { name: "Paulo Castaneda", imgSrc: speaker_20 },
+  { name: "Rosa Maria Wong", imgSrc: speaker_21 },
+  { name: "Roxana Trejo", imgSrc: speaker_22 },
+  { name: "Samuel Ponce de Leon Rosales", imgSrc: speaker_23 },
+  { name: "Victor Rosenthal", imgSrc: speaker_24 },
+  { name: "Daniela de la Rosa", imgSrc: speaker_25 },
 ];
-
-// Una Sola Fila
 
 const filaUno = speakers.slice(0);
 ---
@@ -43,9 +69,25 @@ const filaUno = speakers.slice(0);
   <!-- Fila 1: izquierda → -->
   <div class="relative flex overflow-hidden mb-6 [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)] py-3">
     <div class="marquee-row marquee-left flex gap-12 w-max">
-      {[...filaUno, ...filaUno].map((logo) => (
+      {[...filaUno, ...filaUno].map((speaker) => (
         <div class="flex-shrink-0 flex items-center justify-center h-64 w-64">
-          <img src={logo.src} alt={logo.alt} class="h-full w-auto max-w-full object-contain hover:scale-110 transition-all duration-300" loading="lazy" />
+          <div class="photo-container relative w-[188px] h-[231px] mb-4 flex items-end justify-center">
+              <div class="photo-container__bg absolute inset-0 w-full h-full">
+                <SpeakerOrganicBg class="w-full h-full" />
+              </div>
+              <div class="photo-container__front_layer absolute inset-0 flex items-end justify-center">
+                <figure class="z-10">
+                  <Image
+                    src={speaker.imgSrc}
+                    alt={`Photo of ${speaker.name}`}
+                    class="w-[188px] h-[231px] object-cover mx-auto"
+                    width={188}
+                    height={231}
+                    loading="lazy"
+                  />
+                </figure>
+              </div>
+            </div>
         </div>
       ))}
     </div>
