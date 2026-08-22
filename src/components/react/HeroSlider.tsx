@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import slider1 from '../../assets/slider1.webp';
+import slider2 from '../../assets/slider2.webp';
 
 const images = [
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/slider1.webp',
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/slider2.webp',
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/slider1.webp',
-  'https://res.cloudinary.com/dokvwbz1c/image/upload/slider2.webp',
+  slider1,
+  slider2,
+  slider1,
+  slider2,
 ];
 
 const HeroSlider: React.FC = () => {
@@ -30,7 +32,7 @@ const HeroSlider: React.FC = () => {
     >
       {images.map((src, i) => (
         <img
-          key={src}
+          key={`${src}-${i}`}
           src={src}
           alt={`Slider ${i + 1}`}
           style={{
