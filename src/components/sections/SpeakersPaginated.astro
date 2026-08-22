@@ -70,15 +70,15 @@ const filaUno = speakers.slice(0);
     <div class="marquee-row marquee-left flex gap-12 w-max">
       {[...filaUno, ...filaUno].map((speaker) => (
         <div class="flex-shrink-0 flex items-center justify-center h-64 w-64">
-          <div class="photo-container relative w-[250px] h-[250px] mb-4 flex items-end justify-center">
+          <div class="photo-container relative w-[300px] h-[300px] mb-4 flex items-end justify-center">
               <div class="photo-container__front_layer absolute inset-0 flex items-end justify-center">
                 <figure class="z-10">
                   <Image
                     src={speaker.imgSrc}
                     alt={`Photo of ${speaker.name}`}
-                    class="w-[250px] h-[250px] object-contain mx-auto transition-transform duration-300 hover:scale-110"
-                    width={250}
-                    height={250}
+                    class="w-[300px] h-[300px] object-contain mx-auto transition-transform duration-300 hover:scale-110"
+                    width={300}
+                    height={300}
                     loading="lazy"
                   />
                 </figure>
