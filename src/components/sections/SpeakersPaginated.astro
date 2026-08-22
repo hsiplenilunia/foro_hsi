@@ -1,5 +1,4 @@
 ---
-import SpeakerOrganicBg from "../atoms/SpeakerOrganicBg.astro";
 import { Image } from "astro:assets";
 
 import speaker_01 from "../../assets/speakers/Alejandro_Macias.webp";
@@ -72,9 +71,6 @@ const filaUno = speakers.slice(0);
       {[...filaUno, ...filaUno].map((speaker) => (
         <div class="flex-shrink-0 flex items-center justify-center h-64 w-64">
           <div class="photo-container relative w-[188px] h-[231px] mb-4 flex items-end justify-center">
-              <div class="photo-container__bg absolute inset-0 w-full h-full">
-                <SpeakerOrganicBg class="w-full h-full" />
-              </div>
               <div class="photo-container__front_layer absolute inset-0 flex items-end justify-center">
                 <figure class="z-10">
                   <Image
