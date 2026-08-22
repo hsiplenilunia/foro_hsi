@@ -3,10 +3,10 @@ import slider1 from '../../assets/slider1.webp';
 import slider2 from '../../assets/slider2.webp';
 
 const images = [
-  slider1,
-  slider2,
-  slider1,
-  slider2,
+  slider1.src,
+  slider2.src,
+  slider1.src,
+  slider2.src,
 ];
 
 const HeroSlider: React.FC = () => {
