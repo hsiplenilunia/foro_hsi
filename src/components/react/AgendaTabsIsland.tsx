@@ -185,7 +185,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">MVZ Sandra Cruz López</span><br/>
         <span class="text-gray-500">Responsable del Área de Bacteriología del Centro Nacional de Servicios de Diagnóstico de Salud Animal, SENASICA</span><br/>
-        <br/><span class="font-bold text-[#204356]">Dra. Irma Egoavil Medina</span><br/>
+        <br/><span class="font-bold text-[#204356]">Dra. Irma Egoavil Giménez</span><br/>
         <span class="text-gray-500">Directora General Zoetis</span><br/>
           <br/><span class="font-bold text-[#204356]">MVZ Rocío Reyes Pérez Jiménez</span><br/>
         <span class="text-gray-500">Directora Ejecutiva de la Industria Farmacéutica Veterinaria INFARVET CANIFARMA</span><br/>
