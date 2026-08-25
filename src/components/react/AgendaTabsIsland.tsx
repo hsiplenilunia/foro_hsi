@@ -336,7 +336,7 @@ const agendaData = [
         participants: `<span class="font-bold text-[#204356]">Dra. María Eugenia Jiménez Corona</span><br/>
         <span class="text-gray-500">Directora General de Epidemiología, SSa</span><br/>
         <span class="font-bold text-[#204356]">Dra. Mónica Guardo</span><br/>
-        <span class="text-gray-500">Asesora Internacional de Enfermedades Transmisibles y Determinantes Ambientales de la Salud de la OPS/OMS</span><br/>
+        <br/><span class="text-gray-500">Asesora Internacional de Enfermedades Transmisibles y Determinantes Ambientales de la Salud de la OPS/OMS</span><br/>
         <br/><span class="font-bold text-[#204356]">M.A.S.S. Maribel Ramírez Coronel</span><br/>
         <span class="text-gray-500">Directora Fundadora de la iniciativa Hospitales sin Infecciones</span><br/>`,
       },
