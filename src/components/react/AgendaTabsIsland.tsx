@@ -335,7 +335,7 @@ const agendaData = [
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. María Eugenia Jiménez Corona</span><br/>
         <span class="text-gray-500">Directora General de Epidemiología, SSa</span><br/>
-        <span class="font-bold text-[#204356]">M.A.S.S. Maribel Ramírez Coronel</span><br/>
+        <br/><span class="font-bold text-[#204356]">M.A.S.S. Maribel Ramírez Coronel</span><br/>
         <span class="text-gray-500">Directora Fundadora de la iniciativa Hospitales sin Infecciones</span><br/>`,
       },
         {
