@@ -271,7 +271,7 @@ const agendaData = [
         title: "Impacto de las infecciones asociadas al reprocesamiento de endoscopios flexibles",
         isNetworking: false,
         participants: `<span class="font-bold text-[#204356]">Dra. Julieta Cervigni</span><br/>
-          <span class="text-gray-500">Gerente de Marketing, Advanced Sterilization Products México </span><br/>
+          <span class="text-gray-500">Gerente de Educación Profesional y Comercial para ASP Latinoamérica</span><br/>
 
           <br/><span class="font-bold text-[#3aaa5c]"></span><br/>
           <span class="font-bold text-[#204356]"></span><br/>
