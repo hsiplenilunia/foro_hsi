@@ -16,6 +16,8 @@ const agendaData = [
         <span class="text-gray-500"></span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. José Gerardo Moya Medina<br/></span>
         <span class="text-gray-500">Representante de la OPS/OMS en México<br/></span>
+        <br/><span class="font-bold text-[#204356]">Dra. Adriana Josefina Toriz Saldaña</span><br/>
+        <span class="text-gray-500">Titular de la Coordinación de Vigilancia Epidemiológica del Instituto Mexicano del Seguro Social</span><br/>
         <br/><span class="font-bold text-[#204356]">Dr. Octavio González Chon</span><br/>
         <span class="text-gray-500">Director General de Médica Sur</span><br/>
 
@@ -38,8 +40,8 @@ const agendaData = [
         type: "CONFERENCIA MAGISTRAL",
         title: "El rol del IMSS en la Estrategia Nacional contra las Infecciones y la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]"></span>
-        <span class="text-gray-500"></span>`,
+        participants: `<span class="font-bold text-[#204356]">Dra. Adriana Josefina Toriz Saldaña</span>
+        <br/><span class="text-gray-500">Titular de la Coordinación de Vigilancia Epidemiológica del Instituto Mexicano del Seguro Social</span>`,
       },
       {
         time: "10:00 - 10:45",
