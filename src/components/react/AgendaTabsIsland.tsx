@@ -40,8 +40,8 @@ const agendaData = [
         type: "CONFERENCIA MAGISTRAL",
         title: "El rol del IMSS en la Estrategia Nacional contra las Infecciones y la Resistencia Antimicrobiana",
         isNetworking: false,
-        participants: `<span class="font-bold text-[#204356]">Dra. Adriana Josefina Toriz Saldaña</span>
-        <span class="text-gray-500">Titular de la Coordinación de Vigilancia Epidemiológica del Instituto Mexicano del Seguro Social</span>`,
+        participants: `<span class="font-bold text-[#204356]">Dra. Adriana Josefina Toriz Saldaña</span><br/>
+        <br/><span class="text-gray-500">Titular de la Coordinación de Vigilancia Epidemiológica del Instituto Mexicano del Seguro Social</span>`,
       },
       {
         time: "10:00 - 10:45",
