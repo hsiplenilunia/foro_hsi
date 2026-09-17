@@ -3,17 +3,8 @@ import HeroSection from "../components/HeroSection.astro";
 import LandingHeader from "../components/LandingHeader.astro";
 import QueEs from "../components/sections/QueEs.astro";
 import QueEs2 from "../components/sections/QueEs2.astro";
-import Actualidad from "../components/sections/Actualidad.astro";
-import Actualidad2 from "../components/sections/Actualidad2.astro";
-import Sede from "../components/sections/Sede.astro";
-
 import Layout from "../layouts/Layout.astro";
-import SiteFooter from "../components/molecules/SiteFooter.astro";
-
 import PorqueAsistir from "../components/sections/PorqueAsistir.astro";
-import Speakers from "../components/sections/Speakers.astro";
-import Notas from "../components/sections/Notas.astro";
-import Recursos from "../components/sections/Recursos.astro";
 import Patrocinadores from "../components/sections/Patrocinadores.astro";
 import Aliados from "../components/sections/Aliados.astro";
 import Agenda from "../components/sections/Agenda.astro";
@@ -22,6 +13,7 @@ import Concurso from "../components/sections/Concurso.astro";
 import SpeakersPaginated from "../components/sections/SpeakersPaginated.astro";
 import Galeria from "../components/sections/Galeria.astro";
 import FloatingWhatsApp from "../components/islands/atoms/FloatingWhatsApp.tsx";
+
 ---
 
 <Layout title="Foro 2026 - Hospital sin infecciones">
@@ -30,45 +22,118 @@ import FloatingWhatsApp from "../components/islands/atoms/FloatingWhatsApp.tsx";
   <main
     class="relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
   >
-  <div class="snap-center">
+  <div class="snap-center" id="inicio" data-analytics-section="inicio">
       <HeroSection />
     </div>
-    <div class="snap-center">
+    <div class="snap-center" id="concurso" data-analytics-section="concurso">
       <Concurso />
     </div>    
-    <div class="snap-center">
+    <div class="snap-center scroll-mt-20" id="que-es" data-analytics-section="que-es">
       <QueEs />
     </div>
-    <div class="snap-center">
+    <div class="snap-center scroll-mt-20" id="playlist-section" data-analytics-section="playlist-section">
       <QueEs2 />
     </div>
-    <div class="snap-center">
+    <div class="snap-center" id="porque-asistir" data-analytics-section="porque-asistir">
       <PorqueAsistir />
     </div>
-    <div class="snap-center">
+    <div class="snap-center scroll-mt-20" id="agenda" data-analytics-section="agenda">
       <Agenda />
     </div>
-    <div class="snap-center">
+    <div class="snap-center scroll-mt-20" id="patrocinadores" data-analytics-section="patrocinadores">
       <Patrocinadores />
     </div>
-        <div class="snap-center">
+        <div class="snap-center scroll-mt-20" id="aliados" data-analytics-section="aliados">
       <Aliados />
     </div>
-    <div class="snap-center">
+    <div class="snap-center scroll-mt-20" id="speakers" data-analytics-section="speakers">
       <SpeakersPaginated />
     </div>
     <!-- <div class="snap-center">
       <Notas />
     </div>-->
-    <div class="snap-center">
+    <div class="snap-center" id="galeria" data-analytics-section="galeria">
       <Galeria />
     </div>
     <!--<div class="snap-center">
       <Video />
     </div>-->
-    <div class="snap-center">
+    <div class="snap-center" id="footer" data-analytics-section="footer">
       <PageFooter />
     </div>
     <FloatingWhatsApp className="bg-green-hsi rounded-full" size={60} positionX="right" positionY="bottom" waNumber="525511355967" client:load/>
   </main>
 </Layout>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+
+  const main = document.querySelector('main');
+  const secciones = document.querySelectorAll('[data-analytics-section]');
+  const vistasRegistradas = new Set();
+  const interaccionesRegistradas = new Set();
+  let observerIniciado = false;
+
+  function enviarEvento(eventName, sectionName, params = {}) {
+    const payload = {
+      event: eventName,
+      section_name: sectionName,
+      page_location: window.location.pathname,
+      ...params,
+    };
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, {
+        section_name: sectionName,
+        page_location: window.location.pathname,
+        ...params,
+      });
+    }
+
+    console.log('[GA4-debug]', payload);
+  }
+
+  function registrarVistaSeccion(seccion) {
+    const sectionName = seccion.dataset.analyticsSection;
+    if (!sectionName || vistasRegistradas.has(sectionName)) return;
+
+    vistasRegistradas.add(sectionName);
+    enviarEvento('view_landing_section', sectionName);
+  }
+
+  function registrarInteraccionSeccion(seccion) {
+    const sectionName = seccion.dataset.analyticsSection;
+    if (!sectionName || interaccionesRegistradas.has(sectionName)) return;
+
+    interaccionesRegistradas.add(sectionName);
+    enviarEvento('interact_landing_section', sectionName, {
+      interaction_type: 'click',
+    });
+  }
+
+  function iniciarObserver() {
+    if (observerIniciado || !main || !('IntersectionObserver' in window)) return;
+    observerIniciado = true;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        registrarVistaSeccion(entry.target);
+      });
+    }, {
+      root: main,
+      rootMargin: '0px',
+      threshold: 0.6,
+    });
+
+    secciones.forEach((seccion) => observer.observe(seccion));
+    secciones.forEach((seccion) => {
+      seccion.addEventListener('click', () => registrarInteraccionSeccion(seccion));
+    });
+  }
+
+  iniciarObserver();
+
+  window.__debugLandingSection = function (sectionName) {
+    enviarEvento('view_landing_section', sectionName);
+  };
+</script>
