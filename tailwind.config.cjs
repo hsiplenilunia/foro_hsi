@@ -26,6 +26,7 @@ module.exports = {
         'celeste-hsi': "#00bbe7",
         'green-hsi': "#25A64B",
         'registro-hsi': "#00B0E4",
+        'patrocinador-concurso': "#0AB1E5",
         'btn-registro-concurso': "#0AB1E5",
         'btn-registro-concurso-hover': "#1D5168",
         'btn-bases-concurso': "#D9D9D9",
