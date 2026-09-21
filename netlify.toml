@@ -17,7 +17,7 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
     # Impide que el sitio sea embebido en iframes externos (anti-clickjacking).
-    X-Frame-Options = "DENY"
+    X-Frame-Options = "SAMEORIGIN"
 
     # Evita que el navegador adivine el tipo de contenido (anti MIME-sniffing).
     X-Content-Type-Options = "nosniff"
@@ -57,7 +57,7 @@
     #  base-uri    → evita ataques de base-tag injection
     #  form-action → formularios solo al propio dominio
     # ─────────────────────────────────────────────────────────────────────────
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://res.cloudinary.com https://placehold.co https://img.youtube.com; font-src 'self'; connect-src 'self' https://res.cloudinary.com https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; media-src 'self' https://www.youtube.com https://youtu.be; frame-src https://www.youtube.com https://youtu.be; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://res.cloudinary.com https://placehold.co https://img.youtube.com; font-src 'self'; connect-src 'self' https://res.cloudinary.com https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; media-src 'self' https://www.youtube.com https://youtu.be; frame-src 'self' https://www.youtube.com https://youtu.be; object-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests;"
 
 # ------------------------------------------------------------
 # CACHE — assets con hash de Astro (inmutables)
