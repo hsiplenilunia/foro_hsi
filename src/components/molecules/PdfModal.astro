@@ -13,23 +13,25 @@ const {
 ---
 
 <button 
-  id="open-pdf-btn"
+  type="button"
+  data-pdf-modal-trigger
   class={buttonClass}
 >
   {buttonText}
 </button>
 
 <div 
-  id="pdf-modal" 
+  data-pdf-modal
   class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm items-center justify-center p-4"
 >
   <div class="bg-white rounded-2xl w-full max-w-5xl h-[85vh] flex flex-col relative shadow-2xl overflow-hidden">
     
     <div class="flex justify-between items-center bg-gray-50 px-6 py-4 border-b border-gray-200">
 
-      <h3 class="text-purple font-bold text-lg">Bases del Concurso</h3>
+      <h3 class="text-hsi-blue font-bold text-lg">Bases del Concurso</h3>
       <button 
-        id="close-pdf-btn" 
+        type="button"
+        data-pdf-modal-close
         class="text-gray-500 hover:text-purple text-2xl font-bold p-8 focus:outline-none"
         aria-label="Cerrar modal"
       >
@@ -39,11 +41,11 @@ const {
 
     <div class="flex-1 w-full bg-gray-100 relative">
       <div class="hidden md:block w-full h-full">
-        <embed 
+        <iframe
           src={`${pdfUrl}#toolbar=0&navpanes=0`} 
-          type="application/pdf" 
+          title={buttonText}
           class="w-full h-full"
-        />
+        ></iframe>
       </div>
 
       <div class="flex md:hidden flex-col items-center justify-center h-full px-6 text-center space-y-4">
@@ -62,29 +64,28 @@ const {
 </div>
 
 <script>
-  // Control de estados del DOM sin frameworks pesados
-  const openBtn = document.getElementById('open-pdf-btn');
-  const closeBtn = document.getElementById('close-pdf-btn');
-  const modal = document.getElementById('pdf-modal');
+  document.querySelectorAll('[data-pdf-modal-trigger]').forEach((openBtn) => {
+    const modal = openBtn.nextElementSibling;
+    const closeBtn = modal?.querySelector('[data-pdf-modal-close]');
 
-  if (openBtn && closeBtn && modal) {
+    if (modal && closeBtn) {
     openBtn.addEventListener('click', () => {
       modal.classList.remove('hidden');
       modal.classList.add('flex');
-      document.body.style.overflow = 'hidden'; // Evita scroll de fondo
+      document.body.style.overflow = 'hidden';
     });
 
     const closeModal = () => {
       modal.classList.remove('flex');
       modal.classList.add('hidden');
-      document.body.style.overflow = ''; // Restaura scroll
+      document.body.style.overflow = '';
     };
 
     closeBtn.addEventListener('click', closeModal);
 
-    // Cerrar también si hacen clic fuera del contenedor blanco
     modal.addEventListener('click', (e) => {
       if (e.target === modal) closeModal();
     });
-  }
+    }
+  });
 </script>
