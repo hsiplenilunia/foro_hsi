@@ -22,12 +22,13 @@ import FloatingWhatsApp from "../components/islands/atoms/FloatingWhatsApp.tsx";
   <main
     class="relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
   >
+      <div class="snap-center scroll-mt-20" id="concurso" data-analytics-section="concurso">
+      <Concurso />
+    </div>  
   <div class="snap-center" id="inicio" data-analytics-section="inicio">
       <HeroSection />
     </div>
-    <div class="snap-center scroll-mt-20" id="concurso" data-analytics-section="concurso">
-      <Concurso />
-    </div>    
+  
     <div class="snap-center scroll-mt-20" id="que-es" data-analytics-section="que-es">
       <QueEs />
     </div>
