@@ -8,11 +8,15 @@
   const sectionStyles = `landing-section md:min-h-screen bg-light-white w-screen text-center overflow-hidden relative pb-24 md:pb-0`;
   ---
 
-<section class="relative w-full overflow-hidden pt-40 px-6 md:px-12 min-h-[450px] bg-white
-          md:bg-[url('/bg_concurso_2026.svg')] md:bg-no-repeat
-          md:bg-[length:auto_406px] md:bg-[position:right_top]">
+<section class="relative w-full overflow-hidden pt-40 px-6 md:px-12 min-h-[450px] bg-white">
 
-  <div class="hidden md:block">
+  <div
+    class="hidden md:block absolute inset-x-0 top-[120px] h-[406px] bg-no-repeat bg-[length:auto_406px] bg-right-top pointer-events-none"
+    style="background-image: url('/bg_concurso_2026.svg');"
+    aria-hidden="true"
+  ></div>
+
+  <div class="hidden md:block relative z-10">
     <h2 class="text-3xl font-bold text-gray-800 mb-4">Concurso de Trabajos Libres:</h2>
 
     <div class="flex flex-col items-start gap-2 mb-6">
